@@ -1,6 +1,10 @@
 import { Country } from './types';
 
-const GoldObject: Country[] = [
+
+//just array, not use as component
+
+//
+const goldObject: Country[] = [
     {
         "name": "Afghanistan",
         "countryIndexNumber": 0,
@@ -2355,4 +2359,4 @@ const GoldObject: Country[] = [
     }
 ]
 
-export default GoldObject;
+export default goldObject;
