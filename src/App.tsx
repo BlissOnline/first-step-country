@@ -1,6 +1,6 @@
-import { Country } from './types';
+//import { Country } from './types';
 import QuestionLogicForm from './QuestionLogicForm';
-import goldObject from './goldObject.js';
+//import goldObject from './goldObject.js';
 /*
 import { useState } from 'react'
 
@@ -18,7 +18,7 @@ function App() {
         <h1>Testing 123 Testing </h1>
         <p>goldObject[]</p>
 
-        <QuestionLogicForm>yo</QuestionLogicForm>
+        <QuestionLogicForm></QuestionLogicForm>
       </div>
 
     </>

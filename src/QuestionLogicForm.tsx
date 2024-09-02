@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import GoldObject from './GoldObject';
+import goldObject from './goldObject.js';
 import { Country } from './types';
 
 //defining Component with useState hook being an object
@@ -31,23 +31,23 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 
     // all the if statement logic
 
-    const filteredCountries = GoldObject.filter((item: Country) => {
+    const filteredCountries = goldObject.filter((item: Country) => {
         if (data.ocean === 'important' && !item.coast) return false;
         //probably don't have to define anything..
         //if (data.ocean === 'notImportant' && item.coast) return false;
         if (+data.ppm && +data.ppm <= item.ppm) return false;
 
-        if (data.english === 'important' && !item.coast) return false;
+        if (data.english === 'important' && !item.englishSpeaking) return false;
         // if (data.english === 'notImportant' && item.coast) return false;
-        if (data.dining === 'important' && !item.coast) return false;
+        if (data.dining === 'important' && !item.affordableDining) return false;
         //if (data.dining === 'notImportant' && item.coast) return false;
-        if (data.unsafe === 'important' && !item.coast) return false;
+        if (data.unsafe === 'important' && item.unsafe) return false;
         // if (data.unsafe === 'notImportant' && item.coast) return false;
-        if (data.education === 'important' && !item.coast) return false;
+        if (data.education === 'important' && !item.affordableDining) return false;
         // if (data.education === 'notImportant' && item.coast) return false;
-        if (data.medical === 'important' && !item.coast) return false;
+        if (data.medical === 'important' && !item.affordableHealthCare) return false;
         // if (data.medical === 'notImportant' && item.coast) return false;
-        if (data.nomadVisa === 'important' && !item.coast) return false;
+        if (data.nomadVisa === 'important' && !item.nomadVisa) return false;
         // if (data.nomadVisa === 'notImportant' && item.coast) return false;
 
         return true;
@@ -64,77 +64,73 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <label>
-                    Ocean:
-                    <select name="ocean" value={formData.ocean} onChange={handleChange}>
-                        <option value="">Select</option>
-                        <option value="important">Important</option>
-                        <option value="notImportant">Not Important</option>
-                    </select>
-                </label>
+                <div>
+                    <label>Access to the ocean?</label><br />
+                    <label> Important
+                        <input type='radio' name="ocean" value="important" onChange={handleChange} />
+                    </label>
+                    <label> Not Important
+                        <input type='radio' name="ocean" value="notImportant" onChange={handleChange} />
+                    </label> <br /> <br />
+                </div>
+                
 
-                <label>
-                    PPM:
-                    <input
-                        type="number"
-                        name="ppm"
-                        value={formData.ppm} onChange={handleChange}
-                    />
-                </label>
+                <div>
+                    <label>What is your max monthly budget for living expenses?</label><br />
+                    <label> 
+                        <input name='ppm' type='number' value={formData.ppm} onChange={handleChange}/>
+                    </label> <br /> <br />
+                </div>
+               
 
-                <label>
-                    English:
-                    <select name="english" value={formData.english} onChange={handleChange}>
-                        <option value="">Select</option>
-                        <option value="important">Important</option>
-                        <option value="notImportant">Not Important</option>
-                    </select>
-                </label>
 
-                <label>
-                    Dining:
-                    <select name="dining" value={formData.dining} onChange={handleChange}>
-                        <option value="">Select</option>
-                        <option value="important">Important</option>
-                        <option value="notImportant">Not Important</option>
-                    </select>
+                <label>Do you want your country to have English speakers?</label><br />
+                <label> Important
+                    <input type='radio' name="english" value="important" onChange={handleChange}/>
                 </label>
+                <label> Not Important
+                    <input type='radio' name="english" value="notImportant" onChange={handleChange}/>
+                </label> <br /> <br />
 
-                <label>
-                    Unsafe:
-                    <select name="unsafe" value={formData.unsafe} onChange={handleChange}>
-                        <option value="">Select</option>
-                        <option value="important">Important</option>
-                        <option value="notImportant">Not Important</option>
-                    </select>
+                <label>Do you want your country to have affordable dining options?</label><br />
+                <label> Important
+                    <input type='radio' name="dining" value="important" onChange={handleChange}/>
                 </label>
+                <label> Not Important
+                    <input type='radio' name="dining" value="notImportant" onChange={handleChange}/>
+                </label> <br /> <br />
 
-                <label>
-                    Education:
-                    <select name="education" value={formData.education} onChange={handleChange}>
-                        <option value="">Select</option>
-                        <option value="important">Important</option>
-                        <option value="notImportant">Not Important</option>
-                    </select>
+                <label>Do you want your country to be considered safe? (a level 2 risk or higher, will be excluded from your country list)</label><br />
+                <label> Important
+                    <input type='radio' name="unsafe" value="important" onChange={handleChange}/>
                 </label>
+                <label> Not Important
+                    <input type='radio' name="unsafe" value="notImportant" onChange={handleChange}/>
+                </label> <br /> <br />
 
-                <label>
-                    Medical:
-                    <select name="medical" value={formData.medical} onChange={handleChange}>
-                        <option value="">Select</option>
-                        <option value="important">Important</option>
-                        <option value="notImportant">Not Important</option>
-                    </select>
+                <label>High-quality education options for foreigners, at a great price?</label><br />
+                <label> Important
+                    <input type='radio' name="education" value="important" onChange={handleChange}/>
                 </label>
+                <label> Not Important
+                    <input type='radio' name="education" value="notImportant" onChange={handleChange}/>
+                </label> <br /> <br />
 
-                <label>
-                    Nomad Visa:
-                    <select name="nomadVisa" value={formData.nomadVisa} onChange={handleChange}>
-                        <option value="">Select</option>
-                        <option value="important">Important</option>
-                        <option value="notImportant">Not Important</option>
-                    </select>
+                <label>Available high-quality and affordable medical tourism?</label><br />
+                <label> Important
+                    <input type='radio' name="medical" value="important" onChange={handleChange}/>
                 </label>
+                <label> Not Important
+                    <input type='radio' name="medical" value="notImportant" onChange={handleChange}/>
+                </label> <br /> <br />
+
+                <label>Do you want your country to offer an official digital nomad visa or special permits for remote workers?</label><br />
+                <label> Important
+                    <input type='radio' name="nomadVisa" value="important" onChange={handleChange}/>
+                </label>
+                <label> Not Important
+                    <input type='radio' name="nomadVisa" value="notImportant" onChange={handleChange}/>
+                </label> <br /> <br />
 
                 {/* define submit button */}
 
