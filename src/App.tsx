@@ -1,12 +1,6 @@
-//import { Country } from './types';
+import NavBar from './NavBar';
 import QuestionLogicForm from './QuestionLogicForm';
-//import goldObject from './goldObject.js';
-/*
-import { useState } from 'react'
-
-
-*/
-import './App.css'
+import './App.css';
 
 function App() {
   // might need hook useState here
@@ -14,9 +8,9 @@ function App() {
 
   return (
     <>
+    {/* <NavBar></NavBar> */}
       <div>
-        <h1>Testing 123 Testing </h1>
-        <p>goldObject[]</p>
+        <h1>First Step Country</h1>
 
         <QuestionLogicForm></QuestionLogicForm>
       </div>
