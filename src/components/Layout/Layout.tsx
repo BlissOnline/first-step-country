@@ -7,6 +7,7 @@ interface LayoutProps {
     children: React.ReactNode;
 }
 
+//use layout in router
 //Layout component
 const Layout: React.FC<LayoutProps> = ({ children }) => {
     return (

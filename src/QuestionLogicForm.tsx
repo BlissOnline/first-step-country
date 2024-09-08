@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import goldObject from './goldObject.js';
 import { Country } from './types';
+import Q1 from './components/Questions/Q1.tsx';
+import Q2 from './components/Questions/Q2.tsx';
+import Q3 from './components/Questions/Q3.tsx';
+import Q4 from './components/Questions/Q4.tsx';
+// import Q5 from './components/Questions/Q5.tsx';
+//import Q6 from './components/Questions/Q6.tsx';
+//import Q7 from './components/Questions/Q7.tsx';
+//import Q8 from './components/Questions/Q8.tsx';
 
 //defining Component with useState hook being an object
 const QuestionLogicForm: React.FC = () => {
@@ -27,12 +35,14 @@ const QuestionLogicForm: React.FC = () => {
 
     // next page on click
     const showNextPage = () => {
+        console.log(formData);
         setCurrentPage(prevPage => prevPage + 1);
     };
 
     // prev page on click
 
     // define hadnleSubmit function logic
+    //we need d
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const data = formData;
@@ -69,91 +79,61 @@ const QuestionLogicForm: React.FC = () => {
 
     };
     
+    //() => {}  ...empty arrow function
     // defining the JSX of our component 
 
         return (
             <div>
-                <form onSubmit={handleSubmit}>
-                    <div className={`question-page page-0 ${currentPage === 0 ? 'active' : ''}`}>
-                        <label>Access to the ocean?</label><br />
-                        <label> Important
-                            <input type='radio' name="ocean" value="important" onChange={handleChange} onClick={showNextPage}/>
-                        </label>
-                        <label> Not Important
-                            <input type='radio' name="ocean" value="notImportant" onChange={handleChange} onClick={showNextPage}/>
-                        </label> <br /> <br />
-                    </div>
-                    
+                <div>
+                    {currentPage === 0 && (
+                        <Q1 value={formData.ocean} onChange={(value) => {
+                            setFormData({
+                                ...formData,
+                                ocean: value
+                            });
+                        }} onNext={showNextPage} />         
+                    )}
+                    {/* add more questions */}
 
-                    <div className={`question-page page-1 ${currentPage === 1 ? 'active' : ''}`}>
-                        <label>What is your max monthly budget for living expenses?</label><br />
-                        <label> 
-                            <input name='ppm' type='number' value={formData.ppm} onChange={handleChange}/>
-                        </label> <br /> <br />
-                        <button type='button' onClick={showNextPage}> next step </button>
-                    </div>
+                    {currentPage === 1 && (
+                        <Q2 value={formData.ppm} onChange={handleChange} onNext={showNextPage} />         
+                    )}
+                    {/* add more questions */}
+
+                    {currentPage === 2 && (
+                        <Q3 value={formData.english} onChange={handleChange} onNext={showNextPage} />         
+                    )}
+                    {/* add more questions */}
+
+                    {currentPage === 3 && (
+                        <Q4 value={formData.dining} onChange={handleChange} onNext={showNextPage} />         
+                    )}
+                    {/* add more questions */}
+
+                    {/* {currentPage === 3 && ( */}
+                        {/* <Q4 value={formData.dining} onChange={handleChange} onNext={showNextPage} />          */}
+                    {/* )} */}
+                    {/* add more questions */}
+
+                    {/* {currentPage === 4 && ( */}
+                        {/* <Q5 value={formData.unsafe} onChange={handleChange} onNext={showNextPage} />          */}
+                    {/* )} */}
                 
 
-                    <div className={`question-page page-2 ${currentPage === 2 ? 'active' : ''} `}>
-                        <label>Do you want your country to have English speakers?</label><br />
-                        <label> Important
-                            <input type='radio' name="english" value="important" onChange={handleChange} onClick={showNextPage}/>
-                        </label>
-                        <label> Not Important
-                            <input type='radio' name="english" value="notImportant" onChange={handleChange} onClick={showNextPage}/>
-                        </label> <br /> <br />
-                    </div>
-                    
-                    <div className={`question-page page-3 ${currentPage === 3 ? 'active' : ''}`}>
-                        <label>Do you want your country to have affordable dining options?</label><br />
-                        <label> Important
-                            <input type='radio' name="dining" value="important" onChange={handleChange} onClick={showNextPage}/>
-                        </label>
-                        <label> Not Important
-                            <input type='radio' name="dining" value="notImportant" onChange={handleChange} onClick={showNextPage}/>
-                        </label> <br /> <br />
-                    </div>
+                    {/* {currentPage === 5 && ( */}
+                        {/* <Q6 value={formData.education} onChange={handleChange} onNext={showNextPage} />          */}
+                    {/* )} */}
                 
-                    <div className={`question-page page-4 ${currentPage === 4 ? 'active' : ''}`}>
-                        <label>Do you want your country to be considered safe? (a level 2 risk or higher, will be excluded from your country list)</label><br />
-                        <label> Important
-                            <input type='radio' name="unsafe" value="important" onChange={handleChange} onClick={showNextPage}/>
-                        </label>
-                        <label> Not Important
-                            <input type='radio' name="unsafe" value="notImportant" onChange={handleChange} onClick={showNextPage}/>
-                        </label> <br /> <br />
-                    </div>
-                
-                    <div className={`question-page page-5 ${currentPage === 5 ? 'active' : ''}`}>
-                        <label>High-quality education options for foreigners, at a great price?</label><br />
-                        <label> Important
-                            <input type='radio' name="education" value="important" onChange={handleChange} onClick={showNextPage}/>
-                        </label>
-                        <label> Not Important
-                            <input type='radio' name="education" value="notImportant" onChange={handleChange} onClick={showNextPage}/>
-                        </label> <br /> <br />
-                    </div>
-                    
-                    <div className={`question-page page-6 ${currentPage === 6 ? 'active' : ''}`}>
-                        <label>Available high-quality and affordable medical tourism?</label><br />
-                        <label> Important
-                            <input type='radio' name="medical" value="important" onChange={handleChange} onClick={showNextPage}/>
-                        </label>
-                        <label> Not Important
-                            <input type='radio' name="medical" value="notImportant" onChange={handleChange} onClick={showNextPage}/>
-                        </label> <br /> <br />
-                    </div>
-                
-                    <div className={`question-page page-7 ${currentPage === 7 ? 'active' : ''}`}>
-                        <label>Do you want your country to offer an official digital nomad visa or special permits for remote workers?</label><br />
-                        <label> Important
-                            <input type='radio' name="nomadVisa" value="important" onChange={handleChange} onClick={showNextPage}/>
-                        </label>
-                        <label> Not Important
-                            <input type='radio' name="nomadVisa" value="notImportant" onChange={handleChange} onClick={showNextPage}/>
-                        </label> <br /> <br />
-                    </div>
-                    
+
+                    {/* {currentPage === 6 && ( */}
+                        {/* <Q7 value={formData.medical} onChange={handleChange} onNext={showNextPage} />          */}
+                    {/* )} */}
+         
+
+                    {/* {currentPage === 7 && ( */}
+                        {/* <Q8 value={formData.nomadVisa} onChange={handleChange} onNext={showNextPage} />          */}
+                    {/* )} */}
+            
 
                     {/* define submit button */}
                     <div className={`question-page page-submit ${currentPage === 8 ? 'active' : ''}`}>
@@ -162,7 +142,7 @@ const QuestionLogicForm: React.FC = () => {
 
                     
                     
-                </form>
+                </div>
             </div>
         );
     };
