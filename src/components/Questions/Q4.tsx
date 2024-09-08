@@ -11,17 +11,26 @@ interface Q4Props {
 
 //define the Functional Component 
 const Q4: React.FC<Q4Props> = ({ value, onChange, onNext }) => {
+
+    //handle submission
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        onNext();
+    };
+
+
     return (
-        <div /*className={`question-page page-0 ${currentPage === 0 ? 'active' : ''}`}*/>
+        <form onSubmit={handleSubmit}>
             <label>Do you want your country to have affordable dining options?</label><br />
             <img src='/assets/images/surf-graphic.png'/>
             <label> Important
-                <input type='radio' name="dining" value="important" checked={value === 'important'} onChange={onChange} onClick={onNext}/>
+                <input type='radio' name="dining" value="important" checked={value === 'important'} onChange={onChange}/>
             </label>
             <label> Not Important
-                <input type='radio' name="dining" value="notImportant" checked={value === 'notImportant'} onChange={onChange} onClick={onNext}/>
+                <input type='radio' name="dining" value="notImportant" checked={value === 'notImportant'} onChange={onChange}/>
             </label>
-        </div>
+            <button type='submit'>Next Question</button>
+        </form>
     );
 };
 

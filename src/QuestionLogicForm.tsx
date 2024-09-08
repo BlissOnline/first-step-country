@@ -5,17 +5,17 @@ import Q1 from './components/Questions/Q1.tsx';
 import Q2 from './components/Questions/Q2.tsx';
 import Q3 from './components/Questions/Q3.tsx';
 import Q4 from './components/Questions/Q4.tsx';
-// import Q5 from './components/Questions/Q5.tsx';
-//import Q6 from './components/Questions/Q6.tsx';
-//import Q7 from './components/Questions/Q7.tsx';
-//import Q8 from './components/Questions/Q8.tsx';
+import Q5 from './components/Questions/Q5.tsx';
+import Q6 from './components/Questions/Q6.tsx';
+import Q7 from './components/Questions/Q7.tsx';
+import Q8 from './components/Questions/Q8.tsx';
 
 //defining Component with useState hook being an object
 const QuestionLogicForm: React.FC = () => {
     const [currentPage, setCurrentPage] = useState(0);
     const [formData, setFormData] = useState({
         ocean: '',
-        ppm: '',
+        ppm: 0, //initialize ppm as a number
         english: '',
         dining: '',
         unsafe: '',
@@ -93,6 +93,10 @@ const QuestionLogicForm: React.FC = () => {
                             });
                         }} onNext={showNextPage} />         
                     )}
+
+                    {/* {currentPage === 0 && (
+                        <Q1 value={formData.ocean} onChange={handleChange} onNext={showNextPage}/>         
+                    )} */}
                     {/* add more questions */}
 
                     {currentPage === 1 && (
@@ -110,34 +114,29 @@ const QuestionLogicForm: React.FC = () => {
                     )}
                     {/* add more questions */}
 
-                    {/* {currentPage === 3 && ( */}
-                        {/* <Q4 value={formData.dining} onChange={handleChange} onNext={showNextPage} />          */}
-                    {/* )} */}
-                    {/* add more questions */}
-
-                    {/* {currentPage === 4 && ( */}
-                        {/* <Q5 value={formData.unsafe} onChange={handleChange} onNext={showNextPage} />          */}
-                    {/* )} */}
+                    {currentPage === 4 && (
+                        <Q5 value={formData.unsafe} onChange={handleChange} onNext={showNextPage} />
+                    )}
                 
 
-                    {/* {currentPage === 5 && ( */}
-                        {/* <Q6 value={formData.education} onChange={handleChange} onNext={showNextPage} />          */}
-                    {/* )} */}
+                    {currentPage === 5 && (
+                        <Q6 value={formData.education} onChange={handleChange} onNext={showNextPage} />
+                    )}
                 
 
-                    {/* {currentPage === 6 && ( */}
-                        {/* <Q7 value={formData.medical} onChange={handleChange} onNext={showNextPage} />          */}
-                    {/* )} */}
+                    {currentPage === 6 && (
+                        <Q7 value={formData.medical} onChange={handleChange} onNext={showNextPage} />
+                    )}
          
 
-                    {/* {currentPage === 7 && ( */}
-                        {/* <Q8 value={formData.nomadVisa} onChange={handleChange} onNext={showNextPage} />          */}
-                    {/* )} */}
+                    {currentPage === 7 && (
+                        <Q8 value={formData.nomadVisa} onChange={handleChange} onNext={showNextPage} />
+                    )}
             
 
                     {/* define submit button */}
                     <div className={`question-page page-submit ${currentPage === 8 ? 'active' : ''}`}>
-                        <button type="submit" >Submit</button>
+                        <button type="submit">Submit</button>
                     </div>
 
                     
