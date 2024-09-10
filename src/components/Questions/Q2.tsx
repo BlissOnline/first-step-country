@@ -1,4 +1,5 @@
 import React from 'react';
+import imgPpm from '../../assets/images/ppm-graphic.png';
 
 
 //define props interface if your component will receive any props
@@ -22,6 +23,7 @@ const Q2: React.FC<Q2Props> = ({ value, onChange, onNext }) => {
         
         <form onSubmit={handleSubmit}>
             <label>What is your max monthly budget for living expenses?</label><br />
+            <img src={imgPpm} alt="crunching numbers"/>
             <label> 
                 <input name='ppm' type='number' value={value} onChange={onChange}/>
             </label> <br /> <br />

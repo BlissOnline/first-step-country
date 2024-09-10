@@ -9,9 +9,9 @@ const NavBar: React.FC = () => {
             <ul>
                 {/* logger is link */}
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/blog">123</Link></li>
-                <li><Link to="/about">345</Link></li>
-                <li><Link to="/contact"></Link></li>
+                {/* <li><Link to="/blog">Blog</Link></li> */}
+                <li><Link to="/about">About</Link></li>
+                {/* <li><Link to="/contact">Contact</Link></li> */}
             </ul>
         </nav>
     );

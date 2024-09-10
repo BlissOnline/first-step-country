@@ -1,0 +1,17 @@
+/* global colors */
+:root {
+    /*global color palette*/
+    --color-1: #E4BEA1;
+    --color-2: #FF8566;
+    --color-3: #A46656;
+    --color-4: #55413C; 
+    --color-gold: #C5B358; /*maybe logo, discover, submit*/
+
+    /*fonts*/
+    --font-theme: 'BlackChancery', serif;
+    --font-question: 'Playpen Sans', sans-serif;
+    --font-button: 'Noto sans', sans-serif;
+    --font-general: 'Merriweather', sans-serif;
+    /* --font-toolTip: */
+    
+}

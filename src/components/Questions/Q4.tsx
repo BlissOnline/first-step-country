@@ -1,4 +1,5 @@
 import React from 'react';
+import imgDining from '../../assets/images/affordable-dining-graphic.png';
 
 
 //define props interface if your component will receive any props
@@ -22,7 +23,7 @@ const Q4: React.FC<Q4Props> = ({ value, onChange, onNext }) => {
     return (
         <form onSubmit={handleSubmit}>
             <label>Do you want your country to have affordable dining options?</label><br />
-            <img src='/assets/images/surf-graphic.png'/>
+            <img src={imgDining} alt="taco stand" />
             <label> Important
                 <input type='radio' name="dining" value="important" checked={value === 'important'} onChange={onChange}/>
             </label>

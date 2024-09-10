@@ -1,0 +1,21 @@
+body {
+    font-family: var(--font-button);
+    background-color: var(--color-4);
+}
+
+.qOneQuestion {
+    color: var(--color-2);   
+    font-family: var(--font-question);
+}
+
+.qOneButtonI {
+    background-color: var(--color-1);
+}
+
+.qOneButtonN {
+    background-color: var(--color-2);
+}
+
+form {
+    background-color: var(--color-4);
+}

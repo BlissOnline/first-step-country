@@ -1,4 +1,5 @@
 import React from 'react';
+import imgEducation from '../../assets/images/hq-education-graphic.png';
 
 
 //define props interface if your component will receive any props
@@ -22,7 +23,7 @@ const Q6: React.FC<Q6Props> = ({ value, onChange, onNext }) => {
     return (
         <form onSubmit={handleSubmit}>
             <label>High-quality education options for foreigners, at a great price?</label><br />
-            <img src='/assets/images/surf-graphic.png'/>
+            <img src={imgEducation} alt='school peers' />
             <label> Important
                 <input type='radio' name="education" value="important" checked={value === 'important'} onChange={onChange}/>
             </label>

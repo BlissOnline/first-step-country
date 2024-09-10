@@ -1,4 +1,5 @@
 import React from 'react';
+import imgEnglish from '../../assets/images/english-graphic.png';
 
 
 //define props interface if your component will receive any props
@@ -19,7 +20,7 @@ const Q3: React.FC<Q3Props> = ({ value, onChange, onNext }) => {
     return (
         <form onSubmit={handleSubmit}>
             <label>Do you want your country to have English speakers?</label><br />
-            <img src='/assets/images/surf-graphic.png'/>
+            <img src={imgEnglish} alt="different languages" />
             <label> Important
                 <input type='radio' name="english" value="important" checked={value === 'important'} onChange={onChange} />
             </label>

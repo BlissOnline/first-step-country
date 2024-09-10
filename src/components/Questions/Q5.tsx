@@ -1,4 +1,5 @@
 import React from 'react';
+import imgUnsafe from '../../assets/images/safe-country-graphic.png';
 
 
 //define props interface if your component will receive any props
@@ -22,7 +23,7 @@ const Q5: React.FC<Q5Props> = ({ value, onChange, onNext }) => {
     return (
         <form onSubmit={handleSubmit}>
             <label>Do you want your country to be considered safe? (a level 2 risk or higher, will be excluded from your country list)</label><br />
-            <img src='/assets/images/surf-graphic.png'/>
+            <img src={imgUnsafe} alt='riot control' />
             <label> Important
                 <input type='radio' name="unsafe" value="important" checked={value === 'important'} onChange={onChange}/>
             </label>

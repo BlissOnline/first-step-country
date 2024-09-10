@@ -1,4 +1,5 @@
 import React from 'react';
+import imgNomad from '../../assets/images/nomad-visa-graphic.png';
 
 
 //define props interface if your component will receive any props
@@ -22,7 +23,7 @@ const Q8: React.FC<Q8Props> = ({ value, onChange, onNext }) => {
     return (
         <form onSubmit={handleSubmit}>
             <label>Do you want your country to offer an official digital nomad visa or special permits for remote workers?</label><br />
-            <img src='/assets/images/surf-graphic.png'/>
+            <img src={imgNomad} alt='digital nomad' />
             <label> Important
                 <input type='radio' name="nomadVisa" value="important" checked={value === 'important'} onChange={onChange}/>
             </label>

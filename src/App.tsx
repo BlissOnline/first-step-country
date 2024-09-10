@@ -1,10 +1,13 @@
 
-import QuestionLogicForm from './QuestionLogicForm';
+// import QuestionLogicForm from './QuestionLogicForm';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/Header/NavigationBar/NavBar';
 import './App.css';
 import About from './Pages/About';
 import YPPP from './assets/images/affordable-dining-graphic.png';
+import Home from './Pages/Home';
+import QuestionPage from './Pages/QuestionPage';  //import question component 
+
 
 function App() {
   // might need hook useState here
@@ -13,25 +16,25 @@ function App() {
   return (
     <>
       
-      <img src='/public/vite.svg' />
-      <img src={YPPP} />
+      {/* <img src='/public/vite.svg' />
+      <img src={YPPP} /> */}
 
       <Router>
         <NavBar />
         <Routes>
-          {/* <Route path="/" element={Home} /> */}
+          <Route path="/" element={<Home />} />
           {/* <Route path="/blog" element={Blog} /> */}
           <Route path='/about' element={<About />} />
           {/* <Route path="/contact" element={Contact} /> */}
-          
+          <Route path="/questions" element={<QuestionPage />}/> 
         </Routes>
       </Router>
       
       
       <div>
-        <h1>First Step Country</h1>
+        {/* <h1>First Step Country</h1> */}
 
-        <QuestionLogicForm></QuestionLogicForm>
+        {/* <QuestionLogicForm></QuestionLogicForm> */}
    
       </div>
 
