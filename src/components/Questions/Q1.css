@@ -24,10 +24,11 @@ body {
     width: 30%;
 }
 
-.buttonContainer {
+.qOneButtonContainer {
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     width: 50%;
 
 }

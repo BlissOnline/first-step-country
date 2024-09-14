@@ -105,18 +105,42 @@ const QuestionLogicForm: React.FC = () => {
                     {/* add more questions */}
 
                     {currentPage === 2 && (
-                        <Q3 value={formData.english} onChange={handleChange} onNext={showNextPage} />         
+                        <Q3 value={formData.english} onChange={(value) => {
+                            setFormData({
+                                ...formData,
+                                english: value
+                            });
+                        }} onNext={showNextPage} />         
                     )}
+
+                    {/* {currentPage === 2 && (
+                        <Q3 value={formData.english} onChange={handleChange} onNext={showNextPage} />         
+                    )} */}
                     {/* add more questions */}
 
                     {currentPage === 3 && (
-                        <Q4 value={formData.dining} onChange={handleChange} onNext={showNextPage} />         
+                        <Q4 value={formData.dining} onChange={(value) => {
+                            setFormData({
+                                ...formData,
+                                dining: value
+                            });
+                        }} onNext={showNextPage} />         
                     )}
                     {/* add more questions */}
 
+
                     {currentPage === 4 && (
-                        <Q5 value={formData.unsafe} onChange={handleChange} onNext={showNextPage} />
+                        <Q5 value={formData.unsafe}onChange={(value) => {
+                            setFormData({
+                                ...formData,
+                                unsafe: value
+                            });
+                        }} onNext={showNextPage} />         
                     )}
+
+                    {/* {currentPage === 4 && (
+                        <Q5 value={formData.unsafe} onChange={handleChange} onNext={showNextPage} />
+                    )} */}
                 
 
                     {currentPage === 5 && (
@@ -133,7 +157,7 @@ const QuestionLogicForm: React.FC = () => {
                         <Q8 value={formData.nomadVisa} onChange={handleChange} onNext={showNextPage} />
                     )}
             
-
+{/* remove type submiit add onClick={} */}
                     {/* define submit button */}
                     <div className={`question-page page-submit ${currentPage === 8 ? 'active' : ''}`}>
                         <button type="submit">Submit</button>

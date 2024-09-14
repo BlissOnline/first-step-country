@@ -49,7 +49,7 @@ const Q1: React.FC<Q1Props> = ({ value, onChange, onNext }) => {
             <label className="qOneQuestion">Access to the ocean?</label><br />
             <img src={imgSurf} alt="surfing" className='qOneImg' />
 
-            <div className='buttonContainer'>
+            <div className='qOneButtonContainer'>
                 <label className="qOneButtonI" id='buttons'> Important
                     <input type='radio' name="ocean" value="important" onChange={handleRadioChange}/>
                 </label>

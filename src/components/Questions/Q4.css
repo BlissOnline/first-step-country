@@ -3,16 +3,16 @@
     background-color: var(--color-4);
 } */
 
-.qThreeBody {
+.qFourBody {
     height: calc(100vh - 3rem);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-1);
+    background-color: var(--color-home);
 }
 
-.qThreeQuestion {
+.qFourQuestion {
     color: var(--color-4);   
     font-family: var(--font-question);
     font-size: 3.125vw;
@@ -20,24 +20,22 @@
     
 }
 
-.qThreeImg {
+.qFourImg {
     height: 50%;
     width: 30%;
     flex-shrink: 2;
     margin-top: 2.5rem;
-    /* margin-bottom: 2.5rem; */
-
     margin-bottom: 2rem;
     box-sizing: border-box;
 }
 
-.qThreeButtonContainer {
+.qFourButtonContainer {
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 50%;
-    padding-bottom: 5em;
+    /* padding-bottom: 5em; */
 
 }
 
@@ -51,12 +49,12 @@
     background-color: lightgoldenrodyellow;
 }
 
-.qThreeButtonI {
-    background-color: var(--color-3);
+.qFourButtonI {
+    background-color: var(--color-1);
 }
 
-.qThreeButtonN {
-    background-color: var(--color-2);
+.qFourButtonN {
+    background-color: var(--color-3);
 
 }
 

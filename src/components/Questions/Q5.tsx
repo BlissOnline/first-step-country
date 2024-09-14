@@ -1,11 +1,12 @@
 import React from 'react';
 import imgUnsafe from '../../assets/images/safe-country-graphic.png';
-
+//import './Q5.css';
 
 //define props interface if your component will receive any props
 interface Q5Props {
     value: string;
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    //onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange: (value: string) => void;
     onNext: () => void;
 }
 
@@ -14,23 +15,26 @@ interface Q5Props {
 const Q5: React.FC<Q5Props> = ({ value, onChange, onNext }) => {
 
     //handle submission
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleRadioChange = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         onNext();
     };
 
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className='qFiveBody' >
             <label>Do you want your country to be considered safe? (a level 2 risk or higher, will be excluded from your country list)</label><br />
-            <img src={imgUnsafe} alt='riot control' />
-            <label> Important
-                <input type='radio' name="unsafe" value="important" checked={value === 'important'} onChange={onChange}/>
-            </label>
-            <label> Not Important
-                <input type='radio' name="unsafe" value="notImportant" checked={value === 'notImportant'} onChange={onChange}/>
-            </label>
-            <button type='submit'>Next Question</button>
+            <img src={imgUnsafe} alt='riot control' className='qFiveImg' />
+
+            <div className='qFiveButtonContainer' >
+                <label className='qFiveButtonI' id='buttons' > Important
+                    <input type='radio' name="unsafe" value="important" onChange={handleRadioChange}/>
+                </label>
+                <label className='qFiveButtonN' id='buttons' > Not Important
+                    <input type='radio' name="unsafe" value="notImportant" onChange={handleRadioChange}/>
+                </label>
+                {/* <button type='submit'>Next Question</button> */}
+            </div>
         </form>
     );
 };

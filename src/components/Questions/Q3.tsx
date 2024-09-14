@@ -20,10 +20,10 @@ const Q3: React.FC<Q3Props> = ({ value, onChange, onNext }) => {
 
     return (
         <form className='qThreeBody' >
-            <label className='qThreeQuestioin' >Do you want your country to have English speakers?</label><br />
+            <label className='qThreeQuestion' >Do you want your country to have English speakers?</label><br />
             <img src={imgEnglish} alt="different languages" className='qThreeImg' />
 
-            <div className='buttonContainer'>
+            <div className='qThreeButtonContainer'>
                 <label className="qThreeButtonI" id='buttons'> Important
                     <input type='radio' name="english" value="important" onChange={handleRadioChange} />
                 </label>
