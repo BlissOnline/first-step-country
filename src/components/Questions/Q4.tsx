@@ -16,8 +16,8 @@ interface Q4Props {
 const Q4: React.FC<Q4Props> = ({ value, onChange, onNext }) => {
 
     //handle submission
-    const handleRadioChange = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+    const handleRadioChange = (e: React.FormEvent<HTMLInputElement>) => {
+        onChange(e.target.value);
         onNext();
     };
 

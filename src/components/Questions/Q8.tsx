@@ -1,11 +1,11 @@
 import React from 'react';
 import imgNomad from '../../assets/images/nomad-visa-graphic.png';
-
+import './Q8.css';
 
 //define props interface if your component will receive any props
 interface Q8Props {
     value: string;
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange: (value: string) => void;
     onNext: () => void;
 }
 
@@ -14,23 +14,25 @@ interface Q8Props {
 const Q8: React.FC<Q8Props> = ({ value, onChange, onNext }) => {
 
     //handle submission
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+    const handleRadioChange = (e: React.FormEvent<HTMLInputElement>) => {
+        onChange(e.target.value)
         onNext();
     };
 
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>Do you want your country to offer an official digital nomad visa or special permits for remote workers?</label><br />
-            <img src={imgNomad} alt='digital nomad' />
-            <label> Important
-                <input type='radio' name="nomadVisa" value="important" checked={value === 'important'} onChange={onChange}/>
-            </label>
-            <label> Not Important
-                <input type='radio' name="nomadVisa" value="notImportant" checked={value === 'notImportant'} onChange={onChange}/>
-            </label>
-            <button type='submit'>Next Question</button>
+        <form className='qEightBody' >
+            <label className='qEightQuestion' >Do you want your country to offer an official digital nomad visa or special permits for remote workers?</label><br />
+            <img src={imgNomad} alt='digital nomad' className='qEightImg'  />
+
+            <div className='qEightButtonContainer' >
+                <label className='qEightButtonI' id='buttons' > Important
+                    <input type='radio' name="nomadVisa" value="important"  onChange={handleRadioChange}/>
+                </label>
+                <label className='qEightButtonN' id='buttons' > Not Important
+                    <input type='radio' name="nomadVisa" value="notImportant" onChange={handleRadioChange}/>
+                </label>
+            </div>
         </form>
     );
 };

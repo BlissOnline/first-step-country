@@ -1,26 +1,23 @@
-/* body {
-    font-family: var(--font-button);
-    background-color: var(--color-4);
-} */
-
-.qFiveBody {
+.qSixBody {
     height: calc(100vh - 3rem);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-4);
+    /* background-color: var(--color-3); */
+    background-color: rgba(164, 102, 86, 0.9);
+
 }
 
-.qFiveQuestion {
-    color: var(--color-1);   
+.qSixQuestion {
+    color: var(--color-4);   
     font-family: var(--font-question);
     font-size: 3.125vw;
     margin-top: 3rem;
     
 }
 
-.qFiveImg {
+.qSixImg {
     height: 50%;
     width: 30%;
     /* flex-shrink: 2; */
@@ -29,7 +26,7 @@
     /* box-sizing: border-box; */
 }
 
-.qFiveButtonContainer {
+.qSixButtonContainer {
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
@@ -49,15 +46,11 @@
     background-color: lightgoldenrodyellow;
 }
 
-.qFiveButtonI {
+.qSixButtonI {
     background-color: var(--color-1);
 }
 
-.qFiveButtonN {
+.qSixButtonN {
     background-color: var(--color-2);
 
 }
-
-/* form {
-    background-color: var(--color-4);
-} */

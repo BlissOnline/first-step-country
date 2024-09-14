@@ -1,26 +1,21 @@
-/* body {
-    font-family: var(--font-button);
-    background-color: var(--color-4);
-} */
-
-.qFiveBody {
+.qEightBody {
     height: calc(100vh - 3rem);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-4);
+    background-color: var(--color-home);
 }
 
-.qFiveQuestion {
-    color: var(--color-1);   
+.qEightQuestion {
+    color: var(--color-4);   
     font-family: var(--font-question);
     font-size: 3.125vw;
     margin-top: 3rem;
     
 }
 
-.qFiveImg {
+.qEightImg {
     height: 50%;
     width: 30%;
     /* flex-shrink: 2; */
@@ -29,7 +24,7 @@
     /* box-sizing: border-box; */
 }
 
-.qFiveButtonContainer {
+.qEightButtonContainer {
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
@@ -49,15 +44,11 @@
     background-color: lightgoldenrodyellow;
 }
 
-.qFiveButtonI {
+.qEightButtonI {
     background-color: var(--color-1);
 }
 
-.qFiveButtonN {
-    background-color: var(--color-2);
+.qEightButtonN {
+    background-color: var(--color-3);
 
 }
-
-/* form {
-    background-color: var(--color-4);
-} */

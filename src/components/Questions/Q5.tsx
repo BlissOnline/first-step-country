@@ -15,8 +15,8 @@ interface Q5Props {
 const Q5: React.FC<Q5Props> = ({ value, onChange, onNext }) => {
 
     //handle submission
-    const handleRadioChange = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+    const handleRadioChange = (e: React.FormEvent<HTMLInputElement>) => {
+        onChange(e.target.value);
         onNext();
     };
 

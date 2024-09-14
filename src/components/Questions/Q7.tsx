@@ -1,11 +1,11 @@
 import React from 'react';
 import imgMedical from '../../assets/images/hq-medical-graphic.png';
-
+import './Q7.css';
 
 //define props interface if your component will receive any props
 interface Q7Props {
     value: string;
-    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange: (value: string) => void;
     onNext: () => void;
 }
 
@@ -14,23 +14,25 @@ interface Q7Props {
 const Q7: React.FC<Q7Props> = ({ value, onChange, onNext }) => {
 
     //handle submission
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+    const handleRadioChange = (e: React.FormEvent<HTMLInputElement>) => {
+        onChange(e.target.value)
         onNext();
     };
 
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>Do you want your country to have high-quality and affordable medical tourism?</label><br />
-            <img src={imgMedical} alt='doctors' />
-            <label> Important
-                <input type='radio' name="medical" value="important" checked={value === 'important'} onChange={onChange}/>
-            </label>
-            <label> Not Important
-                <input type='radio' name="medical" value="notImportant" checked={value === 'notImportant'} onChange={onChange}/>
-            </label>
-            <button type='submit'>Next Question</button>
+        <form className='qSevenBody' >
+            <label className='qSevenQuestion' >Do you want your country to have high-quality and affordable medical tourism?</label><br />
+            <img src={imgMedical} alt='doctors' className='qSevenImg' />
+
+            <div className='qSevenButtonContainer' >
+                <label className='qSevenButtonI' id='buttons' > Important
+                    <input type='radio' name="medical" value="important" onChange={handleRadioChange}/>
+                </label>
+                <label className='qSevenButtonN' id='buttons' > Not Important
+                    <input type='radio' name="medical" value="notImportant" onChange={handleRadioChange}/>
+                </label>
+            </div>
         </form>
     );
 };
