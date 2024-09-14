@@ -1,6 +1,6 @@
 import React from 'react';
 import imgUnsafe from '../../assets/images/safe-country-graphic.png';
-//import './Q5.css';
+import './Q5.css';
 
 //define props interface if your component will receive any props
 interface Q5Props {
@@ -23,7 +23,7 @@ const Q5: React.FC<Q5Props> = ({ value, onChange, onNext }) => {
 
     return (
         <form className='qFiveBody' >
-            <label>Do you want your country to be considered safe? (a level 2 risk or higher, will be excluded from your country list)</label><br />
+            <label className='qFiveQuestion' >Do you want your country to be considered safe? (a level 2 risk or higher, will be excluded from your country list)</label><br />
             <img src={imgUnsafe} alt='riot control' className='qFiveImg' />
 
             <div className='qFiveButtonContainer' >

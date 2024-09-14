@@ -130,7 +130,7 @@ const QuestionLogicForm: React.FC = () => {
 
 
                     {currentPage === 4 && (
-                        <Q5 value={formData.unsafe}onChange={(value) => {
+                        <Q5 value={formData.unsafe} onChange={(value) => {
                             setFormData({
                                 ...formData,
                                 unsafe: value
@@ -142,22 +142,41 @@ const QuestionLogicForm: React.FC = () => {
                         <Q5 value={formData.unsafe} onChange={handleChange} onNext={showNextPage} />
                     )} */}
                 
-
+                    
                     {currentPage === 5 && (
-                        <Q6 value={formData.education} onChange={handleChange} onNext={showNextPage} />
+                            <Q6 value={formData.education} onChange={(value) => {
+                                setFormData({
+                                    ...formData,
+                                    education: value
+                                });
+                            }} onNext={showNextPage} /> 
                     )}
-                
+
 
                     {currentPage === 6 && (
-                        <Q7 value={formData.medical} onChange={handleChange} onNext={showNextPage} />
+                            <Q7 value={formData.medical} onChange={(value) => {
+                                setFormData({
+                                    ...formData,
+                                    medical: value
+                                });
+                            }} onNext={showNextPage} /> 
                     )}
-         
+
 
                     {currentPage === 7 && (
-                        <Q8 value={formData.nomadVisa} onChange={handleChange} onNext={showNextPage} />
+                            <Q8 value={formData.nomadVisa} onChange={(value) => {
+                                setFormData({
+                                    ...formData,
+                                    nomadVisa: value
+                                });
+                            }} onNext={showNextPage} /> 
                     )}
+
             
 {/* remove type submiit add onClick={} */}
+{/* or form to link, combine some kind of search, another page,  */}
+{/* submit button can be link, /question ->  /search */}
+{/* /search?ppm=100&ocean=important */}
                     {/* define submit button */}
                     <div className={`question-page page-submit ${currentPage === 8 ? 'active' : ''}`}>
                         <button type="submit">Submit</button>
