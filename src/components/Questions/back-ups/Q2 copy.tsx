@@ -1,6 +1,5 @@
 import React from 'react';
 import imgPpm from '../../assets/images/ppm-graphic.png';
-import './Q2.css';
 
 
 //define props interface if your component will receive any props
@@ -22,13 +21,13 @@ const Q2: React.FC<Q2Props> = ({ value, onChange, onNext }) => {
 
     return (
         
-        <form onSubmit={handleSubmit} className='qTwoBody' >
-            <label className='qTwoQuestion' >What is your max monthly budget for living expenses?</label><br />
-            <img src={imgPpm} alt="crunching numbers" className='qTwoImg' />
-            <label className='qTwoButtonContainer' > $
-                <input name='ppm' type='number' value={value} onChange={onChange} placeholder='based on US dollar... ' />
+        <form onSubmit={handleSubmit}>
+            <label>What is your max monthly budget for living expenses?</label><br />
+            <img src={imgPpm} alt="crunching numbers"/>
+            <label> 
+                <input name='ppm' type='number' value={value} onChange={onChange}/>
             </label> <br /> <br />
-            <button type='submit' className='qTwoButton' > submit number </button>
+            <button type='submit'> next step </button>
         </form>
     );
 };

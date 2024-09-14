@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import goldObject from './goldObject.js';
-import { Country } from './types';
-import Q1 from './components/Questions/Q1.js';
-import Q2 from './components/Questions/Q2';
+// import React, { useState } from 'react';
+// import goldObject from './goldObject.js';
+// import { Country } from './types';
+// import Q1 from './components/Questions/Q1.js';
+// import Q2 from './components/Questions/Q2';
 
 //defining Component with useState hook being an object
 const QuestionLogicForm: React.FC = () => {

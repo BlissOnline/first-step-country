@@ -1,35 +1,55 @@
 body {
     font-family: var(--font-button);
     background-color: var(--color-4);
+    
 }
 
-.qOneBody {
+.qTwoBody {
     height: calc(100vh - 3rem);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* opacity: 80%; */
+    background-color: rgba(164, 102, 86, 0.9);
+
 }
 
-.qOneQuestion {
-    color: var(--color-2);   
+.qTwoQuestion {
+    color: var(--color-4);   
     font-family: var(--font-question);
     font-size: 3.125vw;
     margin-top: 3rem;
 }
 
-.qOneImg {
-    /* flex-shrink: 5; */
+.qTwoImg {
     height: auto;
     width: 30%;
 }
 
-.buttonContainer {
+.qTwoButtonContainer {
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
     width: 50%;
+    font-size: 75px;
+    color: var(--color-4);
 
+}
+
+
+.qTwoButtonContainer input {
+    background-color: var(--color-1); /* Light grey background */
+    border: 5px solid var(--color-4); /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside the input */
+    font-size: 0.5em; /* Font size */
+    margin-left: 10px; /* Space between $ and input */
+    width: 25vw; /* Width of the input */
+}
+
+.qTwoButtonContainer input::placeholder {
+    font-size: 0.5em;
 }
 
 /* hiding native radio input look for modern style  */
@@ -40,28 +60,19 @@ body {
     height: 0;
 } */
 
-#buttons {
-    /* flex: 1 1 auto; */
-    /* padding: 1.9rem 3rem;
-    margin: 0 1rem; */
+
+.qTwoButton {
+    background-color: var(--color-1);
     padding: 1.9vw 3vw;
     margin: 0 1vw;
     border-radius: 25px;
-    /* flex: 1; */
+    margin-bottom: 100px;
 }
 
-#buttons:hover {
+.qTwoButton:hover {
     background-color: lightgoldenrodyellow;
 }
 
-.qOneButtonI {
-    background-color: var(--color-1);
-}
-
-.qOneButtonN {
-    background-color: var(--color-2);
-
-}
 
 form {
     background-color: var(--color-4);

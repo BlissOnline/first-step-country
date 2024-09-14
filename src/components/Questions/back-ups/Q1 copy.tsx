@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import imgSurf from '../../assets/images/surf-graphic.png';
 import './Q1.css';
 
@@ -6,8 +6,7 @@ import './Q1.css';
 //define props interface if your component will receive any props
 interface Q1Props {
     value: string;
-    // onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-    onChange: (value: string) => void;
+    onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     onNext: () => void;
 }
 
@@ -28,39 +27,32 @@ interface Q1Props {
 const Q1: React.FC<Q1Props> = ({ value, onChange, onNext }) => {
 
     //handle submit ,close function
-    //same time issue onNext is looking at intial state and not the new update onChange state
-    // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    //     e.preventDefault();  
-    //     onChange(e.target[0].value);
-    //     onNext();
-
-    const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-            onChange(e.target.value);
-            onNext();
-        };
-
-    
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        //same time issue onNext is looking at intial state and not the new update onChange state
+        onChange(e.target[0].value);
+        onNext();
+    };
 
         //const formData = new FormData(event.currentTarget);
         //useEffect hook 
 
     return (
-        <form className='qOneBody' >
+        <form onSubmit={handleSubmit} className='qOneBody' >
             <label className="qOneQuestion">Access to the ocean?</label><br />
             <img src={imgSurf} alt="surfing" className='qOneImg' />
 
             <div className='buttonContainer'>
                 <label className="qOneButtonI" id='buttons'> Important
-                    <input type='radio' name="ocean" value="important" onChange={handleRadioChange}/>
+                    <input type='radio' name="ocean" value="important" />
                 </label>
                 <label className="qOneButtonN" id='buttons'> Not Important
-                    <input type='radio' name="ocean" value="notImportant" onChange={handleRadioChange}/>
+                    <input type='radio' name="ocean" value="notImportant" />
                 </label>
             </div>
-            {/* <button type='submit'>Next Question</button> */}
+            <button type='submit'>Next Question</button>
         </form>
     );
 };
 
 export default Q1;
-

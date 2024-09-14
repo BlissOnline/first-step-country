@@ -1,0 +1,40 @@
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+    color: white;
+   
+} */
+
+.navBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--color-nav);
+    color: white;
+    height: 3rem;
+  
+
+}
+
+.logo {
+    font-size: 1.5rem;
+   
+    margin-top: 0em;
+    font-family: var(--font-theme);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size: large;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
