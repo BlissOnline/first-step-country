@@ -9,6 +9,7 @@ import Q5 from './components/Questions/Q5.tsx';
 import Q6 from './components/Questions/Q6.tsx';
 import Q7 from './components/Questions/Q7.tsx';
 import Q8 from './components/Questions/Q8.tsx';
+import ShowResults from './components/Questions/ShowResults.tsx';
 
 //defining Component with useState hook being an object
 const QuestionLogicForm: React.FC = () => {
@@ -172,15 +173,24 @@ const QuestionLogicForm: React.FC = () => {
                             }} onNext={showNextPage} /> 
                     )}
 
-            
+                    <div className={`question-page page-submit ${currentPage === 8 ? 'active' : ''}`}>
+                        {currentPage === 8 && (
+                            <ShowResults handleSubmit={handleSubmit} />
+                        )}
+                    </div>
+
+                    
 {/* remove type submiit add onClick={} */}
 {/* or form to link, combine some kind of search, another page,  */}
 {/* submit button can be link, /question ->  /search */}
 {/* /search?ppm=100&ocean=important */}
                     {/* define submit button */}
-                    <div className={`question-page page-submit ${currentPage === 8 ? 'active' : ''}`}>
-                        <button type="submit">Submit</button>
-                    </div>
+                    
+                    {/* <div className={`question-page page-submit ${currentPage === 8 ? 'active' : ''}`}>
+                        <button onClick={handleSubmit} >Submit</button>                      
+                    </div> */}
+
+
 
                     
                     
