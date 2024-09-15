@@ -1,9 +1,10 @@
 import React from 'react';
+import { Country } from '../types';
 
-interface Country {
-    name: string;
-    flagUrl: string;
-}
+// interface Country {
+//     name: string;
+//     flagUrl: string;
+// }
 
 const CountryList: React.FC<{ countries: Country[] }> = ({ countries }) => {
     return (
@@ -18,7 +19,7 @@ const CountryList: React.FC<{ countries: Country[] }> = ({ countries }) => {
                         alignItems: 'center'
                 }}>
                     <img 
-                        src="country.flagUrl" 
+                        // src={country.flagUrl} 
                         alt={`${country.name} flag`} 
                         style={{ width: '50px', marginRight: '10px' }}  
                     />

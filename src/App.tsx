@@ -7,6 +7,8 @@ import About from './Pages/About';
 import Home from './Pages/Home';
 import QuestionPage from './Pages/QuestionPage';  //import question component 
 import CountryList from './Pages/CountryIndex';
+import goldObject from './goldObject';
+
 
 
 function App() {
@@ -24,7 +26,7 @@ function App() {
           <Route path='/about' element={<About />} />
           {/* <Route path="/contact" element={Contact} /> */}
           <Route path="/questions" element={<QuestionPage />} /> 
-          <Route path="/index" element={<CountryList />} />
+          <Route path="/country-index" element={<CountryList countries={goldObject} />} />
         </Routes>
       </Router>
       
