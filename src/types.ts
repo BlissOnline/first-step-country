@@ -3,6 +3,7 @@
 export interface Country {
     name: string;
     countryIndexNumber: number;
+    countryCode?: string; //addition
     ppm: number;
     coast: boolean;
     englishSpeaking: boolean;
@@ -10,5 +11,12 @@ export interface Country {
     unsafe: boolean;
     affordableEducation: boolean;
     affordableHealthCare: boolean;
-    nomadVisa: boolean;            
+    nomadVisa: boolean;        
+    flagUrl?: string; //addition
 } 
+
+export interface CountryCodesListInt {
+    name: string;
+    countryCode: string;
+} 
+

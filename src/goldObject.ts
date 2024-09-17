@@ -2359,4 +2359,9 @@ const goldObject: Country[] = [
     }
 ]
 
+
+
+
+
+
 export default goldObject;

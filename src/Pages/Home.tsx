@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // import useNavigate 
 
+//styles
 import './Home.css'; //seems we don't need to define from 
 
 const Home: React.FC = () => {
