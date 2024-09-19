@@ -3,18 +3,24 @@ import { useNavigate } from 'react-router-dom';
 import './ShowResults.css';
 
 
-
+//anyName
+//
 interface ShowResultsProps {
-    handleSubmit: () => void;
+    formData: any;
 }
 
+// will be object with form data key
 // const ShowResults: React.FC<ShowResultsProps> = ({ handleSubmit }) => {
-const ShowResults: React.FC<ShowResultsProps> = () => {
+// we dessembled props to form data
+const ShowResults: React.FC<ShowResultsProps> = ({ formData }) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
         // handleSubmit();
-        navigate("/country-index");
+
+        //? means we are adding
+        navigate("/country-index?" + Object.keys(formData).map((key) => `${key}=${formData[key]}`).join('&'));
+
     };
 
 

@@ -6,6 +6,10 @@ import { Country } from '../types';
 //     flagUrl: string;
 // }
 
+// interface CountryIndexProps {
+//     filteredCountries: Country[];
+// }
+
 // const CountryList: React.FC<{ countries: Country[] }> = ({ countries }) => {
 const CountryList: React.FC<{ countries: Country[] }> = ({ countries }) => {
     return (

@@ -7,9 +7,13 @@ import About from './Pages/About';
 import Home from './Pages/Home';
 import QuestionPage from './Pages/QuestionPage';  //import question component 
 import CountryList from './Pages/CountryList';
-//import goldObject from './goldObject';
-import goldObjectWithFlags from './utilities/goldObjectWithFlags';
+import CountryIndex from './Pages/CountryIndex';
+//import filteredCountries from './QuestionLogicForm.js'
 
+import goldObject from './goldObject';
+//import goldObjectWithFlags from './utilities/goldObjectWithFlags';
+//import goldObject from './goldObject.js';
+//import { Country } from './types';
 
 
 function App() {
@@ -27,7 +31,10 @@ function App() {
           <Route path='/about' element={<About />} />
           {/* <Route path="/contact" element={Contact} /> */}
           <Route path="/questions" element={<QuestionPage />} /> 
-          <Route path="/country-index" element={<CountryList countries={goldObjectWithFlags} />} />
+          {/* <Route path="/country-index" element={<CountryList countries={goldObjectWithFlags} />} /> */}
+          {/* <Route path="/country-index" element={<CountryList countries={goldObject} />} /> */}
+          <Route path="/country-index" element={<CountryIndex countries={goldObject} />} />
+          {/* <Route path="/country-index" element={<CountryList countries={filteredCountries} />} /> */}
         </Routes>
       </Router>
       

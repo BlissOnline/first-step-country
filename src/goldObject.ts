@@ -2,8 +2,8 @@ import { Country } from './types';
 
 
 //just array, not use as component
-
-//
+//now have countryCode
+//now have flagUrl
 const goldObject: Country[] = [
     {
         "name": "Afghanistan",
@@ -15,7 +15,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "AF",
+        "flagUrl": "/public/flagsAF.png"
     },
     {
         "name": "Albania",
@@ -27,7 +29,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "AL",
+        "flagUrl": "/public/flagsAL.png"
     },
     {
         "name": "Algeria",
@@ -39,7 +43,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "DZ",
+        "flagUrl": "/public/flagsDZ.png"
     },
     {
         "name": "Andorra",
@@ -51,7 +57,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "AD",
+        "flagUrl": "/public/flagsAD.png"
     },
     {
         "name": "Angola",
@@ -63,7 +71,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "AO",
+        "flagUrl": "/public/flagsAO.png"
     },
     {
         "name": "Antigua and Barbuda",
@@ -75,7 +85,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "AG",
+        "flagUrl": "/public/flagsAG.png"
     },
     {
         "name": "Argentina",
@@ -87,7 +99,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "AR",
+        "flagUrl": "/public/flagsAR.png"
     },
     {
         "name": "Armenia",
@@ -99,7 +113,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "AM",
+        "flagUrl": "/public/flagsAM.png"
     },
     {
         "name": "Australia",
@@ -111,7 +127,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "AU",
+        "flagUrl": "/public/flagsAU.png"
     },
     {
         "name": "Austria",
@@ -123,7 +141,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "AT",
+        "flagUrl": "/public/flagsAT.png"
     },
     {
         "name": "Azerbaijan",
@@ -135,7 +155,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": true,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "AZ",
+        "flagUrl": "/public/flagsAZ.png"
     },
     {
         "name": "Bahamas",
@@ -147,7 +169,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "BS",
+        "flagUrl": "/public/flagsBS.png"
     },
     {
         "name": "Bahrain",
@@ -159,7 +183,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "BH",
+        "flagUrl": "/public/flagsBH.png"
     },
     {
         "name": "Bangladesh",
@@ -171,7 +197,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "BD",
+        "flagUrl": "/public/flagsBD.png"
     },
     {
         "name": "Barbados",
@@ -183,7 +211,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "BB",
+        "flagUrl": "/public/flagsBB.png"
     },
     {
         "name": "Belarus",
@@ -195,7 +225,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "BY",
+        "flagUrl": "/public/flagsBY.png"
     },
     {
         "name": "Belgium",
@@ -207,7 +239,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "BE",
+        "flagUrl": "/public/flagsBE.png"
     },
     {
         "name": "Belize",
@@ -219,7 +253,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "BZ",
+        "flagUrl": "/public/flagsBZ.png"
     },
     {
         "name": "Benin",
@@ -231,7 +267,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "BJ",
+        "flagUrl": "/public/flagsBJ.png"
     },
     {
         "name": "Bhutan",
@@ -243,7 +281,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "BT",
+        "flagUrl": "/public/flagsBT.png"
     },
     {
         "name": "Bolivia",
@@ -255,7 +295,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "BO",
+        "flagUrl": "/public/flagsBO.png"
     },
     {
         "name": "Bosnia and Herzegovina",
@@ -267,7 +309,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "BA",
+        "flagUrl": "/public/flagsBA.png"
     },
     {
         "name": "Botswana",
@@ -279,7 +323,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "BW",
+        "flagUrl": "/public/flagsBW.png"
     },
     {
         "name": "Brazil",
@@ -291,7 +337,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": true,
         "affordableHealthCare": true,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "BR",
+        "flagUrl": "/public/flagsBR.png"
     },
     {
         "name": "Brunei",
@@ -303,7 +351,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "BN",
+        "flagUrl": "/public/flagsBN.png"
     },
     {
         "name": "Bulgaria",
@@ -315,7 +365,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": true,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "BG",
+        "flagUrl": "/public/flagsBG.png"
     },
     {
         "name": "Burkina Faso",
@@ -327,7 +379,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "BF",
+        "flagUrl": "/public/flagsBF.png"
     },
     {
         "name": "Burundi",
@@ -339,7 +393,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "BI",
+        "flagUrl": "/public/flagsBI.png"
     },
     {
         "name": "Cabo Verde",
@@ -351,7 +407,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "CV",
+        "flagUrl": "/public/flagsCV.png"
     },
     {
         "name": "Cambodia",
@@ -363,7 +421,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "KH",
+        "flagUrl": "/public/flagsKH.png"
     },
     {
         "name": "Cameroon",
@@ -375,7 +435,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "CM",
+        "flagUrl": "/public/flagsCM.png"
     },
     {
         "name": "Canada",
@@ -387,7 +449,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "CA",
+        "flagUrl": "/public/flagsCA.png"
     },
     {
         "name": "Central African Republic",
@@ -399,7 +463,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "CF",
+        "flagUrl": "/public/flagsCF.png"
     },
     {
         "name": "Chad",
@@ -411,7 +477,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "TD",
+        "flagUrl": "/public/flagsTD.png"
     },
     {
         "name": "Chile",
@@ -423,7 +491,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "CL",
+        "flagUrl": "/public/flagsCL.png"
     },
     {
         "name": "China",
@@ -435,7 +505,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "CN",
+        "flagUrl": "/public/flagsCN.png"
     },
     {
         "name": "Colombia",
@@ -447,7 +519,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": true,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "CO",
+        "flagUrl": "/public/flagsCO.png"
     },
     {
         "name": "Comoros",
@@ -459,7 +533,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "KM",
+        "flagUrl": "/public/flagsKM.png"
     },
     {
         "name": "Congo (Brazzaville)",
@@ -471,7 +547,8 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "flagUrl": "/public/flagsundefined.png"
     },
     {
         "name": "Congo (Kinshasa)",
@@ -483,7 +560,8 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "flagUrl": "/public/flagsundefined.png"
     },
     {
         "name": "Costa Rica",
@@ -495,7 +573,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": true,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "CR",
+        "flagUrl": "/public/flagsCR.png"
     },
     {
         "name": "Croatia",
@@ -507,7 +587,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": true,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "HR",
+        "flagUrl": "/public/flagsHR.png"
     },
     {
         "name": "Cuba",
@@ -519,7 +601,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "CU",
+        "flagUrl": "/public/flagsCU.png"
     },
     {
         "name": "Cyprus",
@@ -531,7 +615,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "CY",
+        "flagUrl": "/public/flagsCY.png"
     },
     {
         "name": "Czech Republic",
@@ -543,7 +629,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": true,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "CZ",
+        "flagUrl": "/public/flagsCZ.png"
     },
     {
         "name": "Denmark",
@@ -555,7 +643,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "DK",
+        "flagUrl": "/public/flagsDK.png"
     },
     {
         "name": "Djibouti",
@@ -567,7 +657,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "DJ",
+        "flagUrl": "/public/flagsDJ.png"
     },
     {
         "name": "Dominica",
@@ -579,7 +671,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "DM",
+        "flagUrl": "/public/flagsDM.png"
     },
     {
         "name": "Dominican Republic",
@@ -591,7 +685,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "DO",
+        "flagUrl": "/public/flagsDO.png"
     },
     {
         "name": "Ecuador",
@@ -603,7 +699,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "EC",
+        "flagUrl": "/public/flagsEC.png"
     },
     {
         "name": "Egypt",
@@ -615,7 +713,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "EG",
+        "flagUrl": "/public/flagsEG.png"
     },
     {
         "name": "El Salvador",
@@ -627,7 +727,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "SV",
+        "flagUrl": "/public/flagsSV.png"
     },
     {
         "name": "Equatorial Guinea",
@@ -639,7 +741,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "GQ",
+        "flagUrl": "/public/flagsGQ.png"
     },
     {
         "name": "Eritrea",
@@ -651,7 +755,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "ER",
+        "flagUrl": "/public/flagsER.png"
     },
     {
         "name": "Estonia",
@@ -663,7 +769,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "EE",
+        "flagUrl": "/public/flagsEE.png"
     },
     {
         "name": "Eswatini",
@@ -675,7 +783,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "SZ",
+        "flagUrl": "/public/flagsSZ.png"
     },
     {
         "name": "Ethiopia",
@@ -687,7 +797,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "ET",
+        "flagUrl": "/public/flagsET.png"
     },
     {
         "name": "Fiji",
@@ -699,7 +811,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "FJ",
+        "flagUrl": "/public/flagsFJ.png"
     },
     {
         "name": "Finland",
@@ -711,7 +825,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "FI",
+        "flagUrl": "/public/flagsFI.png"
     },
     {
         "name": "France",
@@ -723,7 +839,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": true,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "FR",
+        "flagUrl": "/public/flagsFR.png"
     },
     {
         "name": "Gabon",
@@ -735,7 +853,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "GA",
+        "flagUrl": "/public/flagsGA.png"
     },
     {
         "name": "Gambia",
@@ -747,7 +867,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "GM",
+        "flagUrl": "/public/flagsGM.png"
     },
     {
         "name": "Georgia",
@@ -759,7 +881,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "GE",
+        "flagUrl": "/public/flagsGE.png"
     },
     {
         "name": "Germany",
@@ -771,7 +895,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": true,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "DE",
+        "flagUrl": "/public/flagsDE.png"
     },
     {
         "name": "Ghana",
@@ -783,7 +909,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "GH",
+        "flagUrl": "/public/flagsGH.png"
     },
     {
         "name": "Greece",
@@ -795,7 +923,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "GR",
+        "flagUrl": "/public/flagsGR.png"
     },
     {
         "name": "Grenada",
@@ -807,7 +937,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "GD",
+        "flagUrl": "/public/flagsGD.png"
     },
     {
         "name": "Guatemala",
@@ -819,7 +951,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "GT",
+        "flagUrl": "/public/flagsGT.png"
     },
     {
         "name": "Guinea",
@@ -831,7 +965,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "GN",
+        "flagUrl": "/public/flagsGN.png"
     },
     {
         "name": "Guinea-Bissau",
@@ -843,7 +979,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "GW",
+        "flagUrl": "/public/flagsGW.png"
     },
     {
         "name": "Guyana",
@@ -855,7 +993,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "GY",
+        "flagUrl": "/public/flagsGY.png"
     },
     {
         "name": "Haiti",
@@ -867,7 +1007,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "HT",
+        "flagUrl": "/public/flagsHT.png"
     },
     {
         "name": "Honduras",
@@ -879,7 +1021,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "HN",
+        "flagUrl": "/public/flagsHN.png"
     },
     {
         "name": "Hungary",
@@ -891,7 +1035,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": true,
         "affordableHealthCare": true,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "HU",
+        "flagUrl": "/public/flagsHU.png"
     },
     {
         "name": "Iceland",
@@ -903,7 +1049,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "IS",
+        "flagUrl": "/public/flagsIS.png"
     },
     {
         "name": "India",
@@ -915,7 +1063,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": true,
         "affordableHealthCare": true,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "IN",
+        "flagUrl": "/public/flagsIN.png"
     },
     {
         "name": "Indonesia",
@@ -927,7 +1077,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "ID",
+        "flagUrl": "/public/flagsID.png"
     },
     {
         "name": "Iran",
@@ -939,7 +1091,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": true,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "IR",
+        "flagUrl": "/public/flagsIR.png"
     },
     {
         "name": "Iraq",
@@ -951,7 +1105,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "IQ",
+        "flagUrl": "/public/flagsIQ.png"
     },
     {
         "name": "Ireland",
@@ -963,7 +1119,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "IE",
+        "flagUrl": "/public/flagsIE.png"
     },
     {
         "name": "Israel",
@@ -975,7 +1133,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "IL",
+        "flagUrl": "/public/flagsIL.png"
     },
     {
         "name": "Italy",
@@ -987,7 +1147,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "IT",
+        "flagUrl": "/public/flagsIT.png"
     },
     {
         "name": "Ivory Coast",
@@ -999,7 +1161,8 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "flagUrl": "/public/flagsundefined.png"
     },
     {
         "name": "Jamaica",
@@ -1011,7 +1174,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "JM",
+        "flagUrl": "/public/flagsJM.png"
     },
     {
         "name": "Japan",
@@ -1023,7 +1188,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "JP",
+        "flagUrl": "/public/flagsJP.png"
     },
     {
         "name": "Jordan",
@@ -1035,7 +1202,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "JO",
+        "flagUrl": "/public/flagsJO.png"
     },
     {
         "name": "Kazakhstan",
@@ -1047,7 +1216,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "KZ",
+        "flagUrl": "/public/flagsKZ.png"
     },
     {
         "name": "Kenya",
@@ -1059,7 +1230,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": true,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "KE",
+        "flagUrl": "/public/flagsKE.png"
     },
     {
         "name": "Kiribati",
@@ -1071,7 +1244,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "KI",
+        "flagUrl": "/public/flagsKI.png"
     },
     {
         "name": "Kuwait",
@@ -1083,7 +1258,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "KW",
+        "flagUrl": "/public/flagsKW.png"
     },
     {
         "name": "Kyrgyzstan",
@@ -1095,7 +1272,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": true,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "KG",
+        "flagUrl": "/public/flagsKG.png"
     },
     {
         "name": "Laos",
@@ -1107,7 +1286,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "LA",
+        "flagUrl": "/public/flagsLA.png"
     },
     {
         "name": "Latvia",
@@ -1119,7 +1300,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "LV",
+        "flagUrl": "/public/flagsLV.png"
     },
     {
         "name": "Lebanon",
@@ -1131,7 +1314,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "LB",
+        "flagUrl": "/public/flagsLB.png"
     },
     {
         "name": "Lesotho",
@@ -1143,7 +1328,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "LS",
+        "flagUrl": "/public/flagsLS.png"
     },
     {
         "name": "Liberia",
@@ -1155,7 +1342,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "LR",
+        "flagUrl": "/public/flagsLR.png"
     },
     {
         "name": "Libya",
@@ -1167,7 +1356,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "LY",
+        "flagUrl": "/public/flagsLY.png"
     },
     {
         "name": "Liechtenstein",
@@ -1179,7 +1370,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "LI",
+        "flagUrl": "/public/flagsLI.png"
     },
     {
         "name": "Lithuania",
@@ -1191,7 +1384,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "LT",
+        "flagUrl": "/public/flagsLT.png"
     },
     {
         "name": "Luxembourg",
@@ -1203,7 +1398,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "LU",
+        "flagUrl": "/public/flagsLU.png"
     },
     {
         "name": "Madagascar",
@@ -1215,7 +1412,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "MG",
+        "flagUrl": "/public/flagsMG.png"
     },
     {
         "name": "Malawi",
@@ -1227,7 +1426,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "MW",
+        "flagUrl": "/public/flagsMW.png"
     },
     {
         "name": "Malaysia",
@@ -1239,7 +1440,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": true,
         "affordableHealthCare": true,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "MY",
+        "flagUrl": "/public/flagsMY.png"
     },
     {
         "name": "Maldives",
@@ -1251,7 +1454,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "MV",
+        "flagUrl": "/public/flagsMV.png"
     },
     {
         "name": "Mali",
@@ -1263,7 +1468,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "ML",
+        "flagUrl": "/public/flagsML.png"
     },
     {
         "name": "Malta",
@@ -1275,7 +1482,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "MT",
+        "flagUrl": "/public/flagsMT.png"
     },
     {
         "name": "Marshall Islands",
@@ -1287,7 +1496,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "MH",
+        "flagUrl": "/public/flagsMH.png"
     },
     {
         "name": "Mauritania",
@@ -1299,7 +1510,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "MR",
+        "flagUrl": "/public/flagsMR.png"
     },
     {
         "name": "Mauritius",
@@ -1311,7 +1524,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "MU",
+        "flagUrl": "/public/flagsMU.png"
     },
     {
         "name": "Mexico",
@@ -1323,7 +1538,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": true,
         "affordableHealthCare": true,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "MX",
+        "flagUrl": "/public/flagsMX.png"
     },
     {
         "name": "Micronesia",
@@ -1335,7 +1552,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "FM",
+        "flagUrl": "/public/flagsFM.png"
     },
     {
         "name": "Moldova",
@@ -1347,7 +1566,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "MD",
+        "flagUrl": "/public/flagsMD.png"
     },
     {
         "name": "Monaco",
@@ -1359,7 +1580,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "MC",
+        "flagUrl": "/public/flagsMC.png"
     },
     {
         "name": "Mongolia",
@@ -1371,7 +1594,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "MN",
+        "flagUrl": "/public/flagsMN.png"
     },
     {
         "name": "Montenegro",
@@ -1383,7 +1608,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "ME",
+        "flagUrl": "/public/flagsME.png"
     },
     {
         "name": "Morocco",
@@ -1395,7 +1622,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "MA",
+        "flagUrl": "/public/flagsMA.png"
     },
     {
         "name": "Mozambique",
@@ -1407,7 +1636,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "MZ",
+        "flagUrl": "/public/flagsMZ.png"
     },
     {
         "name": "Myanmar",
@@ -1419,7 +1650,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "MM",
+        "flagUrl": "/public/flagsMM.png"
     },
     {
         "name": "Namibia",
@@ -1431,7 +1664,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "NA",
+        "flagUrl": "/public/flagsNA.png"
     },
     {
         "name": "Nauru",
@@ -1443,7 +1678,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "NR",
+        "flagUrl": "/public/flagsNR.png"
     },
     {
         "name": "Nepal",
@@ -1455,7 +1692,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "NP",
+        "flagUrl": "/public/flagsNP.png"
     },
     {
         "name": "Netherlands",
@@ -1467,7 +1706,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "NL",
+        "flagUrl": "/public/flagsNL.png"
     },
     {
         "name": "New Zealand",
@@ -1479,7 +1720,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "NZ",
+        "flagUrl": "/public/flagsNZ.png"
     },
     {
         "name": "Nicaragua",
@@ -1491,7 +1734,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "NI",
+        "flagUrl": "/public/flagsNI.png"
     },
     {
         "name": "Niger",
@@ -1503,7 +1748,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "NE",
+        "flagUrl": "/public/flagsNE.png"
     },
     {
         "name": "Nigeria",
@@ -1515,7 +1762,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "NG",
+        "flagUrl": "/public/flagsNG.png"
     },
     {
         "name": "North Korea",
@@ -1527,7 +1776,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "KP",
+        "flagUrl": "/public/flagsKP.png"
     },
     {
         "name": "North Macedonia",
@@ -1539,7 +1790,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "MK",
+        "flagUrl": "/public/flagsMK.png"
     },
     {
         "name": "Norway",
@@ -1551,7 +1804,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "NO",
+        "flagUrl": "/public/flagsNO.png"
     },
     {
         "name": "Oman",
@@ -1563,7 +1818,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "OM",
+        "flagUrl": "/public/flagsOM.png"
     },
     {
         "name": "Pakistan",
@@ -1575,7 +1832,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "PK",
+        "flagUrl": "/public/flagsPK.png"
     },
     {
         "name": "Palau",
@@ -1587,7 +1846,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "PW",
+        "flagUrl": "/public/flagsPW.png"
     },
     {
         "name": "Palestine",
@@ -1599,7 +1860,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "PS",
+        "flagUrl": "/public/flagsPS.png"
     },
     {
         "name": "Panama",
@@ -1611,7 +1874,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "PA",
+        "flagUrl": "/public/flagsPA.png"
     },
     {
         "name": "Papua New Guinea",
@@ -1623,7 +1888,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "PG",
+        "flagUrl": "/public/flagsPG.png"
     },
     {
         "name": "Paraguay",
@@ -1635,7 +1902,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "PY",
+        "flagUrl": "/public/flagsPY.png"
     },
     {
         "name": "Peru",
@@ -1647,7 +1916,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "PE",
+        "flagUrl": "/public/flagsPE.png"
     },
     {
         "name": "Philippines",
@@ -1659,7 +1930,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": true,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "PH",
+        "flagUrl": "/public/flagsPH.png"
     },
     {
         "name": "Poland",
@@ -1671,7 +1944,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": true,
         "affordableHealthCare": true,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "PL",
+        "flagUrl": "/public/flagsPL.png"
     },
     {
         "name": "Portugal",
@@ -1683,7 +1958,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": true,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "PT",
+        "flagUrl": "/public/flagsPT.png"
     },
     {
         "name": "Qatar",
@@ -1695,7 +1972,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "QA",
+        "flagUrl": "/public/flagsQA.png"
     },
     {
         "name": "Romania",
@@ -1707,7 +1986,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": true,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "RO",
+        "flagUrl": "/public/flagsRO.png"
     },
     {
         "name": "Russia",
@@ -1719,7 +2000,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "RU",
+        "flagUrl": "/public/flagsRU.png"
     },
     {
         "name": "Rwanda",
@@ -1731,7 +2014,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "RW",
+        "flagUrl": "/public/flagsRW.png"
     },
     {
         "name": "Saint Kitts and Nevis",
@@ -1743,7 +2028,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "KN",
+        "flagUrl": "/public/flagsKN.png"
     },
     {
         "name": "Saint Lucia",
@@ -1755,7 +2042,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "LC",
+        "flagUrl": "/public/flagsLC.png"
     },
     {
         "name": "Saint Vincent and the Grenadines",
@@ -1767,7 +2056,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "VC",
+        "flagUrl": "/public/flagsVC.png"
     },
     {
         "name": "Samoa",
@@ -1779,7 +2070,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "WS",
+        "flagUrl": "/public/flagsWS.png"
     },
     {
         "name": "San Marino",
@@ -1791,7 +2084,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "SM",
+        "flagUrl": "/public/flagsSM.png"
     },
     {
         "name": "Sao Tome and Principe",
@@ -1803,7 +2098,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "ST",
+        "flagUrl": "/public/flagsST.png"
     },
     {
         "name": "Saudi Arabia",
@@ -1815,7 +2112,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": true,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "SA",
+        "flagUrl": "/public/flagsSA.png"
     },
     {
         "name": "Senegal",
@@ -1827,7 +2126,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "SN",
+        "flagUrl": "/public/flagsSN.png"
     },
     {
         "name": "Serbia",
@@ -1839,7 +2140,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "RS",
+        "flagUrl": "/public/flagsRS.png"
     },
     {
         "name": "Seychelles",
@@ -1851,7 +2154,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "SC",
+        "flagUrl": "/public/flagsSC.png"
     },
     {
         "name": "Sierra Leone",
@@ -1863,7 +2168,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "SL",
+        "flagUrl": "/public/flagsSL.png"
     },
     {
         "name": "Singapore",
@@ -1875,7 +2182,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "SG",
+        "flagUrl": "/public/flagsSG.png"
     },
     {
         "name": "Slovakia",
@@ -1887,7 +2196,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "SK",
+        "flagUrl": "/public/flagsSK.png"
     },
     {
         "name": "Slovenia",
@@ -1899,7 +2210,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "SI",
+        "flagUrl": "/public/flagsSI.png"
     },
     {
         "name": "Solomon Islands",
@@ -1911,7 +2224,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "SB",
+        "flagUrl": "/public/flagsSB.png"
     },
     {
         "name": "Somalia",
@@ -1923,7 +2238,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "SO",
+        "flagUrl": "/public/flagsSO.png"
     },
     {
         "name": "South Africa",
@@ -1935,7 +2252,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": true,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "ZA",
+        "flagUrl": "/public/flagsZA.png"
     },
     {
         "name": "South Korea",
@@ -1947,7 +2266,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "KR",
+        "flagUrl": "/public/flagsKR.png"
     },
     {
         "name": "South Sudan",
@@ -1959,7 +2280,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "SS",
+        "flagUrl": "/public/flagsSS.png"
     },
     {
         "name": "Spain",
@@ -1971,7 +2294,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": true,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "ES",
+        "flagUrl": "/public/flagsES.png"
     },
     {
         "name": "Sri Lanka",
@@ -1983,7 +2308,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "LK",
+        "flagUrl": "/public/flagsLK.png"
     },
     {
         "name": "Sudan",
@@ -1995,7 +2322,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "SD",
+        "flagUrl": "/public/flagsSD.png"
     },
     {
         "name": "Suriname",
@@ -2007,7 +2336,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "SR",
+        "flagUrl": "/public/flagsSR.png"
     },
     {
         "name": "Sweden",
@@ -2019,7 +2350,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "SE",
+        "flagUrl": "/public/flagsSE.png"
     },
     {
         "name": "Switzerland",
@@ -2031,7 +2364,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "CH",
+        "flagUrl": "/public/flagsCH.png"
     },
     {
         "name": "Syria",
@@ -2043,7 +2378,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "SY",
+        "flagUrl": "/public/flagsSY.png"
     },
     {
         "name": "Taiwan",
@@ -2055,7 +2392,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": true,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "TW",
+        "flagUrl": "/public/flagsTW.png"
     },
     {
         "name": "Tajikistan",
@@ -2067,7 +2406,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "TJ",
+        "flagUrl": "/public/flagsTJ.png"
     },
     {
         "name": "Tanzania",
@@ -2079,7 +2420,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "TZ",
+        "flagUrl": "/public/flagsTZ.png"
     },
     {
         "name": "Thailand",
@@ -2091,7 +2434,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": true,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "TH",
+        "flagUrl": "/public/flagsTH.png"
     },
     {
         "name": "Timor-Leste",
@@ -2103,7 +2448,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "TL",
+        "flagUrl": "/public/flagsTL.png"
     },
     {
         "name": "Togo",
@@ -2115,7 +2462,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "TG",
+        "flagUrl": "/public/flagsTG.png"
     },
     {
         "name": "Tonga",
@@ -2127,7 +2476,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "TO",
+        "flagUrl": "/public/flagsTO.png"
     },
     {
         "name": "Trinidad and Tobago",
@@ -2139,7 +2490,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "TT",
+        "flagUrl": "/public/flagsTT.png"
     },
     {
         "name": "Tunisia",
@@ -2151,7 +2504,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "TN",
+        "flagUrl": "/public/flagsTN.png"
     },
     {
         "name": "Turkey",
@@ -2163,7 +2518,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": true,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "TR",
+        "flagUrl": "/public/flagsTR.png"
     },
     {
         "name": "Turkmenistan",
@@ -2175,7 +2532,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "TM",
+        "flagUrl": "/public/flagsTM.png"
     },
     {
         "name": "Tuvalu",
@@ -2187,7 +2546,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "TV",
+        "flagUrl": "/public/flagsTV.png"
     },
     {
         "name": "Uganda",
@@ -2199,7 +2560,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "UG",
+        "flagUrl": "/public/flagsUG.png"
     },
     {
         "name": "Ukraine",
@@ -2211,7 +2574,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "UA",
+        "flagUrl": "/public/flagsUA.png"
     },
     {
         "name": "United Arab Emirates",
@@ -2223,7 +2588,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "AE",
+        "flagUrl": "/public/flagsAE.png"
     },
     {
         "name": "United Kingdom",
@@ -2235,7 +2602,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "GB",
+        "flagUrl": "/public/flagsGB.png"
     },
     {
         "name": "United States",
@@ -2247,7 +2616,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "US",
+        "flagUrl": "/public/flagsUS.png"
     },
     {
         "name": "Uruguay",
@@ -2259,7 +2630,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "UY",
+        "flagUrl": "/public/flagsUY.png"
     },
     {
         "name": "Uzbekistan",
@@ -2271,7 +2644,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "UZ",
+        "flagUrl": "/public/flagsUZ.png"
     },
     {
         "name": "Vanuatu",
@@ -2283,7 +2658,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "VU",
+        "flagUrl": "/public/flagsVU.png"
     },
     {
         "name": "Vatican City",
@@ -2295,7 +2672,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "VA",
+        "flagUrl": "/public/flagsVA.png"
     },
     {
         "name": "Venezuela",
@@ -2307,7 +2686,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "VE",
+        "flagUrl": "/public/flagsVE.png"
     },
     {
         "name": "Vietnam",
@@ -2319,7 +2700,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": true
+        "nomadVisa": true,
+        "countryCode": "VN",
+        "flagUrl": "/public/flagsVN.png"
     },
     {
         "name": "Yemen",
@@ -2331,7 +2714,9 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "YE",
+        "flagUrl": "/public/flagsYE.png"
     },
     {
         "name": "Zambia",
@@ -2343,7 +2728,9 @@ const goldObject: Country[] = [
         "unsafe": false,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "ZM",
+        "flagUrl": "/public/flagsZM.png"
     },
     {
         "name": "Zimbabwe",
@@ -2355,13 +2742,11 @@ const goldObject: Country[] = [
         "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": false,
-        "nomadVisa": false
+        "nomadVisa": false,
+        "countryCode": "ZW",
+        "flagUrl": "/public/flagsZW.png"
     }
 ]
-
-
-
-
 
 
 export default goldObject;

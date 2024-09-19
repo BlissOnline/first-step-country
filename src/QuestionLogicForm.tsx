@@ -52,30 +52,30 @@ const QuestionLogicForm: React.FC = () => {
 
         // all the if statement logic
 
-        const filteredCountries = goldObject.filter((item: Country) => {
-            if (data.ocean === 'important' && !item.coast) return false;
-            //probably don't have to define anything..
-            //if (data.ocean === 'notImportant' && item.coast) return false;
-            if (+data.ppm && +data.ppm <= item.ppm) return false;
+        // const filteredCountries = goldObject.filter((item: Country) => {
+        //     if (data.ocean === 'important' && !item.coast) return false;
+        //     //probably don't have to define anything..
+        //     //if (data.ocean === 'notImportant' && item.coast) return false;
+        //     if (+data.ppm && +data.ppm <= item.ppm) return false;
 
-            if (data.english === 'important' && !item.englishSpeaking) return false;
-            // if (data.english === 'notImportant' && item.coast) return false;
-            if (data.dining === 'important' && !item.affordableDining) return false;
-            //if (data.dining === 'notImportant' && item.coast) return false;
-            if (data.unsafe === 'important' && item.unsafe) return false;
-            // if (data.unsafe === 'notImportant' && item.coast) return false;
-            if (data.education === 'important' && !item.affordableDining) return false;
-            // if (data.education === 'notImportant' && item.coast) return false;
-            if (data.medical === 'important' && !item.affordableHealthCare) return false;
-            // if (data.medical === 'notImportant' && item.coast) return false;
-            if (data.nomadVisa === 'important' && !item.nomadVisa) return false;
-            // if (data.nomadVisa === 'notImportant' && item.coast) return false;
+        //     if (data.english === 'important' && !item.englishSpeaking) return false;
+        //     // if (data.english === 'notImportant' && item.coast) return false;
+        //     if (data.dining === 'important' && !item.affordableDining) return false;
+        //     //if (data.dining === 'notImportant' && item.coast) return false;
+        //     if (data.unsafe === 'important' && item.unsafe) return false;
+        //     // if (data.unsafe === 'notImportant' && item.coast) return false;
+        //     if (data.education === 'important' && !item.affordableDining) return false;
+        //     // if (data.education === 'notImportant' && item.coast) return false;
+        //     if (data.medical === 'important' && !item.affordableHealthCare) return false;
+        //     // if (data.medical === 'notImportant' && item.coast) return false;
+        //     if (data.nomadVisa === 'important' && !item.nomadVisa) return false;
+        //     // if (data.nomadVisa === 'notImportant' && item.coast) return false;
 
-            return true;
-        });
+        //     return true;
+        // });
 
         // think just logging our result?
-        console.log(filteredCountries);
+        // console.log(filteredCountries);
         console.log(data);
 
     };
@@ -175,7 +175,9 @@ const QuestionLogicForm: React.FC = () => {
 
                     <div className={`question-page page-submit ${currentPage === 8 ? 'active' : ''}`}>
                         {currentPage === 8 && (
-                            <ShowResults handleSubmit={handleSubmit} />
+                            <ShowResults formData={formData} />
+                            //<ShowResults handleSubmit={filteredCountries} />
+                            //<ShowResults handleSubmit={QuestionLogicForm} />
                         )}
                     </div>
 
@@ -201,3 +203,4 @@ const QuestionLogicForm: React.FC = () => {
 
 // export QuestionLogicForm component
 export default QuestionLogicForm; 
+// export function filteredCountries();
