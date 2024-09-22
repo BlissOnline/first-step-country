@@ -55,6 +55,7 @@
 
 .qFourButtonN {
     background-color: var(--color-3);
+    white-space: nowrap;
 
 }
 

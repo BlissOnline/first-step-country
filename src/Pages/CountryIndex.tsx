@@ -32,7 +32,7 @@ const CountryIndex: React.FC = () => {
         //typeof
         let ppm = +(searchParams.get('ppm') || 0);
         if (ppm && ppm <= item.ppm) return false;
-        console.log(ppm, item.ppm);
+        //console.log(ppm, item.ppm);
 
 
         if (searchParams.get('english') === 'important' && !item.englishSpeaking) return false;
@@ -53,9 +53,28 @@ const CountryIndex: React.FC = () => {
 
     return (
         <div>
-            <h1>Country Index {filteredCountries.length}</h1>
-            {/* <CountryList countries={goldObjectWithFlags} /> */}
-            {/* <CountryList countries={filteredCountries} /> */}
+            <h1 
+            className='titleIndex' 
+            style={{
+                background: 'var(--color-home)', 
+                display: 'block', 
+                width: '100%',
+                padding: '0.7rem',
+                fontFamily: 'var(--font-question)',
+                textAlign: 'start',
+                paddingLeft: '1.8em',
+                color: 'var(--color-3)',
+                //textDecoration: 'underline',
+                }} >
+                 <span 
+                 style={{
+                    color: 'var(--color-gold)',
+                    // textDecoration: 'underline',
+                    fontFamily: 'var(--font-general)'
+                 }}>
+            {filteredCountries.length}
+        </span> discovered matches
+            </h1>
             <CountryList countries={filteredCountries} />
         </div>
     );

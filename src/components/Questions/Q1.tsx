@@ -46,16 +46,20 @@ const Q1: React.FC<Q1Props> = ({ value, onChange, onNext }) => {
 
     return (
         <form className='qOneBody' >
-            <label className="qOneQuestion">Access to the ocean?</label><br />
-            <img src={imgSurf} alt="surfing" className='qOneImg' />
+            <div className='qOneContainer'>
 
-            <div className='qOneButtonContainer'>
-                <label className="qOneButtonI" id='buttons'> Important
-                    <input type='radio' name="ocean" value="important" onChange={handleRadioChange}/>
-                </label>
-                <label className="qOneButtonN" id='buttons'> Not Important
-                    <input type='radio' name="ocean" value="notImportant" onChange={handleRadioChange}/>
-                </label>
+                <label className="qOneQuestion">Access to the ocean?</label><br />
+                <img src={imgSurf} alt="surfing" className='qOneImg' />
+
+                <div className='qOneButtonContainer'>
+                    <label className="qOneButtonI" id='buttons'> Important
+                        <input type='radio' name="ocean" value="important" onChange={handleRadioChange}/>
+                    </label>
+                    <label className="qOneButtonN" id='buttons'> Not Important
+                        <input type='radio' name="ocean" value="notImportant" onChange={handleRadioChange}/>
+                    </label>
+
+                </div>
             </div>
             {/* <button type='submit'>Next Question</button> */}
         </form>

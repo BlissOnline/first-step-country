@@ -57,7 +57,9 @@ p {
    border-radius: 30px;
 
    margin-top: 1em;
-   width: 30rem;
+   /* width: 30rem; */
+   width: 80%; /* Changed from 30rem to 80% */
+   max-width: 30rem; /* Optional: to set a maximum width */
    padding: 0;
    border: 2px solid black;
 

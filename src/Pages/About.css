@@ -1,34 +1,35 @@
 /* Main content styles */
 .aboutBody {
-    /* box-sizing: border-box; */
-    font-family: 'Arial', sans-serif;
-    color: ;
+    box-sizing: border-box;
     padding: 20px;
     height: 100vh;
     background-color: var(--color-4);
   }
   
+.qOneContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
   /* Promotional text styles */
-  .aboutText {
+.aboutText {
     color: var(--color-1);
     font-family: var(--font-question);
-    /* font-size: 1em;
-    margin-bottom: 20px; */
+    font-size: 1.2em;
+    /* margin-bottom: 20px;  */
+    margin: 2em 2em;
+    line-height: 1.3em;
   }
   
+.boldText {
+  font-weight: 500;
+  color: var(--color-gold);
+  font-family: var(--font-general);
+}
+
   /* Discover button styles */
-  .discover-button {
-    background-color: #8B4513; /* Dark brown color */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 30px; /* Gives the oval shape */
-  }
-  
-  /* Hover effect for button */
-  .discover-button:hover {
-    background-color: #A0522D; /* Slightly lighter brown color on hover */
-    cursor: pointer; /* Changes cursor to pointer when hovering over button */
-  }
+  #beginButton:hover {
+    /* background-color: var(--color-4);  */
+    background-color: var(--color-1);
+}

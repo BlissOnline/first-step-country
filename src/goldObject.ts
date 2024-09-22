@@ -548,7 +548,8 @@ const goldObject: Country[] = [
         "affordableEducation": false,
         "affordableHealthCare": false,
         "nomadVisa": false,
-        "flagUrl": "/public/flagsundefined.png"
+        "countryCode": "CG",
+        "flagUrl": "/public/flagsCG.png"
     },
     {
         "name": "Congo (Kinshasa)",
@@ -561,7 +562,8 @@ const goldObject: Country[] = [
         "affordableEducation": false,
         "affordableHealthCare": false,
         "nomadVisa": false,
-        "flagUrl": "/public/flagsundefined.png"
+        "countryCode": "CD",
+        "flagUrl": "/public/flagsCD.png"
     },
     {
         "name": "Costa Rica",
@@ -1154,7 +1156,7 @@ const goldObject: Country[] = [
     {
         "name": "Ivory Coast",
         "countryIndexNumber": 82,
-        "ppm": 0,
+        "ppm": 1400,
         "coast": true,
         "englishSpeaking": false,
         "affordableDining": false,
@@ -1162,7 +1164,8 @@ const goldObject: Country[] = [
         "affordableEducation": false,
         "affordableHealthCare": false,
         "nomadVisa": false,
-        "flagUrl": "/public/flagsundefined.png"
+        "countryCode": "CI",
+        "flagUrl": "/public/flagsCI.png"
     },
     {
         "name": "Jamaica",
@@ -1643,7 +1646,7 @@ const goldObject: Country[] = [
     {
         "name": "Myanmar",
         "countryIndexNumber": 117,
-        "ppm": 0,
+        "ppm": 1200,
         "coast": false,
         "englishSpeaking": false,
         "affordableDining": false,
@@ -1853,7 +1856,7 @@ const goldObject: Country[] = [
     {
         "name": "Palestine",
         "countryIndexNumber": 132,
-        "ppm": 0,
+        "ppm": 700,
         "coast": false,
         "englishSpeaking": false,
         "affordableDining": true,
@@ -2091,7 +2094,7 @@ const goldObject: Country[] = [
     {
         "name": "Sao Tome and Principe",
         "countryIndexNumber": 149,
-        "ppm": 0,
+        "ppm": 866,
         "coast": false,
         "englishSpeaking": false,
         "affordableDining": false,
@@ -2273,7 +2276,7 @@ const goldObject: Country[] = [
     {
         "name": "South Sudan",
         "countryIndexNumber": 162,
-        "ppm": 0,
+        "ppm": 489,
         "coast": false,
         "englishSpeaking": true,
         "affordableDining": true,
@@ -2385,7 +2388,7 @@ const goldObject: Country[] = [
     {
         "name": "Taiwan",
         "countryIndexNumber": 170,
-        "ppm": 0,
+        "ppm": 972,
         "coast": false,
         "englishSpeaking": false,
         "affordableDining": true,

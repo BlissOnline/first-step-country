@@ -36,9 +36,8 @@ p {
     font-size: 1.2em;
     margin-bottom: 1.5em;
 }
-
+/* 
 .discover-button {
-   /* padding: 0.5em 0.5em; */
    font-size: 4em;
    font-family: var(--font-theme);
    background-color: var(--color-3); 
@@ -58,4 +57,4 @@ p {
 .discover-button:hover {
     background-color: var(--color-4); 
 }
-
+ */
