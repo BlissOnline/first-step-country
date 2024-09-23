@@ -1,6 +1,7 @@
 import React from 'react';
 import imgSurf from '../../assets/images/surf-graphic.png';
 import './Q1.css';
+import ImportantButtons from '../Buttons/ImportantButtons';
 
 
 //define props interface if your component will receive any props
@@ -34,10 +35,10 @@ const Q1: React.FC<Q1Props> = ({ value, onChange, onNext }) => {
     //     onChange(e.target[0].value);
     //     onNext();
 
-    const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-            onChange(e.target.value);
-            onNext();
-        };
+    // const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    //         onChange(e.target.value);
+    //         onNext();
+    //     };
 
     
 
@@ -49,17 +50,30 @@ const Q1: React.FC<Q1Props> = ({ value, onChange, onNext }) => {
             <div className='qOneContainer'>
 
                 <label className="qOneQuestion">Access to the ocean?</label><br />
-                <img src={imgSurf} alt="surfing" className='qOneImg' />
 
-                <div className='qOneButtonContainer'>
+                <div className='imgContainer'>
+                    <img src={imgSurf} alt="surfing" className='qOneImg' />
+                </div>
+
+                <div>
+                    <ImportantButtons 
+                        name="ocean" 
+                        color1="var(--color-1)" 
+                        color2="var(--color-2)" 
+                        onChange={onChange} 
+                        onNext={onNext} 
+                    />
+                   
+                </div>   
+
+                {/* <div className='qOneButtonContainer'>
                     <label className="qOneButtonI" id='buttons'> Important
                         <input type='radio' name="ocean" value="important" onChange={handleRadioChange}/>
                     </label>
                     <label className="qOneButtonN" id='buttons'> Not Important
                         <input type='radio' name="ocean" value="notImportant" onChange={handleRadioChange}/>
                     </label>
-
-                </div>
+                </div> */}
             </div>
             {/* <button type='submit'>Next Question</button> */}
         </form>

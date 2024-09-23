@@ -4,7 +4,7 @@ body {
 }
 
 .qOneBody {
-    height: calc(100vh - 3rem);
+    /* height: calc(100vh - 3rem); */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -12,6 +12,13 @@ body {
     justify-content: space-evenly;
 }
 
+.qOneContainer {
+    /* background-color: pink; */
+    /* height: fit-content; */
+    height: calc(100vh - 3rem);
+    flex-shrink: 1;
+
+}
 
 .qOneQuestion {
     color: var(--color-2);   
@@ -24,39 +31,48 @@ body {
     margin-top: 3rem;
 }
 
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    object-fit: contain; 
+
+}
+
 .qOneImg {
     /* flex-shrink: 5; */
     /* height: auto;
     width: 30%; */
     max-width: 85%;
+    width: 80%;
     height: auto;
     flex-shrink: 1;
-    object-fit: contain; /* Ensures the image scales properly */
+    object-fit: contain; 
     
 }
 
-.qOneButtonContainer {
+/* .qOneButtonContainer {
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* width: 50%; */
     margin-bottom: 2rem; 
     padding-bottom: 2rem; 
     box-sizing: border-box;
     
 
-}
+} */
 
 
-#buttons {
-    padding: 1.9rem 3rem; /* Adjust padding as needed */
+/* #buttons {
+    padding: 1.9rem 3rem; 
     margin: 0 1rem;
     border-radius: 25px;
-    min-width: 150px; /* Set a minimum width */
-    max-width: 300px; /* Set a maximum width */
-    text-align: center; /* Center the text */
-    flex-grow: 1; /* Allow buttons to grow if needed */
+    min-width: 150px; 
+    max-width: 300px;
+    text-align: center; 
+    flex-grow: 1; 
     min-height: 3.5rem;
     align-content: center;
 }
@@ -70,8 +86,7 @@ body {
 }
 
 .qOneButtonN {
-    background-color: var(--color-2);
-    
+    background-color: var(--color-2);   
 
 }
 
