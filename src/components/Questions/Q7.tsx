@@ -1,6 +1,7 @@
 import React from 'react';
 import imgMedical from '../../assets/images/hq-medical-graphic.png';
 import './Q7.css';
+import ImportantButtons from '../Buttons/ImportantButtons';
 
 //define props interface if your component will receive any props
 interface Q7Props {
@@ -13,25 +14,25 @@ interface Q7Props {
 //define the Functional Component 
 const Q7: React.FC<Q7Props> = ({ value, onChange, onNext }) => {
 
-    //handle submission
-    const handleRadioChange = (e: React.FormEvent<HTMLInputElement>) => {
-        onChange(e.target.value)
-        onNext();
-    };
-
-
     return (
         <form className='qSevenBody' >
-            <label className='qSevenQuestion' >Do you want your country to have high-quality and affordable medical tourism?</label><br />
-            <img src={imgMedical} alt='doctors' className='qSevenImg' />
 
-            <div className='qSevenButtonContainer' >
-                <label className='qSevenButtonI' id='buttons' > Important
-                    <input type='radio' name="medical" value="important" onChange={handleRadioChange}/>
-                </label>
-                <label className='qSevenButtonN' id='buttons' > Not Important
-                    <input type='radio' name="medical" value="notImportant" onChange={handleRadioChange}/>
-                </label>
+            <div className='qSevenContainer' >
+                <label className='qSevenQuestion' >High-quality and affordable medical tourism?</label><br />
+
+                <div className='qSevenImgContainer' >
+                    <img src={imgMedical} alt='doctors' className='qSevenImg' />
+                </div>
+
+                <div>
+                    <ImportantButtons 
+                        name="medical" 
+                        color1="var(--color-3)" 
+                        color2="var(--color-2)" 
+                        onChange={onChange} 
+                        onNext={onNext} 
+                    />                   
+                </div> 
             </div>
         </form>
     );

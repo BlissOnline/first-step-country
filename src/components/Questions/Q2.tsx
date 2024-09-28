@@ -23,15 +23,23 @@ const Q2: React.FC<Q2Props> = ({ value, onChange, onNext }) => {
     return (
         
         <form onSubmit={handleSubmit} className='qTwoBody' >
-            <label className='qTwoQuestion' >What is your max monthly budget for living expenses?</label>
+            <div className='qTwoContainer'> 
+                <label className='qTwoQuestion' >What is your max monthly budget for living expenses?</label>
 
-            <div style={{backgroundImage: imgPpm}} ></div>
-            <img src={imgPpm} alt="crunching numbers" className='qTwoImg' />
-            
-            <label className='qTwoButtonContainer' > $
-                <input name='ppm' type='number' value={value} onChange={onChange} placeholder='based on US dollar... ' />
-            </label> 
-            <button type='submit' className='qTwoButton' > submit number </button>
+                {/* <div style={{backgroundImage: imgPpm}} ></div> */}
+                <div className='qTwoImgContainer'>
+                    <img src={imgPpm} alt="crunching numbers" className='qTwoImg' />
+                </div>
+
+                <label className='qTwoButtonContainer' > $
+                    <input name='ppm' type='number' value={value} onChange={onChange} placeholder='based on US dollar... ' />
+                </label> 
+                
+                <div className='qTwoSubButtonContainer'>
+                    <button type='submit' className='qTwoButton'> submit number </button>
+                </div>
+            </div>
+           
         </form>
     );
 };

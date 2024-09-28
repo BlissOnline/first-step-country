@@ -51,7 +51,7 @@ const Q1: React.FC<Q1Props> = ({ value, onChange, onNext }) => {
 
                 <label className="qOneQuestion">Access to the ocean?</label><br />
 
-                <div className='imgContainer'>
+                <div className='qOneImgContainer'>
                     <img src={imgSurf} alt="surfing" className='qOneImg' />
                 </div>
 

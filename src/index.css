@@ -76,7 +76,7 @@ table {
 
 @font-face {
   font-family: 'BlackChancery';
-  src: url('/public/BLKCHCRY.TTF') format('truetype');
+  src: url('/BLKCHCRY.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -127,7 +127,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: var(--color-home);
   }
   a:hover {
     color: var(--color-4);

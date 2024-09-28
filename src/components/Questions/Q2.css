@@ -5,26 +5,71 @@ body {
 }
 
 .qTwoBody {
-    height: calc(100vh - 3rem);
+    /* height: calc(100vh - 3rem); */
     box-sizing: border-box;
+    /* width: 100vw; */
+    height: calc(100vh - 3rem);
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* opacity: 80%; */
+    justify-content: space-evenly;
     background-color: rgba(164, 102, 86, 0.9);
 
 }
 
+.qTwoContainer {
+    max-width: 40%;
+    /* background-color: pink; */
+    /* border: 2px solid white; */
+    /* height: calc(100vh - 3rem); */
+    flex-shrink: 1;
+    /* margin-top: 3rem; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Adjust as needed */
+    /* max-height: 100vh; */
+    /* padding: 20px; */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+@media only screen and (max-width: 768px) {
+    .qTwoContainer {
+        max-width: 90%; /* Adjust this value as needed */
+    }
+}
+
 .qTwoQuestion {
-    color: var(--color-4);   
+    color: var(--color-4);     
     font-family: var(--font-question);
-    font-size: 3.125vw;
-    margin-top: 3rem;
+    font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+
+    /* transform: scale(1); 
+    transform-origin: center; 
+    transition: transform 0.3s ease; 
+     */
+
+}
+
+.qTwoImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    object-fit: contain; 
+    box-sizing: border-box;
+    
 }
 
 .qTwoImg {
+    max-width: 85%;
+    width: 80%;
     height: auto;
-    width: 30%;
+    /* max-height: 40px; */
+    flex-shrink: 1;
+    object-fit: contain; 
+    margin: -10px;
+    margin-bottom: -20px;
 }
 
 .qTwoButtonContainer {
@@ -34,39 +79,74 @@ body {
     width: 50%;
     font-size: 75px;
     color: var(--color-4);
+    flex-wrap: wrap;
 
 }
 
+.qTwoButtonContainer, .qTwoSubButtonContainer {
+    /* margin-top: 10px; */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    align-items: center;
+} 
 
 .qTwoButtonContainer input {
-    background-color: var(--color-1); /* Light grey background */
-    border: 5px solid var(--color-4); /* Light grey border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px; /* Padding inside the input */
-    font-size: 0.5em; /* Font size */
-    margin-left: 10px; /* Space between $ and input */
-    width: 25vw; /* Width of the input */
+    background-color: var(--color-1); 
+    border: 5px solid var(--color-4); 
+    border-radius: 5px; 
+    padding: 10px; 
+    font-size: 0.5em; 
+    margin-left: 10px; 
+    width: 25vw; 
+    min-width: 150px; 
+    max-width: 300px; 
+    height: 4rem;
+
 }
 
 .qTwoButtonContainer input::placeholder {
     font-size: 0.5em;
+    
 }
 
 /* hiding native radio input look for modern style  */
-/* input[type="radio"] {
+input[type="radio"] {
     opacity: 0;
     position: absolute;
     width: 0;
     height: 0;
-} */
+}
 
+.qTwoSubButtonContainer {
+    /* background-color: aquamarine ; */
+    margin-top: 1.8em;
+    /* border: 2px solid red; */
+    /* height: 60spx; */
+    margin-bottom: 2em;
+
+    
+}
 
 .qTwoButton {
     background-color: var(--color-1);
-    padding: 1.9vw 3vw;
-    margin: 0 1vw;
+    padding: 1.5vw 3vw;
+    /* margin: 0 1vw; */
     border-radius: 25px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
+    min-width: 150px; 
+    max-width: 300px; 
+    text-align: center; 
+    flex-grow: 1; 
+    min-height: 3.5rem;
+    align-content: center;
+    font-family: var(--font-question);
+    font-weight: 600;
+    white-space: nowrap;
+    transition: background-color 0.25s ease;
+
+
+
 }
 
 .qTwoButton:hover {

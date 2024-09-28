@@ -1,25 +1,43 @@
 /* Main content styles */
 .aboutBody {
-    box-sizing: border-box;
-    padding: 20px;
-    height: 100vh;
-    background-color: var(--color-4);
-  }
-  
-.qOneContainer {
+  box-sizing: border-box;
+  /* padding: 20px; */
+  background-color: var(--color-4);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+  
+.aboutMainContainer {
+  box-sizing: border-box;  
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+
+  height: calc(100vh - 3rem);
+
+  /* object-fit: contain;  */
+  max-width: 80%;
+  flex-shrink: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutMainContainer {
+      max-width: 90%; /* Adjust this value as needed */
+      margin-top: -2rem;
+      margin-bottom: -1rem;
+  }
 }
 
   /* Promotional text styles */
 .aboutText {
     color: var(--color-1);
     font-family: var(--font-question);
-    font-size: 1.2em;
-    /* margin-bottom: 20px;  */
-    margin: 2em 2em;
-    line-height: 1.3em;
+
+    font-size: clamp(1.2rem, 3.5vw, 2.3rem);
+    max-width: 80vw;
   }
   
 .boldText {
@@ -28,8 +46,12 @@
   font-family: var(--font-general);
 }
 
+#beginButton {
+  margin-bottom: 2em;
+  margin-top: 1rem;
+}
+
   /* Discover button styles */
-  #beginButton:hover {
-    /* background-color: var(--color-4);  */
-    background-color: var(--color-1);
+#beginButton:hover {
+  background-color: var(--color-1);
 }

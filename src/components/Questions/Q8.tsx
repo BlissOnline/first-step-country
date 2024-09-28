@@ -1,6 +1,7 @@
 import React from 'react';
 import imgNomad from '../../assets/images/nomad-visa-graphic.png';
 import './Q8.css';
+import ImportantButtons from '../Buttons/ImportantButtons';
 
 //define props interface if your component will receive any props
 interface Q8Props {
@@ -13,25 +14,25 @@ interface Q8Props {
 //define the Functional Component 
 const Q8: React.FC<Q8Props> = ({ value, onChange, onNext }) => {
 
-    //handle submission
-    const handleRadioChange = (e: React.FormEvent<HTMLInputElement>) => {
-        onChange(e.target.value)
-        onNext();
-    };
-
-
     return (
         <form className='qEightBody' >
-            <label className='qEightQuestion' >Do you want your country to offer an official digital nomad visa or special permits for remote workers?</label><br />
-            <img src={imgNomad} alt='digital nomad' className='qEightImg'  />
 
-            <div className='qEightButtonContainer' >
-                <label className='qEightButtonI' id='buttons' > Important
-                    <input type='radio' name="nomadVisa" value="important"  onChange={handleRadioChange}/>
-                </label>
-                <label className='qEightButtonN' id='buttons' > Not Important
-                    <input type='radio' name="nomadVisa" value="notImportant" onChange={handleRadioChange}/>
-                </label>
+            <div className='qEightContainer' >
+                <label className='qEightQuestion' >Should your country offer a digital nomad visa or remote work permits?</label><br />
+
+                <div className='qEightImgContainer' >
+                    <img src={imgNomad} alt='digital nomad' className='qEightImg'  />
+                </div>
+
+                <div>
+                    <ImportantButtons 
+                        name="nomadVisa" 
+                        color1="var(--color-1)" 
+                        color2="var(--color-3)" 
+                        onChange={onChange} 
+                        onNext={onNext} 
+                    />                   
+                </div>
             </div>
         </form>
     );
