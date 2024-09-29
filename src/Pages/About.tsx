@@ -3,7 +3,7 @@ import './About.css';
 import DiscoverButton from '../components/Buttons/DiscoverButton';
 
 const About: React.FC = () => {
-    return(
+    return (
         <div className='aboutBody'>
 
             <div className='aboutMainContainer' >

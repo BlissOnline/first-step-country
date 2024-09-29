@@ -5,8 +5,9 @@ import Layout from './components/Layout/Layout';
 import './App.css';
 import About from './Pages/About';
 import Home from './Pages/Home';
+import Contact from './Pages/Contact';
 import QuestionPage from './Pages/QuestionPage';  //import question component 
-import CountryList from './Pages/CountryList';
+// import CountryList from './Pages/CountryList';
 import CountryIndex from './Pages/CountryIndex';
 //import filteredCountries from './QuestionLogicForm.js'
 
@@ -29,7 +30,7 @@ function App() {
           <Route path="/" element={<Home />} />
           {/* <Route path="/blog" element={Blog} /> */}
           <Route path='/about' element={<About />} />
-          {/* <Route path="/contact" element={Contact} /> */}
+          <Route path="/contact" element={<Contact />} />
           <Route path="/questions" element={<QuestionPage />} /> 
           {/* <Route path="/country-index" element={<CountryList countries={goldObjectWithFlags} />} /> */}
           {/* <Route path="/country-index" element={<CountryList countries={goldObject} />} /> */}

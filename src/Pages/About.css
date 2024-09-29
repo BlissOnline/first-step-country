@@ -17,10 +17,12 @@
   flex-direction: column;
 
   height: calc(100vh - 3rem);
+  pointer-events: none;
 
   /* object-fit: contain;  */
   max-width: 80%;
   flex-shrink: 1;
+  margin-top: -2rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -37,7 +39,7 @@
     font-family: var(--font-question);
 
     font-size: clamp(1.2rem, 3.5vw, 2.3rem);
-    max-width: 80vw;
+    /* max-width: 80vw; */
   }
   
 .boldText {

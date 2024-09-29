@@ -1,0 +1,38 @@
+.contactFormContainer {
+    height: auto;
+    width: 80%;
+    /* background-color: aqua; */
+}
+
+/* form {
+
+}  */
+
+.contactFormClass {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.contactLabel {
+    /* background-color: red; */
+    height: 50px;
+}
+
+
+.contactFormInput {
+    width: 90%;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-family: var(--font-question);
+    padding-left: 1rem;
+    /* border: solid black 2px; */
+    border: none;
+    color: var(--color-4);
+    border-radius: 5px;
+}
+
+.message {
+    height: 12rem;
+}

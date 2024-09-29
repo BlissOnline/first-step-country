@@ -16,7 +16,7 @@ const ImportantButtons: React.FC<ImportantButtonsProps> = ({ name, color1, color
     };
 
     return (
-        <div className='ButtonContainer'>
+      <div className='ButtonContainer'>
         <label className='buttons' style={{ backgroundColor: color1 }}> Important
           <input type='radio' name={name} value="important" onChange={handleRadioChange} />
         </label>
