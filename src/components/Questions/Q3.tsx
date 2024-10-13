@@ -12,12 +12,7 @@ interface Q3Props {
 }
 
 //define the Functional Component 
-const Q3: React.FC<Q3Props> = ({ value, onChange, onNext }) => {
-
-    // const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    //         onChange(e.target.value);
-    //         onNext();
-    // };
+const Q3: React.FC<Q3Props> = ({ onChange, onNext }) => {
 
     return (
         <form className='qThreeBody' >
@@ -45,13 +40,3 @@ const Q3: React.FC<Q3Props> = ({ value, onChange, onNext }) => {
 };
 
 export default Q3;
-
-            {/* <div className='qThreeButtonContainer'>
-                <label className="qThreeButtonI" id='buttons'> Important
-                    <input type='radio' name="english" value="important" onChange={handleRadioChange} />
-                </label>
-                <label  className="qThreeButtonN" id='buttons' > Not Important
-                    <input type='radio' name="english" value="notImportant" onChange={handleRadioChange} />
-                </label>
-
-            </div> */}

@@ -13,7 +13,7 @@ interface Q4Props {
 
 
 //define the Functional Component 
-const Q4: React.FC<Q4Props> = ({ value, onChange, onNext }) => {
+const Q4: React.FC<Q4Props> = ({ onChange, onNext }) => {
 
     return (
         <form className={'qFourBody'} >

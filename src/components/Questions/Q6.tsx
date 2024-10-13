@@ -11,9 +11,8 @@ interface Q6Props {
     onNext: () => void;
 }
 
-
 //define the Functional Component 
-const Q6: React.FC<Q6Props> = ({ value, onChange, onNext }) => {
+const Q6: React.FC<Q6Props> = ({ onChange, onNext }) => {
 
     return (
         <form className='qSixBody' >

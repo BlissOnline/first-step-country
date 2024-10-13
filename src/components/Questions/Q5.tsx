@@ -3,7 +3,6 @@ import imgUnsafe from '../../assets/images/safe-country-graphic.png';
 import './Q5.css';
 import ImportantButtons from '../Buttons/ImportantButtons';
 
-//define props interface if your component will receive any props
 interface Q5Props {
     value: string;
     onChange: (value: string) => void;
@@ -12,7 +11,7 @@ interface Q5Props {
 
 
 //define the Functional Component 
-const Q5: React.FC<Q5Props> = ({ value, onChange, onNext }) => {
+const Q5: React.FC<Q5Props> = ({ onChange, onNext }) => {
 
     return (
         <form className='qFiveBody' >

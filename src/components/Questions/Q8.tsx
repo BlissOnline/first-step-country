@@ -12,7 +12,7 @@ interface Q8Props {
 
 
 //define the Functional Component 
-const Q8: React.FC<Q8Props> = ({ value, onChange, onNext }) => {
+const Q8: React.FC<Q8Props> = ({ onChange, onNext }) => {
 
     return (
         <form className='qEightBody' >

@@ -10,9 +10,8 @@ interface Q7Props {
     onNext: () => void;
 }
 
-
 //define the Functional Component 
-const Q7: React.FC<Q7Props> = ({ value, onChange, onNext }) => {
+const Q7: React.FC<Q7Props> = ({ onChange, onNext }) => {
 
     return (
         <form className='qSevenBody' >
