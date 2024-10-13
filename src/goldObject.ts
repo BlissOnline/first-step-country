@@ -1090,7 +1090,7 @@ const goldObject: Country[] = [
         "coast": false,
         "englishSpeaking": false,
         "affordableDining": true,
-        "unsafe": false,
+        "unsafe": true,
         "affordableEducation": false,
         "affordableHealthCare": true,
         "nomadVisa": false,

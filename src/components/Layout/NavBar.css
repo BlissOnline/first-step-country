@@ -25,6 +25,7 @@
    
     margin-top: 0em;
     font-family: var(--font-theme);
+    
 }
 
 ul {
@@ -37,4 +38,11 @@ ul {
 a {
     color: white;
     text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+a:hover {
+    /* color: var(--colo-1); */
+    /* background-color: aquamarine; */
+    /* transition: color 0.25s ease; */
 }
