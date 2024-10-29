@@ -1,25 +1,21 @@
 import React from 'react';
 import { Country } from '../types';
-//import goldObjectWithFlags from '../utilities/goldObjectWithFlags';
 import goldObject from '../goldObject';
-//import { Country } from './types';
 import CountryList from '../Pages/CountryList'; // Ensure this path is correct
-//import { filteredCountries } from '../QuestionLogicForm';
 
 import { useSearchParams } from "react-router-dom";
 
-
+//have to define props interface to fix errors
 interface CountryIndexProps {
-    filteredCountries: Country[];
+    countries: Country[];
 }
-// import QuestionLogicForm from '../QuestionLogicForm';
 
+const CountryIndex: React.FC<CountryIndexProps> = () => {
+    //dont need the setter funciton in our hook
+    let [searchParams] = useSearchParams();
+    //commeting out the setSearchParams, cause for now we arn't changing the searchParams value
+    // let [searchParams, setSearchParams] = useSearchParams();
 
-
-
-
-const CountryIndex: React.FC = () => {
-    let [searchParams, setSearchParams] = useSearchParams();
     //what search parms we want to read
     console.log(searchParams.get(''));
     // console.log("test 12354");
@@ -79,16 +75,5 @@ const CountryIndex: React.FC = () => {
         </div>
     );
 };
-
-// const CountryIndex: React.FC<CountryIndexProps> = ({ filteredCountries }) => {
-//     return (
-//         <div>
-//             <h1>Country Index</h1>
-//             {/* <CountryList countries={goldObjectWithFlags} /> */}
-//             {/* <CountryList countries={filteredCountries} /> */}
-//             <CountryList countries={goldObject} />
-//         </div>
-//     );
-// };
 
 export default CountryIndex;

@@ -10,7 +10,6 @@ import { Country } from '../types';
 //     filteredCountries: Country[];
 // }
 
-// const CountryList: React.FC<{ countries: Country[] }> = ({ countries }) => {
 const CountryList: React.FC<{ countries: Country[] }> = ({ countries }) => {
     return (
         <div>

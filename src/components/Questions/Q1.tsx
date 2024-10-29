@@ -12,7 +12,7 @@ interface Q1Props {
 }
 
 
-const Q1: React.FC<Q1Props> = ({ value, onChange, onNext }) => {
+const Q1: React.FC<Q1Props> = ({ onChange, onNext }) => {
 
     return (
         <form className='qOneBody' >
