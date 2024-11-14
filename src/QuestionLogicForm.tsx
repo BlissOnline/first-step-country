@@ -34,7 +34,7 @@ const QuestionLogicForm: React.FC = () => {
 
     // next page on click
     const showNextPage = () => {
-        console.log(formData);
+        // console.log(formData); //used for console log
         setCurrentPage(prevPage => prevPage + 1);
     };
     

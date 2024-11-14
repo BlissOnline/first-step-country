@@ -13,4 +13,7 @@ export default defineConfig({
     outDir: 'dist', // Ensure this matches your deployment directory
   },
   base: './', // Ensure paths are relative
+  //base: '/your-subdirectory/'   
 });
+
+

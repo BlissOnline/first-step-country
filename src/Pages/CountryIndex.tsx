@@ -17,8 +17,7 @@ const CountryIndex: React.FC<CountryIndexProps> = () => {
     // let [searchParams, setSearchParams] = useSearchParams();
 
     //what search parms we want to read
-    console.log(searchParams.get(''));
-    // console.log("test 12354");
+    //console.log(searchParams.get(''));
 
     const filteredCountries = goldObject.filter((item: Country) => {
         if (searchParams.get('ocean') === 'important' && !item.coast) return false;
