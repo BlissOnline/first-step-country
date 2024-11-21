@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <Router basename="/first-step-country">
+      <Router>
         <Layout></Layout>
         {/* <NavBar /> */}
         <Routes>
@@ -35,15 +35,6 @@ function App() {
 
         </Routes>
       </Router>
-      
-      
-      <div>
-        {/* <h1>First Step Country</h1> */}
-
-        {/* <QuestionLogicForm></QuestionLogicForm> */}
-   
-      </div>
-
     </>
   );
 }
