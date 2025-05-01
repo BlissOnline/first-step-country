@@ -1,10 +1,4 @@
-import { Country, countryLinks } from './types';
-// import countryLinks from '../src/assets/data/countryLinks.json';
-
-//just array, not use as component
-//now have countryCode
-//now have flagUrl
-const goldObject: Country[] = [
+[
     {
         "name": "Afghanistan",
         "countryIndexNumber": 0,
@@ -17,7 +11,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "AF",
-        "flagUrl": "/public/flagsAF.png"
+        "flagUrl": "/public/flagsAF.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Albania",
@@ -31,7 +30,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "AL",
-        "flagUrl": "/public/flagsAL.png"
+        "flagUrl": "/public/flagsAL.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Algeria",
@@ -45,7 +49,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "DZ",
-        "flagUrl": "/public/flagsDZ.png"
+        "flagUrl": "/public/flagsDZ.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Andorra",
@@ -59,7 +68,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "AD",
-        "flagUrl": "/public/flagsAD.png"
+        "flagUrl": "/public/flagsAD.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Angola",
@@ -73,7 +87,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "AO",
-        "flagUrl": "/public/flagsAO.png"
+        "flagUrl": "/public/flagsAO.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Antigua and Barbuda",
@@ -87,7 +106,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "AG",
-        "flagUrl": "/public/flagsAG.png"
+        "flagUrl": "/public/flagsAG.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Argentina",
@@ -101,7 +125,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "AR",
-        "flagUrl": "/public/flagsAR.png"
+        "flagUrl": "/public/flagsAR.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Armenia",
@@ -115,7 +144,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "AM",
-        "flagUrl": "/public/flagsAM.png"
+        "flagUrl": "/public/flagsAM.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Australia",
@@ -129,7 +163,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "AU",
-        "flagUrl": "/public/flagsAU.png"
+        "flagUrl": "/public/flagsAU.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Austria",
@@ -143,7 +182,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "AT",
-        "flagUrl": "/public/flagsAT.png"
+        "flagUrl": "/public/flagsAT.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Azerbaijan",
@@ -157,7 +201,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": false,
         "countryCode": "AZ",
-        "flagUrl": "/public/flagsAZ.png"
+        "flagUrl": "/public/flagsAZ.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Bahamas",
@@ -171,7 +220,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "BS",
-        "flagUrl": "/public/flagsBS.png"
+        "flagUrl": "/public/flagsBS.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Bahrain",
@@ -185,7 +239,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "BH",
-        "flagUrl": "/public/flagsBH.png"
+        "flagUrl": "/public/flagsBH.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Bangladesh",
@@ -199,7 +258,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "BD",
-        "flagUrl": "/public/flagsBD.png"
+        "flagUrl": "/public/flagsBD.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Barbados",
@@ -213,7 +277,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "BB",
-        "flagUrl": "/public/flagsBB.png"
+        "flagUrl": "/public/flagsBB.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Belarus",
@@ -227,7 +296,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "BY",
-        "flagUrl": "/public/flagsBY.png"
+        "flagUrl": "/public/flagsBY.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Belgium",
@@ -241,7 +315,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "BE",
-        "flagUrl": "/public/flagsBE.png"
+        "flagUrl": "/public/flagsBE.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Belize",
@@ -255,7 +334,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "BZ",
-        "flagUrl": "/public/flagsBZ.png"
+        "flagUrl": "/public/flagsBZ.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Benin",
@@ -269,7 +353,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "BJ",
-        "flagUrl": "/public/flagsBJ.png"
+        "flagUrl": "/public/flagsBJ.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Bhutan",
@@ -283,7 +372,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "BT",
-        "flagUrl": "/public/flagsBT.png"
+        "flagUrl": "/public/flagsBT.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Bolivia",
@@ -297,7 +391,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "BO",
-        "flagUrl": "/public/flagsBO.png"
+        "flagUrl": "/public/flagsBO.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Bosnia and Herzegovina",
@@ -311,7 +410,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "BA",
-        "flagUrl": "/public/flagsBA.png"
+        "flagUrl": "/public/flagsBA.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Botswana",
@@ -325,7 +429,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "BW",
-        "flagUrl": "/public/flagsBW.png"
+        "flagUrl": "/public/flagsBW.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Brazil",
@@ -339,7 +448,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": true,
         "countryCode": "BR",
-        "flagUrl": "/public/flagsBR.png"
+        "flagUrl": "/public/flagsBR.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Brunei",
@@ -353,7 +467,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "BN",
-        "flagUrl": "/public/flagsBN.png"
+        "flagUrl": "/public/flagsBN.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Bulgaria",
@@ -367,7 +486,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": false,
         "countryCode": "BG",
-        "flagUrl": "/public/flagsBG.png"
+        "flagUrl": "/public/flagsBG.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Burkina Faso",
@@ -381,7 +505,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "BF",
-        "flagUrl": "/public/flagsBF.png"
+        "flagUrl": "/public/flagsBF.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Burundi",
@@ -395,7 +524,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "BI",
-        "flagUrl": "/public/flagsBI.png"
+        "flagUrl": "/public/flagsBI.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Cabo Verde",
@@ -409,7 +543,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "CV",
-        "flagUrl": "/public/flagsCV.png"
+        "flagUrl": "/public/flagsCV.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Cambodia",
@@ -423,7 +562,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "KH",
-        "flagUrl": "/public/flagsKH.png"
+        "flagUrl": "/public/flagsKH.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Cameroon",
@@ -437,7 +581,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "CM",
-        "flagUrl": "/public/flagsCM.png"
+        "flagUrl": "/public/flagsCM.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Canada",
@@ -451,7 +600,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "CA",
-        "flagUrl": "/public/flagsCA.png"
+        "flagUrl": "/public/flagsCA.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Central African Republic",
@@ -465,7 +619,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "CF",
-        "flagUrl": "/public/flagsCF.png"
+        "flagUrl": "/public/flagsCF.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Chad",
@@ -479,7 +638,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "TD",
-        "flagUrl": "/public/flagsTD.png"
+        "flagUrl": "/public/flagsTD.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Chile",
@@ -493,7 +657,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "CL",
-        "flagUrl": "/public/flagsCL.png"
+        "flagUrl": "/public/flagsCL.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "China",
@@ -507,7 +676,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "CN",
-        "flagUrl": "/public/flagsCN.png"
+        "flagUrl": "/public/flagsCN.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Colombia",
@@ -521,7 +695,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": true,
         "countryCode": "CO",
-        "flagUrl": "/public/flagsCO.png"
+        "flagUrl": "/public/flagsCO.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Comoros",
@@ -535,7 +714,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "KM",
-        "flagUrl": "/public/flagsKM.png"
+        "flagUrl": "/public/flagsKM.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Congo (Brazzaville)",
@@ -549,7 +733,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "CG",
-        "flagUrl": "/public/flagsCG.png"
+        "flagUrl": "/public/flagsCG.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Congo (Kinshasa)",
@@ -563,7 +752,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "CD",
-        "flagUrl": "/public/flagsCD.png"
+        "flagUrl": "/public/flagsCD.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Costa Rica",
@@ -577,7 +771,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": true,
         "countryCode": "CR",
-        "flagUrl": "/public/flagsCR.png"
+        "flagUrl": "/public/flagsCR.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Croatia",
@@ -591,7 +790,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": true,
         "countryCode": "HR",
-        "flagUrl": "/public/flagsHR.png"
+        "flagUrl": "/public/flagsHR.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Cuba",
@@ -605,7 +809,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "CU",
-        "flagUrl": "/public/flagsCU.png"
+        "flagUrl": "/public/flagsCU.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Cyprus",
@@ -619,7 +828,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "CY",
-        "flagUrl": "/public/flagsCY.png"
+        "flagUrl": "/public/flagsCY.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Czech Republic",
@@ -633,7 +847,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": false,
         "countryCode": "CZ",
-        "flagUrl": "/public/flagsCZ.png"
+        "flagUrl": "/public/flagsCZ.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Denmark",
@@ -647,7 +866,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "DK",
-        "flagUrl": "/public/flagsDK.png"
+        "flagUrl": "/public/flagsDK.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Djibouti",
@@ -661,7 +885,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "DJ",
-        "flagUrl": "/public/flagsDJ.png"
+        "flagUrl": "/public/flagsDJ.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Dominica",
@@ -675,7 +904,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "DM",
-        "flagUrl": "/public/flagsDM.png"
+        "flagUrl": "/public/flagsDM.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Dominican Republic",
@@ -689,7 +923,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "DO",
-        "flagUrl": "/public/flagsDO.png"
+        "flagUrl": "/public/flagsDO.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Ecuador",
@@ -703,7 +942,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "EC",
-        "flagUrl": "/public/flagsEC.png"
+        "flagUrl": "/public/flagsEC.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Egypt",
@@ -717,7 +961,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "EG",
-        "flagUrl": "/public/flagsEG.png"
+        "flagUrl": "/public/flagsEG.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "El Salvador",
@@ -731,7 +980,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "SV",
-        "flagUrl": "/public/flagsSV.png"
+        "flagUrl": "/public/flagsSV.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Equatorial Guinea",
@@ -745,7 +999,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "GQ",
-        "flagUrl": "/public/flagsGQ.png"
+        "flagUrl": "/public/flagsGQ.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Eritrea",
@@ -759,7 +1018,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "ER",
-        "flagUrl": "/public/flagsER.png"
+        "flagUrl": "/public/flagsER.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Estonia",
@@ -773,7 +1037,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "EE",
-        "flagUrl": "/public/flagsEE.png"
+        "flagUrl": "/public/flagsEE.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Eswatini",
@@ -787,7 +1056,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "SZ",
-        "flagUrl": "/public/flagsSZ.png"
+        "flagUrl": "/public/flagsSZ.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Ethiopia",
@@ -801,7 +1075,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "ET",
-        "flagUrl": "/public/flagsET.png"
+        "flagUrl": "/public/flagsET.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Fiji",
@@ -815,7 +1094,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "FJ",
-        "flagUrl": "/public/flagsFJ.png"
+        "flagUrl": "/public/flagsFJ.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Finland",
@@ -829,7 +1113,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "FI",
-        "flagUrl": "/public/flagsFI.png"
+        "flagUrl": "/public/flagsFI.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "France",
@@ -843,7 +1132,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "FR",
-        "flagUrl": "/public/flagsFR.png"
+        "flagUrl": "/public/flagsFR.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Gabon",
@@ -857,7 +1151,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "GA",
-        "flagUrl": "/public/flagsGA.png"
+        "flagUrl": "/public/flagsGA.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Gambia",
@@ -871,7 +1170,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "GM",
-        "flagUrl": "/public/flagsGM.png"
+        "flagUrl": "/public/flagsGM.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Georgia",
@@ -885,7 +1189,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "GE",
-        "flagUrl": "/public/flagsGE.png"
+        "flagUrl": "/public/flagsGE.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Germany",
@@ -899,7 +1208,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "DE",
-        "flagUrl": "/public/flagsDE.png"
+        "flagUrl": "/public/flagsDE.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Ghana",
@@ -913,7 +1227,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "GH",
-        "flagUrl": "/public/flagsGH.png"
+        "flagUrl": "/public/flagsGH.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Greece",
@@ -927,7 +1246,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "GR",
-        "flagUrl": "/public/flagsGR.png"
+        "flagUrl": "/public/flagsGR.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Grenada",
@@ -941,7 +1265,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "GD",
-        "flagUrl": "/public/flagsGD.png"
+        "flagUrl": "/public/flagsGD.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Guatemala",
@@ -955,7 +1284,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "GT",
-        "flagUrl": "/public/flagsGT.png"
+        "flagUrl": "/public/flagsGT.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Guinea",
@@ -969,7 +1303,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "GN",
-        "flagUrl": "/public/flagsGN.png"
+        "flagUrl": "/public/flagsGN.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Guinea-Bissau",
@@ -983,7 +1322,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "GW",
-        "flagUrl": "/public/flagsGW.png"
+        "flagUrl": "/public/flagsGW.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Guyana",
@@ -997,7 +1341,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "GY",
-        "flagUrl": "/public/flagsGY.png"
+        "flagUrl": "/public/flagsGY.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Haiti",
@@ -1011,7 +1360,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "HT",
-        "flagUrl": "/public/flagsHT.png"
+        "flagUrl": "/public/flagsHT.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Honduras",
@@ -1025,7 +1379,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "HN",
-        "flagUrl": "/public/flagsHN.png"
+        "flagUrl": "/public/flagsHN.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Hungary",
@@ -1039,7 +1398,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": true,
         "countryCode": "HU",
-        "flagUrl": "/public/flagsHU.png"
+        "flagUrl": "/public/flagsHU.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Iceland",
@@ -1053,7 +1417,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "IS",
-        "flagUrl": "/public/flagsIS.png"
+        "flagUrl": "/public/flagsIS.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "India",
@@ -1067,7 +1436,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": false,
         "countryCode": "IN",
-        "flagUrl": "/public/flagsIN.png"
+        "flagUrl": "/public/flagsIN.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Indonesia",
@@ -1081,7 +1455,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "ID",
-        "flagUrl": "/public/flagsID.png"
+        "flagUrl": "/public/flagsID.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Iran",
@@ -1095,7 +1474,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": false,
         "countryCode": "IR",
-        "flagUrl": "/public/flagsIR.png"
+        "flagUrl": "/public/flagsIR.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Iraq",
@@ -1109,7 +1493,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "IQ",
-        "flagUrl": "/public/flagsIQ.png"
+        "flagUrl": "/public/flagsIQ.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Ireland",
@@ -1123,7 +1512,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "IE",
-        "flagUrl": "/public/flagsIE.png"
+        "flagUrl": "/public/flagsIE.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Israel",
@@ -1137,7 +1531,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "IL",
-        "flagUrl": "/public/flagsIL.png"
+        "flagUrl": "/public/flagsIL.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Italy",
@@ -1151,7 +1550,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "IT",
-        "flagUrl": "/public/flagsIT.png"
+        "flagUrl": "/public/flagsIT.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Ivory Coast",
@@ -1165,7 +1569,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "CI",
-        "flagUrl": "/public/flagsCI.png"
+        "flagUrl": "/public/flagsCI.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Jamaica",
@@ -1179,7 +1588,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "JM",
-        "flagUrl": "/public/flagsJM.png"
+        "flagUrl": "/public/flagsJM.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Japan",
@@ -1193,7 +1607,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "JP",
-        "flagUrl": "/public/flagsJP.png"
+        "flagUrl": "/public/flagsJP.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Jordan",
@@ -1207,7 +1626,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "JO",
-        "flagUrl": "/public/flagsJO.png"
+        "flagUrl": "/public/flagsJO.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Kazakhstan",
@@ -1221,7 +1645,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "KZ",
-        "flagUrl": "/public/flagsKZ.png"
+        "flagUrl": "/public/flagsKZ.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Kenya",
@@ -1235,7 +1664,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "KE",
-        "flagUrl": "/public/flagsKE.png"
+        "flagUrl": "/public/flagsKE.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Kiribati",
@@ -1249,7 +1683,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "KI",
-        "flagUrl": "/public/flagsKI.png"
+        "flagUrl": "/public/flagsKI.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Kuwait",
@@ -1263,7 +1702,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "KW",
-        "flagUrl": "/public/flagsKW.png"
+        "flagUrl": "/public/flagsKW.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Kyrgyzstan",
@@ -1277,7 +1721,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "KG",
-        "flagUrl": "/public/flagsKG.png"
+        "flagUrl": "/public/flagsKG.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Laos",
@@ -1291,7 +1740,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "LA",
-        "flagUrl": "/public/flagsLA.png"
+        "flagUrl": "/public/flagsLA.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Latvia",
@@ -1305,7 +1759,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "LV",
-        "flagUrl": "/public/flagsLV.png"
+        "flagUrl": "/public/flagsLV.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Lebanon",
@@ -1319,7 +1778,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "LB",
-        "flagUrl": "/public/flagsLB.png"
+        "flagUrl": "/public/flagsLB.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Lesotho",
@@ -1333,7 +1797,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "LS",
-        "flagUrl": "/public/flagsLS.png"
+        "flagUrl": "/public/flagsLS.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Liberia",
@@ -1347,7 +1816,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "LR",
-        "flagUrl": "/public/flagsLR.png"
+        "flagUrl": "/public/flagsLR.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Libya",
@@ -1361,7 +1835,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "LY",
-        "flagUrl": "/public/flagsLY.png"
+        "flagUrl": "/public/flagsLY.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Liechtenstein",
@@ -1375,7 +1854,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "LI",
-        "flagUrl": "/public/flagsLI.png"
+        "flagUrl": "/public/flagsLI.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Lithuania",
@@ -1389,7 +1873,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "LT",
-        "flagUrl": "/public/flagsLT.png"
+        "flagUrl": "/public/flagsLT.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Luxembourg",
@@ -1403,7 +1892,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "LU",
-        "flagUrl": "/public/flagsLU.png"
+        "flagUrl": "/public/flagsLU.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Madagascar",
@@ -1417,7 +1911,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "MG",
-        "flagUrl": "/public/flagsMG.png"
+        "flagUrl": "/public/flagsMG.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Malawi",
@@ -1431,7 +1930,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "MW",
-        "flagUrl": "/public/flagsMW.png"
+        "flagUrl": "/public/flagsMW.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Malaysia",
@@ -1445,7 +1949,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": true,
         "countryCode": "MY",
-        "flagUrl": "/public/flagsMY.png"
+        "flagUrl": "/public/flagsMY.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Maldives",
@@ -1459,7 +1968,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "MV",
-        "flagUrl": "/public/flagsMV.png"
+        "flagUrl": "/public/flagsMV.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Mali",
@@ -1473,7 +1987,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "ML",
-        "flagUrl": "/public/flagsML.png"
+        "flagUrl": "/public/flagsML.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Malta",
@@ -1487,7 +2006,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "MT",
-        "flagUrl": "/public/flagsMT.png"
+        "flagUrl": "/public/flagsMT.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Marshall Islands",
@@ -1501,7 +2025,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "MH",
-        "flagUrl": "/public/flagsMH.png"
+        "flagUrl": "/public/flagsMH.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Mauritania",
@@ -1515,7 +2044,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "MR",
-        "flagUrl": "/public/flagsMR.png"
+        "flagUrl": "/public/flagsMR.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Mauritius",
@@ -1529,7 +2063,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "MU",
-        "flagUrl": "/public/flagsMU.png"
+        "flagUrl": "/public/flagsMU.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Mexico",
@@ -1543,7 +2082,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": true,
         "countryCode": "MX",
-        "flagUrl": "/public/flagsMX.png"
+        "flagUrl": "/public/flagsMX.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Micronesia",
@@ -1557,7 +2101,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "FM",
-        "flagUrl": "/public/flagsFM.png"
+        "flagUrl": "/public/flagsFM.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Moldova",
@@ -1571,7 +2120,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "MD",
-        "flagUrl": "/public/flagsMD.png"
+        "flagUrl": "/public/flagsMD.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Monaco",
@@ -1585,7 +2139,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "MC",
-        "flagUrl": "/public/flagsMC.png"
+        "flagUrl": "/public/flagsMC.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Mongolia",
@@ -1599,7 +2158,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "MN",
-        "flagUrl": "/public/flagsMN.png"
+        "flagUrl": "/public/flagsMN.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Montenegro",
@@ -1613,7 +2177,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "ME",
-        "flagUrl": "/public/flagsME.png"
+        "flagUrl": "/public/flagsME.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Morocco",
@@ -1627,7 +2196,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "MA",
-        "flagUrl": "/public/flagsMA.png"
+        "flagUrl": "/public/flagsMA.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Mozambique",
@@ -1641,7 +2215,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "MZ",
-        "flagUrl": "/public/flagsMZ.png"
+        "flagUrl": "/public/flagsMZ.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Myanmar",
@@ -1655,7 +2234,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "MM",
-        "flagUrl": "/public/flagsMM.png"
+        "flagUrl": "/public/flagsMM.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Namibia",
@@ -1669,7 +2253,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "NA",
-        "flagUrl": "/public/flagsNA.png"
+        "flagUrl": "/public/flagsNA.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Nauru",
@@ -1683,7 +2272,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "NR",
-        "flagUrl": "/public/flagsNR.png"
+        "flagUrl": "/public/flagsNR.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Nepal",
@@ -1697,7 +2291,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "NP",
-        "flagUrl": "/public/flagsNP.png"
+        "flagUrl": "/public/flagsNP.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Netherlands",
@@ -1711,7 +2310,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "NL",
-        "flagUrl": "/public/flagsNL.png"
+        "flagUrl": "/public/flagsNL.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "New Zealand",
@@ -1725,7 +2329,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "NZ",
-        "flagUrl": "/public/flagsNZ.png"
+        "flagUrl": "/public/flagsNZ.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Nicaragua",
@@ -1739,7 +2348,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "NI",
-        "flagUrl": "/public/flagsNI.png"
+        "flagUrl": "/public/flagsNI.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Niger",
@@ -1753,7 +2367,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "NE",
-        "flagUrl": "/public/flagsNE.png"
+        "flagUrl": "/public/flagsNE.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Nigeria",
@@ -1767,7 +2386,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "NG",
-        "flagUrl": "/public/flagsNG.png"
+        "flagUrl": "/public/flagsNG.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "North Korea",
@@ -1781,7 +2405,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "KP",
-        "flagUrl": "/public/flagsKP.png"
+        "flagUrl": "/public/flagsKP.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "North Macedonia",
@@ -1795,7 +2424,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "MK",
-        "flagUrl": "/public/flagsMK.png"
+        "flagUrl": "/public/flagsMK.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Norway",
@@ -1809,7 +2443,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "NO",
-        "flagUrl": "/public/flagsNO.png"
+        "flagUrl": "/public/flagsNO.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Oman",
@@ -1823,7 +2462,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "OM",
-        "flagUrl": "/public/flagsOM.png"
+        "flagUrl": "/public/flagsOM.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Pakistan",
@@ -1837,7 +2481,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "PK",
-        "flagUrl": "/public/flagsPK.png"
+        "flagUrl": "/public/flagsPK.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Palau",
@@ -1851,7 +2500,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "PW",
-        "flagUrl": "/public/flagsPW.png"
+        "flagUrl": "/public/flagsPW.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Palestine",
@@ -1865,7 +2519,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "PS",
-        "flagUrl": "/public/flagsPS.png"
+        "flagUrl": "/public/flagsPS.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Panama",
@@ -1879,7 +2538,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "PA",
-        "flagUrl": "/public/flagsPA.png"
+        "flagUrl": "/public/flagsPA.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Papua New Guinea",
@@ -1893,7 +2557,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "PG",
-        "flagUrl": "/public/flagsPG.png"
+        "flagUrl": "/public/flagsPG.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Paraguay",
@@ -1907,7 +2576,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "PY",
-        "flagUrl": "/public/flagsPY.png"
+        "flagUrl": "/public/flagsPY.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Peru",
@@ -1921,7 +2595,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "PE",
-        "flagUrl": "/public/flagsPE.png"
+        "flagUrl": "/public/flagsPE.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Philippines",
@@ -1935,7 +2614,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": true,
         "countryCode": "PH",
-        "flagUrl": "/public/flagsPH.png"
+        "flagUrl": "/public/flagsPH.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Poland",
@@ -1949,7 +2633,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": true,
         "countryCode": "PL",
-        "flagUrl": "/public/flagsPL.png"
+        "flagUrl": "/public/flagsPL.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Portugal",
@@ -1963,7 +2652,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "PT",
-        "flagUrl": "/public/flagsPT.png"
+        "flagUrl": "/public/flagsPT.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Qatar",
@@ -1977,7 +2671,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "QA",
-        "flagUrl": "/public/flagsQA.png"
+        "flagUrl": "/public/flagsQA.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Romania",
@@ -1991,7 +2690,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": true,
         "countryCode": "RO",
-        "flagUrl": "/public/flagsRO.png"
+        "flagUrl": "/public/flagsRO.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Russia",
@@ -2005,7 +2709,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "RU",
-        "flagUrl": "/public/flagsRU.png"
+        "flagUrl": "/public/flagsRU.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Rwanda",
@@ -2019,7 +2728,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "RW",
-        "flagUrl": "/public/flagsRW.png"
+        "flagUrl": "/public/flagsRW.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Saint Kitts and Nevis",
@@ -2033,7 +2747,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "KN",
-        "flagUrl": "/public/flagsKN.png"
+        "flagUrl": "/public/flagsKN.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Saint Lucia",
@@ -2047,7 +2766,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "LC",
-        "flagUrl": "/public/flagsLC.png"
+        "flagUrl": "/public/flagsLC.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Saint Vincent and the Grenadines",
@@ -2061,7 +2785,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "VC",
-        "flagUrl": "/public/flagsVC.png"
+        "flagUrl": "/public/flagsVC.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Samoa",
@@ -2075,7 +2804,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "WS",
-        "flagUrl": "/public/flagsWS.png"
+        "flagUrl": "/public/flagsWS.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "San Marino",
@@ -2089,7 +2823,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "SM",
-        "flagUrl": "/public/flagsSM.png"
+        "flagUrl": "/public/flagsSM.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Sao Tome and Principe",
@@ -2103,7 +2842,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "ST",
-        "flagUrl": "/public/flagsST.png"
+        "flagUrl": "/public/flagsST.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Saudi Arabia",
@@ -2117,7 +2861,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "SA",
-        "flagUrl": "/public/flagsSA.png"
+        "flagUrl": "/public/flagsSA.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Senegal",
@@ -2131,7 +2880,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "SN",
-        "flagUrl": "/public/flagsSN.png"
+        "flagUrl": "/public/flagsSN.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Serbia",
@@ -2145,7 +2899,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "RS",
-        "flagUrl": "/public/flagsRS.png"
+        "flagUrl": "/public/flagsRS.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Seychelles",
@@ -2159,7 +2918,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "SC",
-        "flagUrl": "/public/flagsSC.png"
+        "flagUrl": "/public/flagsSC.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Sierra Leone",
@@ -2173,7 +2937,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "SL",
-        "flagUrl": "/public/flagsSL.png"
+        "flagUrl": "/public/flagsSL.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Singapore",
@@ -2187,7 +2956,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "SG",
-        "flagUrl": "/public/flagsSG.png"
+        "flagUrl": "/public/flagsSG.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Slovakia",
@@ -2201,7 +2975,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "SK",
-        "flagUrl": "/public/flagsSK.png"
+        "flagUrl": "/public/flagsSK.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Slovenia",
@@ -2215,7 +2994,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "SI",
-        "flagUrl": "/public/flagsSI.png"
+        "flagUrl": "/public/flagsSI.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Solomon Islands",
@@ -2229,7 +3013,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "SB",
-        "flagUrl": "/public/flagsSB.png"
+        "flagUrl": "/public/flagsSB.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Somalia",
@@ -2243,7 +3032,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "SO",
-        "flagUrl": "/public/flagsSO.png"
+        "flagUrl": "/public/flagsSO.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "South Africa",
@@ -2257,7 +3051,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "ZA",
-        "flagUrl": "/public/flagsZA.png"
+        "flagUrl": "/public/flagsZA.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "South Korea",
@@ -2271,7 +3070,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "KR",
-        "flagUrl": "/public/flagsKR.png"
+        "flagUrl": "/public/flagsKR.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "South Sudan",
@@ -2285,7 +3089,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "SS",
-        "flagUrl": "/public/flagsSS.png"
+        "flagUrl": "/public/flagsSS.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Spain",
@@ -2299,7 +3108,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": true,
         "countryCode": "ES",
-        "flagUrl": "/public/flagsES.png"
+        "flagUrl": "/public/flagsES.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Sri Lanka",
@@ -2313,7 +3127,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "LK",
-        "flagUrl": "/public/flagsLK.png"
+        "flagUrl": "/public/flagsLK.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Sudan",
@@ -2327,7 +3146,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "SD",
-        "flagUrl": "/public/flagsSD.png"
+        "flagUrl": "/public/flagsSD.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Suriname",
@@ -2341,7 +3165,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "SR",
-        "flagUrl": "/public/flagsSR.png"
+        "flagUrl": "/public/flagsSR.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Sweden",
@@ -2355,7 +3184,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "SE",
-        "flagUrl": "/public/flagsSE.png"
+        "flagUrl": "/public/flagsSE.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Switzerland",
@@ -2369,7 +3203,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "CH",
-        "flagUrl": "/public/flagsCH.png"
+        "flagUrl": "/public/flagsCH.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Syria",
@@ -2383,7 +3222,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "SY",
-        "flagUrl": "/public/flagsSY.png"
+        "flagUrl": "/public/flagsSY.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Taiwan",
@@ -2397,7 +3241,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "TW",
-        "flagUrl": "/public/flagsTW.png"
+        "flagUrl": "/public/flagsTW.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Tajikistan",
@@ -2411,7 +3260,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "TJ",
-        "flagUrl": "/public/flagsTJ.png"
+        "flagUrl": "/public/flagsTJ.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Tanzania",
@@ -2425,7 +3279,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "TZ",
-        "flagUrl": "/public/flagsTZ.png"
+        "flagUrl": "/public/flagsTZ.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Thailand",
@@ -2439,7 +3298,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": true,
         "countryCode": "TH",
-        "flagUrl": "/public/flagsTH.png"
+        "flagUrl": "/public/flagsTH.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Timor-Leste",
@@ -2453,7 +3317,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "TL",
-        "flagUrl": "/public/flagsTL.png"
+        "flagUrl": "/public/flagsTL.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Togo",
@@ -2467,7 +3336,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "TG",
-        "flagUrl": "/public/flagsTG.png"
+        "flagUrl": "/public/flagsTG.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Tonga",
@@ -2481,7 +3355,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "TO",
-        "flagUrl": "/public/flagsTO.png"
+        "flagUrl": "/public/flagsTO.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Trinidad and Tobago",
@@ -2495,7 +3374,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "TT",
-        "flagUrl": "/public/flagsTT.png"
+        "flagUrl": "/public/flagsTT.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Tunisia",
@@ -2509,7 +3393,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "TN",
-        "flagUrl": "/public/flagsTN.png"
+        "flagUrl": "/public/flagsTN.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Turkey",
@@ -2523,7 +3412,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": true,
         "nomadVisa": false,
         "countryCode": "TR",
-        "flagUrl": "/public/flagsTR.png"
+        "flagUrl": "/public/flagsTR.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Turkmenistan",
@@ -2537,7 +3431,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "TM",
-        "flagUrl": "/public/flagsTM.png"
+        "flagUrl": "/public/flagsTM.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Tuvalu",
@@ -2551,7 +3450,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "TV",
-        "flagUrl": "/public/flagsTV.png"
+        "flagUrl": "/public/flagsTV.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Uganda",
@@ -2565,7 +3469,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "UG",
-        "flagUrl": "/public/flagsUG.png"
+        "flagUrl": "/public/flagsUG.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Ukraine",
@@ -2579,7 +3488,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "UA",
-        "flagUrl": "/public/flagsUA.png"
+        "flagUrl": "/public/flagsUA.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "United Arab Emirates",
@@ -2593,7 +3507,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "AE",
-        "flagUrl": "/public/flagsAE.png"
+        "flagUrl": "/public/flagsAE.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "United Kingdom",
@@ -2607,7 +3526,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "GB",
-        "flagUrl": "/public/flagsGB.png"
+        "flagUrl": "/public/flagsGB.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "United States",
@@ -2621,7 +3545,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "US",
-        "flagUrl": "/public/flagsUS.png"
+        "flagUrl": "/public/flagsUS.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Uruguay",
@@ -2635,7 +3564,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "UY",
-        "flagUrl": "/public/flagsUY.png"
+        "flagUrl": "/public/flagsUY.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Uzbekistan",
@@ -2649,7 +3583,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "UZ",
-        "flagUrl": "/public/flagsUZ.png"
+        "flagUrl": "/public/flagsUZ.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Vanuatu",
@@ -2663,7 +3602,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "VU",
-        "flagUrl": "/public/flagsVU.png"
+        "flagUrl": "/public/flagsVU.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Vatican City",
@@ -2677,7 +3621,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "VA",
-        "flagUrl": "/public/flagsVA.png"
+        "flagUrl": "/public/flagsVA.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Venezuela",
@@ -2691,7 +3640,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "VE",
-        "flagUrl": "/public/flagsVE.png"
+        "flagUrl": "/public/flagsVE.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Vietnam",
@@ -2705,7 +3659,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": true,
         "countryCode": "VN",
-        "flagUrl": "/public/flagsVN.png"
+        "flagUrl": "/public/flagsVN.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Yemen",
@@ -2719,7 +3678,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "YE",
-        "flagUrl": "/public/flagsYE.png"
+        "flagUrl": "/public/flagsYE.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Zambia",
@@ -2733,7 +3697,12 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "ZM",
-        "flagUrl": "/public/flagsZM.png"
+        "flagUrl": "/public/flagsZM.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     },
     {
         "name": "Zimbabwe",
@@ -2747,29 +3716,11 @@ const goldObject: Country[] = [
         "affordableHealthCare": false,
         "nomadVisa": false,
         "countryCode": "ZW",
-        "flagUrl": "/public/flagsZW.png"
+        "flagUrl": "/public/flagsZW.png",
+        "affiliateLinks": {
+            "flights": "https://expedia.com/affiliate/g7BB4rI",
+            "hotels": "https://expedia.com/affiliate/MMigqIa",
+            "tours": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
+        }
     }
-].map(country => ({
-    ...country, // Keep existing properties
-    links: countryLinks[country.name] || {} // Add links dynamically
-}));
-
-
-
-
-
-// const affiliateLinks = {
-//     "flights": "https://expedia.com/affiliate/g7BB4rI",
-//     "hotels": "https://expedia.com/affiliate/MMigqIa",
-//     "attractions": "https://www.viator.com/?pid=P00249582&mcid=42383&medium=link"
-// };
-
-
-// goldObject.forEach(country => {
-//     country.affiliateLinks = affiliateLinks;
-// });
-
-console.log(goldObject);
-
-
-export default goldObject;
+]

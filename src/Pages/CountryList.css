@@ -1,0 +1,46 @@
+.indexBar {
+    /* background-color: red; */
+    /* border: solid 2px black; */
+    /* transition: transform 0.3s ease-in-out; */
+    /* transition: height 0.3s ease-in-out; */
+    transition: height 0.3s ease-out;
+
+    height: 71.5px;
+    justify-content: space-between;
+}
+
+.indexBar:hover {
+    /* transform: scaleY(1.5);   affects contents inside*/
+    height: 95px;
+    /* background-color: var(--color-gold); */
+}
+
+.camera-icon {
+    margin-right: 20px;
+}
+
+/* Darkens the image slightly */
+/* a img:hover {
+    filter: brightness(0.8); 
+    transition: filter 0.3s ease;
+} */
+
+a img {
+    transition: opacity 0.3s ease;
+}
+
+a:hover img {
+    opacity: 0.6; /* Slight transparency effect */
+}
+
+#country-title {
+    color: var(--color-4);
+    font-family: Playpen Sans, sans-serif;
+    font-size: 20px;
+    /* padding: 0 100px; */
+    min-width: 100px;
+    max-width: 100px;
+    margin-right: none;
+    padding-right: none;
+    
+}

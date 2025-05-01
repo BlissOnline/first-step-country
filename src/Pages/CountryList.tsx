@@ -1,5 +1,6 @@
 import React, { useEffect, useState} from 'react';
-import { Country } from '../types';
+import { Country, countryLinks } from '../types';
+import './CountryList.css';
 
 // Create a map of country codes to flag images
 const flagMap: { [key: string]: () => Promise<{ default: string }> } = {
@@ -231,17 +232,27 @@ const CountryList: React.FC<{ countries: Country[] }> = ({ countries }) => {
         };
         loadFlags();
     }, []);
+
+    // ✅ Merge affiliate links into countries dynamically
+    const affiliateCountries = countries.map(country => ({
+        ...country,
+        affiliateLinks: countryLinks[country.name] || { flights: [], hotels: [], attractions: [] }
+    }));
+
     return (
         <div>
-            {countries.map((country, index) => (
-                <div  
+            {affiliateCountries.map((country, index) => (
+                <div
+                    className='indexBar'  
                     key={index} 
                     style={{ 
                         backgroundColor: index % 2 === 0 ? '#f5d7b2' : '#f7e3c6', 
                         padding: '10px', 
                         display: 'flex', 
                         alignItems: 'center'
-                }}>
+                    }}>
+         
+
                     {country.countryCode && flagMap[country.countryCode] ? (
                         <img 
                             src={flagUrls[country.countryCode]}
@@ -251,7 +262,35 @@ const CountryList: React.FC<{ countries: Country[] }> = ({ countries }) => {
                     ) : (
                         <span>No flag available for</span> 
                     )} 
-                    <span>{country.name}</span>
+
+                    <span id='country-title'>{country.name}</span>
+
+
+                    {/* Dynamically assign affiliate links */}
+                    {/* ✅ Dynamically assign affiliate links */}
+                    {country.affiliateLinks && (
+                        <>
+                            {country.affiliateLinks?.flights?.length && (
+                                <a href={country.affiliateLinks.flights[0]} target="_blank" rel="nofollow noopener">
+                                    <img src="/src/assets/icons/airplane-svg.svg" alt="Flights Affiliate Link" width="50" height="50" />
+                                </a>
+                            )}
+
+                            {country.affiliateLinks?.hotels?.length && (
+                                <a href={country.affiliateLinks.hotels[0]} target="_blank" rel="nofollow noopener">
+                                    <img src="/src/assets/icons/hotel-svg.svg" alt="Hotels Affiliate Link" width="40" height="40" />
+                                </a>
+                            )}
+
+                            {country.affiliateLinks?.attractions?.length && (
+                                <a href={country.affiliateLinks.attractions[0]} target="_blank" rel="nofollow noopener">
+                                    <img src="/src/assets/icons/camera-svg.svg" alt="Tours Affiliate Link" width="38" height="38" className='camera-icon'/>
+                                </a>
+                            )}
+
+                        </>
+                    )}
+
                 </div>
             ))}
         </div>

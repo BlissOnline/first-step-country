@@ -13,6 +13,11 @@ export interface Country {
     affordableHealthCare: boolean;
     nomadVisa: boolean;        
     flagUrl?: string; //addition
+    affiliateLinks?: { // Addition for affiliate links
+        flights: string;
+        hotels: string;
+        attractions: string;
+    };
 } 
 
 export interface CountryCodesListInt {
@@ -20,3 +25,18 @@ export interface CountryCodesListInt {
     countryCode: string;
 } 
 
+// ✅ Define the type of countryLinks to allow indexing with a string
+export type CountryLinks = {
+    [key: string]: {
+      flights?: string[] | null;
+      hotels?: string[] | null;
+      attractions?: string[] | null;
+    };
+  };
+  
+// ✅ Import JSON file and apply type assertion
+import countryLinksRaw from './assets/data/countryLinks.json';
+
+export const countryLinks: CountryLinks = countryLinksRaw as CountryLinks;
+
+//   const typedCountryLinks: CountryLinks = countryLinks;
