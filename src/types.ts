@@ -28,9 +28,9 @@ export interface CountryCodesListInt {
 // ✅ Define the type of countryLinks to allow indexing with a string
 export type CountryLinks = {
     [key: string]: {
-      flights?: string[] | null;
-      hotels?: string[] | null;
-      attractions?: string[] | null;
+      flights?: string | null;
+      hotels?: string | null;
+      attractions?: string | null;
     };
   };
   

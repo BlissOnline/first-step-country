@@ -1,0 +1,2101 @@
+{
+    "Afghanistan": {
+        "flights": null,
+        "hotels": null,
+        "attractions": null
+    },
+    "Albania": {
+        "flights": [
+            "https://expedia.com/affiliate/tW45tbN"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/d03F8Ad"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Albania/d4471?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Algeria": {
+        "flights": [
+            "https://expedia.com/affiliate/iYJXEwU"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/PMxXd7x"
+        ],
+        "attractions": [
+            "https://www.viator.com/Algeria/d21801?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+
+    "Andorra": {
+        "flights": [
+            "https://expedia.com/affiliate/VEg8KhZ"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/nkkxOpb"
+        ],
+        "attractions": [
+            "https://www.viator.com/Andorra/d21795-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Angola": {
+        "flights": [
+            "https://expedia.com/affiliate/wxgFP7p"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/zTxKqkG"
+        ],
+        "attractions": [
+            "https://www.viator.com/Angola/d21471-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Antigua and Barbuda": {
+        "flights": [
+            "https://expedia.com/affiliate/K03M9wE"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/fE3E6Tz"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Antigua/d22046?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Argentina": {
+        "flights": [
+            "https://expedia.com/affiliate/ILwwTSU"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/aIALG0h"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Argentina/d78?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Armenia": {
+        "flights": [
+            "https://expedia.com/affiliate/KlpW0YR"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/sHp9r17"
+        ],
+        "attractions": [
+            "https://www.viator.com/Armenia/d21802?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Australia": {
+        "flights": [
+            "https://expedia.com/affiliate/VD6TEmy"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/1Fu79K8"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Australia/d22?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Austria": {
+        "flights": [
+            "https://expedia.com/affiliate/dvVivmn"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/O1vD11v"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Austria/d44?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Azerbaijan": {
+        "flights": [
+            "https://expedia.com/affiliate/yqmzzah"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/ca0I5Yd"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Azerbaijan/d22315?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Bahamas": {
+        "flights": [
+            "https://expedia.com/affiliate/tmZnCpQ"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/EuCPBNq"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Bahamas/d29?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Bahrain": {
+        "flights": [
+            "https://expedia.com/affiliate/ZD84zUp"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/FMS9Tng"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Bahrain/d4458?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Bangladesh": {
+        "flights": [
+            "https://expedia.com/affiliate/nzlvh9P"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/F8uMQbC"
+        ],
+        "attractions": [
+            "https://www.viator.com/Bangladesh/d21768?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Barbados": {
+        "flights": [
+            "https://expedia.com/affiliate/1aGLHSp"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/RVvTJvd"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Barbados/d30?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Belarus": {
+        "flights": [
+            "https://expedia.com/affiliate/K3YN8Qg"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/4GrjMqi"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g294447-Activities-Belarus.html"
+        ]
+    },
+    "Belgium": {
+        "flights": [
+            "https://expedia.com/affiliate/RlU9tWP"
+        ],
+        "hotels": [
+            "https://www.expedia.com/Destinations-In-Belgium.d17.Hotel-Destinations"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Belgium/d45?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Belize": {
+        "flights": [
+            "https://expedia.com/affiliate/Kf29HYz"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/t8Y2jWz"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Belize/d746?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Benin": {
+        "flights": [
+            "https://expedia.com/affiliate/3gzmNXp"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/6Qlrwp2"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Benin/d4444-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Bhutan": {
+        "flights": [
+            "https://expedia.com/affiliate/Q4vwthJ"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/h6PlO3A"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-HK/Bhutan/d21472-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Bolivia": {
+        "flights": [
+            "https://expedia.com/affiliate/gVhx4LF"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/HRED9l7"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Bolivia/d5026?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Bosnia and Herzegovina": {
+        "flights": [
+            "https://expedia.com/affiliate/u6hb8wW"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/ns3fUQl"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Bosnia-and-Herzegovina/d22158?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Botswana": {
+        "flights": [
+            "https://expedia.com/affiliate/zFRRTGK"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/nMlElXg"
+        ],
+        "attractions": [
+            "https://www.viator.com/Botswana/d780?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Brazil": {
+        "flights": [
+            "https://expedia.com/affiliate/R7dcsdK"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/yyS9gfp"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Brazil/d79?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Brunei": {
+        "flights": [
+            "https://expedia.com/affiliate/RCGWrD1"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/1rfPDBy"
+        ],
+        "attractions": [
+            "https://www.viator.com/Brunei/d4616?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Bulgaria": {
+        "flights": [
+            "https://expedia.com/affiliate/sKB90fE"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/INmxQfE"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Bulgaria/d46?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Burkina Faso": {
+        "flights": [
+            "https://expedia.com/affiliate/ZXmfezI"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/fxWxWhJ"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g293768-Activities-Burkina_Faso.html"
+        ]
+    },
+    "Burundi": {
+        "flights": [
+            "https://expedia.com/affiliate/Ci5fsAk"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/isk7siW"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Burundi/d21806-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Cabo Verde": {
+        "flights": [
+            "https://expedia.com/affiliate/0YUHMiV"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/S1Nfvnl"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Cape-Verde/d4461?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Cambodia": {
+        "flights": [
+            "https://expedia.com/affiliate/L9QukkT"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/rqT6P24"
+        ],
+        "attractions": [
+            "https://www.viator.com/Cambodia/d12?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Cameroon": {
+        "flights": [
+            "https://expedia.com/affiliate/DJ8Utl1"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/dy7HsI5"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Cameroon/d21885-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Canada": {
+        "flights": [
+            "https://expedia.com/affiliate/90yVbof"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/GTkKRpg"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Canada/d75?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Central African Republic": {
+        "flights": null,
+        "hotels": null,
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g293776-Activities-Central_African_Republic.html"
+        ]
+    },
+    "Chad": {
+        "flights": [
+            "https://expedia.com/affiliate/mjnhkIB"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/sVbIWUD"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Chad/d22159-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Chile": {
+        "flights": [
+            "https://expedia.com/affiliate/Zg1Tvmk"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/39spNEY"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Chile/d80?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "China": {
+        "flights": [
+            "https://expedia.com/affiliate/jlJv0XI"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/jEKNa62"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/China/d13?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Colombia": {
+        "flights": [
+            "https://expedia.com/affiliate/6JaXfdz"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/wIxSfKP"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Colombia/d4497?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Comoros": {
+        "flights": [
+            "https://expedia.com/affiliate/av9e5fD"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/3DZOVLq"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Comoros/d21935-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Democratic Republic of the Congo": {
+        "flights": [
+            "https://expedia.com/affiliate/5Kv6EjP"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/ekiw8zr"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Democratic-Republic-of-Congo/d21933-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Republic of the Congo": {
+        "flights": [
+            "https://expedia.com/affiliate/EtBdTpV"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/YMd1M6G"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.com/Attractions-g294189-Activities-Brazzaville.html"
+        ]
+    },
+    "Costa Rica": {
+        "flights": [
+            "https://expedia.com/affiliate/8l86upe"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/W3bkFoj"
+        ],
+        "attractions": [
+            "https://www.viator.com/Costa-Rica/d747?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Côte d’Ivoire": {
+        "flights": [
+            "https://expedia.com/affiliate/PrrcYAE"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/tfG0DZb"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Abidjan/d26753-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Croatia": {
+        "flights": [
+            "https://expedia.com/affiliate/MGGOWBq"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/5gygGde"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Croatia/d730?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Cuba": {
+        "flights": null,
+        "hotels": null,
+        "attractions": [
+            "https://www.tripadvisor.com/Attractions-g147270-Activities-Cuba.html"
+        ]
+    },
+    "Cyprus": {
+        "flights": [
+            "https://expedia.com/affiliate/j4DX0MF"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/C4OC50s"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Cyprus/d47?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Czech Republic": {
+        "flights": [
+            "https://expedia.com/affiliate/kYyxfXM"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/yDdWHUB"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Czech-Republic/d48?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Denmark": {
+        "flights": [
+            "https://expedia.com/affiliate/A3Sf6xJ"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/c3V1mxR"
+        ],
+        "attractions": [
+            "https://www.viator.com/Denmark/d49?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Djibouti": {
+        "flights": [
+            "https://expedia.com/affiliate/qoeKEaY"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/HTMe2AM"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Djibouti/d4580-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Dominica": {
+        "flights": [
+            "https://expedia.com/affiliate/vDiObns"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/JG0H9vp"
+        ],
+        "attractions": [
+            "https://www.viator.com/Dominica/d814?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Dominican Republic": {
+        "flights": [
+            "https://expedia.com/affiliate/RP6IuX9"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/wpqQYhx"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Dominican-Republic/d32?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "East Timor (Timor-Leste)": {
+        "flights": [
+            "https://expedia.com/affiliate/9LL0QD6"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/dSkkbeT"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/East-Timor-tours/Tours-and-Sightseeing/d27539-g12?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Ecuador": {
+        "flights": [
+            "https://expedia.com/affiliate/nmU1BkW"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/togw1lT"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Ecuador/d727?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Egypt": {
+        "flights": [
+            "https://expedia.com/affiliate/1yXouvF"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/JJkKe3X"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Egypt/d722?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "El Salvador": {
+        "flights": [
+            "https://expedia.com/affiliate/AIOwlQo"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/lM1qcZ6"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/El-Salvador/d5069?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Equatorial Guinea": {
+        "flights": [
+            "https://expedia.com/affiliate/gyiellf"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/y0Bs1Ow"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Equatorial-Guinea/d21890-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Eritrea": {
+        "flights": [
+            "https://expedia.com/affiliate/kuQCMJF"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/i5zZWsQ"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Eritrea/d4583-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Estonia": {
+        "flights": [
+            "https://expedia.com/affiliate/aBf4l7r"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/44Cpfh9"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Estonia/d4146?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Eswatini (Swaziland)": {
+        "flights": [
+            "https://expedia.com/affiliate/ihLztj5"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/EVq7eju"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Eswatini-Swaziland/d21916-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Ethiopia": {
+        "flights": [
+            "https://expedia.com/affiliate/cgeRPKf"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/wahXKsw"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Ethiopia/d21891?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Fiji": {
+        "flights": [
+            "https://expedia.com/affiliate/HX9KcaC"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/gOC4wjb"
+        ],
+        "attractions": [
+            "https://www.viator.com/Fiji/d23?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Finland": {
+        "flights": [
+            "https://expedia.com/affiliate/wDUmeOD"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/SkJAsUf"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Finland/d50?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "France": {
+        "flights": [
+            "https://expedia.com/affiliate/VQfc2e5"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/WZ93TFk"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/France/d51?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Gabon": {
+        "flights": [
+            "https://expedia.com/affiliate/4mmchHr"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/BHTTZkx"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Gabon-tours/Tours-and-Sightseeing/d21899-g12?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "The Gambia": {
+        "flights": [
+            "https://expedia.com/affiliate/g7ngc9U"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/MPykTsV"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Gambia/d22232?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Georgia": {
+        "flights": [
+            "https://expedia.com/affiliate/fQkP781"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/zu0C7dG"
+        ],
+        "attractions": [
+            "https://www.viator.com/Georgia/d21901?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Germany": {
+        "flights": [
+            "https://expedia.com/affiliate/e0ZcU76"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/a1TqgIz"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Germany/d52?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Ghana": {
+        "flights": [
+            "https://expedia.com/affiliate/J1H3FVS"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/0koNYC4"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Ghana/d4439?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Greece": {
+        "flights": [
+            "https://expedia.com/affiliate/4bI2EYr"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/bC6CFOw"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Greece/d53?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Grenada": {
+        "flights": [
+            "https://expedia.com/affiliate/kh0MS2k"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/xvtQW1N"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Grenada/d967?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Guatemala": {
+        "flights": [
+            "https://expedia.com/affiliate/hms4pIC"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/1kI5OJk"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Guatemala/d748?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Guinea": {
+        "flights": [
+            "https://expedia.com/affiliate/EuSemKX"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/7jPkQHo"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g293798-Activities-Guinea.html"
+        ]
+    },
+    "Guinea-Bissau": {
+        "flights": [
+            "https://expedia.com/affiliate/MLYpKdL"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/x4qsYoM"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g293800-Activities-Guinea_Bissau.html"
+        ]
+    },
+    "Guyana": {
+        "flights": [
+            "https://expedia.com/affiliate/u6zKetA"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/h7L0hZX"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Guyana/d22314-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Haiti": {
+        "flights": [
+            "https://expedia.com/affiliate/DFclKg5"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/bmUqHwy"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Haiti/d4324?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Honduras": {
+        "flights": [
+            "https://expedia.com/affiliate/ifbyeo9"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/Z9XTYvq"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Honduras/d4131?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Hungary": {
+        "flights": [
+            "https://expedia.com/affiliate/zDkX916"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/vQq7fJN"
+        ],
+        "attractions": [
+            "https://www.viator.com/Hungary/d54?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Iceland": {
+        "flights": [
+            "https://expedia.com/affiliate/2wEC8Wr"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/EDL53yI"
+        ],
+        "attractions": [
+            "https://www.viator.com/Iceland/d55?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "India": {
+        "flights": [
+            "https://expedia.com/affiliate/oNhTW1H"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/ro7fu6Y"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/India/d723?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Indonesia": {
+        "flights": [
+            "https://expedia.com/affiliate/9qNSfwR"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/VoqwLbt"
+        ],
+        "attractions": [
+            "https://www.viator.com/Indonesia/d15?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Iran": {
+        "flights": null,
+        "hotels": null,
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g293998-Activities-Iran.html"
+        ]
+    },
+    "Iraq": {
+        "flights": null,
+        "hotels": null,
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g294000-Activities-Iraq.html"
+        ]
+    },
+    "Ireland": {
+        "flights": [
+            "https://expedia.com/affiliate/p2aTM7A"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/BCL1EwD"
+        ],
+        "attractions": [
+            "https://www.viator.com/Ireland/d56?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Israel": {
+        "flights": [
+            "https://expedia.com/affiliate/gMoePmU"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/LBKbFP9"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Israel/d919?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Italy": {
+        "flights": [
+            "https://expedia.com/affiliate/8EelAAI"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/xvkYvIR"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Italy/d57?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Jamaica": {
+        "flights": [
+            "https://expedia.com/affiliate/ToiUeCz"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/2UCcSop"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Jamaica/d34?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Japan": {
+        "flights": [
+            "https://expedia.com/affiliate/f4QxG7U"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/k73qp3y"
+        ],
+        "attractions": [
+            "https://www.viator.com/Japan/d16?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Jordan": {
+        "flights": [
+            "https://expedia.com/affiliate/7IDefBN"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/aBOwayy"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Jordan/d744?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Kazakhstan": {
+        "flights": [
+            "https://expedia.com/affiliate/92iORQ7"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/ce0ldqS"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Kazakhstan/d21770-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Kenya": {
+        "flights": [
+            "https://expedia.com/affiliate/m15Lwkk"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/R6lXNl0"
+        ],
+        "attractions": [
+            "https://www.viator.com/Kenya/d801?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Kiribati": {
+        "flights": [
+            "https://expedia.com/affiliate/e71x2zI"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/XiTNS3m"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g294121-Activities-Republic_of_Kiribati.html"
+        ]
+    },
+    "North Korea": {
+        "flights": null,
+        "hotels": null,
+        "attractions": null
+    },
+    "South Korea": {
+        "flights": [
+            "https://expedia.com/affiliate/JPbgYiq"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/5pwOWAA"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/South-Korea/d972?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Kosovo": {
+        "flights": [
+            "https://expedia.com/affiliate/QqYadK4"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/kOshJ01"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Kosovo/d26852?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Kuwait": {
+        "flights": [
+            "https://expedia.com/affiliate/UGE3WJP"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/Dqxt9W9"
+        ],
+        "attractions": [
+            "https://www.viator.com/Kuwait/d4917-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Kyrgyzstan": {
+        "flights": [
+            "https://expedia.com/affiliate/PQtzevE"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/huekRks"
+        ],
+        "attractions": [
+            "https://www.viator.com/Kyrgyzstan/d21902?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Laos": {
+        "flights": [
+            "https://expedia.com/affiliate/nhoEcmW"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/DNFBG9p"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Laos/d5438?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Latvia": {
+        "flights": [
+            "https://expedia.com/affiliate/4NOgbro"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/Ui96Er5"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Latvia/d4479?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Lebanon": {
+        "flights": [
+            "https://expedia.com/affiliate/D7zNnj9"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/w4ppbND"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Lebanon/d4214?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Lesotho": {
+        "flights": [
+            "https://expedia.com/affiliate/HBa2zvk"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/B9IvxyF"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Lesotho/d21903?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Liberia": {
+        "flights": [
+            "https://expedia.com/affiliate/BRQCVCe"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/Lv2rR4p"
+        ],
+        "attractions": null
+    },
+    "Libya": {
+        "flights": [
+            "https://expedia.com/affiliate/nvACpUP"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/JjZXXFw"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g293806-Activities-Libya.html"
+        ]
+    },
+    "Liechtenstein": {
+        "flights": [
+            "https://expedia.com/affiliate/DtOS3lR"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/IfDauJS"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Liechtenstein/d1004?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Lithuania": {
+        "flights": [
+            "https://expedia.com/affiliate/ctlnV82"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/NhJD8xM"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Lithuania/d58?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Luxembourg": {
+        "flights": [
+            "https://expedia.com/affiliate/yw7IyWS"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/OlqXpEf"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Luxembourg/d21797?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Madagascar": {
+        "flights": [
+            "https://expedia.com/affiliate/XfLcrLO"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/k3hGAEP"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Madagascar/d4733-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Malawi": {
+        "flights": [
+            "https://expedia.com/affiliate/7qBblgj"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/KULKe43"
+        ],
+        "attractions": [
+            "https://www.viator.com/Malawi/d21906-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Malaysia": {
+        "flights": [
+            "https://expedia.com/affiliate/F3s9dzL"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/6BwuBNR"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Malaysia/d17?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Maldives": {
+        "flights": [
+            "https://expedia.com/affiliate/olrMGEN"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/PuR2Q5C"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Maldives/d4672-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Mali": {
+        "flights": [
+            "https://expedia.com/affiliate/sbK104b"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/qrRjiFk"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Mali-tours/Day-Trips-and-Excursions/d37745-g5?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Malta": {
+        "flights": [
+            "https://expedia.com/affiliate/2DZ6QQq"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/0knBXbf"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Malta/d4141?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Marshall Islands": {
+        "flights": [
+            "https://expedia.com/affiliate/eFG8Zk5"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/THZOGNi"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g301392-Activities-Marshall_Islands.html"
+        ]
+    },
+    "Mauritania": {
+        "flights": [
+            "https://expedia.com/affiliate/O5eSauP"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/dmkM32F"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Mauritania/d22157-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Mauritius": {
+        "flights": [
+            "https://expedia.com/affiliate/3tP8G7a"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/I4RxFoG"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Mauritius/d4463?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Mexico": {
+        "flights": [
+            "https://expedia.com/affiliate/o9G8fx9"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/99AxWrV"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Mexico/d76?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Micronesia": {
+        "flights": [
+            "https://expedia.com/affiliate/Qb5aASf"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/1fYaDSU"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.com/Attractions-g294198-Activities-Federated_States_of_Micronesia.html"
+        ]
+    },
+    "Moldova": {
+        "flights": [
+            "https://expedia.com/affiliate/dh7yXR0"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/Hn0yEfE"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Moldova/d21900?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Monaco": {
+        "flights": [
+            "https://expedia.com/affiliate/fiopozV"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/WPWdKEC"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Monaco/d948?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Mongolia": {
+        "flights": [
+            "https://expedia.com/affiliate/2Rkneja"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/Qehl2in"
+        ],
+        "attractions": [
+            "https://www.viator.com/Mongolia/d21767?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Montenegro": {
+        "flights": [
+            "https://expedia.com/affiliate/5saB2VB"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/KVMr7aS"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Montenegro/d4475?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Morocco": {
+        "flights": [
+            "https://expedia.com/affiliate/zQyn30T"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/i3pAB3x"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Morocco/d825?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Mozambique": {
+        "flights": [
+            "https://expedia.com/affiliate/v5u6npa"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/bMGPz42"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Mozambique/d4830?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Myanmar (Burma)": {
+        "flights": [
+            "https://expedia.com/affiliate/N7OT3AJ"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/MChd9qn"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Myanmar/d5411?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Namibia": {
+        "flights": [
+            "https://expedia.com/affiliate/UMrINe7"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/IGDeQN5"
+        ],
+        "attractions": [
+            "https://www.viator.com/Namibia/d10?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Nauru": {
+        "flights": [
+            "https://expedia.com/affiliate/jAwzmvc"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/iiWd8IN"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g294127-Activities-Nauru.html"
+        ]
+    },
+    "Nepal": {
+        "flights": [
+            "https://expedia.com/affiliate/cNOnHBH"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/BjO1j20"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Nepal/d724?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Netherlands": {
+        "flights": [
+            "https://expedia.com/affiliate/Xj1VKqW"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/IGRi7qF"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Netherlands/d60?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "New Zealand": {
+        "flights": [
+            "https://expedia.com/affiliate/O7vBoX6"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/vvFMy34"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/New-Zealand/d24?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Nicaragua": {
+        "flights": [
+            "https://expedia.com/affiliate/4gSAb7I"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/gLtTmrP"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Nicaragua/d4499?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Niger": {
+        "flights": [
+            "https://expedia.com/affiliate/v0FHCah"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/3623jyt"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Niger/d21907-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Nigeria": {
+        "flights": [
+            "https://expedia.com/affiliate/WTl3pIV"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/a2tGeth"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Nigeria/d22316?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "North Macedonia": {
+        "flights": [
+            "https://expedia.com/affiliate/x7yuwDp"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/c4OJvD2"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/North-Macedonia/d21800?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Norway": {
+        "flights": [
+            "https://expedia.com/affiliate/LsTg13z"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/Zn2MKwF"
+        ],
+        "attractions": [
+            "https://www.viator.com/Norway/d61?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Oman": {
+        "flights": [
+            "https://expedia.com/affiliate/7FP2e4M"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/taw3nOx"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Oman/d745?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Pakistan": {
+        "flights": [
+            "https://expedia.com/affiliate/wOOzGGO"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/vuOLX73"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Pakistan/d22311?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Palau": {
+        "flights": [
+            "https://expedia.com/affiliate/MySLoJy"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/0VcUYS4"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Palau-tours/Sightseeing/d22163-tag21725?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Panama": {
+        "flights": [
+            "https://expedia.com/affiliate/N5zeJqn"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/9u9n1zN"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Panama/d749?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Papua New Guinea": {
+        "flights": [
+            "https://expedia.com/affiliate/Zf6VFl8"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/9qfOxQy"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Papua-New-Guinea/d4782-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Paraguay": {
+        "flights": [
+            "https://expedia.com/affiliate/QWbew05"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/aCdS4NU"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Paraguay/d21940-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Peru": {
+        "flights": [
+            "https://expedia.com/affiliate/Q84zJFu"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/CNEMG3t"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Peru/d927?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Philippines": {
+        "flights": [
+            "https://expedia.com/affiliate/NypzOQm"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/w3aozA0"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-PH/Philippines/d4603?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Poland": {
+        "flights": [
+            "https://expedia.com/affiliate/mhEefb3"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/0IBwCQh"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Poland/d62?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Portugal": {
+        "flights": [
+            "https://expedia.com/affiliate/LPgKb6Z"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/PZ6ZHYx"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Portugal/d63?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Qatar": {
+        "flights": null,
+        "hotels": [
+            "https://expedia.com/affiliate/e7abToz"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Qatar/d4452?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Romania": {
+        "flights": [
+            "https://expedia.com/affiliate/r4zMMkU"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/Qbm1SrD"
+        ],
+        "attractions": [
+            "https://www.viator.com/Romania/d64?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Russia": {
+        "flights": [
+            "https://expedia.com/affiliate/FHmbeId"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/lRe8AXR"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g294459-Activities-Russia.html"
+        ]
+    },
+    "Rwanda": {
+        "flights": [
+            "https://expedia.com/affiliate/NeNeyIn"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/mHqzngj"
+        ],
+        "attractions": [
+            "https://www.viator.com/Rwanda/d21908?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Saint Kitts and Nevis": {
+        "flights": [
+            "https://expedia.com/affiliate/PLPtrj9"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/U9YiTlP"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/St-Kitts-and-Nevis/d37?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Saint Lucia": {
+        "flights": [
+            "https://expedia.com/affiliate/WQRtGc4"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/9RBj0mB"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/St-Lucia/d38?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Saint Vincent and the Grenadines": {
+        "flights": [
+            "https://expedia.com/affiliate/nG8KphS"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/gzGZu5C"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/St-Vincent-and-the-Grenadines/d4321?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Samoa": {
+        "flights": [
+            "https://expedia.com/affiliate/rI87X5J"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/oRCs2X0"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Samoa/d4770?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "San Marino": {
+        "flights": [
+            "https://expedia.com/affiliate/h9VmTbW"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/cpTvCTp"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/San-Marino/d21911-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Sao Tome and Principe": {
+        "flights": [
+            "https://expedia.com/affiliate/zjCm0Jb"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/euZqy9T"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Sao-Tome-and-Principe/d4920-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Saudi Arabia": {
+        "flights": [
+            "https://expedia.com/affiliate/Z3qAupq"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/7A1FEkk"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Saudi-Arabia/d22154-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Senegal": {
+        "flights": [
+            "https://expedia.com/affiliate/fK3NSnf"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/rKNVIwH"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Senegal/d4448?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Serbia": {
+        "flights": [
+            "https://expedia.com/affiliate/7OlYltU"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/GywiiQ2"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Serbia/d21912?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Seychelles": {
+        "flights": [
+            "https://expedia.com/affiliate/V5p8yT0"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/MhSP5SZ"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Seychelles/d4868?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Sierra Leone": {
+        "flights": [
+            "https://expedia.com/affiliate/aQXAgUk"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/nGbwcl4"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g293832-Activities-Sierra_Leone.html"
+        ]
+    },
+    "Singapore": {
+        "flights": [
+            "https://expedia.com/affiliate/D8Y7d8k"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/35JKaoT"
+        ],
+        "attractions": [
+            "https://www.viator.com/Singapore/d18?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Slovakia": {
+        "flights": [
+            "https://expedia.com/affiliate/24TnUuZ"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/smsHw9Q"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Slovakia/d66?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Slovenia": {
+        "flights": [
+            "https://expedia.com/affiliate/hmAXfTn"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/zwLiQ7b"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Slovenia/d734?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Solomon Islands": {
+        "flights": [
+            "https://expedia.com/affiliate/ydwedp2"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/mQcWjxr"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g294139-Activities-Solomon_Islands.html"
+        ]
+    },
+    "Somalia": {
+        "flights": null,
+        "hotels": null,
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g294439-Activities-Somalia.html"
+        ]
+    },
+    "South Africa": {
+        "flights": [
+            "https://expedia.com/affiliate/vsaiNGH"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/8ll0mRL"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/South-Africa/d11?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Spain": {
+        "flights": [
+            "https://expedia.com/affiliate/oDC2SSC"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/JbWYVw4"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Spain/d67?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Sri Lanka": {
+        "flights": [
+            "https://expedia.com/affiliate/TV8voyS"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/sdeIpmO"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Sri-Lanka/d19?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Sudan": {
+        "flights": [
+            "https://expedia.com/affiliate/Qe9g19d"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/zaP1h0W"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g293834-Activities-Sudan.html"
+        ]
+    },
+    "South Sudan": {
+        "flights": null,
+        "hotels": null,
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g2201790-Activities-South_Sudan.html"
+        ]
+    },
+    "Suriname": {
+        "flights": [
+            "https://expedia.com/affiliate/ZD1Yk24"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/KII3PnA"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Suriname/d22165-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Sweden": {
+        "flights": [
+            "https://expedia.com/affiliate/VKKCvn8"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/MtXeAMm"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Sweden/d68?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Switzerland": {
+        "flights": [
+            "https://expedia.com/affiliate/JBs0F4B"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/NtfKgny"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Switzerland/d69?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Syria": {
+        "flights": null,
+        "hotels": null,
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g294010-Activities-Syria.html"
+        ]
+    },
+    "Taiwan": {
+        "flights": [
+            "https://expedia.com/affiliate/4Rhly8N"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/70W2osv"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Taiwan/d778?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Tajikistan": {
+        "flights": [
+            "https://expedia.com/affiliate/OtLFfDo"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/23C6qHW"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Tajikistan/d21938-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Tanzania": {
+        "flights": [
+            "https://expedia.com/affiliate/emEP9nf"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/mjkzvJc"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Tanzania/d5589?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Thailand": {
+        "flights": [
+            "https://expedia.com/affiliate/Dslr9re"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/VrkTK02"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Thailand/d20?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Togo": {
+        "flights": [
+            "https://expedia.com/affiliate/eyr3qpr"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/yt8ZhUS"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Togo/d4425-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Tonga": {
+        "flights": [
+            "https://expedia.com/affiliate/6RQNdcf"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/e3hKkmL"
+        ],
+        "attractions": [
+            "https://www.viator.com/Tonga/d4786-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Trinidad and Tobago": {
+        "flights": [
+            "https://expedia.com/affiliate/i7kI00T"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/1Hn56fs"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Trinidad-and-Tobago/d39?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Tunisia": {
+        "flights": [
+            "https://expedia.com/affiliate/bvknCT0"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/4W5C4Jd"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Tunisia/d4393?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Turkey": {
+        "flights": [
+            "https://expedia.com/affiliate/v5oKqwx"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/WUZ4jQf"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Turkey/d70?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Turkmenistan": {
+        "flights": [
+            "https://expedia.com/affiliate/oQByIHu"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/K2WjFDh"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Turkmenistan-tours/Tours-and-Sightseeing/d21937-g12?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Tuvalu": {
+        "flights": [
+            "https://expedia.com/affiliate/7oZpxX3"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/NzDHu7D"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g294481-Activities-Tuvalu.html"
+        ]
+    },
+    "Uganda": {
+        "flights": [
+            "https://expedia.com/affiliate/duZ7xIs"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/owjCh6L"
+        ],
+        "attractions": [
+            "https://www.viator.com/Uganda/d5575?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Ukraine": {
+        "flights": [
+            "https://expedia.com/affiliate/TfFFvG4"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/6AhLGQj"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.ca/Attractions-g294473-Activities-Ukraine.html"
+        ]
+    },
+    "United Arab Emirates": {
+        "flights": [
+            "https://expedia.com/affiliate/T7FdBjJ"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/P8ngKkb"
+        ],
+        "attractions": [
+            "https://www.viator.com/United-Arab-Emirates/d743-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "United Kingdom": {
+        "flights": [
+            "https://expedia.com/affiliate/VKF3C18"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/hYMWdYr"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-GB/United-Kingdom/d60457?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "United States": {
+        "flights": [
+            "https://expedia.com/affiliate/7K5s4kW"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/Pq1qjor"
+        ],
+        "attractions": [
+            "https://www.viator.com/USA/d77?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Uruguay": {
+        "flights": [
+            "https://expedia.com/affiliate/7NbonNG"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/uVIjXh8"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Uruguay/d4514?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Uzbekistan": {
+        "flights": [
+            "https://expedia.com/affiliate/KIUjnWX"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/L6rDIQs"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Uzbekistan/d21936?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Vanuatu": {
+        "flights": [
+            "https://expedia.com/affiliate/LYw6kbx"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/1czvQwT"
+        ],
+        "attractions": [
+            "https://www.viator.com/Vanuatu/d4772?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Vatican City": {
+        "flights": [
+            "https://expedia.com/affiliate/tQNetNr"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/enPzmQ5"
+        ],
+        "attractions": [
+            "https://www.viator.com/Vatican-City/d60477?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Venezuela": {
+        "flights": [
+            "https://expedia.com/affiliate/7dIQMNZ"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/U4KMAK6"
+        ],
+        "attractions": [
+            "https://www.tripadvisor.com/Attractions-g294324-Activities-c42-Venezuela.html"
+        ]
+    },
+    "Vietnam": {
+        "flights": [
+            "https://expedia.com/affiliate/meHH94c"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/l5TQiIe"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Vietnam/d21?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Yemen": {
+        "flights": null,
+        "hotels": null,
+        "attractions": [
+            "https://www.viator.com/en-CA/Yemen/d21755-ttd?pid=P00249582&mcid=42383&medium=link"
+        ]
+    },
+    "Zambia": {
+        "flights": [
+            "https://expedia.com/affiliate/rseYlxJ"
+        ],
+        "hotels": [
+            "https://expedia.com/affiliate/UNqHHuS"
+        ],
+        "attractions": [
+            "https://www.viator.com/en-CA/Zambia/d779?pid=P00249582&mcid=42383&medium=link"
+        ]
+    }
+}
+

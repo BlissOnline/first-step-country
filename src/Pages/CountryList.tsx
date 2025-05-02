@@ -270,24 +270,23 @@ const CountryList: React.FC<{ countries: Country[] }> = ({ countries }) => {
                     {/* ✅ Dynamically assign affiliate links */}
                     {country.affiliateLinks && (
                         <>
-                            {country.affiliateLinks?.flights?.length && (
-                                <a href={country.affiliateLinks.flights[0]} target="_blank" rel="nofollow noopener">
+                            {country.affiliateLinks?.flights && (
+                                <a href={country.affiliateLinks.flights} target="_blank" rel="nofollow noopener">
                                     <img src="/src/assets/icons/airplane-svg.svg" alt="Flights Affiliate Link" width="50" height="50" />
                                 </a>
                             )}
 
-                            {country.affiliateLinks?.hotels?.length && (
-                                <a href={country.affiliateLinks.hotels[0]} target="_blank" rel="nofollow noopener">
+                            {country.affiliateLinks?.hotels && (
+                                <a href={country.affiliateLinks.hotels} target="_blank" rel="nofollow noopener">
                                     <img src="/src/assets/icons/hotel-svg.svg" alt="Hotels Affiliate Link" width="40" height="40" />
                                 </a>
                             )}
 
-                            {country.affiliateLinks?.attractions?.length && (
-                                <a href={country.affiliateLinks.attractions[0]} target="_blank" rel="nofollow noopener">
+                            {country.affiliateLinks?.attractions && (
+                                <a href={country.affiliateLinks.attractions} target="_blank" rel="nofollow noopener">
                                     <img src="/src/assets/icons/camera-svg.svg" alt="Tours Affiliate Link" width="38" height="38" className='camera-icon'/>
                                 </a>
                             )}
-
                         </>
                     )}
 
