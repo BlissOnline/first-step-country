@@ -1,12 +1,18 @@
-.indexBar {
-    /* background-color: red; */
-    /* border: solid 2px black; */
-    /* transition: transform 0.3s ease-in-out; */
-    /* transition: height 0.3s ease-in-out; */
+/* .indexBar {
     transition: height 0.3s ease-out;
-
     height: 71.5px;
     justify-content: space-between;
+} */
+
+.indexBar {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto; /* Fixed structure */
+    align-items: center;
+    gap: 10px; /* Space between items */
+    background-color: var(--color-light);
+    padding: 10px;
+    height: 71.5px;
+    transition: height 0.3s ease-out;
 }
 
 .indexBar:hover {
@@ -14,6 +20,28 @@
     height: 95px;
     /* background-color: var(--color-gold); */
 }
+
+.affiliate-links div {
+    flex: 1; /* ✅ Makes each icon take up equal space */
+    /* max-width: 150px;  */
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Maintain layout even when affiliate links are missing */
+.affiliate-links {
+    display: flex;
+    justify-content: center; /* ✅ Ensures even spacing */
+    align-items: center;
+    gap: 10px; 
+    /* flex-wrap: wrap;  */
+    min-height: 50px; /* ✅ Keeps structure */
+    width: 100%;
+
+}
+
+
 
 .camera-icon {
     margin-right: 20px;

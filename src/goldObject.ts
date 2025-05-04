@@ -583,6 +583,20 @@ const goldObject: Country[] = [
         "flagUrl": "/public/flagsCR.png"
     },
     {
+        "name": "Côte d’Ivoire",
+        "countryIndexNumber": 82,
+        "ppm": 1400,
+        "coast": true,
+        "englishSpeaking": false,
+        "affordableDining": false,
+        "unsafe": false,
+        "affordableEducation": false,
+        "affordableHealthCare": false,
+        "nomadVisa": false,
+        "countryCode": "CI",
+        "flagUrl": "/public/flagsCI.png"
+    },
+    {
         "name": "Croatia",
         "countryIndexNumber": 41,
         "ppm": 1200,
@@ -863,7 +877,7 @@ const goldObject: Country[] = [
         "flagUrl": "/public/flagsGA.png"
     },
     {
-        "name": "Gambia",
+        "name": "The Gambia",
         "countryIndexNumber": 61,
         "ppm": 500,
         "coast": true,
@@ -1155,20 +1169,6 @@ const goldObject: Country[] = [
         "nomadVisa": true,
         "countryCode": "IT",
         "flagUrl": "/public/flagsIT.png"
-    },
-    {
-        "name": "Ivory Coast",
-        "countryIndexNumber": 82,
-        "ppm": 1400,
-        "coast": true,
-        "englishSpeaking": false,
-        "affordableDining": false,
-        "unsafe": false,
-        "affordableEducation": false,
-        "affordableHealthCare": false,
-        "nomadVisa": false,
-        "countryCode": "CI",
-        "flagUrl": "/public/flagsCI.png"
     },
     {
         "name": "Jamaica",
@@ -2760,7 +2760,7 @@ const goldObject: Country[] = [
 
 
 
-
+// default links
 // const affiliateLinks = {
 //     "flights": "https://expedia.com/affiliate/g7BB4rI",
 //     "hotels": "https://expedia.com/affiliate/MMigqIa",
@@ -2768,11 +2768,8 @@ const goldObject: Country[] = [
 // };
 
 
-// goldObject.forEach(country => {
-//     country.affiliateLinks = affiliateLinks;
-// });
 
-console.log(goldObject);
+// console.log(goldObject);
 
 
 export default goldObject;

@@ -2,7 +2,7 @@
     "Afghanistan": {
         "flights": null,
         "hotels": null,
-        "attractions": null
+        "attractions": "https://www.tripadvisor.ca/Attractions-g659499-Activities-Afghanistan.html"
     },
     "Albania": {
         "flights": "https://expedia.com/affiliate/tW45tbN",
@@ -249,11 +249,6 @@
         "hotels": "https://expedia.com/affiliate/wpqQYhx",
         "attractions": "https://www.viator.com/en-CA/Dominican-Republic/d32?pid=P00249582&mcid=42383&medium=link"
     },
-    "East Timor (Timor-Leste)": {
-        "flights": "https://expedia.com/affiliate/9LL0QD6",
-        "hotels": "https://expedia.com/affiliate/dSkkbeT",
-        "attractions": "https://www.viator.com/en-CA/East-Timor-tours/Tours-and-Sightseeing/d27539-g12?pid=P00249582&mcid=42383&medium=link"
-    },
     "Ecuador": {
         "flights": "https://expedia.com/affiliate/nmU1BkW",
         "hotels": "https://expedia.com/affiliate/togw1lT",
@@ -453,11 +448,6 @@
         "flights": null,
         "hotels": null,
         "attractions": null
-    },
-    "South Korea": {
-        "flights": "https://expedia.com/affiliate/JPbgYiq",
-        "hotels": "https://expedia.com/affiliate/5pwOWAA",
-        "attractions": "https://www.viator.com/en-CA/South-Korea/d972?pid=P00249582&mcid=42383&medium=link"
     },
     "Kosovo": {
         "flights": "https://expedia.com/affiliate/QqYadK4",
@@ -674,6 +664,11 @@
         "hotels": "https://expedia.com/affiliate/0VcUYS4",
         "attractions": "https://www.viator.com/en-CA/Palau-tours/Sightseeing/d22163-tag21725?pid=P00249582&mcid=42383&medium=link"
     },
+    "Palestine": {
+        "flights": null,
+        "hotels": null,
+        "attractions": null
+    },
     "Panama": {
         "flights": "https://expedia.com/affiliate/N5zeJqn",
         "hotels": "https://expedia.com/affiliate/9u9n1zN",
@@ -814,6 +809,16 @@
         "hotels": "https://expedia.com/affiliate/8ll0mRL",
         "attractions": "https://www.viator.com/en-CA/South-Africa/d11?pid=P00249582&mcid=42383&medium=link"
     },
+    "South Korea": {
+        "flights": "https://expedia.com/affiliate/JPbgYiq",
+        "hotels": "https://expedia.com/affiliate/5pwOWAA",
+        "attractions": "https://www.viator.com/en-CA/South-Korea/d972?pid=P00249582&mcid=42383&medium=link"
+    },
+    "South Sudan": {
+        "flights": null,
+        "hotels": null,
+        "attractions": "https://www.tripadvisor.ca/Attractions-g2201790-Activities-South_Sudan.html"
+    },
     "Spain": {
         "flights": "https://expedia.com/affiliate/oDC2SSC",
         "hotels": "https://expedia.com/affiliate/JbWYVw4",
@@ -829,11 +834,7 @@
         "hotels": "https://expedia.com/affiliate/zaP1h0W",
         "attractions": "https://www.tripadvisor.ca/Attractions-g293834-Activities-Sudan.html"
     },
-    "South Sudan": {
-        "flights": null,
-        "hotels": null,
-        "attractions": "https://www.tripadvisor.ca/Attractions-g2201790-Activities-South_Sudan.html"
-    },
+
     "Suriname": {
         "flights": "https://expedia.com/affiliate/ZD1Yk24",
         "hotels": "https://expedia.com/affiliate/KII3PnA",
@@ -873,6 +874,11 @@
         "flights": "https://expedia.com/affiliate/Dslr9re",
         "hotels": "https://expedia.com/affiliate/VrkTK02",
         "attractions": "https://www.viator.com/en-CA/Thailand/d20?pid=P00249582&mcid=42383&medium=link"
+    },
+    "Timor-Leste": {
+        "flights": "https://expedia.com/affiliate/9LL0QD6",
+        "hotels": "https://expedia.com/affiliate/dSkkbeT",
+        "attractions": "https://www.viator.com/en-CA/East-Timor-tours/Tours-and-Sightseeing/d27539-g12?pid=P00249582&mcid=42383&medium=link"
     },
     "Togo": {
         "flights": "https://expedia.com/affiliate/eyr3qpr",
@@ -973,5 +979,10 @@
         "flights": "https://expedia.com/affiliate/rseYlxJ",
         "hotels": "https://expedia.com/affiliate/UNqHHuS",
         "attractions": "https://www.viator.com/en-CA/Zambia/d779?pid=P00249582&mcid=42383&medium=link"
+    },
+    "Zimbabwe": {
+        "flights": "https://expedia.com/affiliate/odq8wus",
+        "hotels": "https://expedia.com/affiliate/bPj2pSo",
+        "attractions": "https://www.viator.com/en-ZA/Zimbabwe/d5308?pid=P00249582&mcid=42383&medium=link"
     }
 }
