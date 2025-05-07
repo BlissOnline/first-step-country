@@ -2,6 +2,7 @@ import React from 'react';
 import imgMedical from '../../assets/images/hq-medical-graphic.png';
 import './Q7.css';
 import ImportantButtons from '../Buttons/ImportantButtons';
+import { Helmet } from 'react-helmet-async';
 
 //define props interface if your component will receive any props
 interface Q7Props {
@@ -14,26 +15,35 @@ interface Q7Props {
 const Q7: React.FC<Q7Props> = ({ onChange, onNext }) => {
 
     return (
-        <form className='qSevenBody' >
+        <>
+            <Helmet>
+                <title>Best Countries for Affordable & High-Quality Medical Tourism</title>
+                <meta 
+                    name="description"
+                    content="Explore the best countries for affordable and high-quality medical tourism. Compare destinations offering world-class healthcare at budget-friendly prices."
+                />
+            </Helmet>
+            <form className='qSevenBody' >
 
-            <div className='qSevenContainer' >
-                <label className='qSevenQuestion' >High-quality and affordable medical tourism?</label><br />
+                <div className='qSevenContainer' >
+                    <label className='qSevenQuestion' >High-quality and affordable medical tourism?</label><br />
 
-                <div className='qSevenImgContainer' >
-                    <img src={imgMedical} alt='doctors' className='qSevenImg' />
+                    <div className='qSevenImgContainer' >
+                        <img src={imgMedical} alt='Group of doctors in professional attire offering a welcoming gesture' className='qSevenImg' />
+                    </div>
+
+                    <div>
+                        <ImportantButtons 
+                            name="medical" 
+                            color1="var(--color-3)" 
+                            color2="var(--color-2)" 
+                            onChange={onChange} 
+                            onNext={onNext} 
+                        />                   
+                    </div> 
                 </div>
-
-                <div>
-                    <ImportantButtons 
-                        name="medical" 
-                        color1="var(--color-3)" 
-                        color2="var(--color-2)" 
-                        onChange={onChange} 
-                        onNext={onNext} 
-                    />                   
-                </div> 
-            </div>
-        </form>
+            </form>
+        </>        
     );
 };
 

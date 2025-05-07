@@ -2,6 +2,7 @@ import React from 'react';
 import imgUnsafe from '../../assets/images/safe-country-graphic.png';
 import './Q5.css';
 import ImportantButtons from '../Buttons/ImportantButtons';
+import { Helmet } from 'react-helmet-async';
 
 interface Q5Props {
     value: string;
@@ -14,27 +15,34 @@ interface Q5Props {
 const Q5: React.FC<Q5Props> = ({ onChange, onNext }) => {
 
     return (
-        <form className='qFiveBody' >
+        <>
+            <Helmet>
+                <title>Safest Countries to Live In – Top Destinations for Security & Stability</title>
+                <meta 
+                    name="description"
+                    content="Explore the safest countries to live in, ranked by security and stability. Find destinations that prioritize safety, low crime rates, and peaceful environments."
+                />
+            </Helmet>
+            <form className='qFiveBody' >
+                <div className='qFiveContainer'>
+                    <label className='qFiveQuestion' >Do you want your country to be considered safe? </label><br />
 
-            <div className='qFiveContainer'>
-                <label className='qFiveQuestion' >Do you want your country to be considered safe? </label><br />
+                    <div className='qFiveImgContainer'>
+                        <img src={imgUnsafe} alt='Riot police in protective gear facing a large protest' className='qFiveImg' />
+                    </div>
 
-                <div className='qFiveImgContainer'>
-                    <img src={imgUnsafe} alt='riot control' className='qFiveImg' />
+                    <div>
+                        <ImportantButtons 
+                            name="unsafe" 
+                            color1="var(--color-1)" 
+                            color2="var(--color-2)" 
+                            onChange={onChange} 
+                            onNext={onNext} 
+                        />                   
+                    </div>  
                 </div>
-
-                <div>
-                    <ImportantButtons 
-                        name="unsafe" 
-                        color1="var(--color-1)" 
-                        color2="var(--color-2)" 
-                        onChange={onChange} 
-                        onNext={onNext} 
-                    />                   
-                </div>  
-            
-            </div>
-        </form>
+            </form>
+        </>        
     );
 };
 
