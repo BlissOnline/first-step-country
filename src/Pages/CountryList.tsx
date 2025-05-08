@@ -1,6 +1,10 @@
 import React, { useEffect, useState} from 'react';
 import { Country, countryLinks } from '../types';
 import './CountryList.css';
+import airplaneIcon from "../assets/icons/airplane-svg.svg";
+import cameraIcon from "../assets/icons/camera-svg.svg";
+import hotelIcon from "../assets/icons/hotel-svg.svg";
+
 
 // Create a map of country codes to flag images
 const flagMap: { [key: string]: () => Promise<{ default: string }> } = {
@@ -274,7 +278,7 @@ const CountryList: React.FC<{ countries: Country[] }> = ({ countries }) => {
                         <div style={{ width: "50px", height: "50px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                             {country.affiliateLinks.flights ? (
                                 <a href={country.affiliateLinks.flights} target="_blank" rel="nofollow noopener">
-                                    <img src="/src/assets/icons/airplane-svg.svg" alt="Flights Affiliate Link" width="50" height="50" />
+                                    <img src={airplaneIcon} alt="Flights Affiliate Link" width="50" height="50" />
                                 </a>
                             ) : (
                                 <div style={{ width: "50px", height: "50px", visibility: "hidden" }}></div> /* ✅ Empty placeholder */
@@ -285,7 +289,7 @@ const CountryList: React.FC<{ countries: Country[] }> = ({ countries }) => {
                         <div style={{ width: "50px", height: "50px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                             {country.affiliateLinks.hotels ? (
                                 <a href={country.affiliateLinks.hotels} target="_blank" rel="nofollow noopener">
-                                    <img src="/src/assets/icons/hotel-svg.svg" alt="Hotels Affiliate Link" width="40" height="40" />
+                                    <img src={hotelIcon} alt="Hotels Affiliate Link" width="40" height="40" />
                                 </a>
                             ) : (
                                 <div style={{ width: "50px", height: "50px", visibility: "hidden" }}></div> /* ✅ Empty placeholder */
@@ -296,7 +300,7 @@ const CountryList: React.FC<{ countries: Country[] }> = ({ countries }) => {
                         <div style={{ width: "50px", height: "50px", display: "flex", justifyContent: "center", alignItems: "center" }}>
                             {country.affiliateLinks.attractions ? (
                                 <a href={country.affiliateLinks.attractions} target="_blank" rel="nofollow noopener">
-                                    <img src="/src/assets/icons/camera-svg.svg" alt="Tours Affiliate Link" width="38" height="38" className="camera-icon" />
+                                    <img src={cameraIcon} alt="Tours Affiliate Link" width="38" height="38" className="camera-icon" />
                                 </a>
                             ) : (
                                 <div style={{ width: "50px", height: "50px", visibility: "hidden" }}></div> /* ✅ Empty placeholder */
