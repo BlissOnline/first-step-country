@@ -3,6 +3,7 @@ import imgDining from '../../assets/images/affordable-dining-graphic.png';
 import './Q4.css';
 import ImportantButtons from '../Buttons/ImportantButtons';
 import { Helmet } from 'react-helmet-async';
+import BreadcrumbSchema from '../BreadcrumbSchema';
 
 //define props interface if your component will receive any props
 interface Q4Props {
@@ -24,6 +25,11 @@ const Q4: React.FC<Q4Props> = ({ onChange, onNext }) => {
                     content="Discover the best countries with affordable food options. Explore budget-friendly cuisines and destinations that offer great meals at low prices."
                 />
             </Helmet>
+
+            {/* ✅ Added BreadcrumbSchema inside JSX */}
+            <BreadcrumbSchema questionNumber={4} />
+
+
             <form className={'qFourBody'} >
                 <div className="qFourContainer">
 

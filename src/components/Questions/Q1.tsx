@@ -3,7 +3,7 @@ import imgSurf from '../../assets/images/surf-graphic.png';
 import './Q1.css';
 import ImportantButtons from '../Buttons/ImportantButtons';
 import { Helmet } from 'react-helmet-async';
-
+import BreadcrumbSchema from '../BreadcrumbSchema';
 
 //define props interface if your component will receive any props
 interface Q1Props {

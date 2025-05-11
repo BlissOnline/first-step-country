@@ -3,6 +3,7 @@ import imgUnsafe from '../../assets/images/safe-country-graphic.png';
 import './Q5.css';
 import ImportantButtons from '../Buttons/ImportantButtons';
 import { Helmet } from 'react-helmet-async';
+import BreadcrumbSchema from '../BreadcrumbSchema';
 
 interface Q5Props {
     value: string;
@@ -23,6 +24,10 @@ const Q5: React.FC<Q5Props> = ({ onChange, onNext }) => {
                     content="Explore the safest countries to live in, ranked by security and stability. Find destinations that prioritize safety, low crime rates, and peaceful environments."
                 />
             </Helmet>
+
+            {/* ✅ Added BreadcrumbSchema inside JSX */}
+            <BreadcrumbSchema questionNumber={5} />
+
             <form className='qFiveBody' >
                 <div className='qFiveContainer'>
                     <label className='qFiveQuestion' >Do you want your country to be considered safe? </label><br />

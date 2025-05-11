@@ -3,6 +3,7 @@ import imgMedical from '../../assets/images/hq-medical-graphic.png';
 import './Q7.css';
 import ImportantButtons from '../Buttons/ImportantButtons';
 import { Helmet } from 'react-helmet-async';
+import BreadcrumbSchema from '../BreadcrumbSchema';
 
 //define props interface if your component will receive any props
 interface Q7Props {
@@ -23,6 +24,10 @@ const Q7: React.FC<Q7Props> = ({ onChange, onNext }) => {
                     content="Explore the best countries for affordable and high-quality medical tourism. Compare destinations offering world-class healthcare at budget-friendly prices."
                 />
             </Helmet>
+
+            {/* ✅ Added BreadcrumbSchema inside JSX */}
+            <BreadcrumbSchema questionNumber={7} />
+
             <form className='qSevenBody' >
 
                 <div className='qSevenContainer' >

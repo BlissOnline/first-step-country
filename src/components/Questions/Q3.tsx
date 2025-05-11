@@ -3,6 +3,7 @@ import imgEnglish from '../../assets/images/english-graphic.png';
 import './Q3.css';
 import ImportantButtons from '../Buttons/ImportantButtons';
 import { Helmet } from 'react-helmet-async';
+import BreadcrumbSchema from '../BreadcrumbSchema';
 
 //define props interface if your component will receive any props
 interface Q3Props {
@@ -23,6 +24,10 @@ const Q3: React.FC<Q3Props> = ({ onChange, onNext }) => {
                     content="Discover the best countries where English is widely spoken. Explore top destinations based on English prominence and ease of communication."
                 />
             </Helmet>
+
+            {/* ✅ Added BreadcrumbSchema inside JSX */}
+            <BreadcrumbSchema questionNumber={3} />
+
             <form className='qThreeBody' >
                 <div className='qThreeContainer'>
 

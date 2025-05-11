@@ -2,7 +2,7 @@ import React from 'react';
 import imgPpm from '../../assets/images/ppm-graphic.png';
 import './Q2.css';
 import { Helmet } from 'react-helmet-async';
-
+import BreadcrumbSchema from '../BreadcrumbSchema';
 
 //define props interface if your component will receive any props
 interface Q2Props {
@@ -30,6 +30,10 @@ const Q2: React.FC<Q2Props> = ({ value, onChange, onNext }) => {
                     content="Discover the best countries based on your monthly budget. Explore affordable destinations and find locations that match your financial needs."
                 />
             </Helmet>
+
+            {/* ✅ Added BreadcrumbSchema inside JSX */}
+            <BreadcrumbSchema questionNumber={2} />
+
             <form onSubmit={handleSubmit} className='qTwoBody' >
                 <div className='qTwoContainer'> 
                     <label className='qTwoQuestion' >What is your max monthly budget for living expenses?</label>

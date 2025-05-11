@@ -3,6 +3,7 @@ import imgNomad from '../../assets/images/nomad-visa-graphic.png';
 import './Q8.css';
 import ImportantButtons from '../Buttons/ImportantButtons';
 import { Helmet } from 'react-helmet-async';
+import BreadcrumbSchema from '../BreadcrumbSchema';
 
 //define props interface if your component will receive any props
 interface Q8Props {
@@ -24,6 +25,10 @@ const Q8: React.FC<Q8Props> = ({ onChange, onNext }) => {
                     content="Discover the best countries for digital nomads, offering remote work visas and work-friendly environments. Explore top destinations for working and living abroad."
                 />
             </Helmet>
+
+            {/* ✅ Added BreadcrumbSchema inside JSX */}
+            <BreadcrumbSchema questionNumber={8} />
+
             <form className='qEightBody' >
 
                 <div className='qEightContainer' >
