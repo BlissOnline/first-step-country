@@ -24,6 +24,10 @@ const Q1: React.FC<Q1Props> = ({ onChange, onNext }) => {
                     content="Explore the best countries with ocean access and find coastal destinations suited to your lifestyle. Compare regions, benefits, and top locations."
                 />
             </Helmet>
+
+            {/* ✅ Added BreadcrumbSchema inside JSX */}
+            <BreadcrumbSchema questionNumber={1} />
+
             <form className='qOneBody' >
                 <div className='qOneContainer'>
 
