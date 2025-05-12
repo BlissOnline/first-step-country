@@ -1,7 +1,7 @@
 import React from 'react';
 import imgEnglish from '../../assets/images/english-graphic.png';
 import './Q3.css';
-import ImportantButtons from '../Buttons/ImportantButtons';
+import ImportantButtons from '../Buttons/importantButtons';
 import { Helmet } from 'react-helmet-async';
 import BreadcrumbSchema from '../BreadcrumbSchema';
 
