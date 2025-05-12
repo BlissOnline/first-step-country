@@ -8,12 +8,11 @@ import BreadcrumbSchema from '../BreadcrumbSchema';
 interface Q5Props {
     value: string;
     onChange: (value: string) => void;
-    onNext: () => void;
 }
 
 
 //define the Functional Component 
-const Q5: React.FC<Q5Props> = ({ onChange, onNext }) => {
+const Q5: React.FC<Q5Props> = ({ onChange }) => {
 
     return (
         <>
@@ -42,7 +41,7 @@ const Q5: React.FC<Q5Props> = ({ onChange, onNext }) => {
                             color1="var(--color-1)" 
                             color2="var(--color-2)" 
                             onChange={onChange} 
-                            onNext={onNext} 
+                             currentQuestion="q5"
                         />                   
                     </div>  
                 </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import Q1 from './components/Questions/Q1.tsx';
 import Q2 from './components/Questions/Q2.tsx';
 import Q3 from './components/Questions/Q3.tsx';
@@ -11,112 +12,44 @@ import ShowResults from './components/Questions/ShowResults.tsx';
 
 //defining Component with useState hook being an object
 const QuestionLogicForm: React.FC = () => {
-    const [currentPage, setCurrentPage] = useState(0);
+    // const [currentPage, setCurrentPage] = useState(0);
+    const { questionId } = useParams(); // ✅ Get question from URL
+
     const [formData, setFormData] = useState({
         ocean: '',
         ppm: 0, //initialize ppm as a number
         english: '',
         dining: '',
-        unsafe: '',
+        unsafe: '', //probably should do something here
         education: '',
         medical: '',
         nomadVisa: '' 
     });
 
     //defining handleChange function
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value
-        });
+    // ✅ Function to handle input changes
+    const handleChange = (name: string, value: string | number) => {
+        setFormData({ ...formData, [name]: value });
     };
 
-    // next page on click
-    const showNextPage = () => {
-        // console.log(formData); //used for console log
-        setCurrentPage(prevPage => prevPage + 1);
+    // ✅ Dynamically render the correct question based on the URL
+    const renderQuestion = () => {
+        switch (questionId) {
+            case 'q1': return <Q1 value={formData.ocean} onChange={(value) => handleChange('ocean', value)} />;
+            case 'q2': return <Q2 value={formData.ppm} onChange={(e) => handleChange('ppm', e.target.value)} />;
+            case 'q3': return <Q3 value={formData.english} onChange={(value) => handleChange('english', value)} />;
+            case 'q4': return <Q4 value={formData.dining} onChange={(value) => handleChange('dining', value)} />;
+            case 'q5': return <Q5 value={formData.unsafe} onChange={(value) => handleChange('unsafe', value)} />;
+            case 'q6': return <Q6 value={formData.education} onChange={(value) => handleChange('education', value)} />;
+            case 'q7': return <Q7 value={formData.medical} onChange={(value) => handleChange('medical', value)} />;
+            case 'q8': return <Q8 value={formData.nomadVisa} onChange={(value) => handleChange('nomadVisa', value)} />;
+            case 'results': return <ShowResults formData={formData} />;
+            default: return <p>Question not found.</p>;
+        }
     };
     
-    // defining the JSX of our component 
-        return (
-            <div>
-                <div>
-                    {currentPage === 0 && (
-                        <Q1 value={formData.ocean} onChange={(value) => {
-                            setFormData({
-                                ...formData,
-                                ocean: value
-                            });
-                        }} onNext={showNextPage} />         
-                    )}
-
-                    {currentPage === 1 && (
-                        <Q2 value={formData.ppm} onChange={handleChange} onNext={showNextPage} />         
-                    )}
-
-                    {currentPage === 2 && (
-                        <Q3 value={formData.english} onChange={(value) => {
-                            setFormData({
-                                ...formData,
-                                english: value
-                            });
-                        }} onNext={showNextPage} />         
-                    )}
-
-                    {currentPage === 3 && (
-                        <Q4 value={formData.dining} onChange={(value) => {
-                            setFormData({
-                                ...formData,
-                                dining: value
-                            });
-                        }} onNext={showNextPage} />         
-                    )}
-
-                    {currentPage === 4 && (
-                        <Q5 value={formData.unsafe} onChange={(value) => {
-                            setFormData({
-                                ...formData,
-                                unsafe: value
-                            });
-                        }} onNext={showNextPage} />         
-                    )}
-                    
-                    {currentPage === 5 && (
-                            <Q6 value={formData.education} onChange={(value) => {
-                                setFormData({
-                                    ...formData,
-                                    education: value
-                                });
-                            }} onNext={showNextPage} /> 
-                    )}
-
-                    {currentPage === 6 && (
-                            <Q7 value={formData.medical} onChange={(value) => {
-                                setFormData({
-                                    ...formData,
-                                    medical: value
-                                });
-                            }} onNext={showNextPage} /> 
-                    )}
-
-                    {currentPage === 7 && (
-                            <Q8 value={formData.nomadVisa} onChange={(value) => {
-                                setFormData({
-                                    ...formData,
-                                    nomadVisa: value
-                                });
-                            }} onNext={showNextPage} /> 
-                    )}
-
-                    <div className={`question-page page-submit ${currentPage === 8 ? 'active' : ''}`}>
-                        {currentPage === 8 && (
-                            <ShowResults formData={formData} />
-                        )}
-                    </div>       
-                </div>
-            </div>
-        );
-    };
+    
+    return <div className="question-page-container">{renderQuestion()}</div>;;
+};
 
 export default QuestionLogicForm; 

@@ -1,4 +1,5 @@
 import React from 'react';
+// import { useNavigate } from 'react-router-dom';
 import imgSurf from '../../assets/images/surf-graphic.png';
 import './Q1.css';
 import ImportantButtons from '../Buttons/ImportantButtons';
@@ -9,12 +10,10 @@ import BreadcrumbSchema from '../BreadcrumbSchema';
 interface Q1Props {
     value: string;
     onChange: (value: string) => void;
-    onNext: () => void;
+    // onNext: () => void;
 }
 
-
-const Q1: React.FC<Q1Props> = ({ onChange, onNext }) => {
-
+const Q1: React.FC<Q1Props> = ({ onChange }) => {
     return (
         <>
             <Helmet>
@@ -47,16 +46,14 @@ const Q1: React.FC<Q1Props> = ({ onChange, onNext }) => {
                             color1="var(--color-1)" 
                             color2="var(--color-2)" 
                             onChange={onChange} 
-                            onNext={onNext} 
+                            currentQuestion="q1" //✅ Pass the current question identifier
                         />
-                    
-                    </div>   
+                    </div>
 
                 </div>
-
             </form>
         </>
-        
+  
     );
 };
 

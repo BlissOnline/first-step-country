@@ -6,7 +6,8 @@ import './ShowResults.css';
 //anyName
 //
 interface ShowResultsProps {
-    formData: any;
+    // formData: any;
+    formData: Record<string, any>; // ✅ Better type definition
 }
 
 // will be object with form data key
@@ -16,10 +17,12 @@ const ShowResults: React.FC<ShowResultsProps> = ({ formData }) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        // handleSubmit();
+        // const queryString = new URLSearchParams(formData).toString();
+        // navigate("/countryIndex?" + Object.keys(formData).map((key) => `${key}=${formData[key]}`).join('&'));
+        // navigate(`/countryIndex?${queryString}`); 
+        // navigate("/countryIndex?" + new URLSearchParams(formData).toString());
+        navigate(`/country-index?${new URLSearchParams(formData).toString()}`);
 
-        //? means we are adding
-        navigate("/country-index?" + Object.keys(formData).map((key) => `${key}=${formData[key]}`).join('&'));
 
     };
 

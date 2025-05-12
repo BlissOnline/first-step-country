@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // ✅ Import useNavigate
 import imgPpm from '../../assets/images/ppm-graphic.png';
 import './Q2.css';
 import { Helmet } from 'react-helmet-async';
@@ -8,16 +9,17 @@ import BreadcrumbSchema from '../BreadcrumbSchema';
 interface Q2Props {
     value: number;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-    onNext: () => void;
+    // onNext: () => void;
 }
 
 
 //define the Functional Component 
-const Q2: React.FC<Q2Props> = ({ value, onChange, onNext }) => {
+const Q2: React.FC<Q2Props> = ({ value, onChange, }) => {
+     const navigate = useNavigate(); // ✅ Navigation hook
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        onNext();
+        navigate('/questions/q3'); // ✅ Manually navigate to Q3 after form submission
     };
 
 
@@ -44,7 +46,13 @@ const Q2: React.FC<Q2Props> = ({ value, onChange, onNext }) => {
                     </div>
 
                     <label className='qTwoButtonContainer' > $
-                        <input name='ppm' type='number' value={value} onChange={onChange} placeholder='based on US dollar... ' />
+                        <input 
+                            name='ppm' 
+                            type='number' 
+                            value={value} 
+                            onChange={onChange} 
+                            placeholder='based on US dollar... '                   
+                        />
                     </label> 
                     
                     <div className='qTwoSubButtonContainer'>

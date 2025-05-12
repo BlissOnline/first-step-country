@@ -8,7 +8,20 @@ export default defineConfig({
     react(),
     Sitemap({
       hostname: 'https://firststepcountry.com/', 
-      dynamicRoutes: ['/questions', '/about'], // Add more dynamic routes if needed
+      dynamicRoutes: [
+        '/', //✅ Home Page
+        '/about',
+        '/questions/q1',
+        '/questions/q2',
+        '/questions/q3',
+        '/questions/q4',
+        '/questions/q5',
+        '/questions/q6',
+        '/questions/q7',
+        '/questions/q8',
+        '/questions/results',
+        '/countryIndex',
+      ],
     }),
   ],
   resolve: {

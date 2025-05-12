@@ -17,8 +17,11 @@ const Home: React.FC = () => {
 
                 <meta property="og:title" content="Find Your Ideal Travel Destination – Take the Quiz!" />
                 <meta property="og:description" content="Answer a few questions and uncover the perfect country for your next adventure. Start exploring now!" />
-                {/* <meta property="og:image" content="../assets/images/ppm-graphic.png" /> */}
+                
                 <meta property="og:image" content="https://firststepcountry.com/ppm-graphic.png" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+
                 <meta property="og:url" content="https://firststepcountry.com/"  />
                 <meta property="og:type" content="quiz"  />
                 <link rel="canonical" href="https://firststepcountry.com/" />

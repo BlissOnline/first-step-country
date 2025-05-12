@@ -9,11 +9,10 @@ import BreadcrumbSchema from '../BreadcrumbSchema';
 interface Q3Props {
     value: string;
     onChange: (value: string) => void;
-    onNext: () => void;
 }
 
 //define the Functional Component 
-const Q3: React.FC<Q3Props> = ({ onChange, onNext }) => {
+const Q3: React.FC<Q3Props> = ({ onChange }) => {
 
     return (
         <>
@@ -43,7 +42,7 @@ const Q3: React.FC<Q3Props> = ({ onChange, onNext }) => {
                                 color1="var(--color-3)" 
                                 color2="var(--color-2)" 
                                 onChange={onChange} 
-                                onNext={onNext} 
+                                currentQuestion="q3" 
                             />                   
                     </div>   
                 </div>
