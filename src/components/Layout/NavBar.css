@@ -25,6 +25,10 @@
    
     margin-top: 0em;
     font-family: var(--font-theme);
+
+    /* fill: var(--color-gold); */
+    fill: var(--color-4);
+    transition: fill 0.3s ease-in-out;
     
 }
 
@@ -39,10 +43,4 @@ a {
     color: white;
     text-decoration: none;
     transition: color 0.25s ease;
-}
-
-a:hover {
-    /* color: var(--colo-1); */
-    /* background-color: aquamarine; */
-    /* transition: color 0.25s ease; */
 }

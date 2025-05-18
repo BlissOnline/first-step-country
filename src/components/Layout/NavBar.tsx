@@ -7,7 +7,10 @@ const NavBar: React.FC = () => {
     return (
         <nav className='navBody'>
             <div className="logo" > 
-                <Link to="/">First Step Country</Link>
+                <Link to="/">
+                    <img src="/lamp 60 sparkle.svg" alt="Brand Logo" height="60" className='logo'/>
+                </Link>
+                 
             </div>  
             <ul className='nav-links'>
                 {/* logger is link */}

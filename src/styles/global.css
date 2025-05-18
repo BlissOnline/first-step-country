@@ -7,7 +7,8 @@
     --color-4: #55413C; 
     --color-gold: #C5B358; /*maybe logo, discover, submit*/
     --color-nav: #DBCDB2;
-    --color-home: rgba(228, 190, 161, 0.4);
+    /* --color-home: rgba(228, 190, 161, 0.4); */
+    --color-home: #f0e0d5;
       /* #f0e0d5 rgb(240,224,213) home color*/
 
     /*fonts*/
