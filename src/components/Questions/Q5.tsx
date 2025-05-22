@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import imgUnsafe from '../../assets/images/safe-country-graphic.png';
 import './Q5.css';
 import ImportantButtons from '../Buttons/ImportantButtons';
@@ -29,10 +30,23 @@ const Q5: React.FC<Q5Props> = ({ onChange }) => {
 
             <form className='qFiveBody' >
                 <div className='qFiveContainer'>
-                    <label className='qFiveQuestion' >Do you want your country to be considered safe? </label><br />
+                    {/* <label className='qFiveQuestion' >Do you want your country to be considered safe? </label><br /> */}
+                    <label 
+                        className='qFiveQuestion' 
+                        aria-label="Do you want your country to be considered safe?"
+                    >
+                        Do you want your country to be considered safe? 
+                    </label><br />
 
                     <div className='qFiveImgContainer'>
-                        <img src={imgUnsafe} alt='Riot police in protective gear facing a large protest' className='qFiveImg' />
+                        <Image 
+                            src={imgUnsafe} 
+                            alt='Riot police in protective gear facing a large protest' 
+                            width={500} 
+                            height={300} 
+                            className="qFiveImg"
+                        />
+                        {/* <img src={imgUnsafe} alt='Riot police in protective gear facing a large protest' className='qFiveImg' /> */}
                     </div>
 
                     <div>

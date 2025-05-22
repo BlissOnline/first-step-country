@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import imgNomad from '../../assets/images/nomad-visa-graphic.png';
 import './Q8.css';
 import ImportantButtons from '../Buttons/ImportantButtons';
@@ -31,10 +32,22 @@ const Q8: React.FC<Q8Props> = ({ onChange }) => {
             <form className='qEightBody' >
 
                 <div className='qEightContainer' >
-                    <label className='qEightQuestion' >Should your country offer a digital nomad visa or remote work permits?</label><br />
+                    <label 
+                        className='qEightQuestion'
+                        aria-label="Should your country offer a digital nomad visa or remote work permits?"
+                    >
+                        Should your country offer a digital nomad visa or remote work permits?
+                    </label><br />
 
                     <div className='qEightImgContainer' >
-                        <img src={imgNomad} alt='Smiling digital nomad working remotely on a laptop in a scenic location' className='qEightImg'  />
+                        <Image 
+                            src={imgNomad} 
+                            alt="Smiling digital nomad working remotely on a laptop in a scenic location" 
+                            width={500} 
+                            height={300} 
+                            className="qEightImg"
+                        />
+                        {/* <img src={imgNomad} alt='Smiling digital nomad working remotely on a laptop in a scenic location' className='qEightImg'  /> */}
                     </div>
 
                     <div>

@@ -2,13 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // import About from '../../../Pages/About';
 import './NavBar.css';
+import Image from 'next/image';
 
 const NavBar: React.FC = () => {
     return (
         <nav className='navBody'>
             <div className="logo" > 
                 <Link to="/">
-                    <img src="/lamp 60 sparkle.svg" alt="Brand Logo" height="60" className='logo'/>
+                    {/* <img src="/lamp 60 sparkle.svg" alt="Brand Logo" height="60" className='logo'/> */}
+                    <Image src="/lamp 60 sparkle.svg" alt="Brand Logo" width={60} height={60} className='logo'/>
                 </Link>
                  
             </div>  

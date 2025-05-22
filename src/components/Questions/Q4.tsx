@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import imgDining from '../../assets/images/affordable-dining-graphic.png';
 import './Q4.css';
 import ImportantButtons from '../Buttons/ImportantButtons';
@@ -31,10 +32,23 @@ const Q4: React.FC<Q4Props> = ({ onChange }) => {
             <form className={'qFourBody'} >
                 <div className="qFourContainer">
 
-                    <label className='qFourQuestion' >Do you want your country to have affordable dining options?</label><br />
+                    {/* <label className='qFourQuestion' >Do you want your country to have affordable dining options?</label><br /> */}
+                    <label 
+                        className="qFourQuestion" 
+                        aria-label="Do you want your country to have affordable dining options?"
+                    >
+                        Do you want your country to have affordable dining options?
+                    </label><br />
 
                     <div className='qFourImgContainer'>
-                        <img src={imgDining} alt="Street-side taco food stand with a sign displaying 'Tacos'" className='qFourImg' />
+                                                <Image 
+                            src={imgDining} 
+                            alt="Street-side taco food stand with a sign displaying 'Tacos'" 
+                            width={500} 
+                            height={300} 
+                            className="qFourImg"
+                        />
+                        {/* <img src={imgDining} alt="Street-side taco food stand with a sign displaying 'Tacos'" className='qFourImg' /> */}
                     </div>
 
                     <div>
@@ -43,7 +57,7 @@ const Q4: React.FC<Q4Props> = ({ onChange }) => {
                             color1="var(--color-1)" 
                             color2="var(--color-3)" 
                             onChange={onChange} 
-                             currentQuestion="q4"
+                            currentQuestion="q4"
                         />                   
                     </div>  
                 </div>

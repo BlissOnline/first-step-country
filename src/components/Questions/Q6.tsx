@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import imgEducation from '../../assets/images/hq-education-graphic.png';
 import './Q6.css';
 import ImportantButtons from '../Buttons/ImportantButtons';
@@ -30,10 +31,23 @@ const Q6: React.FC<Q6Props> = ({ onChange }) => {
             <form className='qSixBody' >
 
                 <div className='qSixContainer'>
-                    <label className='qSixQuestion' >High-quality education options for foreigners, at a great price?</label><br />
+                    {/* <label className='qSixQuestion' >High-quality education options for foreigners, at a great price?</label><br /> */}
+                    <label 
+                        className='qSixQuestion' 
+                        aria-label="High-quality education options for foreigners, at a great price?"
+                    >
+                        High-quality education options for foreigners, at a great price?
+                    </label><br />
 
                     <div className='qSixImgContainer'>
-                        <img src={imgEducation} alt='Group of students celebrating academic success with a selfie' className='qSixImg' />
+                        <Image 
+                            src={imgEducation} 
+                            alt="Group of students celebrating academic success with a selfie" 
+                            width={500} 
+                            height={300} 
+                            className="qSixImg"
+                        />
+                        {/* <img src={imgEducation} alt='Group of students celebrating academic success with a selfie' className='qSixImg' /> */}
                     </div>
 
                     <div>

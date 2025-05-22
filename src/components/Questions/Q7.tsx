@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import imgMedical from '../../assets/images/hq-medical-graphic.png';
 import './Q7.css';
 import ImportantButtons from '../Buttons/ImportantButtons';
@@ -30,10 +31,22 @@ const Q7: React.FC<Q7Props> = ({ onChange }) => {
             <form className='qSevenBody' >
 
                 <div className='qSevenContainer' >
-                    <label className='qSevenQuestion' >High-quality and affordable medical tourism?</label><br />
+                    <label 
+                        className='qSevenQuestion'
+                        aria-label="High-quality and affordable medical tourism?"
+                    >
+                        High-quality and affordable medical tourism?
+                    </label><br />
 
                     <div className='qSevenImgContainer' >
-                        <img src={imgMedical} alt='Group of doctors in professional attire offering a welcoming gesture' className='qSevenImg' />
+                         <Image 
+                            src={imgMedical} 
+                            alt="Group of doctors in professional attire offering a welcoming gesture" 
+                            width={500} 
+                            height={300} 
+                            className="qSevenImg"
+                        />
+                        {/* <img src={imgMedical} alt='Group of doctors in professional attire offering a welcoming gesture' className='qSevenImg' /> */}
                     </div>
 
                     <div>

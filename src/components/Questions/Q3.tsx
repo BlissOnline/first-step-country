@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import imgEnglish from '../../assets/images/english-graphic.png';
 import './Q3.css';
 import ImportantButtons from '../Buttons/ImportantButtons';
@@ -30,10 +31,25 @@ const Q3: React.FC<Q3Props> = ({ onChange }) => {
             <form className='qThreeBody' >
                 <div className='qThreeContainer'>
 
-                    <label className='qThreeQuestion' >Do you want your country to have English speakers?</label><br />
+                    {/* <label className='qThreeQuestion' >Do you want your country to have English speakers?</label><br /> */}
+                    <label 
+                        className='qThreeQuestion' 
+                        aria-label="Do you want your country to have English speakers?"
+                    >
+                        Do you want your country to have English speakers?
+                    </label><br />
+
+
 
                     <div className='qThreeImgContainer'>
-                        <img src={imgEnglish} alt="Person signaling active listening with multilingual dialogue captions including 'hello' in three languages" className='qThreeImg' />
+                        <Image 
+                            src={imgEnglish} 
+                            alt="Person signaling active listening with multilingual dialogue captions including 'hello' in three languages" 
+                            width={500} 
+                            height={300} 
+                            className="qThreeImg"
+                        />
+                        {/* <img src={imgEnglish} alt="Person signaling active listening with multilingual dialogue captions including 'hello' in three languages" className='qThreeImg' /> */}
                     </div>
 
                     <div>
