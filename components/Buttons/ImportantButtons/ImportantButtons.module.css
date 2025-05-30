@@ -1,0 +1,62 @@
+/* RadioButtonGroup.module.css */
+.buttonContainer {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem; 
+    padding-bottom: 2rem; 
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+
+  /* @media only screen and (max-width: 768px) {
+    .qThreeBody .buttonContainer {
+      margin-bottom: 0rem;
+      
+    }
+  } */
+
+@media only screen and (max-width: 768px) {
+  .buttonContainer { /* ✅ Fixing incorrect reference */
+    margin-bottom: 0rem;
+  }
+}
+  
+.buttons {
+  padding: 1.9rem 3rem; 
+  margin: 0 1rem;
+  margin-bottom: 1em;
+  border-radius: 25px;
+  min-width: 150px; 
+  max-width: 300px; 
+  text-align: center; 
+  flex-grow: 1; 
+  min-height: 3.5rem;
+  align-content: center;
+  font-family: var(--font-button);
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color 0.25s ease;
+
+}
+
+
+
+.buttons:hover {
+  /* background-color: var(--color-gold) !important; */
+  background-color: lightgoldenrodyellow !important;
+  /* color: lightgoldenrodyellow; */
+  /* color: var(--color-gold); */
+  
+}
+
+.important {
+background-color: var(--color1); /* Use variable from your theme */
+}
+
+.notImportant {
+background-color: var(--color2); /* Scoped to CSS */
+}

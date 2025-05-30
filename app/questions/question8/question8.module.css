@@ -1,0 +1,59 @@
+.qEightBody {
+    height: calc(100vh - 3rem);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-home);
+}
+
+.qEightContainer {
+    max-width: 40%;
+    flex-shrink: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    overflow: hidden; 
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 768px) {
+    .qEightContainer {
+        max-width: 90%; /* Adjust this value as needed */
+    }
+}
+
+.qEightQuestion {
+    color: var(--color-4);   
+    font-family: var(--font-question);
+    font-size: clamp(1.6rem, 3.5vw, 2.5rem);
+    margin-top: 3rem;
+    
+}
+
+.qEightImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain; 
+    box-sizing: border-box;  
+    margin: 1.5rem 0;
+}
+
+.qEightImg {
+    max-width: 85%;
+    width: 75%;
+    height: auto;
+
+    flex-shrink: 1;
+    object-fit: contain;
+}
+
+.q8 .important {
+  background-color: var(--color1);
+}
+
+.q8 .notImportant {
+  background-color: var(--color3);
+}

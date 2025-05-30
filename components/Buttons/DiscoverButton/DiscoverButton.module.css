@@ -1,0 +1,26 @@
+.discoverButton {
+   /* padding: 0.5em 0.5em; */
+   font-size: 4em;
+   font-family: var(--font-theme);
+   background-color: var(--color-3); 
+   color: var(--color-gold);
+   border: none;
+   border-radius: 0.5em;
+   cursor: pointer;
+   border-radius: 30px;
+
+   margin-top: 1em;
+   width: 80%; /* Changed from 30rem to 80% */
+   max-width: 30rem; /* Optional: to set a maximum width */
+   padding: 0;
+   border: 2px solid black;
+
+   transition: background-color 0.50s ease;
+
+   white-space: nowrap;
+
+}
+
+.discoverButton:hover {
+    background-color: var(--color-4); 
+}

@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Layout from './components/Layout/Layout';
+import Layout from '../components/Layout/Layout';
 // import './App.css';
-import About from './Pages/About';
-import Home from './Pages/Home';
+import About from '../app/about/about';
+import Home from '../app/page';
 // import Contact from './Pages/Contact';
-import QuestionPage from './Pages/QuestionPage';
-import CountryIndex from './Pages/CountryIndex';
+import QuestionPage from '../components/question-components/QuestionPage';
+import CountryIndex from '../app/country-index/page';
 // import goldObject from './goldObject';
 
 function App() {
