@@ -1,8 +1,7 @@
 import type { Metadata } from "next"; // ✅ Type imports first
 import BreadcrumbSchema from "@/components/BreadcrumbSchema"; // ✅ Project-specific component (important for SEO)
-import ImportantButtons from "../../../components/Buttons/ImportantButtons/ImportantButtons"; // ✅ Another project-specific component
 import Image from "next/image"; // ✅ Built-in Next.js optimization (can sit here or above)
-import "./question7.module.css"; // ✅ CSS styles last
+import Q7Wrapper from "@/components/question-clients/Q7Wrapper";
 
 export function generateMetadata(): Metadata {
   return {
@@ -23,54 +22,19 @@ export function generateMetadata(): Metadata {
     },
   };
 }
-
-//define props interface if your component will receive any props
-interface Q7Props {
-    value: string;
-    onChange: (value: string) => void;
-}
-
-//define the Functional Component 
-const Q7: React.FC<Q7Props> = ({ onChange }) => {
-
+export default function Q7Page() { 
     return (
         <>
-            {/* ✅ Added BreadcrumbSchema inside JSX */}
+
             <BreadcrumbSchema questionNumber={7} />
-
-            <form className='qSevenBody' >
-
-                <div className='qSevenContainer' >
-                    <label 
-                        className='qSevenQuestion'
-                        aria-label="High-quality and affordable medical tourism?"
-                    >
-                        High-quality and affordable medical tourism?
-                    </label><br />
-
-                    <div className='qSevenImgContainer' >
-                         <Image 
-                            src="/questionImages/hq-medical-graphic.png"
-                            alt="Group of doctors in professional attire offering a welcoming gesture" 
-                            width={500} 
-                            height={300} 
-                            className="qSevenImg"
-                        />
-                    </div>
-
-                    <div>
-                        <ImportantButtons 
-                            name="medical" 
-                            // color1="var(--color-3)" 
-                            // color2="var(--color-2)" 
-                            onChange={onChange} 
-                            currentQuestion="q7"
-                        />                   
-                    </div> 
-                </div>
-            </form>
+            <Image 
+                src="/questionImages/hq-medical-graphic.png"
+                alt="Group of doctors in professional attire offering a welcoming gesture" 
+                width={500} 
+                height={300} 
+                className="qSevenImg"
+            />
+            <Q7Wrapper />
         </>        
     );
 };
-
-export default Q7;

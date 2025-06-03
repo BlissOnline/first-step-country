@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from 'next/image';
-import ImportantButtons from '../../../components/Buttons/ImportantButtons/ImportantButtons';
-import './question4.module.css';
-
+import Q4Wrapper from "@/components/question-clients/Q4Wrapper";
 
 export function generateMetadata(): Metadata {
   return {
@@ -24,57 +22,19 @@ export function generateMetadata(): Metadata {
     },
   };
 }
-//define props interface if your component will receive any props
-interface Q4Props {
-    value: string;
-    onChange: (value: string) => void;
-}
 
-//nn
-  //export default function Q4({ onChange }: { onChange: (value: string) => void }) {
-
-//define the Functional Component 
-const Q4: React.FC<Q4Props> = ({ onChange }) => {
+export default function Q4Page() { 
     return (
         <>
-            {/* ✅ Added BreadcrumbSchema inside JSX */}
             <BreadcrumbSchema questionNumber={4} />
-
-            <form className={'qFourBody'} >
-                <div className="qFourContainer">
-
-                    {/* <label className='qFourQuestion' >Do you want your country to have affordable dining options?</label><br /> */}
-                    <label 
-                        className="qFourQuestion" 
-                        aria-label="Do you want your country to have affordable dining options?"
-                    >
-                        Do you want your country to have affordable dining options?
-                    </label><br />
-
-                    <div className='qFourImgContainer'>
-                        <Image 
-                            src="/questionImages/affordable-dining-graphic.png" 
-                            alt="Street-side taco food stand with a sign displaying 'Tacos'" 
-                            width={500} 
-                            height={300} 
-                            className="qFourImg"
-                        />
-                        {/* <img src={imgDining} alt="Street-side taco food stand with a sign displaying 'Tacos'" className='qFourImg' /> */}
-                    </div>
-
-                    <div>
-                        <ImportantButtons 
-                            name="dining" 
-                            // color1="var(--color-1)" 
-                            // color2="var(--color-3)" 
-                            onChange={onChange} 
-                            currentQuestion="q4"
-                        />                   
-                    </div>  
-                </div>
-            </form>
+            <Image 
+                src="/questionImages/affordable-dining-graphic.png" 
+                alt="Street-side taco food stand with a sign displaying 'Tacos'" 
+                width={500} 
+                height={300} 
+                // className="qFourImg"
+            />
+            <Q4Wrapper />
         </>
     );
 };
-
-export default Q4;

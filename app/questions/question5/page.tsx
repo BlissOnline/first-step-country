@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
-import ImportantButtons from '../../../components/Buttons/ImportantButtons/ImportantButtons';
 import Image from 'next/image';
-import './question5.module.css';
-
-
+import Q5Wrapper from "@/components/question-clients/Q5Wrapper";
 
 export function generateMetadata(): Metadata {
   return {
@@ -26,54 +23,20 @@ export function generateMetadata(): Metadata {
   };
 }
 
-interface Q5Props {
-    value: string;
-    onChange: (value: string) => void;
-}
-
-
-//define the Functional Component 
-const Q5: React.FC<Q5Props> = ({ onChange }) => {
-
+export default function Q5Page() { 
     return (
         <>
-            {/* ✅ Added BreadcrumbSchema inside JSX */}
             <BreadcrumbSchema questionNumber={5} />
 
-            <form className='qFiveBody' >
-                <div className='qFiveContainer'>
-                    {/* <label className='qFiveQuestion' >Do you want your country to be considered safe? </label><br /> */}
-                    <label 
-                        className='qFiveQuestion' 
-                        aria-label="Do you want your country to be considered safe?"
-                    >
-                        Do you want your country to be considered safe? 
-                    </label><br />
-
-                    <div className='qFiveImgContainer'>
-                        <Image 
-                            src="/questionImages/safe-country-graphic.png"
-                            alt='Riot police in protective gear facing a large protest' 
-                            width={500} 
-                            height={300} 
-                            className="qFiveImg"
-                        />
-                        {/* <img src={imgUnsafe} alt='Riot police in protective gear facing a large protest' className='qFiveImg' /> */}
-                    </div>
-
-                    <div>
-                        <ImportantButtons 
-                            name="unsafe" 
-                            // color1="var(--color-1)" 
-                            // color2="var(--color-2)" 
-                            onChange={onChange} 
-                            currentQuestion="q5"
-                        />                   
-                    </div>  
-                </div>
-            </form>
+            
+            <Image 
+                src="/questionImages/safe-country-graphic.png"
+                alt='Riot police in protective gear facing a large protest' 
+                width={500} 
+                height={300} 
+                // className="qFiveImg"
+            />
+            <Q5Wrapper />
         </>        
     );
 };
-
-export default Q5;

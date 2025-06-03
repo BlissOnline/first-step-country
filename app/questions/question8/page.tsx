@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
-import ImportantButtons from '../../../components/Buttons/ImportantButtons/ImportantButtons';
 import Image from 'next/image';
-import './question8.module.css';
+import Q8Wrapper from "@/components/question-clients/Q8Wrapper";
+
 
 export function generateMetadata(): Metadata {
   return {
@@ -24,53 +24,18 @@ export function generateMetadata(): Metadata {
   };
 }
 
-//define props interface if your component will receive any props
-interface Q8Props {
-    value: string;
-    onChange: (value: string) => void;
-}
-
-//define the Functional Component 
-const Q8: React.FC<Q8Props> = ({ onChange }) => {
-
+export default function Q8Page() { 
     return (
         <>
-            {/* ✅ Added BreadcrumbSchema inside JSX */}
             <BreadcrumbSchema questionNumber={8} />
-
-            <form className='qEightBody' >
-
-                <div className='qEightContainer' >
-                    <label 
-                        className='qEightQuestion'
-                        aria-label="Should your country offer a digital nomad visa or remote work permits?"
-                    >
-                        Should your country offer a digital nomad visa or remote work permits?
-                    </label><br />
-
-                    <div className='qEightImgContainer' >
-                        <Image 
-                            src='/questionImages/nomad-visa-graphic.png'
-                            alt="Smiling digital nomad working remotely on a laptop in a scenic location" 
-                            width={500} 
-                            height={300} 
-                            className="qEightImg"
-                        />
-                    </div>
-
-                    <div>
-                        <ImportantButtons 
-                            name="nomadVisa" 
-                            // color1="var(--color-1)" 
-                            // color2="var(--color-3)" 
-                            onChange={onChange} 
-                            currentQuestion="q8" 
-                        />                   
-                    </div>
-                </div>
-            </form>
+            <Image 
+                src='/questionImages/nomad-visa-graphic.png'
+                alt="Smiling digital nomad working remotely on a laptop in a scenic location" 
+                width={500} 
+                height={300} 
+                className="qEightImg"
+            />
+            <Q8Wrapper />
         </>
     );
 };
-
-export default Q8;

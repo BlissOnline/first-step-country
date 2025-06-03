@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
-import ImportantButtons from '../../../components/Buttons/ImportantButtons/ImportantButtons';
 import Image from 'next/image';
-import styles from './question1.module.css'
+import Q1Wrapper from "@/components/question-clients/Q1Wrapper";
+// import dynamic from 'next/dynamic'; // ✅ Allows dynamic client-side loading
 
-// import './question1.module.css';
+// ✅ Dynamically import `Q1Client.tsx`
+// const Q1Client = dynamic(() => import("@/components/question-clients/Q1Client"), { ssr: false });
+// import Q1Client from "@/components/question-clients/Q1Client"
 
 export function generateMetadata(): Metadata {
   return {
@@ -26,63 +28,23 @@ export function generateMetadata(): Metadata {
   };
 }
 
-interface Q1Props {
-    value: string;
-    onChange: (value: string) => void;
-    // onNext: () => void;
-}
-
-const Q1: React.FC<Q1Props> = ({ onChange }) => {
+// const Q1: React.FC<Q1Props> = ({ onChange }) => { //value here?
+export default function Q1Page() { // ✅ Remove unnecessary props
     return (
         <>
-            {/* ✅ Added BreadcrumbSchema inside JSX */}
             <BreadcrumbSchema questionNumber={1} />
-
-            <form className={styles.qOneBody}>
-                <div className={styles.qOneContainer}>
-
-                    {/* <label className="qOneQuestion">Access to the ocean?</label><br /> */}
-                    <label 
-                        className={styles.qOneQuestion} 
-                        aria-label="Do you want access to the ocean?"
-                    >
-                        Access to the ocean?
-                    </label><br />
-
-
-                    <div className={styles.qOneImgContainer}>
-                        <Image 
-                            src="/questionImages/surf-graphic.png" // ✅ No need for import statements
-                            // src='../../../public/questionImages/surf-graphic.png'
-                            alt="Surfing graphic" 
-                            width={500} 
-                            height={300} 
-                            className={styles.qOneImg}
-                            priority // ✅ Marks this image as high-priority
-                        />
-                        {/* <img 
-                            src={imgSurf} 
-                            alt="Woman balancing on a surfboard having fun" 
-                            className='qOneImg' 
-                        /> */}
-                    </div>
-
-                    <div>
-                        <ImportantButtons 
-                            name="ocean" 
-                            // color1="var(--color-1)" 
-                            // color2="var(--color-2)" 
-                            onChange={onChange} 
-                            currentQuestion="q1" //✅ Pass the current question identifier
-                        />
-                    </div>
-
-                </div>
-            </form>
+            <Image 
+                src="/questionImages/surf-graphic.png" // ✅ No need for import statements
+                // src='../../../public/questionImages/surf-graphic.png'
+                alt="Surfing graphic" 
+                width={500} 
+                height={300} 
+                // priority // ✅ Marks this image as high-priority
+            />
+            <Q1Wrapper /> {/* ✅ Now dynamically loads the client-side component safely */}  
         </>
-  
     );
 };
 
-export default Q1;
+// export default Q1;
 

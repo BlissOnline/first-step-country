@@ -1,21 +1,23 @@
 //was CountryIndex before next.js
 
 import React from 'react';
-import { useSearchParams } from "react-router-dom";
-import { Country } from '../types';
-import goldObject from '../goldObject';
+// import { useSearchParams } from "react-router-dom";
+import { useSearchParams } from "next/navigation"; // ✅ Use Next.js version
+import { Country } from '@/lib/types';
+import goldObject from '@/lib/goldObject'
 import CountryList from '../../components/CountryList'; // Ensure this path is correct
 import { Helmet } from 'react-helmet-async';
 
-
-
+const ocean = searchParams.get("ocean"); // ✅ Works because `.get()` is valid on `useSearchParams()`
 //have to define props interface to fix errors
 // interface CountryIndexProps {
 //     countries: Country[];
 // }
 
 const CountryIndex: React.FC = () => {
-    let [searchParams] = useSearchParams();
+    const searchParams = useSearchParams(); // ✅ Returns `ReadonlyURLSearchParams`, NOT `URLSearchParams`
+
+    // let [searchParams] = useSearchParams();
 
     const filteredCountries = goldObject.filter((item: Country) => {
         if (searchParams.get('ocean') === 'important' && !item.coast) return false;

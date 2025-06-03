@@ -1,0 +1,28 @@
+"use client"; // ✅ Allows interactivity
+import React from "react";
+import ImportantButtons from "@/components/Buttons/ImportantButtons/ImportantButtons";
+import styles from "./question3.module.css";
+
+interface Q3Props {
+    value?: string;  // ✅ Make `value` optional
+    onChange?: (value: string) => void; // ✅ Make `onChange` optional
+}
+
+const Q3Client: React.FC<Q3Props> = ({ value, onChange = () => {} }) => {
+    return (
+        <form className={styles.qThreeBody}>
+            <div className={styles.qThreeContainer}>
+                <label 
+                        className='qThreeQuestion' 
+                        aria-label="Do you want your country to have English speakers?"
+                    >
+                        Do you want your country to have English speakers?
+                </label>
+                <p>Current Selection: {value}</p> ✅ Display the selected value
+                <ImportantButtons name="english" onChange={onChange} currentQuestion="q3" />
+            </div>
+        </form>
+    );
+};
+
+export default Q3Client;

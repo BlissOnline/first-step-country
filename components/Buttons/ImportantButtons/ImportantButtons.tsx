@@ -17,13 +17,24 @@ const ImportantButtons: React.FC<ImportantButtonsProps> = ({ name, onChange, cur
     // const navigate = useNavigate(); // ✅ Hook for navigation
     const router = useRouter(); // ✅ Replace useNavigate with Next.js' useRouter
 
+    // const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    //     onChange(e.target.value);
+        
+
     const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        onChange(e.target.value);
-        // onNext();
+    if (typeof onChange !== "function") {
+        console.error("🚨 ImportantButtons.tsx received an undefined onChange! Check its parent component.");
+        return;
+    }
+    onChange(e.target.value);
+
+
 
         // ✅ Determine next question based on current question
         const nextQuestionNumber = Number(currentQuestion.replace('q', '')) + 1;
-        const nextRoute = nextQuestionNumber <= 8 ? `/questions/q${nextQuestionNumber}` : `/questions/results`;
+        // const nextRoute = nextQuestionNumber <= 8 ? `/questions/q${nextQuestionNumber}` : `/questions/results`;
+        const nextRoute = nextQuestionNumber <= 8 ? `/questions/question${nextQuestionNumber}` : `/questions/results`;
+
 
         router.push(nextRoute); // ✅ Navigate using Next.js
         // navigate(nextRoute); // ✅ Navigate to the next question or results page
