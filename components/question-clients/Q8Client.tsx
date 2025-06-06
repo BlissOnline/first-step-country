@@ -1,5 +1,8 @@
 "use client"; // ✅ Allows interactivity
 import React from "react";
+
+// import { useRouter } from "next/navigation"; // ✅ Import Next.js router
+
 import ImportantButtons from "@/components/Buttons/ImportantButtons/ImportantButtons";
 import styles from "./question8.module.css";
 
@@ -9,6 +12,12 @@ interface Q8Props {
 }
 
 const Q8Client: React.FC<Q8Props> = ({ value, onChange = () => {} }) => {
+    // const router = useRouter();  // ✅ Initialize router
+
+    // const handleSubmit = () => {  
+    //     router.push("/results");  // ✅ Redirect to results page  
+    // };  
+
     return (
         <form className={styles.qEightBody}>
             <div className={styles.qEightContainer}>

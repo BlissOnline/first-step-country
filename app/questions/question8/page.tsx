@@ -3,7 +3,6 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from 'next/image';
 import Q8Wrapper from "@/components/question-clients/Q8Wrapper";
 
-
 export function generateMetadata(): Metadata {
   return {
     title: "Best Countries for Digital Nomads – Top Destinations with Remote Work Visas",

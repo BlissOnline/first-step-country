@@ -33,7 +33,7 @@ const ImportantButtons: React.FC<ImportantButtonsProps> = ({ name, onChange, cur
         // ✅ Determine next question based on current question
         const nextQuestionNumber = Number(currentQuestion.replace('q', '')) + 1;
         // const nextRoute = nextQuestionNumber <= 8 ? `/questions/q${nextQuestionNumber}` : `/questions/results`;
-        const nextRoute = nextQuestionNumber <= 8 ? `/questions/question${nextQuestionNumber}` : `/questions/results`;
+        const nextRoute = nextQuestionNumber <= 8 ? `/questions/question${nextQuestionNumber}` : `/results`;
 
 
         router.push(nextRoute); // ✅ Navigate using Next.js

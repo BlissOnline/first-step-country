@@ -1,6 +1,7 @@
 // import { useRouter } from "next/navigation";
 import { useParams } from "next/navigation";  // ✅ Correct Next.js import
-import React, { useState } from "react"; // ✅ Make sure useState is imported
+// import React, { useState } from "react"; // ✅ Make sure useState is imported
+import React, { useState, useEffect } from "react"; 
 
 
 // import React, { useState } from 'react';
@@ -9,6 +10,9 @@ import React, { useState } from "react"; // ✅ Make sure useState is imported
 
 // import Q1 from "@/app/questions/question1/page";
 // import Q2 from "@/app/questions/question2/page";
+
+import ShowResults from "@/app/results/page";
+
 
 import Q1Client from "@/components/question-clients/Q1Client";
 import Q2Client from "@/components/question-clients/Q2Client";
@@ -25,7 +29,7 @@ import Q8Client from "@/components/question-clients/Q8Client";
 // import Q6 from "@/app/questions/question6/page";
 // import Q7 from "@/app/questions/question7/page";
 // import Q8 from "@/app/questions/question8/page";
-import ShowResults from "@/app/results/page";
+
 
 // import Q1 from "@/app/questions/question1/page";
 // import Q2 from '../../app/questions/question2/page';
@@ -46,16 +50,38 @@ const QuestionPage: React.FC = () => {
     //const { questionId } = useParams(); // Get the question number from the URL
     //const navigate = useNavigate(); 
 
-    const [formData, setFormData] = useState({
-        ocean: '',
-        ppm: 0,
-        english: '',
-        dining: '',
-        unsafe: '',
-        education: '',
-        medical: '',
-        nomadVisa: ''
+    // const [formData, setFormData] = useState({
+    //     ocean: '',
+    //     ppm: 0,
+    //     english: '',
+    //     dining: '',
+    //     unsafe: '',
+    //     education: '',
+    //     medical: '',
+    //     nomadVisa: ''
+    // });
+
+        // 🔥 Store `formData` in localStorage so it persists across pages
+    const [formData, setFormData] = useState(() => {
+        if (typeof window !== "undefined") {
+            const savedData = localStorage.getItem("formData");
+            return savedData ? JSON.parse(savedData) : {
+                ocean: '',
+                ppm: 0,
+                english: '',
+                dining: '',
+                unsafe: '',
+                education: '',
+                medical: '',
+                nomadVisa: ''
+            };
+        }
+        return {};
     });
+
+    useEffect(() => {
+        localStorage.setItem("formData", JSON.stringify(formData)); // ✅ Saves preferences
+    }, [formData]);
 
     const handleChange = (name: string, value: string | number) => {
         setFormData({
@@ -74,6 +100,8 @@ const QuestionPage: React.FC = () => {
             case 'q6': return <Q6Client value={formData.education} onChange={(value) => handleChange('education', value)}/>;
             case 'q7': return <Q7Client value={formData.medical} onChange={(value) => handleChange('medical', value)} />;
             case 'q8': return <Q8Client value={formData.nomadVisa} onChange={(value) => handleChange('nomadVisa', value)} />;
+
+
             case 'results': return <ShowResults formData={formData} />;
             default: return <p>Question not found.</p>;
         }

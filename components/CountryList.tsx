@@ -1,8 +1,18 @@
+"use client";
+
 import React, { useEffect } from 'react';
 // import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import { Country, countryLinks } from '../lib/types';
-import './CountryList.css';
+// import { Country, CountryLinks } from '@/lib/types';
+// import { Country, CountryLinks } from '@/lib/types';
+import { Country, CountryLinks } from '@/lib/types';
+
+
+import countryLinksDataRaw from "@/lib/data/countryLinks.json";
+const countryLinksData: CountryLinks = countryLinksDataRaw  as unknown as CountryLinks; // ✅ Explicit type assertion
+
+// import countryLinksData from '@/public/data/countryLinks.json';
+// import './CountryList.css';
 
 // Create a map of country codes to flag images
 //const flagMap: { [key: string]: () => Promise<{ default: string }> } = {
@@ -231,7 +241,7 @@ const CountryList: React.FC<{ countries: Country[] }> = ({ countries }) => {
     // ✅ Merge affiliate links into countries dynamically
     const affiliateCountries = countries.map(country => ({
         ...country,
-        affiliateLinks: countryLinks[country.name] || { flights: [], hotels: [], attractions: [] }
+        affiliateLinks: countryLinksData[country.name] || { flights: [], hotels: [], attractions: [] }
     }));
 
     return (

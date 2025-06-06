@@ -1,85 +1,18 @@
-//was CountryIndex before next.js
+import React from "react";
+import CountryIndexWrapper from "@/components/country-clients/CountryIndexWrapper"; // ✅ Absolute path
 
-import React from 'react';
-// import { useSearchParams } from "react-router-dom";
-import { useSearchParams } from "next/navigation"; // ✅ Use Next.js version
-import { Country } from '@/lib/types';
-import goldObject from '@/lib/goldObject'
-import CountryList from '../../components/CountryList'; // Ensure this path is correct
-import { Helmet } from 'react-helmet-async';
 
-const ocean = searchParams.get("ocean"); // ✅ Works because `.get()` is valid on `useSearchParams()`
-//have to define props interface to fix errors
-// interface CountryIndexProps {
-//     countries: Country[];
-// }
 
-const CountryIndex: React.FC = () => {
-    const searchParams = useSearchParams(); // ✅ Returns `ReadonlyURLSearchParams`, NOT `URLSearchParams`
+//console.log("DEBUG: CountryIndexWrapper Type =>", CountryIndexWrapper); // ✅ Debugging line
 
-    // let [searchParams] = useSearchParams();
-
-    const filteredCountries = goldObject.filter((item: Country) => {
-        if (searchParams.get('ocean') === 'important' && !item.coast) return false;
-
-        let ppm = +(searchParams.get('ppm') || 0);
-        // if (ppm && ppm <= item.ppm) return false;
-        if (ppm && item.ppm > ppm) return false;
-
-        if (searchParams.get('english') === 'important' && !item.englishSpeaking) return false;
-       
-        if (searchParams.get('dining') === 'important' && !item.affordableDining) return false;
-      
-        if (searchParams.get('unsafe') === 'important' && item.unsafe) return false;
-       
-        if (searchParams.get('education') === 'important' && !item.affordableEducation) return false;
-
-        if (searchParams.get('medical') === 'important' && !item.affordableHealthCare) return false;
-        
-        if (searchParams.get('nomadVisa') === 'important' && !item.nomadVisa) return false;
-        // if (data.nomadVisa === 'notImportant' && item.coast) return false;
-
-        return true;
-    });
-
-    return (
-        <>
-            <Helmet>
-                <title>Find Your Perfect Destination – Countries Matching Your Preferences!</title>
-                <meta 
-                    name="description"
-                    content="Discover the best countries tailored to your preferences! See personalized quiz results and find flights, hotels, and tours for your next adventure."
-                />
-            </Helmet>
-            <div>
-                <h1 
-                    className='titleIndex' 
-                    style={{
-                        background: 'var(--color-home)', 
-                        display: 'block', 
-                        width: '100%',
-                        padding: '0.7rem',
-                        fontFamily: 'var(--font-question)',
-                        textAlign: 'start',
-                        paddingLeft: '1.8em',
-                        color: 'var(--color-3)',
-                        //textDecoration: 'underline',
-                    }} >
-                    <span 
-                        style={{
-                            color: 'var(--color-gold)',
-                            // textDecoration: 'underline',
-                            fontFamily: 'var(--font-general)'
-                        }}>
-                        {filteredCountries.length}
-                    </span> discovered matches
-                </h1>
-                <CountryList countries={filteredCountries} />
-            </div>
-            
-        </>
-        
-    );
+console.log("DEBUG: typeof CountryIndexWrapper =>", typeof CountryIndexWrapper); // ✅ Check type
+console.log("DEBUG: Full CountryIndexWrapper =>", CountryIndexWrapper); // ✅ Deep inspection
+console.log("DEBUG: CountryIndexWrapper keys =>", Object.keys(CountryIndexWrapper)); // ✅ What properties exist?
+export const metadata = {
+    title: "Find Your Perfect Destination – Countries Matching Your Preferences!",
+    description: "Discover the best countries tailored to your preferences! See personalized quiz results and find flights, hotels, and tours for your next adventure."
 };
 
-export default CountryIndex;
+export default function CountryIndexPage() {
+    return <CountryIndexWrapper />;
+}

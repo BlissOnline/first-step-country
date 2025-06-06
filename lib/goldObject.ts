@@ -1,5 +1,19 @@
-import { Country, countryLinks } from './types';
+// import { Country, CountryLinks } from './types';
+// import { Country, CountryLinks } from './types';
+// import { Country, CountryLinks } from '@/lib/types';
+import { Country, CountryLinks } from '@/lib/types';
+//import { CountryLinks as countryLinksData } from "@/lib/countryLinks"; // ✅ Rename imported object to avoid confusion
+import countryLinksData from "@/lib/data/countryLinks.json"; // ✅ Rename imported object to avoid confusion
+// import countryLinks from "../public/data/countryLinks.json";
+
+const countryLinksTyped: CountryLinks = countryLinksData as CountryLinks; // ✅ Type assertion
+
+// import { getCountryLinks } from "@/lib/countryLinks"; // ✅ Import the function, not the type
 // import countryLinks from '../src/assets/data/countryLinks.json';
+// import countryLinks from "../data/countryLinks.json";
+
+
+// import { countryLinks } from './countryLinks';
 
 
 
@@ -2753,9 +2767,16 @@ const goldObject: Country[] = [
         "flagUrl": "/public/flagsZW.png"
     }
 ].map(country => ({
-    ...country, // Keep existing properties
-    links: countryLinks[country.name] || {} // Add links dynamically
+    ...country, 
+    links: countryLinksTyped[country.name] || { flights: [], hotels: [], attractions: [] } // ✅ TypeScript now recognizes indexing
 }));
+
+
+
+// .map(country => ({
+//     ...country, // Keep existing properties
+//     links: countryLinksData[country.name] || {} // Add links dynamically
+// }));
 
 
 

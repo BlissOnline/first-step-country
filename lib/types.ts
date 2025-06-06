@@ -27,14 +27,28 @@ export interface CountryCodesListInt {
 } 
 
 // ✅ Define the type of countryLinks to allow indexing with a string
+// export type CountryLinks = {
+//     [key: string]: {
+//       flights?: string | null;
+//       hotels?: string | null;
+//       attractions?: string | null;
+//     };
+//   };
+
+// export type CountryLinks = Record<string, { // ✅ Allow indexing with string keys
+//     flights?: string | null;
+//     hotels?: string | null;
+//     attractions?: string | null;
+// }>;
+
 export type CountryLinks = {
     [key: string]: {
       flights?: string | null;
       hotels?: string | null;
       attractions?: string | null;
     };
-  };
-  
+};
+
 // ✅ Import JSON file and apply type assertion
 // import countryLinksRaw from './assets/data/countryLinks.json';
 
