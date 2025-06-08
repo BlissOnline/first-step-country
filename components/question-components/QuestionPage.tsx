@@ -14,7 +14,8 @@ import React, { useState, useEffect } from "react";
 import ShowResults from "@/app/results/page";
 
 
-import Q1Client from "@/components/question-clients/Q1Client";
+// import Q1Client from "@/components/question-clients/Q1Client";
+import Q1Wrapper from "@/components/question-clients/Q1Wrapper";
 import Q2Client from "@/components/question-clients/Q2Client";
 import Q3Client from "@/components/question-clients/Q3Client";
 import Q4Client from "@/components/question-clients/Q4Client";
@@ -22,24 +23,6 @@ import Q5Client from "@/components/question-clients/Q5Client";
 import Q6Client from "@/components/question-clients/Q6Client";
 import Q7Client from "@/components/question-clients/Q7Client";
 import Q8Client from "@/components/question-clients/Q8Client";
-
-// import Q3 from "@/app/questions/question3/page";
-// import Q4 from "@/app/questions/question4/page";
-// import Q5 from "@/app/questions/question5/page";
-// import Q6 from "@/app/questions/question6/page";
-// import Q7 from "@/app/questions/question7/page";
-// import Q8 from "@/app/questions/question8/page";
-
-
-// import Q1 from "@/app/questions/question1/page";
-// import Q2 from '../../app/questions/question2/page';
-// import Q3 from '../../app/questions/question3/page';
-// import Q4 from '../../app/questions/question4/page';
-// import Q5 from '../../app/questions/question5/page';
-// import Q6 from '../../app/questions/question6/page';
-// import Q7 from '../../app/questions/question7/page';
-// import Q8 from '../../app/questions/question8/page';
-// import ShowResults from '../../app/results/page';
 
 const QuestionPage: React.FC = () => {
     // const router = useRouter();
@@ -80,19 +63,40 @@ const QuestionPage: React.FC = () => {
     });
 
     useEffect(() => {
-        localStorage.setItem("formData", JSON.stringify(formData)); // ✅ Saves preferences
+        console.log("DEBUG: Current formData before saving =>", formData); // ✅ See what data exists before saving
+
+        if (Object.keys(formData).length > 0) {  
+            localStorage.setItem("formData", JSON.stringify(formData));
+            console.log("✅ DEBUG: Saved formData to localStorage =>", localStorage.getItem("formData"));
+        } else {
+            console.log("🚨 WARNING: formData is empty—not saving!");
+        }
     }, [formData]);
 
+
+
+    // const handleChange = (name: string, value: string | number) => {
+    //     setFormData({
+    //         ...formData,
+    //         [name]: value
+    //     });
+    // };
     const handleChange = (name: string, value: string | number) => {
-        setFormData({
-            ...formData,
-            [name]: value
-        });
+        console.log(`DEBUG: handleChange called for ${name} = ${value}`); // ✅ Log when function runs
+
+        const updatedFormData = { ...formData, [name]: value };
+        setFormData(updatedFormData);
+
+        console.log(`DEBUG: After update - formData[${name}] =`, updatedFormData[name]); // ✅ Log new value
     };
+
+
 
     const renderQuestion = () => {
         switch (questionId) {
-            case 'q1': return <Q1Client value={formData.ocean} onChange={(value) => handleChange('ocean', value)} />;
+            // case 'q1': return <Q1Client value={formData.ocean} onChange={(value) => handleChange('ocean', value)} />;
+            case 'q1': return <Q1Wrapper value={formData.ocean} onChange={(value) => handleChange('ocean', value)} />;
+
             case 'q2': return <Q2Client value={formData.ppm} onChange={(e) => handleChange('ppm', e.target.value)} />;
             case 'q3': return <Q3Client value={formData.english} onChange={(value) => handleChange('english', value)} />;
             case 'q4': return <Q4Client value={formData.dining} onChange={(value) => handleChange('dining', value)} />;

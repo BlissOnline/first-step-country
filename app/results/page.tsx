@@ -1,52 +1,45 @@
-//file was ShowResults.tsx before next.js
 "use client";
-import React from 'react';
-import { useRouter } from "next/navigation"; // ✅ Correct Next.js routing
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";  
 import styles from "./results.module.css";
 
-
-//anyName
-//
-interface ShowResultsProps {
-    // formData: any;
-    formData: Record<string, any>; // ✅ Better type definition
+interface ShowResultsProps {  
+    formData?: Record<string, any>;  // ✅ Explicitly define props type to fix TypeScript error
 }
 
-// will be object with form data key
-// const ShowResults: React.FC<ShowResultsProps> = ({ handleSubmit }) => {
-// we dessembled props to form data
 const ShowResults: React.FC<ShowResultsProps> = ({ formData }) => {
-    // const navigate = useNavigate();
     const router = useRouter();
+    const [savedData, setSavedData] = useState<Record<string, any> | null>(null);
+
+    // ✅ Restore `formData` when reaching `/results`
+    useEffect(() => {
+        if (!formData || Object.keys(formData).length === 0) {
+            console.log("🚨 WARNING: formData is empty—loading from localStorage!");
+            const localData = localStorage.getItem("formData");
+            setSavedData(localData ? JSON.parse(localData) : null);
+        } else {
+            setSavedData(formData);
+        }
+    }, [formData]);
 
     const handleClick = () => {
-        // console.log("DEBUG: Form Data =>", formData); // ✅ See if form data contains expected values
-        // console.log("DEBUG: Query String =>", new URLSearchParams(formData).toString()); // ✅ See generated query string
-        // const queryString = new URLSearchParams(formData).toString();
-        // navigate("/countryIndex?" + Object.keys(formData).map((key) => `${key}=${formData[key]}`).join('&'));
-        // navigate(`/countryIndex?${queryString}`); 
-        // navigate("/countryIndex?" + new URLSearchParams(formData).toString());
-        // navigate(`/country-index?${new URLSearchParams(formData).toString()}`);
-        // router.push(`/country-index?${new URLSearchParams(formData).toString()}`); // ✅ Fix navigation
-        // router.push("/results");
-        console.log("DEBUG: Form Data before navigation =>", formData);
-        const queryString = new URLSearchParams(formData).toString();
+        if (!savedData || Object.keys(savedData).length === 0) {
+            console.log("🚨 ERROR: No form data—cannot navigate!");
+            return;
+        }
+
+        const queryString = new URLSearchParams(savedData).toString();
         console.log("DEBUG: Generated Query String =>", queryString);
 
         router.push(`/country-index?${queryString}`);
-
-
-        // router.push(`/country-index?${new URLSearchParams(formData).toString()}`);
-
     };
-
 
     return (
         <div className={styles.showResultsContainer}>
             <h1 className={styles.showResultsHeader}>You're all done</h1>
-            {/* <button className='showResultsButton' onClick={handleSubmit} >Show Results</button> */}
-            <button className={styles.showResultsButton} onClick={handleClick} >Show Results</button>
-            {/* onClick={handleSubmit} remove for onClick for nav to work */}
+            <button className={styles.showResultsButton} onClick={handleClick}>
+                Show Results
+            </button>
         </div>
     );
 };

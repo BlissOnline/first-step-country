@@ -7,7 +7,10 @@ import { useParams } from "next/navigation"; // ✅ Correct Next.js import
 
 // import Q1 from "@/app/questions/question1/page";
 
-import Q1Client from "@/components/question-clients/Q1Client";
+import ShowResults from "@/app/results/page";
+
+// import Q1Client from "@/components/question-clients/Q1Client";
+import Q1Wrapper from "@/components/question-clients/Q1Wrapper";
 import Q2Client from "@/components/question-clients/Q2Client";
 import Q3Client from "@/components/question-clients/Q3Client";
 import Q4Client from "@/components/question-clients/Q4Client";
@@ -23,7 +26,7 @@ import Q8Client from "@/components/question-clients/Q8Client";
 // import Q6 from "@/app/questions/question6/page";
 // import Q7 from "@/app/questions/question7/page";
 // import Q8 from "@/app/questions/question8/page";
-import ShowResults from "@/app/results/page";
+
 
 //defining Component with useState hook being an object
 const QuestionLogicForm: React.FC = () => {
@@ -45,14 +48,18 @@ const QuestionLogicForm: React.FC = () => {
     //defining handleChange function
     // ✅ Function to handle input changes
     const handleChange = (name: string, value: string | number) => {
+        const newData = { ...formData, [name]: value };
         setFormData({ ...formData, [name]: value });
+        console.log("DEBUG: Updated formData:", newData);
     };
 
     // ✅ Dynamically render the correct question based on the URL
     const renderQuestion = () => {
         switch (questionId) {
             // case 'q1': return <Q1 value={formData.ocean} onChange={(value) => handleChange('ocean', value)} />;
-            case 'q1': return <Q1Client value={formData.ocean} onChange={(value) => handleChange('ocean', value)} />; // ✅ Fixed!
+            // case 'q1': return <Q1Client value={formData.ocean} onChange={(value) => handleChange('ocean', value)} />; 
+            case 'q1': return <Q1Wrapper value={formData.ocean} onChange={(value) => handleChange('ocean', value)} />;
+
 
             // case 'q2': return <Q2 value={formData.ppm} onChange={(e) => handleChange('ppm', e.target.value)} />;
             case 'q2': return <Q2Client value={formData.ppm} onChange={(e) => handleChange('ppm', e.target.value)} />;

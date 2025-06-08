@@ -1,56 +1,59 @@
-"use client"; // ✅ Ensures this runs only on the client
+"use client";
 
-import React from 'react';
-// import { useNavigate } from 'react-router-dom'; // ✅ Import useNavigate
-import { useRouter } from "next/navigation"; // ✅ Use Next.js routing instead of react-router-dom
-import styles from "./ImportantButtons.module.css"; // ✅ Use CSS Modules
-// import './ImportantButtons.css';
+import React from "react";
+import { useRouter } from "next/navigation";
+import styles from "./ImportantButtons.module.css";
 
 interface ImportantButtonsProps {
-    name: string;
-    onChange: (value: string) => void;
-    // onNext: () => void;
-    currentQuestion: string; // ✅ New prop to determine the next route
+  name: string;
+  onChange: (value: string) => void;
+  currentQuestion: string;
 }
 
 const ImportantButtons: React.FC<ImportantButtonsProps> = ({ name, onChange, currentQuestion }) => {
-    // const navigate = useNavigate(); // ✅ Hook for navigation
-    const router = useRouter(); // ✅ Replace useNavigate with Next.js' useRouter
+  const router = useRouter();
 
-    // const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    //     onChange(e.target.value);
-        
-
-    const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (typeof onChange !== "function") {
-        console.error("🚨 ImportantButtons.tsx received an undefined onChange! Check its parent component.");
-        return;
+      console.error("🚨 ImportantButtons.tsx received an undefined onChange! Check its parent component.");
+      return;
     }
     onChange(e.target.value);
 
+    // Calculate the next route. On the final question, append the query parameters built from localStorage.
+    const nextQuestionNumber = Number(currentQuestion.replace('q', '')) + 1;
 
+    // Retrieve formData from localStorage
+    const storedDataStr = localStorage.getItem("formData");
+    let queryString = "";
+    if (storedDataStr) {
+      try {
+        const storedData = JSON.parse(storedDataStr);
+        queryString = new URLSearchParams(storedData).toString();
+      } catch (error) {
+        console.error("Failed to parse formData from localStorage", error);
+      }
+    }
 
-        // ✅ Determine next question based on current question
-        const nextQuestionNumber = Number(currentQuestion.replace('q', '')) + 1;
-        // const nextRoute = nextQuestionNumber <= 8 ? `/questions/q${nextQuestionNumber}` : `/questions/results`;
-        const nextRoute = nextQuestionNumber <= 8 ? `/questions/question${nextQuestionNumber}` : `/results`;
+    const nextRoute = nextQuestionNumber <= 8
+      ? `/questions/question${nextQuestionNumber}`
+      : `/results?${queryString}`;
 
+    router.push(nextRoute);
+  };
 
-        router.push(nextRoute); // ✅ Navigate using Next.js
-        // navigate(nextRoute); // ✅ Navigate to the next question or results page
-    };
-
-    return (
-      // <div className='ButtonContainer'>
-      <div className={styles.buttonContainer}> {/* ✅ Scoped styles */}
-        <label className={`${styles.buttons} ${styles.important}`}> Important
-          <input type='radio' name={name} value="important" onChange={handleRadioChange} />
-        </label>
-        <label className={`${styles.buttons} ${styles.notImportant}`}> Not Important
-          <input type='radio' name={name} value="notImportant" onChange={handleRadioChange} />
-        </label>
-      </div> 
-    );
+  return (
+    <div className={styles.buttonContainer}>
+      <label className={`${styles.buttons} ${styles.important}`}>
+        Important
+        <input type="radio" name={name} value="important" onChange={handleRadioChange} />
+      </label>
+      <label className={`${styles.buttons} ${styles.notImportant}`}>
+        Not Important
+        <input type="radio" name={name} value="notImportant" onChange={handleRadioChange} />
+      </label>
+    </div>
+  );
 };
 
-export default ImportantButtons
+export default ImportantButtons;
