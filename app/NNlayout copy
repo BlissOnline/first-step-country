@@ -1,9 +1,14 @@
 // import type { Metadata } from "next";
 
 import "../styles/global.css";
-import { QuizProvider } from "@/components/context/QuizContext";  // ✅ Import the QuizProvider
+// import { Merriweather, Noto_Sans, Playpen_Sans } from "next/font/google";
 import Head from "next/head";
 import Script from "next/script";
+
+// const merriweather = Merriweather({ weight: ["300", "400", "700", "900"], subsets: ["latin"] });
+// const notoSans = Noto_Sans({ weight: ["100", "900"], subsets: ["latin"] });
+// const playpenSans = Playpen_Sans({ weight: ["100", "800"], subsets: ["latin"] });
+//think i still need main theme BlackChercacy
 
 export const viewport = {
   themeColor: "#f0e0d5", // ✅ Move themeColor here
@@ -45,9 +50,6 @@ export default function RootLayout({
             rel="stylesheet"
           />
 
-           {/* Preload Google Tag Manager to optimize loading */}
-  <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-Y2JDHJHYSN" as="script" />
-
           {/* Apple Touch Icon */}
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
@@ -78,7 +80,7 @@ export default function RootLayout({
                       "name": "Is the quiz free to use?",
                       "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes! The quiz is completely free to use and has no sign-up.",
+                        "text": "Yes! The quiz is completely free to use and has no sign up.",
                       },
                     },
                   ],
@@ -86,12 +88,11 @@ export default function RootLayout({
               ],
             })}
           </script>
+
         </Head>
       </head>
       <body className="global-body">
-        <QuizProvider> {/* ✅ Wrap the app inside QuizProvider */}
-          <div id="root">{children}</div>
-        </QuizProvider>
+        <div id="root">{children}</div>
 
         {/* Google Analytics Optimized with next/script */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2JDHJHYSN" />

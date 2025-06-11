@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from 'next/image';
-import Q1Wrapper from "@/components/question-clients/Q1Wrapper";
+import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
+// import Q1Wrapper from "@/components/question-clients/Q1Wrapper";
 // import dynamic from 'next/dynamic'; // ✅ Allows dynamic client-side loading
 
 // ✅ Dynamically import `Q1Client.tsx`
@@ -41,7 +42,9 @@ export default function Q1Page() { // ✅ Remove unnecessary props
                 height={300} 
                 // priority // ✅ Marks this image as high-priority
             />
-            <Q1Wrapper /> {/* ✅ Now dynamically loads the client-side component safely */}  
+            {/* Pass "q1" explicitly */}
+            <QuestionLogicForm questionId="q1" />
+            {/* <Q1Wrapper value={""} onChange={(val) => console.log("onChange called with:", val)}/> {/* ✅ Now dynamically loads the client-side component safely */} 
         </>
     );
 };

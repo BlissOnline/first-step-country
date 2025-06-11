@@ -3,14 +3,6 @@ import { useParams } from "next/navigation";  // ✅ Correct Next.js import
 // import React, { useState } from "react"; // ✅ Make sure useState is imported
 import React, { useState, useEffect } from "react"; 
 
-
-// import React, { useState } from 'react';
-// import { useParams } from 'react-router-dom';
-// import Q1 from '../../app/questions/question1/page';
-
-// import Q1 from "@/app/questions/question1/page";
-// import Q2 from "@/app/questions/question2/page";
-
 import ShowResults from "@/app/results/page";
 
 
@@ -28,21 +20,6 @@ const QuestionPage: React.FC = () => {
     // const router = useRouter();
     const { questionId } = useParams();  // ✅ Get the question ID from the URL
 
-    // const questionId = router.query?.questionId as string; // ✅ Correct way in Next.js
-
-    //const { questionId } = useParams(); // Get the question number from the URL
-    //const navigate = useNavigate(); 
-
-    // const [formData, setFormData] = useState({
-    //     ocean: '',
-    //     ppm: 0,
-    //     english: '',
-    //     dining: '',
-    //     unsafe: '',
-    //     education: '',
-    //     medical: '',
-    //     nomadVisa: ''
-    // });
 
         // 🔥 Store `formData` in localStorage so it persists across pages
     const [formData, setFormData] = useState(() => {
