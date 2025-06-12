@@ -3,12 +3,20 @@ import React from "react";
 import ImportantButtons from "@/components/Buttons/ImportantButtons/ImportantButtons";
 import styles from "./question3.module.css";
 
-interface Q3Props {
-    value?: string;  // ✅ Make `value` optional
-    onChange?: (value: string) => void; // ✅ Make `onChange` optional
+export interface Q3Props {
+    value: string;  // ✅ Make `value` optional
+    onChange: (value: string) => void; // ✅ Make `onChange` optional
 }
 
 const Q3Client: React.FC<Q3Props> = ({ value, onChange = () => {} }) => {
+
+    console.log("DEBUG: Q3Client received props =>", { value, onChange }); // ✅ Logs received props
+
+    const handleButtonClick = (selectedValue: string) => {
+        console.log("Q3Client Button Clicked:", selectedValue); // ✅ Debug if event fires
+        onChange(selectedValue); // ✅ Calls parent onChange function
+    };
+
     return (
         <form className={styles.qThreeBody}>
             <div className={styles.qThreeContainer}>
@@ -19,7 +27,11 @@ const Q3Client: React.FC<Q3Props> = ({ value, onChange = () => {} }) => {
                         Do you want your country to have English speakers?
                 </label>
                 <p>Current Selection: {value}</p> ✅ Display the selected value
-                <ImportantButtons name="english" onChange={onChange} currentQuestion="q3" />
+                <ImportantButtons 
+                    name="english" 
+                    onChange={handleButtonClick} 
+                    currentQuestion="q3" 
+                />
             </div>
         </form>
     );

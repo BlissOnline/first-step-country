@@ -2,7 +2,9 @@
 import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from "next/image";
-import Q2Wrapper from "@/components/question-clients/Q2Wrapper";
+// import Q2Wrapper from "@/components/question-clients/Q2Wrapper";
+import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
+
 
 export function generateMetadata(): Metadata {
   return {
@@ -12,7 +14,7 @@ export function generateMetadata(): Metadata {
       title: "Best Countries Based on Budget – Find Affordable Destinations",
       description: "Discover affordable destinations based on your budget.",
       images: [{ url: "https://firststepcountry.com/images/ppm-graphic.png", width: 1200, height: 630 }],
-      url: "https://firststepcountry.com/questions/q2",
+      url: "https://firststepcountry.com/questions/question2",
       type: "article",
     },
     twitter: {
@@ -35,7 +37,8 @@ export default function Q2Page() {
               height={300} 
               // className="qTwoImg"
           />
-          <Q2Wrapper /> {/* ✅ Dynamically loads the interactive component */}
+          <QuestionLogicForm questionId="q2" />
+          {/* <Q2Wrapper /> ✅ Dynamically loads the interactive component */}
         </>
     );
 };

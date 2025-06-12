@@ -37,7 +37,7 @@ const ImportantButtons: React.FC<ImportantButtonsProps> = ({ name, onChange, cur
 
     const nextRoute = nextQuestionNumber <= 8
       ? `/questions/question${nextQuestionNumber}`
-      : `/results?${queryString}`;
+      : `/questions/results?${queryString}`;
 
     router.push(nextRoute);
   };

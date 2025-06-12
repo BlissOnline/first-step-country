@@ -3,8 +3,6 @@
 import React, { useEffect } from 'react';
 // import dynamic from 'next/dynamic';
 import Image from 'next/image';
-// import { Country, CountryLinks } from '@/lib/types';
-// import { Country, CountryLinks } from '@/lib/types';
 import { Country, CountryLinks } from '@/lib/types';
 
 

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from 'next/image';
-import Q4Wrapper from "@/components/question-clients/Q4Wrapper";
+// import Q4Wrapper from "@/components/question-clients/Q4Wrapper";
+import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
 
 export function generateMetadata(): Metadata {
   return {
@@ -11,7 +12,7 @@ export function generateMetadata(): Metadata {
       title: "Best Countries for Affordable Food – Find Budget-Friendly Cuisine",
       description: "Explore affordable dining destinations worldwide.",
       images: [{ url: "https://firststepcountry.com/questionImages/dining-graphic.png", width: 1200, height: 630 }], // ✅ Corrected image path
-      url: "https://firststepcountry.com/questions/q4",
+      url: "https://firststepcountry.com/questions/question4",
       type: "article",
     },
     twitter: {
@@ -34,7 +35,8 @@ export default function Q4Page() {
                 height={300} 
                 // className="qFourImg"
             />
-            <Q4Wrapper />
+            <QuestionLogicForm questionId="q4" />
+            {/* <Q4Wrapper /> */}
         </>
     );
 };

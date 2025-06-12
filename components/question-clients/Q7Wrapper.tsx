@@ -1,8 +1,13 @@
 "use client"; 
 import dynamic from "next/dynamic";
+import { Q7Props } from "@/components/question-clients/Q7Client";
+
 
 const Q7Client = dynamic(() => import("@/components/question-clients/Q7Client"), { ssr: false });
 
-export default function Q7Wrapper() {
-    return <Q7Client />;
-}
+const Q7Wrapper: React.FC<Q7Props> = (props) => {
+    console.log("DEBUG: Q7Wrapper received props =>", props); // ✅ Log received props
+    return <Q7Client {...props} />;
+};
+
+export default Q7Wrapper;

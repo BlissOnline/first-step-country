@@ -1,8 +1,12 @@
 "use client"; 
 import dynamic from "next/dynamic";
+import { Q6Props } from "@/components/question-clients/Q6Client";
 
 const Q6Client = dynamic(() => import("@/components/question-clients/Q6Client"), { ssr: false });
 
-export default function Q6Wrapper() {
-    return <Q6Client />;
-}
+const Q6Wrapper: React.FC<Q6Props> = (props) => {
+    console.log("DEBUG: Q6Wrapper received props =>", props); // ✅ Log received props
+    return <Q6Client {...props} />;
+};
+
+export default Q6Wrapper;

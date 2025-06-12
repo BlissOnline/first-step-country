@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from 'next/image';
-import Q8Wrapper from "@/components/question-clients/Q8Wrapper";
+import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
 
 export function generateMetadata(): Metadata {
   return {
@@ -11,7 +11,7 @@ export function generateMetadata(): Metadata {
       title: "Best Countries for Digital Nomads – Top Destinations with Remote Work Visas",
       description: "Explore top destinations for remote work worldwide.",
       images: [{ url: "https://firststepcountry.com/questionImages/nomad-visa-graphic.png", width: 1200, height: 630 }], // ✅ Ensure the correct file placement
-      url: "https://firststepcountry.com/questions/q8",
+      url: "https://firststepcountry.com/questions/question8",
       type: "article",
     },
     twitter: {
@@ -34,7 +34,7 @@ export default function Q8Page() {
                 height={300} 
                 className="qEightImg"
             />
-            <Q8Wrapper />
+            <QuestionLogicForm questionId="q8" />
         </>
     );
 };

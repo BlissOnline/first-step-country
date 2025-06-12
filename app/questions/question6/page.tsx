@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from 'next/image';
-import Q6Wrapper from "@/components/question-clients/Q6Wrapper";
+import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
 
 export function generateMetadata(): Metadata {
   return {
@@ -11,7 +11,7 @@ export function generateMetadata(): Metadata {
       title: "Best Countries for Affordable, High-Quality Education for Foreigners",
       description: "Explore top destinations for international students.",
       images: [{ url: "https://firststepcountry.com/questionImages/hq-education-graphic.png", width: 1200, height: 630 }], // ✅ Corrected image path
-      url: "https://firststepcountry.com/questions/q6",
+      url: "https://firststepcountry.com/questions/question6",
       type: "article",
     },
     twitter: {
@@ -34,7 +34,7 @@ export default function Q6Page() {
                 height={300} 
                 className="qSixImg"
             />
-            <Q6Wrapper />
+            <QuestionLogicForm questionId="q6" />
         </>        
     );
 };

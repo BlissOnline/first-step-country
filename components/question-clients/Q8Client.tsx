@@ -1,22 +1,21 @@
 "use client"; // ✅ Allows interactivity
 import React from "react";
-
-// import { useRouter } from "next/navigation"; // ✅ Import Next.js router
-
 import ImportantButtons from "@/components/Buttons/ImportantButtons/ImportantButtons";
 import styles from "./question8.module.css";
 
-interface Q8Props {
-    value?: string;  // ✅ Make `value` optional
-    onChange?: (value: string) => void; // ✅ Make `onChange` optional
+export interface Q8Props {
+    value: string;  // ✅ Make `value` optional
+    onChange: (value: string) => void; // ✅ Make `onChange` optional
 }
 
 const Q8Client: React.FC<Q8Props> = ({ value, onChange = () => {} }) => {
-    // const router = useRouter();  // ✅ Initialize router
+    
+    console.log("DEBUG: Q8Client received props =>", { value, onChange }); 
 
-    // const handleSubmit = () => {  
-    //     router.push("/results");  // ✅ Redirect to results page  
-    // };  
+    const handleButtonClick = (selectedValue: string) => {
+        console.log("Q8Client Button Clicked:", selectedValue); // ✅ Debug if event fires
+        onChange(selectedValue); // ✅ Calls parent onChange function
+    };
 
     return (
         <form className={styles.qEightBody}>
@@ -28,7 +27,10 @@ const Q8Client: React.FC<Q8Props> = ({ value, onChange = () => {} }) => {
                     Should your country offer a digital nomad visa or remote work permits?
                 </label>{/* //br here? */}
                 <p>Current Selection: {value}</p> {/* ✅ Display the selected value */}
-                <ImportantButtons name="nomadVisa" onChange={onChange} currentQuestion="q8" />
+                <ImportantButtons 
+                    name="nomadVisa" 
+                    onChange={handleButtonClick} 
+                    currentQuestion="q8" />
             </div>
         </form>
     );

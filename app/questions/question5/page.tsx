@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from 'next/image';
-import Q5Wrapper from "@/components/question-clients/Q5Wrapper";
+import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
+
+
+// import Q5Wrapper from "@/components/question-clients/Q5Wrapper";
 
 export function generateMetadata(): Metadata {
   return {
@@ -11,7 +14,7 @@ export function generateMetadata(): Metadata {
       title: "Safest Countries to Live In – Top Destinations for Security & Stability",
       description: "Explore the safest countries for security and low crime rates.",
       images: [{ url: "https://firststepcountry.com/questionImages/unsafe-graphic.png", width: 1200, height: 630 }], // ✅ Corrected image path
-      url: "https://firststepcountry.com/questions/q5",
+      url: "https://firststepcountry.com/questions/question5",
       type: "article",
     },
     twitter: {
@@ -36,7 +39,7 @@ export default function Q5Page() {
                 height={300} 
                 // className="qFiveImg"
             />
-            <Q5Wrapper />
+            <QuestionLogicForm questionId="q5" />
         </>        
     );
 };

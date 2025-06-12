@@ -17,7 +17,7 @@ export function generateMetadata(): Metadata {
       title: "Best Countries for Ocean Access – Find Coastal Destinations",
       description: "Find coastal destinations suited to your lifestyle.",
       images: [{ url: "https://firststepcountry.com/questionImages/surf-graphic.png", width: 1200, height: 630 }],
-      url: "https://firststepcountry.com/questions/q1",
+      url: "https://firststepcountry.com/questions/question1",
       type: "article",
     },
     twitter: {

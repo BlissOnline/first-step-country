@@ -1,5 +1,3 @@
-// import "../../src/styles/global.css";
-// import "../../src/"
 import "../../styles/global.css"
 
 import { ClientOnly } from "./client"; // ✅ Corrected import

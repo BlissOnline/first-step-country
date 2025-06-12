@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from 'next/image';
-import Q3Wrapper from "@/components/question-clients/Q3Wrapper";
+// import Q3Wrapper from "@/components/question-clients/Q3Wrapper";
+import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
+
 
 export function generateMetadata(): Metadata {
   return {
@@ -11,7 +13,7 @@ export function generateMetadata(): Metadata {
       title: "Best Countries for English Speakers – Where English is Widely Spoken",
       description: "Discover top destinations for English speakers.",
       images: [{ url: "https://firststepcountry.com/questionImages/english-graphic.png", width: 1200, height: 630 }],
-      url: "https://firststepcountry.com/questions/q3",
+      url: "https://firststepcountry.com/questions/question3",
       type: "article",
     },
     twitter: {
@@ -34,7 +36,8 @@ export default function Q3Page() {
                 height={300} 
                 // className="qThreeImg"
             />
-            <Q3Wrapper />
+            <QuestionLogicForm questionId="q3" />
+            {/* <Q3Wrapper /> */}
         </>
     );
 };

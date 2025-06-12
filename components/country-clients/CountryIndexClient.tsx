@@ -20,10 +20,6 @@ const CountryIndexClient: React.FC = () => {
         console.log("DEBUG: ocean value =>", searchParams.get("ocean"));
     }, [searchParams]);
 
-    // console.log("DEBUG: searchParams =>", searchParams.toString()); // ✅ Check raw query params
-    // console.log("DEBUG: ocean value =>", searchParams.get("ocean")); // ✅ Confirm individual preferences
-    // console.log("DEBUG: ocean value manually extracted =>", searchParams.get("ocean"));
-
     const filteredCountries = goldObject.filter((item: Country) => {
 
         console.log("DEBUG: Checking item =>", item.name);

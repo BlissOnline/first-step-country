@@ -6,7 +6,7 @@ import styles from "./question2.module.css";
 
 
 //define props interface if your component will receive any props
-interface Q2Props {
+export interface Q2Props {
     value?: number;
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }

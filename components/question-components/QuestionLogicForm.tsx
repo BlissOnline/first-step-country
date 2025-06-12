@@ -2,16 +2,18 @@
 import { useRouter } from "next/navigation";
 import { useQuiz, FormDataType } from "@/components/context/QuizContext"; // ✅ Import global state and type
 
-import ShowResults from "@/app/results/page";
+import ShowResults from "@/app/questions/results/page";
 
 import Q1Wrapper from "@/components/question-clients/Q1Wrapper";
-import Q2Client from "@/components/question-clients/Q2Client";
-import Q3Client from "@/components/question-clients/Q3Client";
-import Q4Client from "@/components/question-clients/Q4Client";
-import Q5Client from "@/components/question-clients/Q5Client";
-import Q6Client from "@/components/question-clients/Q6Client";
-import Q7Client from "@/components/question-clients/Q7Client";
-import Q8Client from "@/components/question-clients/Q8Client";
+// import Q2Client from "@/components/question-clients/Q2Client";
+import Q2Wrapper from "@/components/question-clients/Q2Wrapper";
+// import Q3Client from "@/components/question-clients/Q3Client";
+import Q3Wrapper from "@/components/question-clients/Q3Wrapper";
+import Q4Wrapper from "@/components/question-clients/Q4Wrapper";
+import Q5Wrapper from "@/components/question-clients/Q5Wrapper";
+import Q6Wrapper from "@/components/question-clients/Q6Client";
+import Q7Wrapper from "@/components/question-clients/Q7Client";
+import Q8Wrapper from "@/components/question-clients/Q8Wrapper";
 
 interface QuestionLogicFormProps {
   questionId: string;
@@ -50,21 +52,22 @@ const QuestionLogicForm: React.FC<QuestionLogicFormProps> = ({ questionId }) => 
         });
         return <Q1Wrapper value={formData.ocean} onChange={(value) => handleChange('ocean', value)} />;
       case 'q2':
-        return <Q2Client value={formData.ppm} onChange={(e) => handleChange('ppm', Number(e.target.value))} />;
+        return <Q2Wrapper value={formData.ppm} onChange={(e) => handleChange('ppm', Number(e.target.value))} />;
       case 'q3':
-        return <Q3Client value={formData.english} onChange={(value) => handleChange('english', value)} />;
+        return <Q3Wrapper value={formData.english} onChange={(value) => handleChange('english', value)} />;
       case 'q4':
-        return <Q4Client value={formData.dining} onChange={(value) => handleChange('dining', value)} />;
+        return <Q4Wrapper value={formData.dining} onChange={(value) => handleChange('dining', value)} />;
       case 'q5':
-        return <Q5Client value={formData.unsafe} onChange={(value) => handleChange('unsafe', value)} />;
+        return <Q5Wrapper value={formData.unsafe} onChange={(value) => handleChange('unsafe', value)} />;
       case 'q6':
-        return <Q6Client value={formData.education} onChange={(value) => handleChange('education', value)} />;
+        return <Q6Wrapper value={formData.education} onChange={(value) => handleChange('education', value)} />;
       case 'q7':
-        return <Q7Client value={formData.medical} onChange={(value) => handleChange('medical', value)} />;
+        return <Q7Wrapper value={formData.medical} onChange={(value) => handleChange('medical', value)} />;
       case 'q8':
-        return <Q8Client value={formData.nomadVisa} onChange={(value) => handleChange('nomadVisa', value)} />;
+        return <Q8Wrapper value={formData.nomadVisa} onChange={(value) => handleChange('nomadVisa', value)} />;
       case 'results':
-        return <ShowResults formData={formData} />;
+        // return <ShowResults formData={formData} />;
+        return <ShowResults />;
       default:
         return <p>Question not found.</p>;
     }
@@ -85,7 +88,7 @@ const QuestionLogicForm: React.FC<QuestionLogicFormProps> = ({ questionId }) => 
       ).toString();
 
       console.log("DEBUG: Navigating to results with query =>", queryString);
-      router.push(`/results?${queryString}`);
+      router.push(`/questions/results?${queryString}`);
     }
   };
 

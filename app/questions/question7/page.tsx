@@ -1,7 +1,7 @@
 import type { Metadata } from "next"; // ✅ Type imports first
 import BreadcrumbSchema from "@/components/BreadcrumbSchema"; // ✅ Project-specific component (important for SEO)
 import Image from "next/image"; // ✅ Built-in Next.js optimization (can sit here or above)
-import Q7Wrapper from "@/components/question-clients/Q7Wrapper";
+import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
 
 export function generateMetadata(): Metadata {
   return {
@@ -11,7 +11,7 @@ export function generateMetadata(): Metadata {
       title: "Best Countries for Affordable & High-Quality Medical Tourism",
       description: "Explore top destinations for medical tourism worldwide.",
       images: [{ url: "https://firststepcountry.com/questionImages/hq-medical-graphic.png", width: 1200, height: 630 }], // ✅ Ensure the correct file placement
-      url: "https://firststepcountry.com/questions/q7",
+      url: "https://firststepcountry.com/questions/question7",
       type: "article",
     },
     twitter: {
@@ -34,7 +34,7 @@ export default function Q7Page() {
                 height={300} 
                 className="qSevenImg"
             />
-            <Q7Wrapper />
+            <QuestionLogicForm questionId="q7" />
         </>        
     );
 };
