@@ -8,11 +8,9 @@ export interface Q1Props {
     onChange: (value: string) => void; // ✅ Make `onChange` optional
 }
 
-const Q1Client: React.FC<Q1Props> = ({ value, onChange = () => {} }) => {
-    console.log("DEBUG: Q1Client received props =>", { value, onChange }); // ✅ Logs received props
+const Q1Client: React.FC<Q1Props> = ({ onChange = () => {} }) => {
 
     const handleButtonClick = (selectedValue: string) => {
-        console.log("Q1Client Button Clicked:", selectedValue); // ✅ Debug if event fires
         onChange(selectedValue); // ✅ Calls parent onChange function
     };
 
@@ -22,10 +20,9 @@ const Q1Client: React.FC<Q1Props> = ({ value, onChange = () => {} }) => {
                 <label className={styles.qOneQuestion}>
                     Access to the ocean?
                 </label>
-                <p>Current Selection: {value || "None selected"} </p> {/* ✅ Prevents empty display */}
                 <ImportantButtons 
                     name="ocean" 
-                    onChange={handleButtonClick} // ✅ Handles selection changes
+                    onChange={handleButtonClick} 
                     currentQuestion="q1" 
                 />
             </div>

@@ -8,12 +8,10 @@ export interface Q6Props {
     onChange: (value: string) => void; // ✅ Make `onChange` optional
 }
 
-const Q6Client: React.FC<Q6Props> = ({ value, onChange = () => {} }) => {
+const Q6Client: React.FC<Q6Props> = ({ onChange = () => {} }) => {
 
-    console.log("DEBUG: Q6Client received props =>", { value, onChange }); 
 
     const handleButtonClick = (selectedValue: string) => {
-        console.log("Q6Client Button Clicked:", selectedValue); // ✅ Debug if event fires
         onChange(selectedValue); // ✅ Calls parent onChange function
     };
 
@@ -27,7 +25,6 @@ const Q6Client: React.FC<Q6Props> = ({ value, onChange = () => {} }) => {
                 >
                     High-quality education options for foreigners, at a great price?
                 </label>
-                <p>Current Selection: {value}</p> {/* ✅ Display the selected value */}
                 <ImportantButtons 
                     name="education" 
                     onChange={handleButtonClick} 

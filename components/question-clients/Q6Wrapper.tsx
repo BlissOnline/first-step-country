@@ -5,7 +5,6 @@ import { Q6Props } from "@/components/question-clients/Q6Client";
 const Q6Client = dynamic(() => import("@/components/question-clients/Q6Client"), { ssr: false });
 
 const Q6Wrapper: React.FC<Q6Props> = (props) => {
-    console.log("DEBUG: Q6Wrapper received props =>", props); // ✅ Log received props
     return <Q6Client {...props} />;
 };
 

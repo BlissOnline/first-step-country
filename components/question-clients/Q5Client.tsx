@@ -4,16 +4,13 @@ import ImportantButtons from "@/components/Buttons/ImportantButtons/ImportantBut
 import styles from "./question5.module.css";
 
 export interface Q5Props {
-    value?: string;  // ✅ Make `value` optional
-    onChange?: (value: string) => void; // ✅ Make `onChange` optional
+    value: string; 
+    onChange: (value: string) => void;
 }
 
-const Q5Client: React.FC<Q5Props> = ({ value, onChange = () => {} }) => {
-
-    console.log("DEBUG: Q5Client received props =>", { value, onChange }); 
+const Q5Client: React.FC<Q5Props> = ({ onChange = () => {} }) => {
 
     const handleButtonClick = (selectedValue: string) => {
-        console.log("Q5Client Button Clicked:", selectedValue); // ✅ Debug if event fires
         onChange(selectedValue); // ✅ Calls parent onChange function
     };
 
@@ -26,7 +23,6 @@ const Q5Client: React.FC<Q5Props> = ({ value, onChange = () => {} }) => {
                 >
                     Do you want your country to be considered safe? 
                 </label>
-                <p>Current Selection: {value}</p> {/* ✅ Display the selected value */}
                 <ImportantButtons 
                     name="unsafe" 
                     onChange={handleButtonClick} 

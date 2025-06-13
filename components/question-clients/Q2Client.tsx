@@ -11,10 +11,9 @@ export interface Q2Props {
     onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-//define the Functional Component 
+
 const Q2Client: React.FC<Q2Props> = ({ value, onChange, }) => {
      const router = useRouter(); // ✅ Define router before using it
-     //const navigate = useNavigate(); // ✅ Navigation hook
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();

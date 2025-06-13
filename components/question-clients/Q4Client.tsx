@@ -4,16 +4,13 @@ import ImportantButtons from "@/components/Buttons/ImportantButtons/ImportantBut
 import styles from "./question4.module.css";
 
 export interface Q4Props {
-    value: string;  // ✅ Make `value` optional
-    onChange: (value: string) => void; // ✅ Make `onChange` optional
+    value: string; 
+    onChange: (value: string) => void; 
 }
 
-const Q4Client: React.FC<Q4Props> = ({ value, onChange = () => {} }) => {
-
-    console.log("DEBUG: Q4Client received props =>", { value, onChange }); // ✅ Logs received props
+const Q4Client: React.FC<Q4Props> = ({ onChange = () => {} }) => {
 
     const handleButtonClick = (selectedValue: string) => {
-        console.log("Q4Client Button Clicked:", selectedValue); // ✅ Debug if event fires
         onChange(selectedValue); // ✅ Calls parent onChange function
     };
 
@@ -26,7 +23,6 @@ const Q4Client: React.FC<Q4Props> = ({ value, onChange = () => {} }) => {
                 >
                     Do you want your country to have affordable dining options?
                 </label>
-                <p>Current Selection: {value}</p> {/* ✅ Display the selected value */}
                 <ImportantButtons 
                     name="dining" 
                     onChange={handleButtonClick} 

@@ -8,12 +8,9 @@ export interface Q8Props {
     onChange: (value: string) => void; // ✅ Make `onChange` optional
 }
 
-const Q8Client: React.FC<Q8Props> = ({ value, onChange = () => {} }) => {
-    
-    console.log("DEBUG: Q8Client received props =>", { value, onChange }); 
+const Q8Client: React.FC<Q8Props> = ({ onChange = () => {} }) => {
 
     const handleButtonClick = (selectedValue: string) => {
-        console.log("Q8Client Button Clicked:", selectedValue); // ✅ Debug if event fires
         onChange(selectedValue); // ✅ Calls parent onChange function
     };
 
@@ -26,7 +23,6 @@ const Q8Client: React.FC<Q8Props> = ({ value, onChange = () => {} }) => {
                 >
                     Should your country offer a digital nomad visa or remote work permits?
                 </label>{/* //br here? */}
-                <p>Current Selection: {value}</p> {/* ✅ Display the selected value */}
                 <ImportantButtons 
                     name="nomadVisa" 
                     onChange={handleButtonClick} 

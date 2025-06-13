@@ -10,10 +10,7 @@ export interface Q3Props {
 
 const Q3Client: React.FC<Q3Props> = ({ value, onChange = () => {} }) => {
 
-    console.log("DEBUG: Q3Client received props =>", { value, onChange }); // ✅ Logs received props
-
     const handleButtonClick = (selectedValue: string) => {
-        console.log("Q3Client Button Clicked:", selectedValue); // ✅ Debug if event fires
         onChange(selectedValue); // ✅ Calls parent onChange function
     };
 
