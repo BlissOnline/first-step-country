@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from 'next/image';
 import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
-// import Q1Client from "@/components/question-clients/Q1Client"; // or QuestionLogicForm if that's what you're using
-// import Q1Wrapper from "@/components/question-clients/Q1Wrapper";
 import styles from "../../../components/question-clients/question1.module.css"
 
 export function generateMetadata(): Metadata {
@@ -26,28 +24,30 @@ export function generateMetadata(): Metadata {
   };
 }
 
-// const Q1: React.FC<Q1Props> = ({ onChange }) => { //value here?
-export default function Q1Page() { // ✅ Remove unnecessary props
+export default function Q1Page() {
     return (
       <div className={styles.qOnePage}>
         <BreadcrumbSchema questionNumber={1} />
+
+        <div className={styles.qOneContainer}>
+          
+          <label className={styles.qOneQuestion}>
+              Access to the ocean?
+          </label>
+        </div>
+
         <div className={styles.qOneImgContainer}>
           <Image 
-              src="/questionImages/surf-graphic.png" // ✅ No need for import statements
-              // src='../../../public/questionImages/surf-graphic.png'
+              src="/questionImages/surf-graphic.png" 
               alt="Surfing graphic" 
               width={400} 
               height={400} 
               className={styles.qOneImg}
-              // priority // ✅ Marks this image as high-priority
           />
         </div>
-        {/* Pass "q1" explicitly */}
-        {/* <Q1Wrapper /> */}
         <QuestionLogicForm questionId="q1" />
       </div>
     );
 };
 
-// export default Q1;
 
