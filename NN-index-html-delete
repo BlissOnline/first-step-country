@@ -22,16 +22,7 @@
 
 
     <meta name="theme-color" content="#f0e0d5">
-    <!-- Schema Markup, helps search engines understand your website better -->
-    <!-- <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Quiz",
-        "name": "Find Your Perfect Travel Destination",
-        "url": "https://firststepcountry.com/quiz",
-        "description": "Answer a few questions to find the best country for your travel needs!"
-      }
-    </script> -->
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -85,6 +76,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- <script type="module" src="/src/main.tsx"></script> -->
   </body>
 </html>

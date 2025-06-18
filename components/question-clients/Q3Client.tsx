@@ -8,7 +8,7 @@ export interface Q3Props {
     onChange: (value: string) => void; // ✅ Make `onChange` optional
 }
 
-const Q3Client: React.FC<Q3Props> = ({ value, onChange = () => {} }) => {
+const Q3Client: React.FC<Q3Props> = ({ onChange = () => {} }) => {
 
     const handleButtonClick = (selectedValue: string) => {
         onChange(selectedValue); // ✅ Calls parent onChange function
@@ -23,7 +23,6 @@ const Q3Client: React.FC<Q3Props> = ({ value, onChange = () => {} }) => {
                     >
                         Do you want your country to have English speakers?
                 </label>
-                <p>Current Selection: {value}</p> ✅ Display the selected value
                 <ImportantButtons 
                     name="english" 
                     onChange={handleButtonClick} 

@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useEffect } from "react";
-// import React from "react";
+// import React, { useEffect } from "react";
+import React from "react";
 
 import { useSearchParams } from "next/navigation"; 
 import { Country } from "@/lib/types";
@@ -15,15 +15,12 @@ const CountryIndexClient: React.FC = () => {
 
 
      // ✅ Log search params inside useEffect to prevent issues with hooks
-    useEffect(() => {
-        console.log("DEBUG: searchParams =>", searchParams.toString());
-        console.log("DEBUG: ocean value =>", searchParams.get("ocean"));
-    }, [searchParams]);
+    // useEffect(() => {
+    //     console.log("DEBUG: searchParams =>", searchParams.toString());
+    //     console.log("DEBUG: ocean value =>", searchParams.get("ocean"));
+    // }, [searchParams]);
 
     const filteredCountries = goldObject.filter((item: Country) => {
-
-        console.log("DEBUG: Checking item =>", item.name);
-
 
         if (searchParams.get("ocean") === "important" && !item.coast) {
             console.log("EXCLUDED:", item.name);

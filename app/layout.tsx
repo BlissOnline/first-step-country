@@ -1,6 +1,7 @@
 // import type { Metadata } from "next";
 
 import "../styles/global.css";
+import Layout from "@/components/Layout/Layout";
 import { QuizProvider } from "@/components/context/QuizContext";  // ✅ Import the QuizProvider
 import Head from "next/head";
 import Script from "next/script";
@@ -28,11 +29,7 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
@@ -45,8 +42,8 @@ export default function RootLayout({
             rel="stylesheet"
           />
 
-           {/* Preload Google Tag Manager to optimize loading */}
-  <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-Y2JDHJHYSN" as="script" />
+          {/* Preload Google Tag Manager to optimize loading */}
+          <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-Y2JDHJHYSN" as="script" />
 
           {/* Apple Touch Icon */}
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -90,7 +87,9 @@ export default function RootLayout({
       </head>
       <body className="global-body">
         <QuizProvider> {/* ✅ Wrap the app inside QuizProvider */}
-          <div id="root">{children}</div>
+          {/* Wrap all children with our Layout so that our Navbar (and other header content) persist */}
+          <Layout>{children}</Layout>
+          {/* <div id="root">{children}</div> */}
         </QuizProvider>
 
         {/* Google Analytics Optimized with next/script */}

@@ -5,7 +5,7 @@ const Header: React.FC = () => {
     return (
         <header>
             <NavBar/>
-            {/* add navigation or other header content */}
+            {/* additional header content if needed */}
         </header>
     );
 };

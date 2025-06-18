@@ -8,7 +8,10 @@
     padding-bottom: 2rem; 
     box-sizing: border-box;
     flex-wrap: wrap;
-    overflow: hidden;
+    /* overflow: hidden; */
+    /* min-width: 80%; */
+    /* background-color: yellow; */
+    
   }
 
 

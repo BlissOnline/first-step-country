@@ -16,6 +16,11 @@
     background-color: var(--color-nav);
     color: white;
     height: 3rem;
+    margin: 0;
+    
+    position: absolute;
+    top: 0;
+    width: 100%;
   
 
 }

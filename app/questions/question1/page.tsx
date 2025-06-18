@@ -2,12 +2,9 @@ import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from 'next/image';
 import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
+// import Q1Client from "@/components/question-clients/Q1Client"; // or QuestionLogicForm if that's what you're using
 // import Q1Wrapper from "@/components/question-clients/Q1Wrapper";
-// import dynamic from 'next/dynamic'; // ✅ Allows dynamic client-side loading
-
-// ✅ Dynamically import `Q1Client.tsx`
-// const Q1Client = dynamic(() => import("@/components/question-clients/Q1Client"), { ssr: false });
-// import Q1Client from "@/components/question-clients/Q1Client"
+import styles from "../../../components/question-clients/question1.module.css"
 
 export function generateMetadata(): Metadata {
   return {
@@ -32,20 +29,23 @@ export function generateMetadata(): Metadata {
 // const Q1: React.FC<Q1Props> = ({ onChange }) => { //value here?
 export default function Q1Page() { // ✅ Remove unnecessary props
     return (
-        <>
-            <BreadcrumbSchema questionNumber={1} />
-            <Image 
-                src="/questionImages/surf-graphic.png" // ✅ No need for import statements
-                // src='../../../public/questionImages/surf-graphic.png'
-                alt="Surfing graphic" 
-                width={500} 
-                height={300} 
-                // priority // ✅ Marks this image as high-priority
-            />
-            {/* Pass "q1" explicitly */}
-            <QuestionLogicForm questionId="q1" />
-            {/* <Q1Wrapper value={""} onChange={(val) => console.log("onChange called with:", val)}/> {/* ✅ Now dynamically loads the client-side component safely */} 
-        </>
+      <div className={styles.qOnePage}>
+        <BreadcrumbSchema questionNumber={1} />
+        <div className={styles.qOneImgContainer}>
+          <Image 
+              src="/questionImages/surf-graphic.png" // ✅ No need for import statements
+              // src='../../../public/questionImages/surf-graphic.png'
+              alt="Surfing graphic" 
+              width={400} 
+              height={400} 
+              className={styles.qOneImg}
+              // priority // ✅ Marks this image as high-priority
+          />
+        </div>
+        {/* Pass "q1" explicitly */}
+        {/* <Q1Wrapper /> */}
+        <QuestionLogicForm questionId="q1" />
+      </div>
     );
 };
 

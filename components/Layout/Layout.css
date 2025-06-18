@@ -1,4 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    /* background-color: lightgreen;
+     */
+}
+
+.layout {
+  /* background-color: lightgreen; */
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+
+  /* You can add additional layout-specific styles if needed */
 }

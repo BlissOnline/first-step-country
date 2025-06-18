@@ -20,20 +20,6 @@
     
 }
 
-/* body {
-    background-color: white;
-    font-family: var(--font-general);
-}
-
-h1, h2, h3 {
-    font-family: var(--font-theme);
-}
-
-button {
-    font-family: var(--font-button);
-} */
-
-/* below is the content of the deleted App.css file */
 
 #root {
   /* max-width: 1280px; */
@@ -47,8 +33,11 @@ button {
 }
 
 .global-body {
-    background-color: var(--color-home); /* ✅ Applies the global background */
+    /* background-color: var(--color-home); */
+    /* background-color: transparent;  */
+    /* background-color: inherit;  */
     font-family: var(--font-general);
+    height: 0;
 }
 
 /* .card {
@@ -59,14 +48,14 @@ button {
   color: #888;
 }
 
-.question-page {
+/* .question-page {
   display: none;
   width: 100%;
   height: 100vh;   
   padding: 20px;
   box-sizing: border-box;
   
-}
+} */
 
 .question-page.active {
   display: block;
@@ -76,3 +65,103 @@ button {
   background-color: #f0f8ff;
   padding: 20px;
 } */
+
+
+/* here is rest on index.css contents that seem right to keep */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  /* width: 100%;
+  height: 100%;
+  background-color: transparent; */
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* height: 100%; */
+  /* background-color: lime;  */
+  background-color: transparent;
+
+  /* overflow: hidden; */
+
+}
+
+  /* need to achieve full background color on questions */
+  /* width: 100%;
+  height: 100%; */
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* Lists without bullet points */
+ol, ul {
+    list-style: none;
+}
+
+/* Quotes fix */
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* Table border & spacing fix */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* something about light mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: var(--color-home);
+  }
+  a:hover {
+    color: var(--color-4);
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

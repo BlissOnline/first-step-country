@@ -4,13 +4,24 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import styles from "./ImportantButtons.module.css";
 
+interface ButtonTheme {
+  important: string;
+  notImportant: string;
+}
+
 interface ImportantButtonsProps {
   name: string;
   onChange: (value: string) => void;
   currentQuestion: string;
+  buttonTheme?: ButtonTheme;  // NEW: Optional prop for dynamic button colors.
 }
 
-const ImportantButtons: React.FC<ImportantButtonsProps> = ({ name, onChange, currentQuestion }) => {
+const ImportantButtons: React.FC<ImportantButtonsProps> = ({ 
+  name, 
+  onChange, 
+  currentQuestion,
+  buttonTheme, // Destructure the new prop.
+}) => {
   const router = useRouter();
 
   const handleRadioChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -44,11 +55,18 @@ const ImportantButtons: React.FC<ImportantButtonsProps> = ({ name, onChange, cur
 
   return (
     <div className={styles.buttonContainer}>
-      <label className={`${styles.buttons} ${styles.important}`}>
+      <label 
+        className={`${styles.buttons} ${styles.important}`}
+        style={{ backgroundColor: buttonTheme ? buttonTheme.important : undefined }}
+      >
         Important
         <input type="radio" name={name} value="important" onChange={handleRadioChange} />
       </label>
-      <label className={`${styles.buttons} ${styles.notImportant}`}>
+
+      <label 
+        className={`${styles.buttons} ${styles.notImportant}`}
+        style={{ backgroundColor: buttonTheme ? buttonTheme.notImportant : undefined }}
+      >
         Not Important
         <input type="radio" name={name} value="notImportant" onChange={handleRadioChange} />
       </label>

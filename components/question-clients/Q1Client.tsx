@@ -4,8 +4,8 @@ import ImportantButtons from "@/components/Buttons/ImportantButtons/ImportantBut
 import styles from "./question1.module.css";
 
 export interface Q1Props {
-    value: string;  // ✅ Make `value` optional
-    onChange: (value: string) => void; // ✅ Make `onChange` optional
+    value?: string;  // ✅ Make `value` optional
+    onChange?: (value: string) => void; // ✅ Make `onChange` optional
 }
 
 const Q1Client: React.FC<Q1Props> = ({ onChange = () => {} }) => {
@@ -15,6 +15,7 @@ const Q1Client: React.FC<Q1Props> = ({ onChange = () => {} }) => {
     };
 
     return (
+        // <div className={styles.qOnePage}>
         <form className={styles.qOneBody}>
             <div className={styles.qOneContainer}>
                 <label className={styles.qOneQuestion}>
@@ -23,10 +24,12 @@ const Q1Client: React.FC<Q1Props> = ({ onChange = () => {} }) => {
                 <ImportantButtons 
                     name="ocean" 
                     onChange={handleButtonClick} 
-                    currentQuestion="q1" 
+                    currentQuestion="q1"
+                    buttonTheme={{ important: "var(--color-1)", notImportant: "var(--color-2)" }} 
                 />
             </div>
         </form>
+        // </div>
     );
 };
 
