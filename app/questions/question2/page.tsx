@@ -1,10 +1,8 @@
-//import { useRouter } from "next/navigation"; // ✅ Correct import for Next.js navigation
 import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from "next/image";
-// import Q2Wrapper from "@/components/question-clients/Q2Wrapper";
 import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
-
+import styles from "../../../components/question-clients/question2.module.css";
 
 export function generateMetadata(): Metadata {
   return {
@@ -28,17 +26,32 @@ export function generateMetadata(): Metadata {
 
 export default function Q2Page() {
     return (
-        <>
-          <BreadcrumbSchema questionNumber={2} />
+      <div className={styles.qTwoPage}>
+        <BreadcrumbSchema questionNumber={2} />
+
+        <div className={styles.qTwoContainer}>
+
+          <label 
+            className={styles.qTwoQuestion} 
+            aria-label="What is your max monthly budget for living expenses?"
+          >
+            What is your max monthly budget for living expenses?
+          </label>
+          
+        </div>
+
+        <div className={styles.qTwoImgContainer}>
           <Image 
               src="/questionImages/ppm-graphic.png"
               alt="Woman using a calculator to budget monthly expenses in an office setting." 
               width={500} 
               height={300} 
-              // className="qTwoImg"
+              className={styles.qTwoImg}
           />
-          <QuestionLogicForm questionId="q2" />
-          {/* <Q2Wrapper /> ✅ Dynamically loads the interactive component */}
-        </>
+        </div>
+
+        <QuestionLogicForm questionId="q2" />
+      </div>
     );
 };
+

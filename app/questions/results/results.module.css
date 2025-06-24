@@ -1,4 +1,3 @@
-
 /* this class is from question logic form  */
 .question-page {
     background-color: var(--color-home);
@@ -6,20 +5,15 @@
     margin: 0;
 }
 
-
 .showResultsContainer {
     text-align: center;
-    /* background-color: var(--color-home);  */
-    /* padding: 3em; */
-    height: calc(100vh - 3rem);
+    min-height: 100vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--color-home);
-
-
 }
 
 .showResultsHeader {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from 'next/image';
 import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
-import styles from "../../../components/question-clients/question1.module.css"
+import styles from "../../../components/question-clients/question1.module.css";
 
 export function generateMetadata(): Metadata {
   return {
@@ -31,20 +31,25 @@ export default function Q1Page() {
 
         <div className={styles.qOneContainer}>
           
-          <label className={styles.qOneQuestion}>
-              Access to the ocean?
+          <label 
+            className={styles.qOneQuestion}
+            aria-label="Do you need access to the ocean when choosing a country?"
+          >
+            Access to the ocean?
           </label>
         </div>
 
         <div className={styles.qOneImgContainer}>
           <Image 
-              src="/questionImages/surf-graphic.png" 
-              alt="Surfing graphic" 
-              width={400} 
-              height={400} 
-              className={styles.qOneImg}
+            src="/questionImages/surf-graphic.png" 
+            alt="Woman surfing – representing access to the ocean." 
+            width={400} 
+            height={400} 
+            className={styles.qOneImg}
+            priority // 👈 This tells Next.js to preload it
           />
         </div>
+        
         <QuestionLogicForm questionId="q1" />
       </div>
     );

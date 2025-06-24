@@ -21,6 +21,7 @@ const QuizContext = createContext<QuizContextType | undefined>(undefined);
 const LOCAL_STORAGE_KEY = "quizData";
 
 export const QuizProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+   const [hydrated, setHydrated] = useState(false); // NEW: hydration flag
   // Initialize state from localStorage, if available
   const [formData, setFormDataState] = useState<FormDataType>(() => {
     if (typeof window !== "undefined") {
@@ -46,6 +47,10 @@ export const QuizProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     };
   });
 
+  useEffect(() => {
+    setHydrated(true); // Set flag only after first client mount
+  }, []);
+
   // Whenever formData changes, update localStorage
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -57,6 +62,8 @@ export const QuizProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     setFormDataState((prevData) => ({ ...prevData, ...updatedData }));
     // console.log("Updated global formData =>", { ...formData, ...updatedData });
   };
+
+  if (!hydrated) return null; // ⛔ Prevent render until ready
 
   return (
     <QuizContext.Provider value={{ formData, setFormData }}>

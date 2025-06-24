@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 // import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import { Country, CountryLinks } from '@/lib/types';
+import './CountryList.css';
 
 
 import countryLinksDataRaw from "@/lib/data/countryLinks.json";
@@ -257,12 +258,13 @@ const CountryList: React.FC<{ countries: Country[] }> = ({ countries }) => {
                         style={{
                             backgroundColor: index % 2 === 0 ? '#f5d7b2' : '#f7e3c6',
                             padding: '10px',
-                            display: 'flex',
                             alignItems: 'center',
                         }}
                     >
-                        <Image src={flagSrc} alt={`${country.name} flag`} width={50} height={30} priority={false} />
-                        <span id="country-title">{country.name}</span>
+                        <div className="country-label">
+                            <Image src={flagSrc} alt={`${country.name} flag`} width={50} height={30} priority={false} />
+                            <span id="country-title">{country.name}</span>
+                        </div>
 
                         {/* ✅ Affiliate links */}
                         <div className="affiliate-links">

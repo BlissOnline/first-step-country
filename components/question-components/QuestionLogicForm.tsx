@@ -1,4 +1,5 @@
 "use client";
+// import { useEffect } from "react";
 // import { useRouter } from "next/navigation";
 import { useQuiz, FormDataType } from "@/components/context/QuizContext"; // ✅ Import global state and type
 
@@ -13,13 +14,18 @@ import Q6Wrapper from "@/components/question-clients/Q6Wrapper";
 import Q7Wrapper from "@/components/question-clients/Q7Wrapper";
 import Q8Wrapper from "@/components/question-clients/Q8Wrapper";
 
-import styles from "@/components/question-clients/question1.module.css";
-
 interface QuestionLogicFormProps {
   questionId: string;
 }
 
 const QuestionLogicForm: React.FC<QuestionLogicFormProps> = ({ questionId }) => {
+
+  // useEffect(() => {
+  //   console.log("🔄 questionId:", questionId);
+  //   console.log("🧠 formData.ocean:", formData.ocean);
+  //   const stored = localStorage.getItem("quizData");
+  //   console.log("💾 localStorage[quizData]:", stored);
+  // }, []);
   // const router = useRouter();
   const { formData, setFormData } = useQuiz(); // ✅ Use global state
   // console.log(" DEBUG: Loaded formData from Context =>", formData);
@@ -31,6 +37,12 @@ const QuestionLogicForm: React.FC<QuestionLogicFormProps> = ({ questionId }) => 
 
   // Render the appropriate question component based on questionId 
   const renderQuestion = () => {
+    // Only intercept the first mount of q1 if there's no stored data
+    if (questionId === 'q1' && typeof window !== 'undefined') {
+      const stored = localStorage.getItem("quizData");
+      if (!stored) return null; // Prevent double render if localStorage isn't ready
+    }
+
     switch (questionId) {
       case 'q1':
         return <Q1Wrapper value={formData.ocean} onChange={(value) => handleChange('ocean', value)} />;
@@ -57,9 +69,14 @@ const QuestionLogicForm: React.FC<QuestionLogicFormProps> = ({ questionId }) => 
   };
 
   return (
-    <div className={styles.qOneContainer}>
+    // <div className={styles.qOneContainer}>
+    //   {renderQuestion()}
+    // </div>  
+    // <>
+    //   {renderQuestion()}
+    // </>
+    <div key={questionId}>
       {renderQuestion()}
-      {/* <button onClick={handleNext}>Next</button> */}
     </div>
   );
 };

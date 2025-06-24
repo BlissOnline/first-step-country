@@ -1,14 +1,9 @@
-/* .indexBar {
-    transition: height 0.3s ease-out;
-    height: 71.5px;
-    justify-content: space-between;
-} */
-
 .indexBar {
     display: grid;
-    grid-template-columns: auto 1fr auto auto auto; /* Fixed structure */
+    /* grid-template-columns: auto 1fr auto auto auto;  */
+    /* grid-template-columns: auto 1fr 1fr 1fr 1fr; */
     align-items: center;
-    gap: 10px; /* Space between items */
+    gap: 10px; 
     background-color: var(--color-light);
     padding: 10px;
     height: 71.5px;
@@ -21,27 +16,35 @@
     /* background-color: var(--color-gold); */
 }
 
-.affiliate-links div {
-    flex: 1; /* ✅ Makes each icon take up equal space */
-    /* max-width: 150px;  */
-    justify-content: center;
-    align-items: center;
+.country-label {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjust as needed to bring them closer or give breathing room */
+}
+
+/* Optional: override grid if needed */
+.indexBar .country-label {
+  grid-column: 1 / span 2; /* If necessary to collapse the first two columns into one */
 }
 
 
-/* Maintain layout even when affiliate links are missing */
 .affiliate-links {
     display: flex;
-    justify-content: center; /* ✅ Ensures even spacing */
+    /* flex-direction: row;  */
+    flex-direction: row-reverse;
+    justify-content: space-around;
     align-items: center;
     gap: 10px; 
-    /* flex-wrap: wrap;  */
-    min-height: 50px; /* ✅ Keeps structure */
-    width: 100%;
-
+    min-height: 50px;
+    width: auto; 
+    /* margin-right: 500px; */
+    /* padding-right: 300px; */
 }
 
 
+.indexBar .affiliate-links {
+    grid-column: 3 / span 3;
+}
 
 .camera-icon {
     margin-right: 20px;

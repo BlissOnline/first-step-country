@@ -2,6 +2,8 @@ import type { Metadata } from "next"; // ✅ Type imports first
 import BreadcrumbSchema from "@/components/BreadcrumbSchema"; // ✅ Project-specific component (important for SEO)
 import Image from "next/image"; // ✅ Built-in Next.js optimization (can sit here or above)
 import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
+import styles from "@/components/question-clients/question7.module.css"
+
 
 export function generateMetadata(): Metadata {
   return {
@@ -24,17 +26,31 @@ export function generateMetadata(): Metadata {
 }
 export default function Q7Page() { 
     return (
-        <>
+      <div className={styles.qSevenPage}>
 
-            <BreadcrumbSchema questionNumber={7} />
-            <Image 
-                src="/questionImages/hq-medical-graphic.png"
-                alt="Group of doctors in professional attire offering a welcoming gesture" 
-                width={500} 
-                height={300} 
-                className="qSevenImg"
-            />
-            <QuestionLogicForm questionId="q7" />
-        </>        
+        <BreadcrumbSchema questionNumber={7} />
+
+        <div className={styles.qSevenContainer}>
+          <label 
+            className={styles.qSevenQuestion}
+            aria-label="High-quality and affordable medical tourism?"
+          >
+            High-quality and affordable medical tourism?
+          </label>
+        </div>
+
+        <div className={styles.qSevenImgContainer}>
+          <Image
+            src="/questionImages/hq-medical-graphic.png"
+            alt="Group of doctors in professional attire offering a welcoming gesture"
+            width={500}
+            height={300}
+            className={styles.qSevenImg}
+          />
+        </div>
+
+        <QuestionLogicForm questionId="q7" />
+
+      </div>
     );
 };

@@ -11,24 +11,19 @@ export interface Q4Props {
 const Q4Client: React.FC<Q4Props> = ({ onChange = () => {} }) => {
 
     const handleButtonClick = (selectedValue: string) => {
-        onChange(selectedValue); // ✅ Calls parent onChange function
+        onChange(selectedValue);
     };
 
     return (
         <form className={styles.qFourBody}>
-            <div className={styles.qFourContainer}>
-                <label 
-                    className="qFourQuestion" 
-                    aria-label="Do you want your country to have affordable dining options?"
-                >
-                    Do you want your country to have affordable dining options?
-                </label>
-                <ImportantButtons 
-                    name="dining" 
-                    onChange={handleButtonClick} 
-                    currentQuestion="q4" 
-                />
-            </div>
+
+            <ImportantButtons 
+                name="dining" 
+                onChange={handleButtonClick} 
+                currentQuestion="q4" 
+                buttonTheme={{ important: "var(--color-1)", notImportant: "var(--color-3)" }} 
+            />
+
         </form>
     );
 };

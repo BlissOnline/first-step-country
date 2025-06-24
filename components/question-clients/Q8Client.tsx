@@ -1,35 +1,31 @@
-"use client"; // ✅ Allows interactivity
+"use client";
 import React from "react";
 import ImportantButtons from "@/components/Buttons/ImportantButtons/ImportantButtons";
 import styles from "./question8.module.css";
 
 export interface Q8Props {
-    value: string;  // ✅ Make `value` optional
-    onChange: (value: string) => void; // ✅ Make `onChange` optional
+    value: string; 
+    onChange: (value: string) => void; 
 }
 
 const Q8Client: React.FC<Q8Props> = ({ onChange = () => {} }) => {
 
     const handleButtonClick = (selectedValue: string) => {
-        onChange(selectedValue); // ✅ Calls parent onChange function
+        onChange(selectedValue); 
     };
 
     return (
         <form className={styles.qEightBody}>
-            <div className={styles.qEightContainer}>
-                <label 
-                    className='qEightQuestion'
-                    aria-label="Should your country offer a digital nomad visa or remote work permits?"
-                >
-                    Should your country offer a digital nomad visa or remote work permits?
-                </label>{/* //br here? */}
-                <ImportantButtons 
-                    name="nomadVisa" 
-                    onChange={handleButtonClick} 
-                    currentQuestion="q8" />
-            </div>
+
+            <ImportantButtons 
+                name="nomadVisa" 
+                onChange={handleButtonClick} 
+                currentQuestion="q8" 
+                buttonTheme={{ important: "var(--color-1)", notImportant: "var(--color-3)" }}
+            />
+
         </form>
     );
 };
 
-export default Q8Client;
+export default Q8Client;    

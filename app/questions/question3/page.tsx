@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from 'next/image';
-// import Q3Wrapper from "@/components/question-clients/Q3Wrapper";
 import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
-
+import styles from "@/components/question-clients/question3.module.css";
 
 export function generateMetadata(): Metadata {
   return {
@@ -27,17 +26,30 @@ export function generateMetadata(): Metadata {
 
 export default function Q3Page() { 
     return (
-        <>
-            <BreadcrumbSchema questionNumber={3} />
-            <Image 
-                src="/questionImages/english-graphic.png" 
-                alt="Person signaling active listening with multilingual dialogue captions including 'hello' in three languages" 
-                width={500} 
-                height={300} 
-                // className="qThreeImg"
-            />
-            <QuestionLogicForm questionId="q3" />
-            {/* <Q3Wrapper /> */}
-        </>
+      <div className={styles.qThreePage}>
+        <BreadcrumbSchema questionNumber={3} />
+
+        <div className={styles.qThreeContainer}>
+          <label 
+            className={styles.qThreeQuestion} 
+            aria-label="Do you want your country to have English speakers?"
+          >
+            Do you want your country to have English speakers?
+          </label>
+        </div>
+        
+        <div className={styles.qThreeImgContainer}>
+          <Image
+              src="/questionImages/english-graphic.png"
+              alt="Person signaling active listening with multilingual dialogue captions including 'hello' in three languages"
+              width={500}
+              height={300}
+              className={styles.qThreeImg}
+          />
+        </div>
+
+        <QuestionLogicForm questionId="q3" />
+        
+      </div>
     );
 };

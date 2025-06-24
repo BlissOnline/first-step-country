@@ -3,7 +3,7 @@
 import "../styles/global.css";
 import Layout from "@/components/Layout/Layout";
 import { QuizProvider } from "@/components/context/QuizContext";  // ✅ Import the QuizProvider
-import Head from "next/head";
+// import Head from "next/head";
 import Script from "next/script";
 
 export const viewport = {
@@ -13,7 +13,10 @@ export const viewport = {
 export const metadata = {
   title: "Find Your Ideal Travel Destination | Personalized Quiz",
   description: "Discover the best country for your next adventure with our fun, personalized quiz!",
-  icons: { icon: "/lamp 40px no spark.svg", apple: "/apple-touch-icon.png" },
+  icons: { 
+    icon: "/lamp 40px no spark.svg", 
+    apple: "/apple-touch-icon.png", 
+  },
   openGraph: {
     title: "Find Your Ideal Travel Destination – Take the Quiz!",
     description: "Answer a few questions and uncover the perfect country for your next adventure.",
@@ -33,57 +36,59 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        <Head>
-          {/* Fonts Optimized via next/font */}
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Noto+Sans:wght@100..900&family=Playpen+Sans:wght@100..800&display=swap"
-            rel="stylesheet"
-          />
+        {/* Fonts Optimized via next/font */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Noto+Sans:wght@100..900&family=Playpen+Sans:wght@100..800&display=swap"
+          rel="stylesheet"
+        />
 
-          {/* Preload Google Tag Manager to optimize loading */}
-          <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-Y2JDHJHYSN" as="script" />
+        {/* Preload Google Tag Manager to optimize loading */}
+        <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-Y2JDHJHYSN" as="script" />
 
-          {/* Apple Touch Icon */}
-          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        {/* It just tells the browser very directly, “Here’s your favicon. Happy now?” */}
+        <link rel="icon" href="/lamp 40px no spark.svg" />
 
-          {/* Schema Markup */}
-          <script type="application/ld+json">
-            {JSON.stringify({
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "WebSite",
-                  "name": "First Step Country",
-                  "url": "https://firststepcountry.com/",
-                },
-                {
-                  "@type": "FAQPage",
-                  "mainEntity": [
-                    {
-                      "@type": "Question",
-                      "name": "How does the quiz help me find a travel destination?",
-                      "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text":
-                          "The quiz analyzes your travel preferences to suggest the best countries for your next adventure.",
-                      },
+        {/* Apple Touch Icon */}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+        {/* Schema Markup */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebSite",
+                "name": "First Step Country",
+                "url": "https://firststepcountry.com/",
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "How does the quiz help me find a travel destination?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text":
+                        "The quiz analyzes your travel preferences to suggest the best countries for your next adventure.",
+                        // "Fun short questionnaire to find countries based on needs"
                     },
-                    {
-                      "@type": "Question",
-                      "name": "Is the quiz free to use?",
-                      "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Yes! The quiz is completely free to use and has no sign-up.",
-                      },
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is the quiz free to use?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes! The quiz is completely free to use and has no sign-up.",
                     },
-                  ],
-                },
-              ],
-            })}
-          </script>
-        </Head>
+                  },
+                ],
+              },
+            ],
+          })}
+        </script>
       </head>
       <body className="global-body">
         <QuizProvider> {/* ✅ Wrap the app inside QuizProvider */}

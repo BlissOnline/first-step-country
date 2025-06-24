@@ -1,4 +1,4 @@
-"use client"; // ✅ Allows interactivity
+"use client"; 
 import React from "react";
 import ImportantButtons from "@/components/Buttons/ImportantButtons/ImportantButtons";
 import styles from "./question3.module.css";
@@ -11,24 +11,19 @@ export interface Q3Props {
 const Q3Client: React.FC<Q3Props> = ({ onChange = () => {} }) => {
 
     const handleButtonClick = (selectedValue: string) => {
-        onChange(selectedValue); // ✅ Calls parent onChange function
+        onChange(selectedValue); 
     };
 
     return (
         <form className={styles.qThreeBody}>
-            <div className={styles.qThreeContainer}>
-                <label 
-                        className='qThreeQuestion' 
-                        aria-label="Do you want your country to have English speakers?"
-                    >
-                        Do you want your country to have English speakers?
-                </label>
-                <ImportantButtons 
-                    name="english" 
-                    onChange={handleButtonClick} 
-                    currentQuestion="q3" 
-                />
-            </div>
+
+            <ImportantButtons 
+                name="english" 
+                onChange={handleButtonClick} 
+                currentQuestion="q3" 
+                buttonTheme={{ important: "var(--color-3)", notImportant: "var(--color-2)" }} 
+            />
+            
         </form>
     );
 };

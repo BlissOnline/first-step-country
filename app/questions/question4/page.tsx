@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from 'next/image';
-// import Q4Wrapper from "@/components/question-clients/Q4Wrapper";
 import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
+import styles from "@/components/question-clients/question4.module.css"
 
 export function generateMetadata(): Metadata {
   return {
@@ -26,17 +26,30 @@ export function generateMetadata(): Metadata {
 
 export default function Q4Page() { 
     return (
-        <>
-            <BreadcrumbSchema questionNumber={4} />
-            <Image 
-                src="/questionImages/affordable-dining-graphic.png" 
-                alt="Street-side taco food stand with a sign displaying 'Tacos'" 
-                width={500} 
-                height={300} 
-                // className="qFourImg"
-            />
-            <QuestionLogicForm questionId="q4" />
-            {/* <Q4Wrapper /> */}
-        </>
+
+      <div className={styles.qFourPage}>
+        <BreadcrumbSchema questionNumber={4} />
+
+        <div className={styles.qFourContainer}>
+          <label 
+            className={styles.qFourQuestion} 
+            aria-label="Do you want your country to have affordable dining options?"
+          >
+            Do you want your country to have affordable dining options?
+          </label>
+        </div>
+
+        <div className={styles.qFourImgContainer}>
+          <Image
+              src="/questionImages/affordable-dining-graphic.png"
+              alt="Street-side taco food stand with a sign displaying 'Tacos'"
+              width={500}
+              height={300}
+              className={styles.qFourImg}
+          />
+        </div>
+
+        <QuestionLogicForm questionId="q4" />
+      </div>
     );
 };

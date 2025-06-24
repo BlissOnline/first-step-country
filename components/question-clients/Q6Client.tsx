@@ -1,36 +1,30 @@
-"use client"; // ✅ Allows interactivity
+"use client"; 
 import React from "react";
 import ImportantButtons from "@/components/Buttons/ImportantButtons/ImportantButtons";
 import styles from "./question6.module.css";
 
 export interface Q6Props {
-    value: string;  // ✅ Make `value` optional
-    onChange: (value: string) => void; // ✅ Make `onChange` optional
+    value: string;  
+    onChange: (value: string) => void; 
 }
 
 const Q6Client: React.FC<Q6Props> = ({ onChange = () => {} }) => {
 
 
     const handleButtonClick = (selectedValue: string) => {
-        onChange(selectedValue); // ✅ Calls parent onChange function
+        onChange(selectedValue); 
     };
-
 
     return (
         <form className={styles.qSixBody}>
-            <div className={styles.qSixContainer}>
-                <label 
-                    className='qSixQuestion' 
-                    aria-label="High-quality education options for foreigners, at a great price?"
-                >
-                    High-quality education options for foreigners, at a great price?
-                </label>
-                <ImportantButtons 
-                    name="education" 
-                    onChange={handleButtonClick} 
-                    currentQuestion="q6" 
-                />
-            </div>
+
+            <ImportantButtons 
+                name="education" 
+                onChange={handleButtonClick} 
+                currentQuestion="q6" 
+                buttonTheme={{ important: "var(--color-1)", notImportant: "var(--color-2)" }}
+            />
+
         </form>
     );
 };

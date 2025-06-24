@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from 'next/image';
 import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
+import styles from "@/components/question-clients/question8.module.css"
+
 
 export function generateMetadata(): Metadata {
   return {
@@ -25,16 +27,31 @@ export function generateMetadata(): Metadata {
 
 export default function Q8Page() { 
     return (
-        <>
-            <BreadcrumbSchema questionNumber={8} />
-            <Image 
-                src='/questionImages/nomad-visa-graphic.png'
-                alt="Smiling digital nomad working remotely on a laptop in a scenic location" 
-                width={500} 
-                height={300} 
-                className="qEightImg"
-            />
-            <QuestionLogicForm questionId="q8" />
-        </>
+      <div className={styles.qEightPage}>
+
+        <BreadcrumbSchema questionNumber={8} />
+
+        <div className={styles.qEightContainer}>
+          <label 
+            className={styles.qEightQuestion}
+            aria-label="Should your country offer a digital nomad visa or remote work permits?"
+          >
+            Should your country offer a digital nomad visa or remote work permits?
+          </label>
+        </div>
+
+        <div className={styles.qEightImgContainer}>
+          <Image
+            src='/questionImages/nomad-visa-graphic.png'
+            alt="Smiling digital nomad working remotely on a laptop in a scenic location"
+            width={500}
+            height={300}
+            className={styles.qEightImg}
+          />
+        </div>
+
+        <QuestionLogicForm questionId="q8" />
+
+      </div>
     );
 };

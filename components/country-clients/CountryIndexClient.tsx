@@ -22,10 +22,10 @@ const CountryIndexClient: React.FC = () => {
 
     const filteredCountries = goldObject.filter((item: Country) => {
 
-        if (searchParams.get("ocean") === "important" && !item.coast) {
-            console.log("EXCLUDED:", item.name);
-            return false;
-        }
+        // if (searchParams.get("ocean") === "important" && !item.coast) {
+        //     console.log("EXCLUDED:", item.name);
+        //     return false;
+        // }
 
         // if (searchParams.get("ocean") === "important" && !item.coast) return false;
 
@@ -43,7 +43,7 @@ const CountryIndexClient: React.FC = () => {
     });
 
     return (
-        <div>
+        <div style={{ paddingTop: '48px' }}>
             <h1 
                 className="titleIndex" 
                 style={{
@@ -54,6 +54,8 @@ const CountryIndexClient: React.FC = () => {
                     textAlign: "start",
                     paddingLeft: "1.8em",
                     color: "var(--color-3)",
+                    fontSize: "3.2em",
+                    lineHeight: "59px",
                 }} 
             >
                 <span style={{ color: "var(--color-gold)", fontFamily: "var(--font-general)" }}>

@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 import Image from 'next/image';
 import QuestionLogicForm from "@/components/question-components/QuestionLogicForm";
-
-
-// import Q5Wrapper from "@/components/question-clients/Q5Wrapper";
+import styles from "@/components/question-clients/question5.module.css"
 
 export function generateMetadata(): Metadata {
   return {
@@ -28,18 +26,30 @@ export function generateMetadata(): Metadata {
 
 export default function Q5Page() { 
     return (
-        <>
-            <BreadcrumbSchema questionNumber={5} />
 
-            
-            <Image 
-                src="/questionImages/safe-country-graphic.png"
-                alt='Riot police in protective gear facing a large protest' 
-                width={500} 
-                height={300} 
-                // className="qFiveImg"
-            />
-            <QuestionLogicForm questionId="q5" />
-        </>        
+      <div className={styles.qFivePage}>
+        <BreadcrumbSchema questionNumber={5} />
+
+        <div className={styles.qFiveContainer}>
+          <label 
+            className={styles.qFiveQuestion} 
+            aria-label="Do you want your country to be considered safe?"
+          >
+            Do you want your country to be considered safe? 
+          </label>
+        </div>
+        
+        <div className={styles.qFiveImgContainer}>
+          <Image
+            src="/questionImages/safe-country-graphic.png"
+            alt='Riot police in protective gear facing a large protest'
+            width={500}
+            height={300}
+            className={styles.qFiveImg}
+          />
+        </div>
+
+        <QuestionLogicForm questionId="q5" />
+      </div>  
     );
 };
