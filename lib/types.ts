@@ -55,3 +55,14 @@ export type CountryLinks = {
 // export const countryLinks: CountryLinks = countryLinksRaw as CountryLinks;
 
 //   const typedCountryLinks: CountryLinks = countryLinks;
+
+export type QuizData = {
+  ocean: boolean;
+  english: boolean;
+  dining: boolean;
+  unsafe: boolean;
+  education: boolean;
+  medical: boolean;
+  nomadVisa: boolean;
+  ppm: number;
+};

@@ -29,7 +29,8 @@ const CountryIndexClient: React.FC = () => {
 
         // if (searchParams.get("ocean") === "important" && !item.coast) return false;
 
-        let ppm = +(searchParams.get("ppm") || 0);
+        // let ppm = +(searchParams.get("ppm") || 0);
+        const ppm = +(searchParams.get("ppm") || 0);
         if (ppm && item.ppm > ppm) return false;
 
         if (searchParams.get("english") === "important" && !item.englishSpeaking) return false;

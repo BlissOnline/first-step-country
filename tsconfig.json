@@ -2,7 +2,11 @@
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "module": "ESNext",
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -19,26 +23,37 @@
     "allowJs": true,
     "forceConsistentCasingInFileNames": true,
     "incremental": true,
-    "plugins": [{ "name": "next" }],
-    "baseUrl": ".",  // ✅ Add baseUrl
-    "paths": {        // ✅ Define aliases
-      "@/*": ["./*"],
-      "@/lib/*": ["lib/*"],
-      "@/components/*": ["components/*"]
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".", // ✅ Add baseUrl
+    "paths": { // ✅ Define aliases
+      "@/*": [
+        "./*"
+      ],
+      "@/lib/*": [
+        "lib/*"
+      ],
+      "@/components/*": [
+        "components/*"
+      ]
     }
   },
   "include": [
-    "./src",
     "./dist/types/**/*.ts",
     "./next-env.d.ts",
+    "./src",
     "app/**/*",
     "components/**/*",
-    "lib/**/*"
+    "lib/**/*",
+    ".next/types/**/*.ts"
   ],
-  "exclude": ["./node_modules"]
+  "exclude": [
+    "./node_modules"
+  ]
 }
-
-
 // {
 //   "compilerOptions": {
 //     "target": "ES2020",
@@ -65,7 +80,6 @@
 //   "include": ["./src", "./dist/types/**/*.ts", "./next-env.d.ts", "app/Pages", "app/home/page.tsx", "app/about/about.tsx", "app/components", "app/contact/Contact.tsx", "app/country-index/page.tsx", "components/Layout", "components/BreadcrumbSchema.tsx", "components/Forms", "components/Buttons", "components/question-components/QuestionPage.tsx", "components/question-components/QuestionLogicForm.tsx", "components/CountryList.tsx", "lib/goldObject.ts", "lib/countryLinks.tsx", "lib/types.ts"],
 //   "exclude": ["./node_modules"]
 // }
-
 //this was old file not next.js
 // {
 //   "compilerOptions": {

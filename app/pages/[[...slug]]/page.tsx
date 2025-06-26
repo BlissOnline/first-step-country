@@ -1,5 +1,5 @@
-import "../../styles/global.css"
-
+// import "../../styles/global.css";
+import "@/styles/global.css";
 import { ClientOnly } from "./client"; // ✅ Corrected import
 
 export function generateStaticParams() {

@@ -2,10 +2,14 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";  
 import styles from "./results.module.css";
+import type { QuizData } from "../../../lib/types"; 
+
 
 const ShowResults: React.FC = () => {
     const router = useRouter();
-    const [savedData, setSavedData] = useState<Record<string, any> | null>(null);
+    // const [savedData, setSavedData] = useState<Record<string, any> | null>(null);
+    const [savedData, setSavedData] = useState<QuizData | null>(null);
+
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -21,7 +25,14 @@ const ShowResults: React.FC = () => {
             return;
         }
 
-        const queryString = new URLSearchParams(savedData).toString();
+        //dumb thing you have to do to please typescript, we are turning the form data values to string
+        const queryString = new URLSearchParams(
+            Object.fromEntries(
+                Object.entries(savedData).map(([key, value]) => [key, String(value)])
+            )
+        ).toString();
+
+        // const queryString = new URLSearchParams(savedData).toString();
         // console.log("DEBUG: Generated Query String =>", queryString);
 
         router.push(`/country-index?${queryString}`);
