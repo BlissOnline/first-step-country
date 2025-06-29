@@ -1,5 +1,10 @@
 //possible that this should be .tsx file instead if im including JSX
 //Country doens't exist
+export type City = {
+  name: string;
+  ppm: number;
+}
+
 export interface Country {
     name: string;
     countryIndexNumber: number;
@@ -13,7 +18,10 @@ export interface Country {
     affordableHealthCare: boolean;
     nomadVisa: boolean;        
     flagUrl?: string; //addition
-     affiliateLinks?: CountryLinks; // ✅ Use `CountryLinks` here
+    affiliateLinks?: CountryLinks; // ✅ Use `CountryLinks` here
+    cities?: City[]; // Optional field to extend functionality over time
+
+    
     // affiliateLinks?: { // Addition for affiliate links
     //     flights: string;
     //     hotels: string;
