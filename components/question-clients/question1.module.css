@@ -1,11 +1,30 @@
 .qOnePage {
-    min-height: 100vh;
+   
+    /* min-height: calc(100vh - var(--nav-height));
+  
+    padding-top: var(--nav-height);
+
+    box-sizing: border-box;    
+
     width: 100%;
     background-color: pink;  
     display: flex;
     margin: 0;
     padding: 0;
     flex-direction: column;    
+    font-family: var(--font-question); */
+      /* push the entire page below the fixed navbar */
+    margin-top: var(--nav-height);
+
+    /* ensure it fills the remaining viewport without extra scroll-gap */
+    min-height: calc(100vh - var(--nav-height));
+
+    box-sizing: border-box;
+    width: 100%;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    margin: 0;        /* this zeroes only on left/right/bottom now */
     font-family: var(--font-question);
 }
 

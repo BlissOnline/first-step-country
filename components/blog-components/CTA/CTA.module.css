@@ -1,0 +1,32 @@
+/* blog-components/CTA.module.css */
+.cta {
+  border-left: 4px solid #3b82f6;
+  background-color: #eff6ff;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.text {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.button {
+  display: inline-block;
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #2563eb;
+}

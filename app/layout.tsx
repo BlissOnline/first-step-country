@@ -1,57 +1,84 @@
-// import type { Metadata } from "next";
+// app/layout.tsx
 
-import "../styles/global.css";
-import Layout from "@/components/Layout/Layout";
-import { QuizProvider } from "@/components/context/QuizContext";  // ✅ Import the QuizProvider
-// import Head from "next/head";
-import Script from "next/script";
+import "../styles/global.css"
+import Layout from "@/components/Layout/Layout"
+import { QuizProvider } from "@/components/context/QuizContext"
+import Script from "next/script"
+
+// ➊ Import your client-only MDX wrapper
+// import MDXClientProvider from "@/components/blog-components/MDXClientProvider"
 
 export const viewport = {
-  themeColor: "#f0e0d5", // ✅ Move themeColor here
-};
+  themeColor: "#f0e0d5",
+}
 
 export const metadata = {
   title: "Find Your Ideal Travel Destination | Personalized Quiz",
-  description: "Discover the best country for your next adventure with our fun, personalized quiz!",
-  icons: { 
-    icon: "/lamp 40px no spark.svg", 
-    apple: "/apple-touch-icon.png", 
+  description:
+    "Discover the best country for your next adventure with our fun, personalized quiz!",
+  icons: {
+    icon: "/lamp 40px no spark.svg",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "Find Your Ideal Travel Destination – Take the Quiz!",
-    description: "Answer a few questions and uncover the perfect country for your next adventure.",
-    images: [{ url: "https://firststepcountry.com/ppm-graphic.png", width: 1200, height: 630 }],
+    description:
+      "Answer a few questions and uncover the perfect country for your next adventure.",
+    images: [
+      {
+        url: "https://firststepcountry.com/ppm-graphic.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
     url: "https://firststepcountry.com/",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Find Your Ideal Travel Destination – Take the Quiz!",
-    description: "Answer a few questions and uncover the perfect country for your next adventure.",
+    description:
+      "Answer a few questions and uncover the perfect country for your next adventure.",
     images: ["https://firststepcountry.com/ppm-graphic.png"],
   },
-};
+}
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
       <head>
         {/* Fonts Optimized via next/font */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Noto+Sans:wght@100..900&family=Playpen+Sans:wght@100..800&display=swap"
           rel="stylesheet"
         />
 
-        {/* Preload Google Tag Manager to optimize loading */}
-        <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=G-Y2JDHJHYSN" as="script" />
+        {/* Preload Google Tag Manager */}
+        <link
+          rel="preload"
+          href="https://www.googletagmanager.com/gtag/js?id=G-Y2JDHJHYSN"
+          as="script"
+        />
 
-        {/* It just tells the browser very directly, “Here’s your favicon. Happy now?” */}
+        {/* Favicon */}
         <link rel="icon" href="/lamp 40px no spark.svg" />
 
         {/* Apple Touch Icon */}
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
 
         {/* Schema Markup */}
         <script type="application/ld+json">
@@ -60,28 +87,28 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             "@graph": [
               {
                 "@type": "WebSite",
-                "name": "First Step Country",
-                "url": "https://firststepcountry.com/",
+                name: "First Step Country",
+                url: "https://firststepcountry.com/",
               },
               {
                 "@type": "FAQPage",
-                "mainEntity": [
+                mainEntity: [
                   {
                     "@type": "Question",
-                    "name": "How does the quiz help me find a travel destination?",
-                    "acceptedAnswer": {
+                    name: "How does the quiz help me find a travel destination?",
+                    acceptedAnswer: {
                       "@type": "Answer",
-                      "text":
+                      text:
                         "The quiz analyzes your travel preferences to suggest the best countries for your next adventure.",
-                        // "Fun short questionnaire to find countries based on needs"
                     },
                   },
                   {
                     "@type": "Question",
-                    "name": "Is the quiz free to use?",
-                    "acceptedAnswer": {
+                    name: "Is the quiz free to use?",
+                    acceptedAnswer: {
                       "@type": "Answer",
-                      "text": "Yes! The quiz is completely free to use and has no sign-up.",
+                      text:
+                        "Yes! The quiz is completely free to use and has no sign-up.",
                     },
                   },
                 ],
@@ -90,15 +117,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           })}
         </script>
       </head>
+
       <body className="global-body">
-        <QuizProvider> {/* ✅ Wrap the app inside QuizProvider */}
-          {/* Wrap all children with our Layout so that our Navbar (and other header content) persist */}
+        <QuizProvider>
           <Layout>{children}</Layout>
-          {/* <div id="root">{children}</div> */}
+          {/* ➌ Wrap your app in the client-side MDX provider */}
+          {/* <MDXClientProvider>
+            <Layout>{children}</Layout>
+          </MDXClientProvider> */}
         </QuizProvider>
 
-        {/* Google Analytics Optimized with next/script */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2JDHJHYSN" />
+        {/* Google Analytics via next/script */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-Y2JDHJHYSN"
+        />
         <Script
           id="google-analytics"
           strategy="afterInteractive"
@@ -113,5 +146,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </body>
     </html>
-  );
+)
 }

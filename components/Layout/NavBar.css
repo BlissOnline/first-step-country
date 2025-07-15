@@ -1,40 +1,56 @@
 /* nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  
+  color: white;
    
 } */
 
+:root {
+  --nav-height: 3rem;   /* change once, use everywhere */
+}
+
 .navBody {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--color-nav);
-    color: white;
-    height: 3rem;
-    margin: 0;
-    
-    position: absolute;
-    top: 0;
-    width: 100%;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-nav);
+  color: white;
+  height: 3rem;
+  margin: 0;
   
+  position: absolute;
+  top: 0;
+  width: 100%; */
+
+  position: fixed;      /* fix at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  background-color: var(--color-nav);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  z-index: 1000;
 
 }
 
 .logo {
-    font-size: 1.5rem;
-   
-    margin-top: 0em;
-    font-family: var(--font-theme);
+  font-size: 1.5rem;
 
-    /* fill: var(--color-gold); */
-    fill: var(--color-4);
-    /* transition: fill 0.3s ease-in-out; */
-    transition: opacity 0.3s ease;
+  margin-top: 0em;
+  font-family: var(--font-theme);
+
+  /* fill: var(--color-gold); */
+  fill: var(--color-4);
+  /* transition: fill 0.3s ease-in-out; */
+  transition: opacity 0.3s ease;
 }
 
 .logo:hover {

@@ -17,7 +17,7 @@ const NavBar: React.FC = () => {
             <ul className='nav-links'>
                 {/* logger is link */}
                 {/* <li><Link to="/">Home</Link></li> */}
-                {/* <li><Link to="/blog">Blog</Link></li> */}
+                <li><Link href="/blog" className="nav-link">Blog</Link></li>
                 <li><Link href="/about" className="nav-link">About</Link></li>
                 {/* <li><Link to="/contact">Contact</Link></li> */}
             </ul>
