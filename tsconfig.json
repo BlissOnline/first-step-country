@@ -28,8 +28,8 @@
         "name": "next"
       }
     ],
-    "baseUrl": ".", // ✅ Add baseUrl
-    "paths": { // ✅ Define aliases
+    "baseUrl": ".", 
+    "paths": { 
       "@/*": [
         "./*"
       ],
@@ -42,12 +42,12 @@
     }
   },
   "include": [
-    "./dist/types/**/*.ts",
+    // "./dist/types/**/*.ts",
     "./next-env.d.ts",
-    "./src",
     "app/**/*",
     "components/**/*",
     "lib/**/*",
+    "pages/**/*", 
     ".next/types/**/*.ts"
   ],
   "exclude": [
