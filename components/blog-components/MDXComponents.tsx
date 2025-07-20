@@ -1,4 +1,5 @@
 import React, { ComponentProps } from 'react'
+import Category from './Category'
 import CTA from './CTA'
 import styles from './MDXComponents.module.css'
 
@@ -10,8 +11,11 @@ type MDXMap = {
 }
 
 const MDXComponents: MDXMap = {
+  h1: (props) => <h1 className={styles.title} {...props} />,
   h2: (props) => <h2 className={styles.heading} {...props} />,
+  h3: (props) => <h3 className={styles.subheading} {...props} />,
   p:  (props) => <p className={styles.paragraph} {...props} />,
+  Category,
   CTA,
 }
 

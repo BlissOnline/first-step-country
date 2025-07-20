@@ -1,0 +1,27 @@
+/* components/blog-components/Category.module.css */
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.main {
+  background: #e0f7fa;
+  color: #006064;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.separator {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.sub {
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: 500;
+}

@@ -38,7 +38,7 @@
   /* background-color: inherit;  */
   font-family: var(--font-general);
   height: 0;
-  padding-top: var(--nav-height);
+  /* padding-top: var(--nav-height); */
   scroll-padding-top: var(--nav-height);
 }
 
