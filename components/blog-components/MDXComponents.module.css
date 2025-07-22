@@ -1,3 +1,10 @@
+.title {
+  font-family: var(--font-question);
+  font-size: 40px;
+  color: black;
+}
+
+
 .heading {
   color: #2c3e50;
   margin-bottom: 1rem;

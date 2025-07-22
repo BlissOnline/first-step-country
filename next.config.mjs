@@ -2,3 +2,4 @@
 export default {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'mdx'],
 }
+

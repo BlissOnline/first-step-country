@@ -1,18 +1,15 @@
 // pages/blog/index.tsx
 import Link from 'next/link'
-import { GetStaticProps } from 'next'
-import { listSlugs } from '../../lib/posts'  // still OK as a relative import
+import type { GetStaticProps } from 'next'
+import { listSlugs } from '../../lib/posts'
 
 type Props = {
   slugs: string[]
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  // Runs on the server at build time—safe to use fs here
   const slugs = listSlugs()
-  return {
-    props: { slugs },
-  }
+  return { props: { slugs } }
 }
 
 export default function BlogIndex({ slugs }: Props) {
@@ -20,7 +17,7 @@ export default function BlogIndex({ slugs }: Props) {
     <main className="prose mx-auto p-8">
       <h1>Blog</h1>
       <ul>
-        {slugs.map((slug) => (
+        {slugs.map((slug: string) => (
           <li key={slug}>
             <Link href={`/blog/${slug}`}>{slug}</Link>
           </li>
