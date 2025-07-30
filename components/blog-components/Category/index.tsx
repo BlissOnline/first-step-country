@@ -15,7 +15,7 @@ export default function Category({
             <span className={styles.main}>{category.toUpperCase()}</span>
             {subCategory && (
                 <>
-                    <span className={styles.separator}>|</span>
+                    <span className={styles.separator} />
                     <span className={styles.sub}>{subCategory}</span>
                 </>
             )}

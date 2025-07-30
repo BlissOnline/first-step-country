@@ -1,5 +1,26 @@
 /* components/BlogLayout.module.css */
+
+/* .container {
+  margin-left: 2rem;  
+  margin-right: 2rem; 
+} */
+
+.pageBg {
+  /* full-width bg */
+  /* background-color: #f0f4f8;  */
+  background-color: #F8F7F5; 
+}
+
 .container {
-  margin-left: 2rem;   /* You can adjust this to your liking */
-  margin-right: 2rem;  /* Optional: keeps balance on larger screens */
+  /* background-color: #f0f4f8;     */
+  background-color: #F8F7F5;
+  padding-left: 2rem;           /* inset content */
+  padding-right: 2rem;
+  /* optional: constrain max-width if you want */
+  /* max-width: 48rem;
+  margin: 0 auto; */
+  max-width: 58rem;
+  margin: 0 auto;
+
+  padding-top: 15px;
 }

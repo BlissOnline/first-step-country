@@ -21,12 +21,24 @@
   /* font-size: 0.875rem; */
 }
 
-.separator {
+/* .separator {
   color: black;
   font-size: 22px;
   font-weight: 600;
   padding-bottom: 5px;
+} */
+
+
+
+.separator {
+  display: inline-block;
+  width: 2px;               /* how long you want the line */
+  height: 30px;                 /* thickness */
+  background-color: currentColor; /* inherits your text color (black) */
+  vertical-align: middle;      /* line up with text */
+  margin: 0 0.3rem;            /* space around it */
 }
+
 
 .sub {
   font-family: Merriweather;

@@ -1,21 +1,47 @@
 /* SleepCTA.module.css */
+.sleepChartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
 .titleRow {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 28px;
+  font-family: var(--font-question);
 }
 
 
 .table {
-  width: 100%;
+  /* width: 100%; */
   border-collapse: collapse;
   color: white;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
 }
 
 .table th,
 .table td {
-  padding: 0.5rem;
-  border: 1px solid #ddd;
+  /* padding: 0.5rem; */
+  border: 1px solid black;
+  width: 200px;
+  height: 51px;
+  /* align-self: center;
+  justify-content: center; */
+  /* ← these two lines do all the work */
+  text-align: center;
+  vertical-align: middle;
+
+  font-family: var(--font-button);
+
+
   /* background-color: red; */
 }
 
@@ -31,16 +57,95 @@
   background-color: var(--color-4);
 }
 
-.buttons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+.sleepCTAContainer {
+  text-align: center;
+  margin: 2rem 0;
 }
 
-.button {
+/* 1) Prompt */
+.prompt {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-3);
+}
+
+/* 2) Divider line under prompt */
+.divider {
+  width: 40rem;
+  height: 2px;
+  background: black;
+  margin: 0 auto 2rem;
+  border-radius: 2px;
+}
+
+/* 3) Card grid */
+.cardContainer {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Individual card */
+.card               {
+  border-radius:  8px;
+  box-shadow:     0 2px 6px rgba(0,0,0,0.1);
+  width:          12rem;
+  padding:        1rem;
+  padding-bottom: 1.5rem;
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+  color:          #fff;         /* ensure text is readable */
+}
+
+/* now each gets its own bg */
+.cardApartment { background-color: var(--color-1); }
+.cardHostel    { background-color: var(--color-3); }
+.cardHotel     { background-color: var(--color-4); }
+
+/* Card title + underline */
+.cardTitle {
+  font-size: 1.1rem;
+  margin: 0;
+  color: white;
+}
+.cardDivider {
+  width: 8rem;
+  height: 1px;
+  background: black;
+  margin: 0.5rem 0 1rem;
+}
+
+/* Button shell */
+.cardButton {
   padding: 0.5rem 1rem;
-  background-color: #0070f3;
-  color: #fff;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--color-2);
+  color: black;
+  border: black solid 2px;
   text-decoration: none;
-  border-radius: 4px;
+  font-family: var(--font-question);
+  box-shadow:     0 2px 6px rgba(0,0,0,0.1);
+  /* font-weight: bold; */
+  transition: transform 0.1s ease;
+}
+.cardButton:hover {
+  transform: translateY(-2px);
+}
+
+/* Variant backgrounds */
+/* .apartmentColor { background-color: var(--color-1); }
+.hostelColor    { background-color: var(--color-3); }
+.hotelColor     { background-color: var(--color-4); } */
+
+/* for the 2 components wrapped in a colored div */
+.section {
+  background-color: #F0E0D5;
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
