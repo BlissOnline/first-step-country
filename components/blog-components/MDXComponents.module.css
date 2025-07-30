@@ -2,13 +2,17 @@
   font-family: var(--font-question);
   font-size: 40px;
   color: black;
+  margin-bottom: 1rem;
 }
 
 
 .heading {
   color: #2c3e50;
   margin-bottom: 1rem;
+  font-size: 32px;
 }
+
+
 .paragraph {
   line-height: 1.6;
   margin-bottom: 1rem;

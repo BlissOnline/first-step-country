@@ -1,0 +1,5 @@
+/* components/BlogLayout.module.css */
+.container {
+  margin-left: 2rem;   /* You can adjust this to your liking */
+  margin-right: 2rem;  /* Optional: keeps balance on larger screens */
+}

@@ -1,6 +1,7 @@
 import React, { ComponentProps } from 'react'
 import Category from './Category'
 import CTA from './CTA'
+import { SleepComparisonChart, SleepCTAButtons } from '@/components/blog-components/SleepCTA'
 import styles from './MDXComponents.module.css'
 
 type MDXMap = {
@@ -17,6 +18,9 @@ const MDXComponents: MDXMap = {
   p:  (props) => <p className={styles.paragraph} {...props} />,
   Category,
   CTA,
+  SleepComparisonChart, 
+  SleepCTAButtons,
+
 }
 
 export default MDXComponents

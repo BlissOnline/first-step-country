@@ -5,6 +5,8 @@ import { MDXRemote }     from 'next-mdx-remote'
 import { serialize }     from 'next-mdx-remote/serialize'
 import remarkGfm         from 'remark-gfm'
 
+import BlogLayout from '@/components/blog-components/BlogLayout'
+
 import MDXComponents     from '../../components/blog-components/MDXComponents'
 // ← Make sure your file lives at this path! 
 //    If you named it components/blog-components/Category/index.tsx, use:
@@ -99,58 +101,60 @@ export default function PostPage({ frontMatter: fm, mdxSource }: Props) {
         <meta name="description" content={fm.displayTitle} />
       </Head>
 
-      <article className="prose mx-auto p-8">
-        {/* 1) Category */}
-        {fm.category && (
-          <Category
-            category={fm.category}
-            subCategory={fm.subCategory ?? undefined}
-          />
-        )}
+      <BlogLayout>
+        <article className="prose mx-auto p-8">
+          {/* 1) Category */}
+          {fm.category && (
+            <Category
+              category={fm.category}
+              subCategory={fm.subCategory ?? undefined}
+            />
+          )}
 
-        {/* 2) Title */}
-        <h1 className={styles.title}>{fm.displayTitle}</h1>
+          {/* 2) Title */}
+          <h1 className={styles.title}>{fm.displayTitle}</h1>
 
-        {/* 3–5) Author + date */}
-        {fm.author && (
-          <div className="author-block mb-2">
-            <p className="author-name">
-              By {fm.author}
-              {fm.authorRole && `, ${fm.authorRole}`}
-            </p>
-            {fm.authorBio && <p className="author-bio">{fm.authorBio}</p>}
+          {/* 3–5) Author + date */}
+          {fm.author && (
+            <div className="author-block mb-2">
+              <p className="author-name">
+                By {fm.author}
+                {fm.authorRole && `, ${fm.authorRole}`}
+              </p>
+              {fm.authorBio && <p className="author-bio">{fm.authorBio}</p>}
+            </div>
+          )}
+          <time dateTime={fm.date}>{fm.date}</time>
+
+          {/* 6) Separator */}
+          <hr className="my-6" />
+
+          {/* 7) Share button */}
+          <div className="share-button mb-6">
+            <a
+              href={`https://twitter.com/share?url=${encodeURIComponent(
+                typeof window !== 'undefined'
+                  ? window.location.href
+                  : ''
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Share this post
+            </a>
           </div>
-        )}
-        <time dateTime={fm.date}>{fm.date}</time>
 
-        {/* 6) Separator */}
-        <hr className="my-6" />
+          {/* 8–9) Featured image + caption */}
+          {fm.featuredImage && (
+            <figure className="mb-6">
+              <img src={fm.featuredImage} alt={fm.imageCaption ?? ''} />
+              {fm.imageCaption && <figcaption>{fm.imageCaption}</figcaption>}
+            </figure>
+          )}
 
-        {/* 7) Share button */}
-        <div className="share-button mb-6">
-          <a
-            href={`https://twitter.com/share?url=${encodeURIComponent(
-              typeof window !== 'undefined'
-                ? window.location.href
-                : ''
-            )}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Share this post
-          </a>
-        </div>
-
-        {/* 8–9) Featured image + caption */}
-        {fm.featuredImage && (
-          <figure className="mb-6">
-            <img src={fm.featuredImage} alt={fm.imageCaption ?? ''} />
-            {fm.imageCaption && <figcaption>{fm.imageCaption}</figcaption>}
-          </figure>
-        )}
-
-        <MDXRemote {...mdxSource} components={MDXComponents} />
-      </article>
+          <MDXRemote {...mdxSource} components={MDXComponents} />
+        </article>
+      </BlogLayout>
     </>
   )
 }

@@ -1,0 +1,46 @@
+/* SleepCTA.module.css */
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.table th,
+.table td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  /* background-color: red; */
+}
+
+.apartmentColor {
+  background-color: var(--color-1);
+}
+
+.hostelColor {
+  background-color: var(--color-3);
+}
+
+.hotelColor {
+  background-color: var(--color-4);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  background-color: #0070f3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
