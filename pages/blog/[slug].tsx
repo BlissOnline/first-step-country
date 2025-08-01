@@ -8,10 +8,11 @@ import remarkGfm         from 'remark-gfm'
 import BlogLayout from '@/components/blog-components/BlogLayout'
 
 import MDXComponents     from '../../components/blog-components/MDXComponents'
-// ← Make sure your file lives at this path! 
-//    If you named it components/blog-components/Category/index.tsx, use:
-//    import CategoryTag from '../../components/blog-components/Category'
+
 import Category       from '../../components/blog-components/Category'
+
+import AuthorBlock from '@/components/blog-components/AuthorBlock'
+
 
 import { getPostBySlug, listSlugs } from '../../lib/posts'
 
@@ -116,15 +117,20 @@ export default function PostPage({ frontMatter: fm, mdxSource }: Props) {
 
           {/* 3–5) Author + date */}
           {fm.author && (
-            <div className="author-block mb-2">
-              <p className="author-name">
-                By {fm.author}
-                {fm.authorRole && `, ${fm.authorRole}`}
-              </p>
-              {fm.authorBio && <p className="author-bio">{fm.authorBio}</p>}
-            </div>
+            <AuthorBlock
+              name={fm.author}
+              role={fm.authorRole ?? undefined}
+              bio={fm.authorBio ?? undefined}
+            />
           )}
-          <time dateTime={fm.date}>{fm.date}</time>
+
+          {/* <time dateTime={fm.date}>{fm.date}</time> */}
+          <time
+            className={styles.date}
+            dateTime={fm.date}
+          >
+            {fm.date}
+          </time>
 
           {/* 6) Separator */}
           <hr className="my-6" />

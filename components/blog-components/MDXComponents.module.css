@@ -16,4 +16,11 @@
 .paragraph {
   line-height: 1.6;
   margin-bottom: 1rem;
+  font-family: var(--font-paragraph);
+}
+
+.date {
+  font-family: var(--font-button);
+  font-size: 0.9rem;
+  color: #555;
 }

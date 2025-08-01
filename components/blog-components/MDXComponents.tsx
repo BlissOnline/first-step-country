@@ -1,5 +1,6 @@
 import React, { ComponentProps } from 'react'
 import Category from './Category'
+import AuthorBlock from './AuthorBlock' 
 import CTA from './CTA'
 import { SleepComparisonChart, SleepCTAButtons, SleepSection } from '@/components/blog-components/SleepCTA'
 import styles from './MDXComponents.module.css'
@@ -21,6 +22,7 @@ const MDXComponents: MDXMap = {
   SleepComparisonChart, 
   SleepCTAButtons,
   SleepSection,
+  AuthorBlock,
 
 }
 

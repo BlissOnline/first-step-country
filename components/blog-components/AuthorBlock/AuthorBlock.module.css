@@ -1,0 +1,20 @@
+/* Post.module.css */
+/* .authorBlock {
+  margin-bottom: 1rem;
+} */
+
+.authorName {
+  /* font-family: "Roboto", sans-serif; */
+  font-family: var(--font-detail);
+  /* font-size: 1rem; */
+  /* font-weight: 600; */
+  color: #333333;
+}
+
+.authorBio {
+  /* font-family: "Georgia", serif; */
+  font-family: var(--font-detail);
+  /* font-size: 0.9rem; */
+  font-style: italic;
+  color: #333333;
+}
