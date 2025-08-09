@@ -1,0 +1,31 @@
+/* components/CountryHeader.module.css */
+
+.container {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 50px;
+}
+
+.label {
+  font-family: var(--font-question);
+  /* font-family: var(--font-button); */
+  font-size: 35px;
+  /* color: #333333; */
+  color: black;
+  font-weight: 300;
+}
+
+.name {
+  /* font-family: var(--font-button); */
+  font-family: var(--font-question);
+  font-size: 35px;
+  /* color: black; */
+  color: #333333;
+}
+
+.flag {
+  display: block;
+  /* width: 76px; */
+  height: 46px;
+}

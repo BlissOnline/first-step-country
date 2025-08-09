@@ -1,0 +1,117 @@
+/* CTA.module.css */
+
+/* .container {
+  max-width: 400px;
+  margin: 2rem auto;
+  background-color: rgba(228, 190, 161, 0.72);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  text-align: center;
+} */
+.container {
+  position: relative;
+  overflow: hidden;
+  max-width: 400px;
+  margin: 2rem auto;
+  /* your 72% #E4BEA1 from before */
+  background-color: rgba(228, 190, 161, 0.72);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+/* noise fx on bg */
+/* Black speckles (000000 at 25%) */
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  /* paste your SVG here, switching fill to black */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><filter id='noise'><feTurbulence type='fractalNoise' baseFrequency='0.5' numOctaves='1' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23noise)' fill='black'/></svg>");
+  
+  background-repeat: repeat;
+  background-size: 50% 50%;
+  mix-blend-mode: multiply;
+  opacity: 0.25;
+}
+
+/* White speckles (FFFFFF at 25%) */
+.container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  /* paste your SVG here, switching fill to white */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><filter id='noise'><feTurbulence type='fractalNoise' baseFrequency='0.5' numOctaves='1' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23noise)' fill='white'/></svg>");
+  
+  background-repeat: repeat;
+  background-size: 50% 50%;
+  mix-blend-mode: screen;
+  opacity: 0.25;
+}
+
+
+
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  /* color: #333; */
+  color: var(--color-4);
+  margin-bottom: 1rem;
+  font-family: var(--font-question);
+}
+
+.icon {
+  margin-right: 0.5rem;
+  color: #1e90ff;
+  font-size: 1.5rem;
+}
+
+.separator {
+  height: 1px;
+  /* background-color: #e0e0e0; */
+  background-color: black;
+  margin: 1rem 0;
+  border: none;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  /* font-family: var(--font-question); */
+  /* font-family: var(--font-button); */
+  /* font-family: var(--font-detail); */
+  /* font-family: var(--font-theme); */
+  font-family: var(--font-paragraph);
+  /* color: #555; */
+  color: var(--color-4);
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--color-2);
+  border: solid 2px black;
+  color: black;
+  font-family: var(--font-question);
+  font-weight: 500;
+
+  padding: 0.75rem 1.5rem;
+  /* border: none; */
+  border-radius: 28px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #1c86ee;
+}

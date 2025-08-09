@@ -1,0 +1,20 @@
+/* src/components/CountryPhoto/styles.module.css */
+
+.container {
+  width: 100%;
+  margin: 2rem auto;    /* center and vertical spacing */
+  text-align: left;
+}
+
+.image {
+  max-width: 650px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.caption {
+  /* margin-top: 0.5rem; */
+  font-size: 0.875rem;
+  color: #555;
+  font-family: var(--font-detail);
+}

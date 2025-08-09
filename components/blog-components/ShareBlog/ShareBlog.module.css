@@ -1,0 +1,73 @@
+/* components/SharePopover.module.css */
+.wrapper {
+  position: relative;
+  display: inline-block;
+  font-family: var(--font-question);
+  /* background-color: #333333; */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  /* color:yellow; */
+}
+.toggle {
+  background-color: #333333;   /* or your site’s primary bg color */
+  color: #1f2937;              /* dark gray for legibility */
+  padding: 0.5rem 1rem;
+  /* border: 1px solid #d1d5db;   */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center; /* optional */
+
+  transition: transform 0.1s ease, opacity 0.4s ease;
+
+}
+
+.toggle:hover {
+  /* background-color: red; */
+  opacity: 90%;
+  transform: translateY(-2px)
+}
+
+.popover {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  z-index: 10;
+}
+
+.label {
+  font-family: var(--font-question);
+  font-size: 14px;
+  font-weight: 500;
+  color: #DBCDB2;
+  /* Add other styles as needed */
+}
+
+.item {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--color-text);
+  cursor: pointer;
+  white-space: nowrap;
+  /* font-family: var(--font-question); */
+  /* color: pink; */
+  color: #DBCDB2;
+}
+.item:hover {
+  background: var(--color-light);
+}
+
+/* SharePopover.module.css */
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #ffffff;
+}

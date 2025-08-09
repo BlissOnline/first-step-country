@@ -1,0 +1,48 @@
+/* container + centering */
+.container {
+  margin: 2rem 0;
+  text-align: left;
+  /* background-color: red; */
+}
+
+/* wrapper to enforce aspect ratio if needed */
+.imageWrapper {
+  width: 100%;
+}
+
+/* responsive image */
+.image {
+  object-fit: cover;
+  border-radius: 4px;
+  max-width: 650px;
+}
+
+/* caption styling */
+.caption {
+  font-family: var(--font-detail);
+  /* margin-top: 0.5rem; */
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.4;
+  /* color: #555; */
+  color: #000000;
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+  .container {
+    margin: 3rem 0;
+  }
+  .caption {
+    font-size: 1rem; /* 16px */
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    margin: 4rem 0;
+  }
+  .caption {
+    font-size: 1.125rem; /* 18px */
+  }
+}

@@ -1,5 +1,6 @@
 // pages/blog/[slug].tsx
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import type { GetStaticPaths, GetStaticProps } from 'next'
 import { MDXRemote }     from 'next-mdx-remote'
 import { serialize }     from 'next-mdx-remote/serialize'
@@ -12,7 +13,8 @@ import MDXComponents     from '../../components/blog-components/MDXComponents'
 import Category       from '../../components/blog-components/Category'
 
 import AuthorBlock from '@/components/blog-components/AuthorBlock'
-
+import ShareBlog from '@/components/blog-components/ShareBlog'
+import FeaturedImage from '@/components/blog-components/FeaturedImage'
 
 import { getPostBySlug, listSlugs } from '../../lib/posts'
 
@@ -24,6 +26,7 @@ type FrontMatter = {
   title:        string
   seoTitle:     string
   displayTitle: string
+  excerpt?:     string    
   date:         string
   category:     string | null
   subCategory:  string | null
@@ -62,6 +65,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
     title:        fmRaw.title,
     seoTitle:     fmRaw.seoTitle     ?? fmRaw.title,
     displayTitle: fmRaw.displayTitle ?? fmRaw.title,
+    // excerpt:       fmRaw.excerpt,           // grab excerpt if you added it
     date:         fmRaw.date,
 
     category:     fmRaw.category   ?? null,
@@ -95,11 +99,59 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
 }
 
 export default function PostPage({ frontMatter: fm, mdxSource }: Props) {
+  const router  = useRouter()
+  // replace with your real domain in .env.local
+  const siteUrl    = process.env.NEXT_PUBLIC_SITE_URL || 'https://firststepcountry.com/'
+  const postUrl    = `${siteUrl}${router.asPath}`
+  const description = fm.excerpt || fm.displayTitle
+
+  // parse the ISO string into a Date…
+  const dateObj = new Date(fm.date)
+
+  // …then format it with the full month name:
+  const formattedDate = dateObj.toLocaleDateString('en-US', {
+    year:  'numeric',
+    month: 'long',
+    day:   'numeric',
+  })  // → "June 30, 2025"
+
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>{fm.seoTitle}</title>
         <meta name="description" content={fm.displayTitle} />
+      </Head> */}
+
+      <Head>
+        {/* Basic SEO */}
+        <title>{fm.seoTitle}</title>
+        <meta name="description" content={description} />
+
+        {/* Open Graph */}
+        <meta property="og:type"        content="article" />
+        <meta property="og:title"       content={fm.seoTitle} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url"         content={postUrl} />
+        {fm.featuredImage && (
+          <meta
+            property="og:image"
+            content={`${siteUrl}${fm.featuredImage}`}
+          />
+        )}
+
+        {/* Twitter Card */}
+        <meta name="twitter:card"        content="summary_large_image" />
+        <meta name="twitter:title"       content={fm.seoTitle} />
+        <meta
+          name="twitter:description"
+          content={description}
+        />
+        {fm.featuredImage && (
+          <meta
+            name="twitter:image"
+            content={`${siteUrl}${fm.featuredImage}`}
+          />
+        )}
       </Head>
 
       <BlogLayout>
@@ -124,39 +176,41 @@ export default function PostPage({ frontMatter: fm, mdxSource }: Props) {
             />
           )}
 
-          {/* <time dateTime={fm.date}>{fm.date}</time> */}
+          {/*  Replace the inner text with your formatted string: */}
           <time
             className={styles.date}
-            dateTime={fm.date}
+            dateTime={fm.date}           // keep the raw ISO for accessibility/SEO
           >
-            {fm.date}
+            Published {formattedDate}
           </time>
 
           {/* 6) Separator */}
-          <hr className="my-6" />
+          {/* <hr className="my-6" /> */}
+
+          {/* 6) Separator */}
+          <hr className={styles.introSeparator} />
 
           {/* 7) Share button */}
-          <div className="share-button mb-6">
-            <a
-              href={`https://twitter.com/share?url=${encodeURIComponent(
-                typeof window !== 'undefined'
-                  ? window.location.href
-                  : ''
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Share this post
-            </a>
+          <div className="mb-6">
+            <ShareBlog title={fm.displayTitle} />
           </div>
+          {fm.featuredImage && (
+            <FeaturedImage
+              src={fm.featuredImage}
+              alt={fm.imageCaption}
+              caption={fm.imageCaption}
+            />
+          )}
 
           {/* 8–9) Featured image + caption */}
-          {fm.featuredImage && (
+
+
+          {/* {fm.featuredImage && (
             <figure className="mb-6">
               <img src={fm.featuredImage} alt={fm.imageCaption ?? ''} />
               {fm.imageCaption && <figcaption>{fm.imageCaption}</figcaption>}
             </figure>
-          )}
+          )} */}
 
           <MDXRemote {...mdxSource} components={MDXComponents} />
         </article>

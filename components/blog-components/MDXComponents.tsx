@@ -1,6 +1,12 @@
 import React, { ComponentProps } from 'react'
 import Category from './Category'
 import AuthorBlock from './AuthorBlock' 
+import ShareBlog from './ShareBlog'
+import FeaturedImage from './FeaturedImage'
+import CountryHeader from './CountryHeader'
+import CountryPhoto from './CountryPhoto'
+import BudgetBreakdown from './ExpenseBreakdown'
+import FlightCTA from './FlightCTA'
 import CTA from './CTA'
 import { SleepComparisonChart, SleepCTAButtons, SleepSection } from '@/components/blog-components/SleepCTA'
 import styles from './MDXComponents.module.css'
@@ -18,11 +24,18 @@ const MDXComponents: MDXMap = {
   h3: (props) => <h3 className={styles.subheading} {...props} />,
   p:  (props) => <p className={styles.paragraph} {...props} />,
   Category,
+  AuthorBlock,
+  ShareBlog,
+  FeaturedImage,
+
+  CountryHeader,
+  CountryPhoto,
+  BudgetBreakdown,
+  FlightCTA,
   CTA,
   SleepComparisonChart, 
   SleepCTAButtons,
   SleepSection,
-  AuthorBlock,
 
 }
 

@@ -15,6 +15,9 @@
   /* font-family: "Georgia", serif; */
   font-family: var(--font-detail);
   /* font-size: 0.9rem; */
-  font-style: italic;
+  /* font-style: italic; */
   color: #333333;
+
+  margin-bottom: 20px;
+
 }
