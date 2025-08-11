@@ -1,110 +1,103 @@
 /* Container + Title */
-
 .container {
   max-width: 960px;
-  margin: 2rem auto;
+  margin: 2rem auto 3rem;
   padding: 0 1rem;
-  margin-bottom: 50px;
-  /* background-color: red; */
-  /* border: solid 2px black; */
 }
 
 .sectionTitle {
   font-size: 1.75rem;
   text-align: center;
-  margin-bottom: 1.5rem;
   margin-bottom: 1rem;
   font-family: var(--font-question);
   color: var(--color-4);
 }
 
 .designLine {
-  width: 550px;                  /* length of the line */
-  height: 3px;                  /* thickness */
-  background-color: #000;    
-  background-color: var(--color-3); 
-  border: none;                 /* remove default <hr> styling */
-  margin: 0.5rem auto 1.5rem;
-  margin-bottom: 70px;   /* vertical spacing, centered */
+  width: 550px;
+  height: 3px;
+  background-color: var(--color-4);
+  border: none;
+  margin: 0.5rem auto 2rem;
 }
 
 .designLineBottom {
-  /* width: 800px;        */
   width: 100%;
-  height: 2px;                  /* thickness */
-  background-color: #000;    /* accent color—swap this */
-  border: none;                 /* remove default <hr> styling */
-  margin: 0.5rem auto 1.5rem;
-  margin-bottom: 150px; 
-  margin-top: 80px; 
+  height: 2px;
+  background-color: #000;
+  border: none;
+  margin: 4rem 0 6rem;
 }
 
-
 /* Grid of Cards */
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
-/* Individual Card */
-
+/* Card Wrapper */
 .card {
-  display: flex;
-  flex-direction: column;
-  /* background: #fff; */
-  color: #FFFFFF;
-  background-color: var(--color-3);
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  font-family: var(--font-button);
-  /* font-family: var(--font-paragraph); */
-  /* font-family: var(--font-detail); */
-  /* font-family: var(--font-question); */
-}
-
-.cardBudget {
-  /* background-color: #FDEBD0; */
-  background-color: var(--color-3);
-}
-
-.cardYolo {
-  /* background-color: #FADBD8; */
-  background-color: var(--color-4);
-}
-
-.cardNomad {
-  /* background-color: #D6EAF8; */
-  background-color: var(--color-1);
-}
-
-
-.cardTitle {
-  font-size: 1.25rem;
-  margin: 0 0 0.75rem;
+  position: relative;
+  overflow: visible;
+  background: transparent;
   text-align: center;
-  /* font-family: var(--font-question); */
-  font-family: var(--font-paragraph);
+  font-family: var(--font-button);
+}
+
+/* Title + Image */
+.cardTitle {
+  margin: 0;
+  font-size: 1.25rem;
+  font-family: var(--font-question);
+  z-index: 2;
+  position: relative;
+  background: transparent;
+  color: var(--color-4);
 }
 
 .imageWrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+  margin: 1rem auto 0;
+  width: 120px;
+  height: 120px;
+}
+
+/* Chart Container */
+.chart {
+  position: relative;
+  margin-top: -2rem;
+  padding: 3rem 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+/* Chart color variants */
+.chartBudget {
+  background-color: var(--color-3);
+}
+
+.chartYolo {
+  background-color: var(--color-4);
+}
+
+.chartNomad {
+  background-color: var(--color-1);
 }
 
 /* Expense Breakdown */
-
 .breakdown {
   display: grid;
   row-gap: 0.75rem;
+  text-align: left;
 }
 
 .row {
   display: flex;
   align-items: center;
+  margin-left: 20px;
 }
 
 .label {
@@ -122,6 +115,7 @@
   height: 20px;
   border-radius: 4px;
   transition: width 0.4s ease;
+  margin-left: 20px;
 }
 
 .cost {
@@ -131,24 +125,17 @@
 }
 
 /* Total Line */
-
 .totalLine {
-  position: relative;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.4rem;
+  border-top: 2px solid white;
   text-align: center;
 }
 
-/* .totalLine hr {
-  border: none;
-  border-top: 1px dashed #888;
-  margin: 0;
-} */
-
 .totalLine span {
-  position: absolute;
+  position: static;
   top: -0.6em;
-  left: 50%;
-  transform: translateX(-50%);
+  background: inherit;
   padding: 0 0.5rem;
   font-weight: bold;
 }

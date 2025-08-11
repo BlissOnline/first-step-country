@@ -109,9 +109,14 @@
   border-radius: 28px;
   text-decoration: none;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: background-color 0.2s ease;
+  transition: 
+    background-color 0.2s ease,
+    transform        0.1s ease-in-out;
 }
 
 .button:hover {
-  background-color: #1c86ee;
+  /* background-color: #1c86ee; */
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+  
 }

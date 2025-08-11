@@ -10,11 +10,11 @@ interface Expense {
 
 interface CardData {
   title: string
-  expenses: Expense[]   // exactly five items
+  expenses: Expense[]
 }
 
 interface BudgetBreakdownProps {
-  cards: CardData[]     // three cards, each with five expenses
+  cards: CardData[]
 }
 
 const IMAGE_MAP: Record<string, { src: string; alt: string }> = {
@@ -22,7 +22,7 @@ const IMAGE_MAP: Record<string, { src: string; alt: string }> = {
     src: '/questionImages/ppm-graphic.png',
     alt: 'Backpacker on a budget',
   },
-  'Yolo Tourist': {
+  'YOLO Traveler': {
     src: '/questionImages/luxury-travel-orange.png',
     alt: 'Fine dining traveler',
   },
@@ -32,58 +32,54 @@ const IMAGE_MAP: Record<string, { src: string; alt: string }> = {
   },
 }
 
+const CHART_CLASS_MAP: Record<string, string> = {
+  'Budget Tourist': styles.chartBudget,
+  'YOLO Traveler':  styles.chartYolo,
+  'Digital Nomad':  styles.chartNomad,
+}
+
 const BudgetBreakdown: FC<BudgetBreakdownProps> = ({ cards }) => (
-  <>
-    <section
-      className={styles.container}
-      aria-labelledby="expense-breakdown-comparison-title"
+  <section
+    className={styles.container}
+    aria-labelledby="expense-breakdown-comparison-title"
+  >
+    <h2
+      id="expense-breakdown-comparison-title"
+      className={styles.sectionTitle}
     >
-      <h2
-        id="expense-breakdown-comparison-title"
-        className={styles.sectionTitle}
-      >
-        Expense Breakdown Comparison
-      </h2>
+      Expense Breakdown Comparison
+    </h2>
 
-      <hr className={styles.designLine} />
+    <hr className={styles.designLine} />
 
-      <div className={styles.grid}>
-        {cards.map((card, idx) => {
-          const total = card.expenses.reduce((sum, e) => sum + e.cost, 0)
-          const imageData = IMAGE_MAP[card.title] || {
-            src: '/images/default.svg',
-            alt: card.title,
-          }
+    <div className={styles.grid}>
+      {cards.map((card) => {
+        const total = card.expenses.reduce((sum, e) => sum + e.cost, 0)
+        const imageData = IMAGE_MAP[card.title] || {
+          src: '/images/default.svg',
+          alt: card.title,
+        }
 
-          return (
-            <article 
-              key={idx} 
-              className={`${styles.card} ${
-                card.title === 'Budget Tourist'
-                  ? styles.cardBudget
-                  : card.title === 'Yolo Tourist'
-                  ? styles.cardYolo
-                  : styles.cardNomad
-              }`}
-            >
-              {/* Approach Title */}
-              <h3 className={styles.cardTitle}>{card.title}</h3>
+        const key = card.title.trim()
+        const chartClass = CHART_CLASS_MAP[key] || styles.chartBudget
 
-              {/* Fixed Illustration */}
-              <div className={styles.imageWrapper}>
-                <Image
-                  src={imageData.src}
-                  alt={imageData.alt}
-                  width={120}
-                  height={120}
-                  loading="lazy"
-                />
-              </div>
+        return (
+          <article key={card.title} className={styles.card}>
+            <h3 className={styles.cardTitle}>{card.title}</h3>
+            <div className={styles.imageWrapper}>
+              <Image
+                src={imageData.src}
+                alt={imageData.alt}
+                width={120}
+                height={120}
+                loading="lazy"
+              />
+            </div>
 
-              {/* Expense Bars */}
+            <div className={`${styles.chart} ${chartClass}`}>
               <dl className={styles.breakdown}>
-                {card.expenses.map((e, i) => (
-                  <div key={i} className={styles.row}>
+                {card.expenses.map((e) => (
+                  <div key={e.category} className={styles.row}>
                     <dt className={styles.label}>{e.category}</dt>
                     <dd className={styles.barWrapper}>
                       <div
@@ -99,22 +95,17 @@ const BudgetBreakdown: FC<BudgetBreakdownProps> = ({ cards }) => (
                 ))}
               </dl>
 
-              {/* Total Line */}
               <footer className={styles.totalLine}>
-                <hr />
                 <span>Total per Day: ${total}</span>
               </footer>
-            </article>
-            
-          )
-        })}
-      </div>
-      
-    </section>
-    <hr className={styles.designLineBottom} /> 
+            </div>
+          </article>
+        )
+      })}
+    </div>
 
-  </> 
+    <hr className={styles.designLineBottom} />
+  </section>
 )
-
 
 export default BudgetBreakdown

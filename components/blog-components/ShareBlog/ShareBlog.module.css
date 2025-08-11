@@ -59,7 +59,7 @@
   white-space: nowrap;
   /* font-family: var(--font-question); */
   /* color: pink; */
-  color: #DBCDB2;
+  color: var(--color-4);
 }
 .item:hover {
   background: var(--color-light);
