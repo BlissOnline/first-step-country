@@ -13,6 +13,12 @@
     "deploy": "gh-pages -d dist",
     "postbuild": "next-sitemap --config next-sitemap.config.cjs"
   },
+
+    "sideEffects": [
+    "components/blog-components/TourCTA/index.tsx",
+    "components/blog-components/TourCTA/TourCTA.client.tsx"
+  ],
+  
   "dependencies": {
     "gray-matter": "^4.0.3",
     "next": "^15.4.3",

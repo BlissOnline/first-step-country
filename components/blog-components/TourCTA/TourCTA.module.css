@@ -1,10 +1,12 @@
-/* CTA.module.css */
-
 .container {
   position: relative;
   overflow: hidden;
-  max-width: 400px;
-  margin: 2rem auto;
+  /* max-width: 400px; */
+  max-width: 960px;
+  margin: 2rem auto 3rem;
+  padding: 0 1rem;
+  /* margin: 2rem auto; */
+
   /* your 72% #E4BEA1 from before */
   background-color: rgba(228, 190, 161, 0.72);
   border-radius: 8px;
@@ -12,6 +14,7 @@
   padding: 1.5rem;
   text-align: center;
   margin-bottom: 90px;
+  padding-bottom: 60px;
 }
 
 /* noise fx on bg */
@@ -48,43 +51,67 @@
 }
 
 
+.widget {
+  /* you can size/override widget container here */
+  margin-bottom: 1.5rem;
+}
 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  /* padding-top: 50px; */
+  margin-top: 90px;
+}
+
+.icon {
+  margin-bottom: 5px;
+}
+
+.cta {
+  padding: 1.5rem 1rem;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
 .title {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  /* color: #333; */
-  color: var(--color-4);
-  margin-bottom: 1rem;
+  color: #333;
+  /* color: var(--color-4); */
+  /* margin-bottom: 1rem; */
   font-family: var(--font-question);
-}
-
-.icon {
-  margin-right: 0.5rem;
-  color: #1e90ff;
-  font-size: 1.5rem;
+  margin-top: 20px;
 }
 
 .separator {
   height: 1px;
   /* background-color: #e0e0e0; */
   background-color: black;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
+  margin: 0.7rem auto;
   border: none;
+  width: 60%;
+  /* align-self: center; */
 }
 
 .subtitle {
-  font-size: 1.125rem;
+  font-size: 1.3rem;
   /* font-family: var(--font-question); */
   /* font-family: var(--font-button); */
   /* font-family: var(--font-detail); */
   /* font-family: var(--font-theme); */
   font-family: var(--font-paragraph);
   /* color: #555; */
-  color: var(--color-4);
-  margin-bottom: 1.5rem;
+  color: #333;
+  /* color: var(--color-4); */
+  /* margin-bottom: 1.5rem; */
+  margin-bottom: 35px;
+  margin-top: 15px;
 }
 
 .button {
@@ -109,5 +136,4 @@
   /* background-color: #1c86ee; */
   transform: translateY(-2px);
   filter: brightness(1.1);
-  
 }

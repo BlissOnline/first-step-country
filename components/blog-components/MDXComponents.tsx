@@ -7,6 +7,9 @@ import CountryHeader from './CountryHeader'
 import CountryPhoto from './CountryPhoto'
 import BudgetBreakdown from './ExpenseBreakdown'
 import FlightCTA from './FlightCTA'
+// import TourCTA from './TourCTA'
+import TourCTA from './TourCTA/TourCTA.client'
+
 import CTA from './CTA'
 import { SleepComparisonChart, SleepCTAButtons, SleepSection } from '@/components/blog-components/SleepCTA'
 import styles from './MDXComponents.module.css'
@@ -32,6 +35,7 @@ const MDXComponents: MDXMap = {
   CountryPhoto,
   BudgetBreakdown,
   FlightCTA,
+  TourCTA,
   CTA,
   SleepComparisonChart, 
   SleepCTAButtons,
