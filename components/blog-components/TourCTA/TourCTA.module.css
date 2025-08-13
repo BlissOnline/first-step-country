@@ -8,7 +8,8 @@
   /* margin: 2rem auto; */
 
   /* your 72% #E4BEA1 from before */
-  background-color: rgba(228, 190, 161, 0.72);
+  /* background-color: rgba(228, 190, 161, 0.72); */
+  background-color: #F8F7F5;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 1.5rem;
@@ -26,7 +27,7 @@
   pointer-events: none;
 
   /* paste your SVG here, switching fill to black */
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><filter id='noise'><feTurbulence type='fractalNoise' baseFrequency='0.5' numOctaves='1' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23noise)' fill='black'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><filter id='noise'><feTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23noise)' fill='black'/></svg>");
   
   background-repeat: repeat;
   background-size: 50% 50%;

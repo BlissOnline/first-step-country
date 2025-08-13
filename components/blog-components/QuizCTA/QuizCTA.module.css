@@ -1,0 +1,100 @@
+.quizCta {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto;
+  text-decoration: none;
+}
+
+.inner {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Keeps it a perfect circle */
+  border-radius: 50%;
+  background-color: #5d4037;
+  color: #ffffff;
+  border: solid black 2px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inner:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+/* .logo {
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  margin-bottom: -80px;
+  margin: -50px;
+} */
+
+.logo {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-bottom: -80px;
+  margin-top: -60px;
+}
+
+/* @media (max-width: 500px) {
+  .logo {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: -2rem;
+  }
+} */
+
+
+.title {
+  font-family: var(--font-theme);
+  color: #DBCDB2;
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  /* background-color: #ffccbc; */
+  background-color: var(--color-2);
+  color: var(--color-4);
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  font-family: var(--font-question);
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-bottom: 15px;
+  border: solid black 2px;;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  /* background-color: #ffb74d; */
+  background-color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 500px) {
+  .inner {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+  }
+}

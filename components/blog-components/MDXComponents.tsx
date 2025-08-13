@@ -12,6 +12,7 @@ import TourCTA from './TourCTA/TourCTA.client'
 
 import CTA from './CTA'
 import { SleepComparisonChart, SleepCTAButtons, SleepSection } from '@/components/blog-components/SleepCTA'
+import QuizCTA from './QuizCTA'
 import styles from './MDXComponents.module.css'
 
 type MDXMap = {
@@ -40,6 +41,7 @@ const MDXComponents: MDXMap = {
   SleepComparisonChart, 
   SleepCTAButtons,
   SleepSection,
+  QuizCTA,
 
 }
 
