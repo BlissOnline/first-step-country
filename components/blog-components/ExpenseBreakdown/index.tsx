@@ -47,7 +47,7 @@ const BudgetBreakdown: FC<BudgetBreakdownProps> = ({ cards }) => (
       id="expense-breakdown-comparison-title"
       className={styles.sectionTitle}
     >
-      Expense Breakdown Comparison
+      Daily Expense Breakdown Comparison
     </h2>
 
     <hr className={styles.designLine} />

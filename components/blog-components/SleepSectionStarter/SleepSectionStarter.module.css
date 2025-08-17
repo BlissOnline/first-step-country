@@ -1,0 +1,51 @@
+.container {
+  text-align: center;
+  /* padding: 2rem 1rem; */
+  margin-bottom: 50px;
+}
+
+.separator {
+  height: 1px;
+  /* background-color: #e0e0e0; */
+  background-color: black;
+  /* margin: 1rem 0; */
+  margin: 0.7rem auto;
+  border: none;
+  width: 95%;
+  /* align-self: center; */
+  margin-bottom: 50px;
+}
+
+.iconWrapper {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.subHeader {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: var(--font-question);
+  text-align: center;
+}
+
+.paragraph {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  /* max-width: 600px; */
+  /* margin: 0 auto 2rem; */
+  font-family: var(--font-paragraph);
+  color: black;
+}
+
+.divider {
+  width: 50px;
+  height: 4px;
+  background-color: var(--color-accent);
+  margin: 0 auto 2rem;
+  border-radius: 2px;
+}
+
+

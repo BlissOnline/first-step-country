@@ -14,8 +14,10 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 1.5rem;
   text-align: center;
-  margin-bottom: 90px;
+  /* margin-bottom: 90px; */
   padding-bottom: 60px;
+  /* margin-bottom: 150px; */
+  margin-bottom: 160px;
 }
 
 /* noise fx on bg */
