@@ -5,7 +5,7 @@
 }
 
 .separator {
-  height: 1px;
+  height: 3px;
   /* background-color: #e0e0e0; */
   background-color: black;
   /* margin: 1rem 0; */
@@ -13,7 +13,8 @@
   border: none;
   width: 95%;
   /* align-self: center; */
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  margin-bottom: 125px;
 }
 
 .iconWrapper {
@@ -43,7 +44,7 @@
 .divider {
   width: 50px;
   height: 4px;
-  background-color: var(--color-accent);
+  /* background-color: var(--color-accent); */
   margin: 0 auto 2rem;
   border-radius: 2px;
 }

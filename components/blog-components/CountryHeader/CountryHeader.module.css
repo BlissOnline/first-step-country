@@ -16,6 +16,15 @@
   font-weight: 300;
 }
 
+/* ────────────────────────────────────────────────── */
+/* Hide the “label” on small viewports              */
+/* ────────────────────────────────────────────────── */
+@media screen and (max-width: 571px) {
+  .label {
+    display: none;
+  }
+}
+
 .name {
   /* font-family: var(--font-button); */
   font-family: var(--font-question);

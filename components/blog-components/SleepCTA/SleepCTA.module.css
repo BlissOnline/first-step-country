@@ -45,6 +45,7 @@
   border: 1px solid black;
   width: 200px;
   height: 51px;
+  min-height: 60px; 
   /* align-self: center;
   justify-content: center; */
   /* ← these two lines do all the work */
@@ -161,12 +162,63 @@
   margin: 0;
   color: white;
 }
-.cardDivider {
+
+/* .cardDivider {
   width: 8rem;
   height: 1px;
   background: black;
   margin: 0.5rem 0 1rem;
+} */
+
+/* make divider fluid */
+.divider {
+  width: 100%;
+  max-width: 40rem;      /* caps it in big layouts */
+  height: 2px;
+  background: black;
+  margin: 0 auto 2rem;
+  border-radius: 2px;
 }
+
+/* stack table columns into cards on mobile */
+@media (max-width: 768px) {
+  .table {
+    border: none;
+  }
+  .table thead {
+    display: none;
+  }
+  .table tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;    /* or whatever your bg is */
+    
+  }
+  .table tbody tr td {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    position: relative;
+    
+  }
+  .table tbody tr td::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    /* color: #333; */
+  }
+
+  /* if you want a little shadow on each “card” */
+  .table tbody tr {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+}
+
 
 /* Button shell */
 .cardButton {
