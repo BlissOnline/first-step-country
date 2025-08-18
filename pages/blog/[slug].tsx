@@ -36,6 +36,7 @@ type FrontMatter = {
   authorBio:     string | null
 
   featuredImage: string | null
+  showFeaturedImage?: boolean
   imageCaption:  string | null
 }
 
@@ -76,6 +77,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
     authorBio:     fmRaw.authorBio   ?? null,
 
     featuredImage: fmRaw.featuredImage ?? null,
+    showFeaturedImage: fmRaw.showFeaturedImage ?? true,
     imageCaption:  fmRaw.imageCaption  ?? null,
   }
 
@@ -115,6 +117,13 @@ export default function PostPage({ frontMatter: fm, mdxSource }: Props) {
     day:   'numeric',
   })  // → "June 30, 2025"
 
+  // 3) pull the new flag out
+  const {
+    featuredImage,
+    imageCaption,
+    showFeaturedImage = true,  // default
+  } = fm
+
   return (
     <>
       {/* <Head>
@@ -132,10 +141,10 @@ export default function PostPage({ frontMatter: fm, mdxSource }: Props) {
         <meta property="og:title"       content={fm.seoTitle} />
         <meta property="og:description" content={description} />
         <meta property="og:url"         content={postUrl} />
-        {fm.featuredImage && (
+        {fm.featuredImage && showFeaturedImage && (
           <meta
             property="og:image"
-            content={`${siteUrl}${fm.featuredImage}`}
+            content={`${siteUrl}${featuredImage}`}
           />
         )}
 
@@ -146,10 +155,10 @@ export default function PostPage({ frontMatter: fm, mdxSource }: Props) {
           name="twitter:description"
           content={description}
         />
-        {fm.featuredImage && (
+        {fm.featuredImage && showFeaturedImage && (
           <meta
             name="twitter:image"
-            content={`${siteUrl}${fm.featuredImage}`}
+            content={`${siteUrl}${featuredImage}`}
           />
         )}
       </Head>
@@ -194,23 +203,15 @@ export default function PostPage({ frontMatter: fm, mdxSource }: Props) {
           <div className="mb-6">
             <ShareBlog title={fm.displayTitle} />
           </div>
-          {fm.featuredImage && (
-            <FeaturedImage
-              src={fm.featuredImage}
-              alt={fm.imageCaption}
-              caption={fm.imageCaption}
-            />
-          )}
 
           {/* 8–9) Featured image + caption */}
-
-
-          {/* {fm.featuredImage && (
-            <figure className="mb-6">
-              <img src={fm.featuredImage} alt={fm.imageCaption ?? ''} />
-              {fm.imageCaption && <figcaption>{fm.imageCaption}</figcaption>}
-            </figure>
-          )} */}
+          {showFeaturedImage && featuredImage && (
+            <FeaturedImage
+              src={featuredImage}
+              alt={imageCaption ?? undefined}
+              caption={imageCaption ?? undefined}
+            />
+          )}
 
           <MDXRemote {...mdxSource} components={MDXComponents} />
         </article>

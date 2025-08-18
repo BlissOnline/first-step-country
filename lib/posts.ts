@@ -16,6 +16,7 @@ export type RawFrontMatter = {
   authorBio?:     string
 
   featuredImage?: string
+  showFeaturedImage?: boolean
   imageCaption?:  string
 }
 
