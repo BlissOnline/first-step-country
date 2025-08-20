@@ -13,25 +13,25 @@
     "deploy": "gh-pages -d dist",
     "postbuild": "next-sitemap --config next-sitemap.config.cjs"
   },
-
-    "sideEffects": [
+  "sideEffects": [
     "components/blog-components/TourCTA/index.tsx",
     "components/blog-components/TourCTA/TourCTA.client.tsx"
   ],
-  
   "dependencies": {
     "gray-matter": "^4.0.3",
     "next": "^15.4.3",
     "next-mdx-remote": "^5.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "remark-frontmatter": "^5.0.0",
-    "remark-gfm": "^4.0.1",
-    "remark-mdx-frontmatter": "^5.2.0"
+    "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
+    "@mdx-js/loader": "^3.1.0",
+    "@next/mdx": "^15.4.6",
     "@types/node": "^22.16.0",
     "@types/react": "^18.3.4",
+    "remark-frontmatter": "^5.0.0",
+    "remark-mdx-frontmatter": "^5.2.0",
     "typescript": "^5.5.4"
   }
 }

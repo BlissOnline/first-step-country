@@ -2,6 +2,8 @@
 import '../styles/global.css'    // your CSS variables, colors, and manual @import for fonts
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
+import { MDXProvider } from '@mdx-js/react'
+import MDXComponents from '@/components/blog-components/MDXComponents'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -21,7 +23,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         />
 
       </Head>
-      <Component {...pageProps} />
+      <MDXProvider components={MDXComponents}>
+        <Component {...pageProps} />
+      </MDXProvider>
     </>
   )
 }
