@@ -9,8 +9,6 @@
   margin-bottom: 90px;
 }
 
-
-
 .sleepChartContainer {
   display: flex;
   justify-content: center;
@@ -27,34 +25,12 @@
   font-family: var(--font-question);
 }
 
-
-/* .table {
-  border-collapse: collapse;
-  color: white;
-  display: flexbox;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} */
-
 .table {
   position: relative;
   overflow: hidden;
-
-  /* your existing styles */
-  /* width: 100%; */
   border-collapse: collapse;
   color: white;
-
-  /* -webkit-text-stroke: 1px black; */
-  /* text-shadow:
-    -1px -1px 0 black,
-     1px -1px 0 black,
-    -1px  1px 0 black,
-     1px  1px 0 black; */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  
-
   display: flex;           /* changed from flexbox */
   justify-content: center;
   align-items: center;
@@ -213,13 +189,6 @@
   color: white;
 }
 
-/* .cardDivider {
-  width: 8rem;
-  height: 1px;
-  background: black;
-  margin: 0.5rem 0 1rem;
-} */
-
 /* make divider fluid */
 .divider {
   width: 100%;
@@ -291,10 +260,27 @@
   filter: brightness(1.1);
 }
 
+/* added for safety warnings on booking sites */
 
+/* components/blog-components/SleepCTA/SleepCTA.module.css */
 
-/* Variant backgrounds */
-/* .apartmentColor { background-color: var(--color-1); }
-.hostelColor    { background-color: var(--color-3); }
-.hotelColor     { background-color: var(--color-4); } */
+.safetyTip {
+  border-left: 4px solid #f59e0b;
+  background:    #fffbeb;
+  padding:       1rem;
+  margin:        1rem 0 2rem;
+  font-size:     0.95rem;
+  text-align:    left;
+}
 
+.safetyTip strong {
+  color: #b45309;
+}
+
+.safetyTip ul {
+  margin: 0.5rem 0 0 1rem;
+}
+
+.safetyTip li {
+  margin-bottom: 0.25rem;
+}

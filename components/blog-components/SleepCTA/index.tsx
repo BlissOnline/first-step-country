@@ -17,9 +17,10 @@ export type LinkObj = {
   variant: 'apartment' | 'hostel' | 'hotel'
 }
 
-type Props = {
+export type Props = {
   prompt: string
   links:  LinkObj[]
+  safetyTips?: string[]
 }
 
 export function SleepComparisonChart({
@@ -90,7 +91,7 @@ export function SleepComparisonChart({
   )
 }
 
-export function SleepCTAButtons({ prompt, links }: Props) {
+export function SleepCTAButtons({ prompt, links, safetyTips, }: Props) {
   return (
     <div className={styles.sleepCTAContainer}>
       {/* 1) Prompt */}
@@ -98,6 +99,18 @@ export function SleepCTAButtons({ prompt, links }: Props) {
 
       {/* 2) Divider line */}
       <div className={styles.divider} />
+
+      {/* 2a) Optional Safety Tip */}
+      {safetyTips && safetyTips.length > 0 && (
+        <aside className={styles.safetyTip}>
+          <strong>Safety Tip:</strong>
+          <ul>
+            {safetyTips.map((tip, i) => (
+              <li key={i}>{tip}</li>
+            ))}
+          </ul>
+        </aside>
+      )}
 
       {/* 3) Card grid */}
       <div className={styles.cardContainer}>

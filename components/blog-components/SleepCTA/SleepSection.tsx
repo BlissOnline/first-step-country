@@ -13,15 +13,17 @@ export interface SleepSectionProps {
   data: ChartRow[]
   prompt: string
   links: LinkObj[]
+  safetyTips?: string[]
 }
 
 export const SleepSection: React.FC<SleepSectionProps> = ({
   data,
   prompt,
   links,
+  safetyTips,
 }) => (
   <div className={styles.section}>
     <SleepComparisonChart data={data} />
-    <SleepCTAButtons prompt={prompt} links={links} />
+    <SleepCTAButtons prompt={prompt} links={links} safetyTips={safetyTips} />
   </div>
 )

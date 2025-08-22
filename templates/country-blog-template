@@ -57,16 +57,19 @@ Bangladesh is one of Asia’s most rewarding off-beat secrets—home to the worl
 />
 
 <FlightCTA
-  title="Book Cheap Flights to Dhaka, Bangladesh"
+  title="Book Cheap Flights to CITY, COUNTRY"
   subtitle="Your $15 a Day Adventure Awaits!"
   buttonText="Book Now"
-  href="https://www.expedia.com/Destinations-In-Bangladesh.d15.Flight-Destinations?siteid=1&langid=1033&clickref=1100lBmVULST&affcid=US.DIRECT.PHG.1100l395738.1100l68075&ref_id=1100lBmVULST&my_ad=AFF.US.DIRECT.PHG.1100l395738.1100l68075&afflid=1100lBmVULST&affdtl=PHG.1100lBmVULST.PZOjp9NGik"
+  href=""
 />
 
-<TourSectionStarter
-  subHeader="Discover Bangladesh’s Hidden Gems with These Day Trips"
-  paragraph="Bangladesh isn’t just rivers and cities. Join a guided Sundarbans safari to spot Bengal tigers, explore centuries-old tea estates in Sylhet, or cycle through the backroads of Barisal with a local guide. Whether you crave wildlife, culture or off-the-beaten-path adventures, these tours are your ticket to the real Bangladesh."
-/>
+!!!This is the tour/expedition hook p: 
+explain how the best stuff is cheap and or free, or even comparing famous restrausants, or stuff worth the price
+-free tours, all inclusive, overnight adventure tours, must sees
+Top 3 Free or Dirt-Cheap Experiences
+•	Visit Lalbagh Fort and wander Old Dhaka’s narrow lanes (entrance free).
+•	Sunrise on Cox’s Bazar beach—pack your own snacks.
+•	Tea-garden trek around Sreemangal and sample fresh leaf infusions at family-run stalls.
 
 <TourCTA
   partnerId="P00249582"
@@ -91,12 +94,12 @@ Bangladesh is one of Asia’s most rewarding off-beat secrets—home to the worl
     },
     // add more rows here if you like
   ]}
-  prompt="Ready to book your budget stay in Bangladesh?"
+  prompt="Ready to book your budget stay in PICK COUNTRY"
   links={[
     {
       label:   'Apartment Stay',
       variant: 'apartment',
-      href:    'https://bikroy.com/en/ads/bangladesh/apartment-rentals'
+      href:    'https://your-hostel-affiliate-link.com'
     },
     {
       label:   'Hostel Stay',
@@ -106,16 +109,11 @@ Bangladesh is one of Asia’s most rewarding off-beat secrets—home to the worl
     {
       label:   'Hotel Stay',
       variant: 'hotel',
-      href:    'https://www.expedia.com/Destinations-In-Bangladesh.d15.Hotel-Destinations?siteid=1&langid=1033&clickref=1100lBr3Aa9n&affcid=US.DIRECT.PHG.1100l395738.1100l68075&ref_id=1100lBr3Aa9n&my_ad=AFF.US.DIRECT.PHG.1100l395738.1100l68075&afflid=1100lBr3Aa9n&affdtl=PHG.1100lBr3Aa9n.PZ5_GYcXCs'
+      href:    'https://your-hostel-affiliate-link.com'
     },
   ]}
   safetyTips={[
-    'If booking an apartment we recommend using Bikroy.com',
-    'Bikroy.com is Bangladesh’s largest classifieds platform, but peer-to-peer rentals carry some risk.',
-    'Always verify the landlord in person before handing over any money.',
-    'Inspect the apartment and sign a written agreement.',
-    'Use secure payment methods—avoid wiring cash or deposits for a property you’ve never seen.',
-    'Bikroy.com uses Bangladeshi Taka for listed prices, use a currency convertor for preferred currency'
+    'If booking an apartment we recommend using ....',
   ]}
 />
 

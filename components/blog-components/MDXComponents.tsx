@@ -12,6 +12,7 @@ import CountryPhoto from './CountryPhoto'
 import BudgetBreakdown from './ExpenseBreakdown'
 import FlightCTA from './FlightCTA'
 // import TourCTA from './TourCTA'
+import TourSectionStarter from './TourSectionStarter'
 import TourCTA from './TourCTA/TourCTA.client'
 
 import CTA from './CTA'
@@ -91,6 +92,7 @@ const MDXComponents: MDXMap = {
   CountryPhoto,
   BudgetBreakdown,
   FlightCTA,
+  TourSectionStarter,
   TourCTA,
   CTA,
   SleepSectionStarter,

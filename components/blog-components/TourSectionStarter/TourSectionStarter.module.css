@@ -1,0 +1,41 @@
+.container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.separator {
+  height: 3px;
+  background-color: black;
+  margin: 0.7rem auto 125px;
+  border: none;
+  width: 95%;
+}
+
+.iconWrapper {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.subHeader {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: var(--font-question);
+  text-align: center;
+}
+
+.paragraph {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: var(--font-paragraph);
+  color: black;
+}
+
+.divider {
+  width: 50px;
+  height: 4px;
+  margin: 0 auto 2rem;
+  border-radius: 2px;
+}
