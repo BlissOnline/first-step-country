@@ -17,6 +17,16 @@ interface BudgetBreakdownProps {
   cards: CardData[]
 }
 
+/**
+ * Format a number as a “price”:
+ * - Up to two decimals
+ * - No trailing zeros or “.00”
+ */
+const formatPrice = (value: number): string =>
+  value
+    .toFixed(2)          // ensure two decimals
+    .replace(/\.?0+$/, '') // strip trailing ".00" or extra zeros
+
 const IMAGE_MAP: Record<string, { src: string; alt: string }> = {
   'Budget Tourist': {
     src: '/questionImages/ppm-graphic.png',
@@ -59,7 +69,6 @@ const BudgetBreakdown: FC<BudgetBreakdownProps> = ({ cards }) => (
           src: '/images/default.svg',
           alt: card.title,
         }
-
         const key = card.title.trim()
         const chartClass = CHART_CLASS_MAP[key] || styles.chartBudget
 
@@ -89,14 +98,18 @@ const BudgetBreakdown: FC<BudgetBreakdownProps> = ({ cards }) => (
                           backgroundColor: e.color ?? '#ccc',
                         }}
                       />
-                      <span className={styles.cost}>${e.cost}</span>
+                      <span className={styles.cost}>
+                        ${formatPrice(e.cost)}
+                      </span>
                     </dd>
                   </div>
                 ))}
               </dl>
 
               <footer className={styles.totalLine}>
-                <span>Total per Day: ${total}</span>
+                <span>
+                  Total per Day: ${formatPrice(total)}
+                </span>
               </footer>
             </div>
           </article>

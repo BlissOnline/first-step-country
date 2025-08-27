@@ -32,7 +32,7 @@ Bangladesh is one of Asia’s most rewarding off-beat secrets—home to the worl
         { category: 'Hostel', cost: 11, color: '#FF8566' },
         { category: '3 Street Food Meals', cost: 3.50, color: '#F0E0D5' },
         { category: 'Transport', cost: 1.20, color: '#C5B358' },
-        { category: '1 Attraction', cost: 2.50, color: '#000000' },
+        { category: '2 Attractions', cost: 2.50, color: '#000000' },
       ],
     },
     {
@@ -63,13 +63,10 @@ Bangladesh is one of Asia’s most rewarding off-beat secrets—home to the worl
   href=""
 />
 
-!!!This is the tour/expedition hook p: 
-explain how the best stuff is cheap and or free, or even comparing famous restrausants, or stuff worth the price
--free tours, all inclusive, overnight adventure tours, must sees
-Top 3 Free or Dirt-Cheap Experiences
-•	Visit Lalbagh Fort and wander Old Dhaka’s narrow lanes (entrance free).
-•	Sunrise on Cox’s Bazar beach—pack your own snacks.
-•	Tea-garden trek around Sreemangal and sample fresh leaf infusions at family-run stalls.
+<TourSectionStarter
+  subHeader="Best Day Trips in Cambodia – Temples, Lakes & Local Life on a Budget"
+  paragraph="Cambodia isn’t just temples and tuk‑tuks. Watch the sunrise over Angkor Wat, explore the stilted homes of Kampong Phluk’s floating village, or take a bamboo train ride through Battambang’s countryside. Join a cooking class in Siem Reap, cruise the Mekong at sunset, or hike through Kep National Park for panoramic views—all without breaking the bank. These day trips connect you to Cambodia’s soul, whether you’re chasing history, nature, or local flavor."
+/>
 
 <TourCTA
   partnerId="P00249582"
