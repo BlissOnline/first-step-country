@@ -22,7 +22,7 @@ imageCaption:   ""
   caption="Children Walking to Edu Center in Rural Bangladesh"
 />
 
-Bangladesh is one of Asia’s most rewarding off-beat secrets—home to the world’s largest mangrove forest (the Sundarbans), 120 km of empty golden sand at Cox’s Bazar, and vibrant river-city life in Dhaka and Barisal. You’ll meet unforgettable hospitality, feast on fiery street curries, and dive into centuries-old Sufi shrines without ever breaking your budget.
+country hook paragraph
 
 <BudgetBreakdown
   cards={[
@@ -84,9 +84,9 @@ Bangladesh is one of Asia’s most rewarding off-beat secrets—home to the worl
 <SleepSection
   data={[
     {
-      apartment1: '$125 – $600/month',
-      apartment2: '$200 – $1,000/month',
-      hostel:     '$7 – $18/night',
+      apartment1: '$125 – $600+/month',
+      apartment2: '$200 – $1,000+/month',
+      hostel:     '$7 – $18+/night',
       hotel:      '$20 – $120+/night',
     },
     // add more rows here if you like
@@ -110,7 +110,7 @@ Bangladesh is one of Asia’s most rewarding off-beat secrets—home to the worl
     },
   ]}
   safetyTips={[
-    'If booking an apartment we recommend using ....',
+    '...pending good apartment hunting resource...',
   ]}
 />
 
