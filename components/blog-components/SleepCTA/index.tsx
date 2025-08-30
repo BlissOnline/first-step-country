@@ -15,6 +15,7 @@ export type LinkObj = {
   label:   string
   href:    string
   variant: 'apartment' | 'hostel' | 'hotel'
+  comingSoon?: boolean
 }
 
 export type Props = {
@@ -118,6 +119,7 @@ export function SleepCTAButtons({ prompt, links, safetyTips, }: Props) {
           const cardBgClass = styles[
             `card${capitalize(link.variant)}`
           ]
+          const isComingSoon = link.comingSoon || !link.href
 
           return (
             <div
@@ -127,15 +129,27 @@ export function SleepCTAButtons({ prompt, links, safetyTips, }: Props) {
               <h3 className={styles.cardTitle}>
                 {link.label}
               </h3>
+
               <div className={styles.cardDivider} />
-              <a
-                href={link.href}
-                className={styles.cardButton}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+
+              {/* coming soon */}
+              {isComingSoon ? (
+                <button
+                  className={styles.cardButtonDisabled}
+                  disabled
+                >
+                  Coming Soon
+                </button>
+              ) : (
+                <a
+                  href={link.href}
+                  className={styles.cardButton}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                 Book Now
-              </a>
+               </a>
+              )}
             </div>
           )
         })}
