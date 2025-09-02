@@ -1,22 +1,43 @@
-import React from 'react';
-import Header from'./Header';
-import './Layout.css';
-// import Footer from './Footer';
+// components/Layout/Layout.tsx
+'use client'
 
-//Define the props for the Layout component
+import React from 'react'
+import { usePathname } from 'next/navigation'
+import Header from './Header'
+import './Layout.css'
+
 interface LayoutProps {
-    children: React.ReactNode;
+  children: React.ReactNode
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
-    return (
-        <div className='layout'>
-            <Header />
-            {/* <main>{children}</main> */}
-            <main>{children}</main>
-            {/* <Footer /> */}
-        </div>
-    );
-};
+export default function Layout({ children }: LayoutProps) {
+  const pathname = usePathname() || ''
 
-export default Layout;
+  const isBlog         = pathname.startsWith('/blog')
+  const isAbout        = pathname.startsWith('/about')
+
+  const isQuestions    = pathname.startsWith('/questions')
+  const isResults      = pathname.startsWith('/results')
+  const isCountryIndex = pathname.startsWith('/country-index')
+  
+
+  const wrapperClass = [
+    'layout',
+    isBlog         && 'layout--blog',
+    isAbout        && 'layout--about',
+
+
+    isQuestions    && 'layout--questions',
+    isResults      && 'layout--results',
+    isCountryIndex && 'layout--country-index',
+  ]
+    .filter(Boolean)
+    .join(' ')
+
+  return (
+    <div className={wrapperClass}>
+      <Header />
+      <main>{children}</main>
+    </div>
+  )
+}

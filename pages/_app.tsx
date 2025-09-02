@@ -5,6 +5,8 @@ import type { AppProps } from 'next/app'
 import { MDXProvider } from '@mdx-js/react'
 import MDXComponents from '@/components/blog-components/MDXComponents'
 
+import Layout from '@/components/Layout/Layout'
+
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -23,9 +25,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         />
 
       </Head>
-      <MDXProvider components={MDXComponents}>
-        <Component {...pageProps} />
-      </MDXProvider>
+      <Layout>
+        <MDXProvider components={MDXComponents}>
+          <Component {...pageProps} />
+        </MDXProvider>
+      </Layout>
     </>
   )
 }

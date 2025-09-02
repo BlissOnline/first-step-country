@@ -27,6 +27,9 @@ type FrontMatter = {
   category:         string | null
   subCategory:      string | null
 
+  description:     string | null
+  keywords:        string[] | null
+
   author:           string | null
   authorRole:       string | null
   authorBio:        string | null
@@ -75,6 +78,9 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
     category:         fmRaw.category    ?? null,
     subCategory:      fmRaw.subCategory ?? null,
 
+    description:      fmRaw.description  ?? fmRaw.excerpt ?? null,
+    keywords:         fmRaw.keywords     ?? null,
+
     author:           fmRaw.author      ?? null,
     authorRole:       fmRaw.authorRole  ?? null,
     authorBio:        fmRaw.authorBio   ?? null,
@@ -107,7 +113,8 @@ export default function PostPage({ frontMatter: fm, mdxSource }: Props) {
   const router      = useRouter()
   const siteUrl     = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://firststepcountry.com'
   const postUrl     = `${siteUrl}${router.asPath}`
-  const description = fm.excerpt ?? fm.displayTitle
+  // const description = fm.excerpt ?? fm.displayTitle
+  const description = fm.description ?? fm.excerpt ?? fm.displayTitle
 
   const dateObj = new Date(fm.date)
   const formattedDate = dateObj.toLocaleDateString('en-US', {

@@ -56,7 +56,6 @@
     max-width: 500px;   
     display: block;
     background-color: transparent; 
-    display: block;
     object-fit: contain;
     margin: 0 auto;
     padding: 0px 20px;
@@ -81,12 +80,13 @@
     flex-wrap: wrap;
 }
 
-.qTwoButtonContainer, .qTwoSubButtonContainer {
+.qTwoButtonContainer,
+.qTwoSubButtonContainer {
     width: 100%;
     display: flex;
-    justify-content: center; /* Center the buttons */
+    justify-content: center;
     align-items: center;
-} 
+}
 
 .qTwoButtonContainer input {
     background-color: var(--color-1); 
@@ -99,12 +99,39 @@
     min-width: 150px; 
     max-width: 300px; 
     height: 4rem;
-
 }
 
+/* make the “0” placeholder look identical to real text */
 .qTwoButtonContainer input::placeholder {
-    font-size: 0.5em;
-    
+    color: currentColor;
+    opacity: 1;
+    font-size: inherit;
+}
+
+/* vendor prefixes for broader browser support */
+.qTwoButtonContainer input::-webkit-input-placeholder {
+    color: currentColor;
+    opacity: 1;
+    font-size: inherit;
+}
+
+.qTwoButtonContainer input::-moz-placeholder {
+    color: currentColor;
+    opacity: 1;
+    font-size: inherit;
+}
+
+.qTwoButtonContainer input:-ms-input-placeholder {
+    color: currentColor;
+    opacity: 1;
+    font-size: inherit;
+}
+
+.qTwoButtonContainer input:-moz-placeholder {
+    /* older Firefox */
+    color: currentColor;
+    opacity: 1;
+    font-size: inherit;
 }
 
 .qTwoSubButtonContainer {
