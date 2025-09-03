@@ -46,7 +46,7 @@ export default function BlogIndex({ posts }: Props) {
   return (
     <main className="mx-auto p-8">
       {/* ───────── Budget Travel Blogs ───────── */}
-      <h2>Budget Travel Blogs</h2>
+      <h2 className={styles.blogCategoryTitle}>Budget Travel Blogs</h2>
       <div className={styles.blogGrid}>
         {budgetBlogs.map(({ slug, displayTitle, featuredImage }) => (
           <Link key={slug} href={`/blog/${slug}`} className={styles.card}>
@@ -61,7 +61,7 @@ export default function BlogIndex({ posts }: Props) {
       </div>
 
       {/* ───────── Country Deep Dives ───────── */}
-      <h2 className="mt-12">Country Deep Dives</h2>
+      <h2 className={styles.blogCategoryTitle}>Country Deep Dives</h2>
       <div className={styles.blogGrid}>
         {countryDives.map(({ slug, displayTitle, featuredImage }) => (
           <Link key={slug} href={`/blog/${slug}`} className={styles.card}>

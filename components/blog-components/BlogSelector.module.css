@@ -1,9 +1,37 @@
 /* components/blog-components/BlogSelector.module.css */
 
+.blogCategoryTitle {
+  font-family: var(--font-question);
+  font-size: 35px;
+  color: var(--color-4);
+
+  /* make it shrink‐to‐fit so the underline matches text width */
+  display: inline-block;
+  position: relative;
+  margin-bottom: 1rem; 
+
+  border-bottom: 3.1px solid var(--color-1);
+  padding-bottom: 0.25rem;
+}
+
+/* .blogCategoryTitle::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -0.25rem;       
+  transform: translateX(-50%);
+  width: 50px;            
+  height: 4px;            
+  background: var(--color-3);
+  border-radius: 2px;     
+} */
+
 .blogGrid {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+  margin-bottom: 3rem;
 }
 
 .card {

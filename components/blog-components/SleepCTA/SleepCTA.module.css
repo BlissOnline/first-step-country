@@ -265,24 +265,45 @@
 /* components/blog-components/SleepCTA/SleepCTA.module.css */
 
 .safetyTip {
+  /* keep your warning style */
   border-left: 4px solid #f59e0b;
   background:    #fffbeb;
   padding:       1rem;
   margin:        1rem 0 2rem;
   font-size:     0.95rem;
   text-align:    left;
+
+  /* force it to be a block that spans the container */
+  display: block !important;
+  width:   100%  !important;
 }
 
+/* if you have bold text inside a tip */
 .safetyTip strong {
   color: #b45309;
 }
 
+/* style the UL as a normal list */
 .safetyTip ul {
-  margin: 0.5rem 0 0 1rem;
+  margin:             0.5rem 0 0 1.5rem;
+  padding:            0;
+  list-style-type:    disc;
+  list-style-position: outside;
+
+  /* full width so it can wrap lines properly */
+  display: block !important;
+  width:   100%      !important;
 }
 
+/* each LI is a normal bullet line, full width */
 .safetyTip li {
-  margin-bottom: 0.25rem;
+  display:       list-item !important;
+  width:         100%       !important;
+  margin-bottom: 0.5rem;
+  padding:       0;
+  background:    none;
+  border:        none;
+  box-shadow:    none;
 }
 
 /* coming soon, button not available */

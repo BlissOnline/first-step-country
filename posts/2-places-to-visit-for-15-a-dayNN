@@ -7,8 +7,8 @@ category:     "RECOMMENDED TRAVEL"
 subCategory:  "BUDGET"
 
 author:       "Wes Laycock"
-authorRole:   "First Step Country Founder"
-authorBio:    "Wes writes about his experience as a digital nomad and more."
+authorRole:   "Founder & Budget Travel Strategist"
+authorBio:    "Wes empowers budget travelers to explore the world affordably"
 
 featuredImage:  "/blogHeroImages/orange-shirt-lady.jpg"
 imageCaption:   ""
@@ -23,6 +23,8 @@ In 2025, these two countries rank among the absolute cheapest on the planet, wit
   name="Bangladesh"
   flagSrc="/flags/bd.svg"
 />
+
+
 
 <CountryPhoto
   src="/blogCountryImages/bangladesh/bangladesh-walk.jpg"
