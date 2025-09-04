@@ -33,10 +33,10 @@ const COMPONENTS = new Set<string>([
 
 // Map generic names → display text + heading level
 const COMPONENT_MAP: Record<string, { text: string; level: number }> = {
-  BudgetBreakdown:    { text: 'Budget breakdown', level: 2 },
-  FlightCTA:          { text: 'Cheap flights',   level: 2 },
-  TourSectionStarter: { text: 'Tours',           level: 2 },
-  SleepSectionStarter:{ text: 'Sleep options',   level: 2 },
+  BudgetBreakdown:    { text: 'Budget Breakdown', level: 2 },
+  FlightCTA:          { text: 'Cheap Flights',   level: 2 },
+  TourSectionStarter: { text: 'Tours and Activites', level: 2 },
+  SleepSectionStarter:{ text: 'Sleeping',   level: 2 },
 }
 
 export function extractHeadings(markdown: string): Heading[] {

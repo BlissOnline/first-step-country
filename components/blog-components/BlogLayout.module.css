@@ -38,37 +38,98 @@
   font-size: 0.9rem;
 }
 
-.toc {
-  background: #f7fafc;
-  padding: 1rem;
-  border-radius: 4px;
-  margin-bottom: 2rem;
-}
+/* components/BlogLayout.module.css */
 
-.toc strong {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
+/* 1) Make sure the UL itself is a block container */
 .toc ul {
-  list-style: none;
-  padding: 0;
+  display: block;          /* override any flex/inline settings */
+  padding-left: 1.5rem;    /* keep room for your bullets */
   margin: 0;
 }
 
+/* 2) Force each LI to be block‐level */
 .toc li {
-  margin: 0.4rem 0;
+  display: list-item;      /* ensures bullets and line breaks */
+  margin: 0.5rem 0;        /* vertical spacing between items */
+}
+
+/* 3) If .toc was using flex, make it columnar */
+.toc {
+  display: flex;           
+  flex-direction: column;  
+  color: black;
+  font-size: 28px;
+  margin-top: 0;
+  font-family: var(--font-button);
+}
+
+/* override when nav also has .noImageTOC */
+.toc.noImageTOC {
+  margin-top: 40px;   /* or 40px, whatever you like */
+}
+
+/* 4) (Optional) indent deeper levels */
+.toc .lvl2 {
+  margin-left: 1rem;
+  font-size: 22px;
+  font-family: var(--font-question);
 }
 
 .toc .lvl3 {
-  margin-left: 1rem;
+  margin-left: 2rem;
+  list-style-type: circle;
 }
 
+/* Make sure you place this *after* any imported/reset styles so it wins */
+
+/* 1) Base link color */
 .toc a {
-  color: #1a202c;
+  color: var(--color-3);        /* a dark charcoal—feel free to swap for your brand’s text color */
   text-decoration: none;
 }
 
-.toc a:hover {
+/* 2) Visited state (optional) */
+.toc a:visited {
+  color: var(--color-3);
+}
+
+/* 3) Hover/focus state */
+.toc a:hover,
+.toc a:focus {
+  color: var(--color-4);        /* a strong accent for interaction */
   text-decoration: underline;
+}
+
+/* 1) Ensure your UL has bullets turned on */
+.toc ul {
+  list-style-type: disc;      /* solid circles */
+  list-style-position: outside;
+  margin: 0;
+  padding-left: 1.5rem;       /* space for bullets */
+  display: block;
+}
+
+/* 2) Force each LI back to list‐item (if you overrode it elsewhere) */
+.toc li {
+  display: list-item;
+  margin: 0.5rem 0;
+}
+
+/* 3) Color the marker (the bullet itself) */
+.toc li::marker {
+  /* color: #F0E0D5;      */
+  font-size: 1em;             
+  color: var(--color-4);
+}
+
+/* 4) Optional: Different bullet style on deeper levels */
+.toc .lvl2::marker {
+  list-style-type: circle;    /* hollow circle for h3’s */
+  /* color: #F0E0D5; */
+  color: var(--color-4);
+}
+.toc .lvl3::marker {
+  list-style-type: square;    /* square for h4’s if you had them */
+  /* color: #F0E0D5; */
+  color: var(--color-4);
 }

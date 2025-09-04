@@ -17,10 +17,17 @@ import Category from '@/components/blog-components/Category'
 import AuthorBlock from '@/components/blog-components/AuthorBlock'
 import ShareBlog from '@/components/blog-components/ShareBlog'
 import FeaturedImage from '@/components/blog-components/FeaturedImage'
+import TableOfContents from '@/components/blog-components/TableOfContents'
 
 import { getPostBySlug, listSlugs, RawFrontMatter } from '@/lib/posts'
 
+// This import needs to be the file where you defined .noImageTOC
+import layoutStyles from '@/components/blog-components/BlogLayout.module.css'
+
 import styles from '@/components/blog-components/MDXComponents.module.css'
+
+
+
 
 type FrontMatter = {
   title:            string
@@ -135,6 +142,7 @@ export default function PostPage({ frontMatter: fm, mdxSource, headings }: Props
     month: 'long',
     day:   'numeric',
   })
+  const hasImage = Boolean(fm.showFeaturedImage && fm.featuredImage)
 
   return (
     <>
@@ -159,7 +167,7 @@ export default function PostPage({ frontMatter: fm, mdxSource, headings }: Props
       </Head>
 
       {/* pass headings into your layout */}
-      <BlogLayout headings={headings}>
+      <BlogLayout>
         <article className="prose mx-auto p-8">
           {fm.category && (
             <Category
@@ -195,6 +203,11 @@ export default function PostPage({ frontMatter: fm, mdxSource, headings }: Props
               caption={fm.imageCaption || undefined}
             />
           )}
+
+          <TableOfContents 
+            headings={headings}
+            className={!hasImage ? layoutStyles.noImageTOC : ''}
+          />
 
           <MDXRemote {...mdxSource} components={MDXComponents} />
         </article>
