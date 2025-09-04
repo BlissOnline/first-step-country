@@ -8,11 +8,18 @@ type CTAProps = {
   subtitle: string
   buttonText: string
   href: string
+  id?: string
 }
 
-const FlightCTA: React.FC<CTAProps> = ({ title, subtitle, buttonText, href }) => {
+const FlightCTA: React.FC<CTAProps> = ({ 
+  title, 
+  subtitle, 
+  buttonText, 
+  href,
+  id 
+}) => {
   return (
-    <div className={styles.container}>
+    <div id={id} className={styles.container}>
       <h2 className={styles.title}>
         {/* <FaPlane className={styles.icon} /> */}
         <Image src="/icons/airplane-svg.svg" alt="Airplane icon" width={60} height={60} className='icon'/>

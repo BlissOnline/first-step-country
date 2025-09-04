@@ -5,14 +5,16 @@ import styles from './SleepSectionStarter.module.css'
 export type SleepSectionStarterProps = {
   subHeader: string
   paragraph: string
+  id?: string
 }
 
 const SleepSectionStarter: React.FC<SleepSectionStarterProps> = ({
   subHeader,
   paragraph,
+  id,
 }) => {
   return (
-    <section className={styles.container}>
+    <section id={id} className={styles.container}>
       <hr className={styles.separator} />  
       
       <div className={styles.iconWrapper}>

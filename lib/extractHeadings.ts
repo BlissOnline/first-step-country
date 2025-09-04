@@ -7,17 +7,37 @@ import { toString }       from 'mdast-util-to-string'
 import Slugger            from 'github-slugger'
 import type { Node }      from 'unist'
 
-// reuse your Heading type
-export type Heading = { id: string; text: string; level: number }
+export type Heading = { 
+  id: string
+  text: string
+  level: number
+}
 
-// list of your custom section–creating components
-const COMPONENTS = new Set([
+/** Reusable slugify (for non-AST calls like wrappers) */
+export function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w]+/g, '-')
+    .replace(/(^-|-$)/g, '')
+}
+
+// All of the custom MDX components that should become ToC entries
+const COMPONENTS = new Set<string>([
+  'CountryHeader',
   'BudgetBreakdown',
   'FlightCTA',
   'TourSectionStarter',
   'SleepSectionStarter',
-  'CountryHeader',
 ])
+
+// Map generic names → display text + heading level
+const COMPONENT_MAP: Record<string, { text: string; level: number }> = {
+  BudgetBreakdown:    { text: 'Budget breakdown', level: 2 },
+  FlightCTA:          { text: 'Cheap flights',   level: 2 },
+  TourSectionStarter: { text: 'Tours',           level: 2 },
+  SleepSectionStarter:{ text: 'Sleep options',   level: 2 },
+}
 
 export function extractHeadings(markdown: string): Heading[] {
   const tree = unified()
@@ -28,51 +48,45 @@ export function extractHeadings(markdown: string): Heading[] {
   const slugger = new Slugger()
   const headings: Heading[] = []
 
-  // 1) Standard H2/H3 from markdown
+  // 1) Grab all ## and ### Markdown headings
   visit(tree, 'heading', (node: any) => {
     if (node.depth === 2 || node.depth === 3) {
       const text = toString(node)
-      const id   = slugger.slug(text)
-      headings.push({ id, text, level: node.depth })
+      headings.push({
+        id: slugger.slug(text),
+        text,
+        level: node.depth,
+      })
     }
   })
 
-  // 2) JSX components like <BudgetBreakdown /> etc.
+  // 2) Detect your MDX section components
   visit(tree, (node: Node) => {
-    // MDX-components appear as mdxJsxFlowElement in the AST
-    if ((node as any).type === 'mdxJsxFlowElement') {
-      const name = (node as any).name as string
-      if (!COMPONENTS.has(name)) return
+    if ((node as any).type !== 'mdxJsxFlowElement') return
+    const elm = node as any
+    if (!COMPONENTS.has(elm.name)) return
 
-      // derive text & level
-      let text: string, level: number
-      if (name === 'CountryHeader') {
-        // pick up label + name props
-        const attrs = (node as any).attributes as any[]
-        const labelAttr = attrs.find(a => a.name === 'label')?.value
-        const nameAttr  = attrs.find(a => a.name === 'name')?.value
-        text  = `${labelAttr ?? ''} ${nameAttr ?? ''}`.trim()
-        level = 2
-      } else {
-        // generic mapping
-        const map: Record<string, { text: string; level: number }> = {
-          BudgetBreakdown:    { text: 'Budget breakdown', level: 2 },
-          FlightCTA:          { text: 'Cheap flights',   level: 2 },
-          TourSectionStarter: { text: 'Tours',           level: 2 },
-          SleepSectionStarter:{ text: 'Sleep options',   level: 2 },
-        }
-        ;({ text, level } = map[name])
-      }
-
-      const id = slugger.slug(
-        name === 'CountryHeader'
-          ? // slug off the actual country name, e.g. “Bangladesh”
-            text.split(':').pop()?.trim() || text
-          : text
-      )
-
-      headings.push({ id, text, level })
+    let text: string, level: number
+    if (elm.name === 'CountryHeader') {
+      const attrs = elm.attributes as any[]
+      const label = attrs.find(a => a.name === 'label')?.value
+      const name  = attrs.find(a => a.name === 'name')?.value
+      text  = `${label ?? ''} ${name ?? ''}`.trim()  // e.g. "Discover: Nepal"
+      level = 2
+    } else {
+      ({ text, level } = COMPONENT_MAP[elm.name])
     }
+
+    // For CountryHeader slug off just the country name after the colon
+    const base = elm.name === 'CountryHeader'
+      ? text.split(':').pop()!.trim()
+      : text
+
+    headings.push({
+      id: slugger.slug(base),
+      text,
+      level,
+    })
   })
 
   return headings

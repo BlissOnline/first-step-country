@@ -7,15 +7,17 @@ type CountryHeaderProps = {
   label: string;    // e.g. "Destination #1"
   name: string;     // e.g. "Bangladesh"
   flagSrc: string;  // path under public/, e.g. "/flags/bangladesh.svg"
+  id?: string;
 };
 
 export default function CountryHeader({
   label,
   name,
   flagSrc,
+  id,
 }: CountryHeaderProps) {
   return (
-    <div className={styles.container}>
+    <div id={id} className={styles.container}>
       <span className={styles.label}>{label}</span>
       <span className={styles.name}>{name}</span>
       <img

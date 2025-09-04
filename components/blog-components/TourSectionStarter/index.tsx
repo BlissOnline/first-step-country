@@ -5,14 +5,16 @@ import styles from './TourSectionStarter.module.css'
 export type TourSectionStarterProps = {
   subHeader: string
   paragraph: string
+  id?: string
 }
 
 const TourSectionStarter: React.FC<TourSectionStarterProps> = ({
   subHeader,
   paragraph,
+  id,
 }) => {
   return (
-    <section className={styles.container}>
+    <section id={id} className={styles.container}>
       {/* <hr className={styles.separator} /> */}
 
       <div className={styles.iconWrapper}>
