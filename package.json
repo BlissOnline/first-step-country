@@ -18,12 +18,19 @@
     "components/blog-components/TourCTA/TourCTA.client.tsx"
   ],
   "dependencies": {
+    "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.3",
     "next": "^15.4.3",
     "next-mdx-remote": "^5.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "remark-gfm": "^4.0.1"
+    "remark-autolink-headings": "^7.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-mdx": "^3.1.1",
+    "remark-parse": "^11.0.0",
+    "remark-slug": "^7.0.1",
+    "unified": "^11.0.5",
+    "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
     "@mdx-js/loader": "^3.1.0",

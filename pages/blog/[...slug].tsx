@@ -6,6 +6,10 @@ import type { GetStaticPaths, GetStaticProps } from 'next'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import remarkGfm from 'remark-gfm'
+import remarkSlug from 'remark-slug'
+import remarkAutolinkHeadings from 'remark-autolink-headings'
+
+import { extractHeadings, type Heading } from '@/lib/extractHeadings'
 
 import BlogLayout from '@/components/blog-components/BlogLayout'
 import MDXComponents from '@/components/blog-components/MDXComponents'
@@ -27,16 +31,16 @@ type FrontMatter = {
   category:         string | null
   subCategory:      string | null
 
-  description:     string | null
-  keywords:        string[] | null
+  description:      string | null
+  keywords:         string[] | null
 
   author:           string | null
   authorRole:       string | null
   authorBio:        string | null
 
-  featuredImage:      string | null
-  showFeaturedImage:  boolean
-  imageCaption:       string | null
+  featuredImage:    string | null
+  showFeaturedImage:boolean
+  imageCaption:     string | null
 }
 
 type Props = {
@@ -46,13 +50,13 @@ type Props = {
     frontmatter:    FrontMatter
     scope:          FrontMatter
   }
+  headings: Heading[]
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const slugs = listSlugs()   // e.g. ['countries/bangladesh', 'general/hello-world']
+  const slugs = listSlugs()
   return {
     paths: slugs.map((slug) => ({
-      // split on "/" only—ensure listSlugs() outputs forward-slashes on Windows
       params: { slug: slug.split('/') },
     })),
     fallback: false,
@@ -67,7 +71,9 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
     content: string
   }
 
-  // Force every optional field to be either a real string or null
+  // extract ToC data
+  const headings: Heading[] = extractHeadings(content)
+
   const fm: FrontMatter = {
     title:            fmRaw.title,
     seoTitle:         fmRaw.seoTitle     ?? fmRaw.title,
@@ -75,24 +81,31 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
     excerpt:          fmRaw.excerpt      ?? null,
     date:             fmRaw.date,
 
-    category:         fmRaw.category    ?? null,
-    subCategory:      fmRaw.subCategory ?? null,
+    category:         fmRaw.category      ?? null,
+    subCategory:      fmRaw.subCategory   ?? null,
 
-    description:      fmRaw.description  ?? fmRaw.excerpt ?? null,
-    keywords:         fmRaw.keywords     ?? null,
+    description:      fmRaw.description   ?? fmRaw.excerpt ?? null,
+    keywords:         fmRaw.keywords      ?? null,
 
-    author:           fmRaw.author      ?? null,
-    authorRole:       fmRaw.authorRole  ?? null,
-    authorBio:        fmRaw.authorBio   ?? null,
+    author:           fmRaw.author        ?? null,
+    authorRole:       fmRaw.authorRole    ?? null,
+    authorBio:        fmRaw.authorBio     ?? null,
 
-    featuredImage:     fmRaw.featuredImage     ?? null,
-    showFeaturedImage: fmRaw.showFeaturedImage ?? true,
-    imageCaption:      fmRaw.imageCaption      ?? null,
+    featuredImage:    fmRaw.featuredImage ?? null,
+    showFeaturedImage:fmRaw.showFeaturedImage ?? true,
+    imageCaption:     fmRaw.imageCaption ?? null,
   }
 
   const rawResult = await serialize(content, {
     scope: fm,
-    mdxOptions: { remarkPlugins: [remarkGfm], rehypePlugins: [] },
+    mdxOptions: {
+      remarkPlugins: [
+        remarkGfm,
+        remarkSlug,
+        remarkAutolinkHeadings
+      ],
+      rehypePlugins: []
+    },
   })
 
   const mdxSource = {
@@ -105,15 +118,15 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
     props: {
       frontMatter: fm,
       mdxSource,
+      headings,
     },
   }
 }
 
-export default function PostPage({ frontMatter: fm, mdxSource }: Props) {
+export default function PostPage({ frontMatter: fm, mdxSource, headings }: Props) {
   const router      = useRouter()
   const siteUrl     = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://firststepcountry.com'
   const postUrl     = `${siteUrl}${router.asPath}`
-  // const description = fm.excerpt ?? fm.displayTitle
   const description = fm.description ?? fm.excerpt ?? fm.displayTitle
 
   const dateObj = new Date(fm.date)
@@ -145,7 +158,8 @@ export default function PostPage({ frontMatter: fm, mdxSource }: Props) {
         )}
       </Head>
 
-      <BlogLayout>
+      {/* pass headings into your layout */}
+      <BlogLayout headings={headings}>
         <article className="prose mx-auto p-8">
           {fm.category && (
             <Category

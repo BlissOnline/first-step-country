@@ -15,6 +15,7 @@ interface CardData {
 
 interface BudgetBreakdownProps {
   cards: CardData[]
+  id?: string
 }
 
 /**
@@ -48,8 +49,9 @@ const CHART_CLASS_MAP: Record<string, string> = {
   'Digital Nomad':  styles.chartNomad,
 }
 
-const BudgetBreakdown: FC<BudgetBreakdownProps> = ({ cards }) => (
+const BudgetBreakdown: FC<BudgetBreakdownProps> = ({ cards, id }) => (
   <section
+    id={id}
     className={styles.container}
     aria-labelledby="expense-breakdown-comparison-title"
   >
