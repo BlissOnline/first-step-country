@@ -31,11 +31,16 @@
 }
 
 .disclaimer {
-  background: #fff4e5;
-  border-left: 4px solid #f59e0b;
+  background: #F0E0D5;
+  border-left: 4px solid #FF8566;
   padding: 1rem;
-  margin-bottom: 2rem;
-  font-size: 0.9rem;
+  /* margin-bottom: 2rem; */
+  margin-bottom: 45px;
+  /* font-size: 0.9rem; */
+  font-size: 14px;
+  /* font-family: var(--font-general); */
+  font-family: var(--font-button);
+  margin-top: 45px;
 }
 
 /* components/BlogLayout.module.css */
@@ -45,6 +50,7 @@
   display: block;          /* override any flex/inline settings */
   padding-left: 1.5rem;    /* keep room for your bullets */
   margin: 0;
+  padding-bottom: 45px;
 }
 
 /* 2) Force each LI to be block‐level */

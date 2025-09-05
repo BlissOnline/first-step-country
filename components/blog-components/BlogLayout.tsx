@@ -31,18 +31,8 @@ export default function BlogLayout({ children }: BlogLayoutProps) {
       
       {/* single container that holds disclaimer, ToC, and content */}
       <div className={styles.container}>
-
-        {/* 1) Disclaimer */}
-        <div className={styles.disclaimer}>
-          <p>
-            Disclaimer: The information in these blog posts is for educational
-            and planning purposes only. Always verify details before booking or traveling.
-          </p>
-        </div>
-
         {/* 3) Your MDX content */}
         {children}
-
       </div>
 
       {/* 4) Blog footer */}

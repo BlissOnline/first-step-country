@@ -204,6 +204,13 @@ export default function PostPage({ frontMatter: fm, mdxSource, headings }: Props
             />
           )}
 
+          {/* Disclaimer now lives here */}
+          <div className={layoutStyles.disclaimer}>
+            <p>
+              Disclaimer: Some links on this site are affiliate links, which means I may earn a small commission if you make a purchase — at no extra cost to you. These commissions help keep First Step Country free and full of budget travel tips for everyone. All content is provided for entertainment and general planning purposes only. While I strive for accuracy, travel information can change without notice. Always double‑check details with official sources before booking or traveling. I accept no responsibility for any loss, injury, or inconvenience sustained by anyone using this information.
+            </p>
+          </div>
+
           <TableOfContents 
             headings={headings}
             className={!hasImage ? layoutStyles.noImageTOC : ''}

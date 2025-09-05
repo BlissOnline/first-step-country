@@ -83,12 +83,12 @@ const MDXComponents: MDXMap = {
   },
 
   TourSectionStarter: (props: ComponentProps<typeof TourSectionStarter>) => {
-    const id = slugify('Tours')
+    const id = slugify('Tours and Activities')
     return <TourSectionStarter {...props} id={id} />
   },
 
   SleepSectionStarter: (props: ComponentProps<typeof SleepSectionStarter>) => {
-    const id = slugify('Sleep options')
+    const id = slugify('Sleeping')
     return <SleepSectionStarter {...props} id={id} />
   },
 }

@@ -35,7 +35,7 @@ const COMPONENTS = new Set<string>([
 const COMPONENT_MAP: Record<string, { text: string; level: number }> = {
   BudgetBreakdown:    { text: 'Budget Breakdown', level: 2 },
   FlightCTA:          { text: 'Cheap Flights',   level: 2 },
-  TourSectionStarter: { text: 'Tours and Activites', level: 2 },
+  TourSectionStarter: { text: 'Tours and Activities', level: 2 },
   SleepSectionStarter:{ text: 'Sleeping',   level: 2 },
 }
 

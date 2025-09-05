@@ -53,8 +53,11 @@
 
 
 .layout--blog main {
-  margin-top: 65px;
+  /* margin-top: 65px; */
   /* margin-top: 45px; */
+  padding-top: 65px;
+  background-color: #F8F7F5;
+  /* background-color: pink; */
 }
 
 .layout--about main {
