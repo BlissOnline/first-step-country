@@ -48,31 +48,46 @@ export default function BlogIndex({ posts }: Props) {
       {/* ───────── Budget Travel Blogs ───────── */}
       <h2 className={styles.blogCategoryTitle}>Budget Travel Blogs</h2>
       <div className={styles.blogGrid}>
-        {budgetBlogs.map(({ slug, displayTitle, featuredImage }) => (
-          <Link key={slug} href={`/blog/${slug}`} className={styles.card}>
-            <div
-              className={styles.cardImage}
-              style={{ backgroundImage: `url(${featuredImage})` }}
-            />
-            <div className={styles.cardTitle}>{displayTitle}</div>
-            <div className={styles.frame} />
-          </Link>
-        ))}
+        {budgetBlogs.map(({ slug, displayTitle, featuredImage }) => {
+          // normalize any backslashes to forward slashes
+          const cleanSlug = slug.replace(/\\/g, '/')
+          return (
+            <Link
+              key={cleanSlug}
+              href={`/blog/${cleanSlug}`}
+              className={styles.card}
+            >
+              <div
+                className={styles.cardImage}
+                style={{ backgroundImage: `url(${featuredImage})` }}
+              />
+              <div className={styles.cardTitle}>{displayTitle}</div>
+              <div className={styles.frame} />
+            </Link>
+          )
+        })}
       </div>
 
       {/* ───────── Country Deep Dives ───────── */}
       <h2 className={styles.blogCategoryTitle}>Country Deep Dives</h2>
       <div className={styles.blogGrid}>
-        {countryDives.map(({ slug, displayTitle, featuredImage }) => (
-          <Link key={slug} href={`/blog/${slug}`} className={styles.card}>
-            <div
-              className={styles.cardImage}
-              style={{ backgroundImage: `url(${featuredImage})` }}
-            />
-            <div className={styles.cardTitle}>{displayTitle}</div>
-            <div className={styles.frame} />
-          </Link>
-        ))}
+        {countryDives.map(({ slug, displayTitle, featuredImage }) => {
+          const cleanSlug = slug.replace(/\\/g, '/')
+          return (
+            <Link
+              key={cleanSlug}
+              href={`/blog/${cleanSlug}`}
+              className={styles.card}
+            >
+              <div
+                className={styles.cardImage}
+                style={{ backgroundImage: `url(${featuredImage})` }}
+              />
+              <div className={styles.cardTitle}>{displayTitle}</div>
+              <div className={styles.frame} />
+            </Link>
+          )
+        })}
       </div>
     </main>
   )

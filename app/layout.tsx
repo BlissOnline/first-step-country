@@ -64,11 +64,11 @@ export default function RootLayout({
         />
 
         {/* Preload Google Tag Manager */}
-        <link
+        {/* <link
           rel="preload"
           href="https://www.googletagmanager.com/gtag/js?id=G-Y2JDHJHYSN"
           as="script"
-        />
+        /> */}
 
         {/* Favicon */}
         <link rel="icon" href="/lamp 40px no spark.svg" />

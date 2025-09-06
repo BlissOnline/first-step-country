@@ -12,9 +12,13 @@
 
 /* responsive image */
 .image {
-  object-fit: cover;
+    /* max-width: 800px;      */
+  max-width: 650px;  /* cap at your true width */
+  width: 100%;            /* override the intrinsic width to fluid */
+  height: auto;           /* lock in the aspect ratio */
+  object-fit: cover;      /* same as inline style for any extra safety */
   border-radius: 4px;
-  max-width: 650px;
+
 }
 
 /* caption styling */

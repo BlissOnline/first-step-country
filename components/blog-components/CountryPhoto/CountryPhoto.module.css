@@ -2,12 +2,32 @@
 
 .container {
   width: 100%;
-  margin: 2rem auto;    /* center and vertical spacing */
+  /* margin: 2rem auto; */
+  margin: 2rem 0;  
   text-align: left;
 }
 
-.image {
+/* .image {
   max-width: 650px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+} */
+
+/* .imageWrapper {
+  position: relative;
+  aspect-ratio: 650 / 400;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+} */
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }

@@ -15,7 +15,6 @@ export default function FeaturedImage({
   caption,
   className = '',
 }: Props) {
-  // ensure we never send null to <Image>
   const safeAlt = alt ?? ''
 
   return (
@@ -24,9 +23,15 @@ export default function FeaturedImage({
         <Image
           src={src}
           alt={safeAlt}
-          layout="responsive"
-          width={800}
-          height={500}
+          // — use the image’s real pixel size here:
+          width={650}
+          height={366}
+          sizes="(max-width: 650px) 100vw, 650px"
+          style={{
+            width: '100%',     // fluid
+            height: 'auto',    // preserve ratio
+            objectFit: 'cover',
+          }}
           className={styles.image}
           priority
         />
