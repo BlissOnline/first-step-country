@@ -30,15 +30,15 @@ const CountryIndexClient: React.FC = () => {
         // if (searchParams.get("ocean") === "important" && !item.coast) return false;
 
         // let ppm = +(searchParams.get("ppm") || 0);
-        const ppm = +(searchParams.get("ppm") || 0);
+        const ppm = +(searchParams?.get("ppm") || 0);
         if (ppm && item.ppm > ppm) return false;
 
-        if (searchParams.get("english") === "important" && !item.englishSpeaking) return false;
-        if (searchParams.get("dining") === "important" && !item.affordableDining) return false;
-        if (searchParams.get("unsafe") === "important" && item.unsafe) return false;
-        if (searchParams.get("education") === "important" && !item.affordableEducation) return false;
-        if (searchParams.get("medical") === "important" && !item.affordableHealthCare) return false;
-        if (searchParams.get("nomadVisa") === "important" && !item.nomadVisa) return false;
+        if (searchParams?.get("english") === "important" && !item.englishSpeaking) return false;
+        if (searchParams?.get("dining") === "important" && !item.affordableDining) return false;
+        if (searchParams?.get("unsafe") === "important" && item.unsafe) return false;
+        if (searchParams?.get("education") === "important" && !item.affordableEducation) return false;
+        if (searchParams?.get("medical") === "important" && !item.affordableHealthCare) return false;
+        if (searchParams?.get("nomadVisa") === "important" && !item.nomadVisa) return false;
 
         return true;
     });

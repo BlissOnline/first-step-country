@@ -6,8 +6,8 @@ import type { GetStaticPaths, GetStaticProps } from 'next'
 import { MDXRemote } from 'next-mdx-remote'
 import { serialize } from 'next-mdx-remote/serialize'
 import remarkGfm from 'remark-gfm'
-import remarkSlug from 'remark-slug'
-import remarkAutolinkHeadings from 'remark-autolink-headings'
+import rehypeSlug from 'rehype-slug'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 
 import { extractHeadings, type Heading } from '@/lib/extractHeadings'
 
@@ -23,11 +23,7 @@ import { getPostBySlug, listSlugs, RawFrontMatter } from '@/lib/posts'
 
 // This import needs to be the file where you defined .noImageTOC
 import layoutStyles from '@/components/blog-components/BlogLayout.module.css'
-
 import styles from '@/components/blog-components/MDXComponents.module.css'
-
-
-
 
 type FrontMatter = {
   title:            string
@@ -73,6 +69,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
   const slugArray = params?.slug as string[]
   const slug = slugArray.join('/')
+
   const { frontMatter: fmRaw, content } = getPostBySlug(slug) as {
     frontMatter: RawFrontMatter
     content: string
@@ -108,10 +105,11 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
     mdxOptions: {
       remarkPlugins: [
         remarkGfm,
-        remarkSlug,
-        remarkAutolinkHeadings
       ],
-      rehypePlugins: []
+      rehypePlugins: [
+        rehypeSlug,
+        [rehypeAutolinkHeadings, { behavior: 'wrap' }],
+      ],
     },
   })
 
@@ -166,7 +164,6 @@ export default function PostPage({ frontMatter: fm, mdxSource, headings }: Props
         )}
       </Head>
 
-      {/* pass headings into your layout */}
       <BlogLayout>
         <article className="prose mx-auto p-8">
           {fm.category && (
@@ -204,14 +201,13 @@ export default function PostPage({ frontMatter: fm, mdxSource, headings }: Props
             />
           )}
 
-          {/* Disclaimer now lives here */}
           <div className={layoutStyles.disclaimer}>
             <p>
               Disclaimer: Some links on this site are affiliate links, which means I may earn a small commission if you make a purchase — at no extra cost to you. These commissions help keep First Step Country free and full of budget travel tips for everyone. All content is provided for entertainment and general planning purposes only. While I strive for accuracy, travel information can change without notice. Always double‑check details with official sources before booking or traveling. I accept no responsibility for any loss, injury, or inconvenience sustained by anyone using this information.
             </p>
           </div>
 
-          <TableOfContents 
+          <TableOfContents
             headings={headings}
             className={!hasImage ? layoutStyles.noImageTOC : ''}
           />

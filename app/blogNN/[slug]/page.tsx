@@ -43,7 +43,7 @@ export default async function PostPage({
   const mdxSource = await serialize(raw, {
     scope: frontMatter,
     mdxOptions: {
-      outputFormat: 'function-body',
+      // outputFormat: 'function-body',
       remarkPlugins: [remarkGfm],
       rehypePlugins: [],
     },
