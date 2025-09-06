@@ -1,3 +1,5 @@
+"use client"
+
 // components/TourCTA/TourCTA.client.tsx
 import dynamic from 'next/dynamic'
 

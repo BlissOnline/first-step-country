@@ -1,3 +1,5 @@
+"use client";
+
 // components/SharePopover.tsx
 import { useState } from 'react'
 import styles from './ShareBlog.module.css'

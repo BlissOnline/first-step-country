@@ -1,3 +1,4 @@
+"use client"
 // 1) Module‐level log: runs as soon as this file is imported
 // console.log('🔧 [TourCTA] real component module loaded');
 
