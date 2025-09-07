@@ -9,7 +9,7 @@ export default function Footer() {
         {/* About */}
         <section className={styles.about}>
           <h4>About First Step Country</h4>
-          <p>Budget travel tips, city guides, and resources for digital nomads.</p>
+          <p>Budget travel tips, city guides, and resources for budget travelers.</p>
         </section>
 
         {/* Quick Links */}
