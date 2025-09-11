@@ -153,6 +153,7 @@
     font-weight: 600;
     white-space: nowrap;
     transition: background-color 0.25s ease;
+    cursor: pointer;
 }
 
 .qTwoButton:hover {

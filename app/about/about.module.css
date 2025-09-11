@@ -1,0 +1,99 @@
+/* full-screen flex wrapper */
+.aboutBody {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  /* background-color: var(--color-4); */
+  background-color: #F8F7F5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title + underline */
+.titleContainer {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-family: var(--font-question);
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--color-3);
+  padding-bottom: 3px;
+}
+
+.underline {
+  width: 95%;
+  height: 3.5px;
+  background-color: var(--color-1);
+  margin: 0.5rem auto 0;
+  margin-bottom: 20px;
+}
+
+/* Hero image */
+.imageWrapper {
+  width: 100%;
+  /* max-width: 1200px; */
+  max-width: 600px;   /* ← limit the hero to 600px */
+  /* margin-bottom: 2rem; */
+  margin-bottom: 125px;
+}
+
+.missionImage {
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+/* Text blocks */
+.textContainer {
+  /* max-width: 800px; */
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.aboutText {
+  /* color: var(--color-1); */
+  color: #333333;
+  font-family: var(--font-paragraph);
+  /* font-size: clamp(1.1rem, 3vw, 1.8rem); */
+  font-size: 21px;
+  /* font-size: 1rem; */
+  line-height: 1.4;
+}
+
+.highlight {
+  font-weight: 400;
+  /* color: var(--color-gold); */
+  color: var(--color-3);
+  /* font-family: var(--font-general); */
+  font-family: var(--font-question);
+}
+
+/* CTA + button */
+.ctaContainer {
+  margin-top: 2.5rem;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.ctaText {
+  /* font-size: clamp(1rem, 2.5vw, 1.25rem); */
+  font-size: 21px;
+  color: var(--color-4);
+  /* margin-bottom: 1rem; */
+  font-family: var(--font-question);
+}
+
+.beginButton {
+  /* will merge with DiscoverButton styles */
+  align-self: center;
+  pointer-events: auto;
+  /* background-color: var(--color-1); */
+
+}
