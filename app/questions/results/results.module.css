@@ -28,18 +28,17 @@
     width: 50%;
 }
 
-/* .logo {
-    width: 10%;
-    margin-bottom: 2em;
-} */
-
-
-
-/* dont think thier is even a <p> property.. so not sure why thats here.. */
-/* p {
-    font-size: 1.2em;
-    margin-bottom: 1.5em;
-} */
+.disclaimer {
+  /* background: #F0E0D5; */
+  background: var(--color-1);
+  border-left: 4px solid #FF8566;
+  width: 80%;
+  padding: 1rem;
+  /* margin-top: 45px;
+  margin-bottom: 45px; */
+  font-size: 14px;
+  font-family: var(--font-button);
+}
 
 .showResultsButton {
    /* padding: 0.5em 0.5em; */
