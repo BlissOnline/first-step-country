@@ -1,7 +1,7 @@
 // components/BlogLayout.tsx
 import { ReactNode } from 'react'
 import styles from './BlogLayout.module.css'
-import Footer from '@/components/blog-components/Footer'
+// import Footer from '@/components/blog-components/Footer'
 // import { Heading } from '@/lib/extractHeadings'
 
 
@@ -36,7 +36,7 @@ export default function BlogLayout({ children }: BlogLayoutProps) {
       </div>
 
       {/* 4) Blog footer */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

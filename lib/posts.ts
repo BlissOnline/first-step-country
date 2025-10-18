@@ -16,6 +16,8 @@ export type RawFrontMatter = {
   category?:       string
   subCategory?:    string
 
+  country?: string
+
   description?: string
   keywords?:    string[]
 
@@ -81,6 +83,8 @@ export function getPostBySlug(
 
     category:        data.category && String(data.category),
     subCategory:     data.subCategory && String(data.subCategory),
+
+    country:         data.country && String(data.country),
 
     author:          data.author && String(data.author),
     authorRole:      data.authorRole && String(data.authorRole),

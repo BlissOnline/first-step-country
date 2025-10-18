@@ -1,5 +1,7 @@
 // pages/blog/[...slug].tsx
 
+import React, { useMemo } from 'react'
+
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import type { GetStaticPaths, GetStaticProps } from 'next'
@@ -20,7 +22,9 @@ import FeaturedImage from '@/components/blog-components/FeaturedImage'
 import TableOfContents from '@/components/blog-components/TableOfContents'
 
 import { getPostBySlug, listSlugs, RawFrontMatter } from '@/lib/posts'
-
+import countries from '@/lib/goldObject'
+import { SafetyWarning } from '@/components/blog-components/SafetyWarning'
+import type { Country } from '@/lib/types'
 // This import needs to be the file where you defined .noImageTOC
 import layoutStyles from '@/components/blog-components/BlogLayout.module.css'
 import styles from '@/components/blog-components/MDXComponents.module.css'
@@ -33,6 +37,8 @@ type FrontMatter = {
   date:             string
   category:         string | null
   subCategory:      string | null
+
+  country?:          string | null
 
   description:      string | null
   keywords:         string[] | null
@@ -88,6 +94,8 @@ export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
     category:         fmRaw.category      ?? null,
     subCategory:      fmRaw.subCategory   ?? null,
 
+    country:          fmRaw.country       ?? null,
+
     description:      fmRaw.description   ?? fmRaw.excerpt ?? null,
     keywords:         fmRaw.keywords      ?? null,
 
@@ -142,6 +150,14 @@ export default function PostPage({ frontMatter: fm, mdxSource, headings }: Props
   })
   const hasImage = Boolean(fm.showFeaturedImage && fm.featuredImage)
 
+  // Find the country object by frontmatter.country
+  const countryMatch = useMemo<Country | undefined>(() => {
+    if (!fm.country) return undefined
+    return (countries as Country[]).find(
+      (c) => c.name.toLowerCase() === fm.country!.toLowerCase()
+    )
+  }, [fm.country])
+
   return (
     <>
       <Head>
@@ -165,6 +181,9 @@ export default function PostPage({ frontMatter: fm, mdxSource, headings }: Props
       </Head>
 
       <BlogLayout>
+        {countryMatch?.unsafe && (
+          <SafetyWarning countryName={countryMatch.name} />
+        )}
         <article className="prose mx-auto p-8">
           {fm.category && (
             <Category

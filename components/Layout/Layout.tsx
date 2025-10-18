@@ -5,6 +5,7 @@ import React from 'react'
 import { usePathname } from 'next/navigation'
 import Header from './Header'
 import './Layout.css'
+import Footer from '../blog-components/Footer'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -38,6 +39,7 @@ export default function Layout({ children }: LayoutProps) {
     <div className={wrapperClass}>
       <Header />
       <main>{children}</main>
+      <Footer />
     </div>
   )
 }

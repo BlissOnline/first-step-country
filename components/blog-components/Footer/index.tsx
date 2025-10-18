@@ -38,10 +38,20 @@ export default function Footer() {
         <section className={styles.social}>
           <h4>Follow Us</h4>
           <ul>
-            <li>coming soon...</li>
-            {/* <li><a href="https://twitter.com/yourhandle">Twitter</a></li>
-            <li><a href="https://instagram.com/yourhandle">Instagram</a></li>
-            <li><a href="https://youtube.com/yourchannel">YouTube</a></li> */}
+            {/* <li><a href="https://twitter.com/yourhandle">Twitter</a></li> */}
+
+            <li>
+              <a href="https://www.instagram.com/firststepcountry/" target="_blank" rel="noopener noreferrer">
+                <img src="/socialIcons/instagram-icon-bg.svg" alt="Instagram" width={24} height={24} />
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/@FirstStepCountry" target="_blank" rel="noopener noreferrer">
+                <img src="/socialIcons/yt-icon.svg" alt="YouTube" width={24} height={24} />
+              </a>
+            </li>
+
           </ul>
         </section>
       </div>
