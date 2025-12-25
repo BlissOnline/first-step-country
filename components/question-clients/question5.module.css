@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: space-evenly;
     font-family: var(--font-question);
-    background-color: var(--color-4);
+    background-color: var(--color-home);
 }
 
 .qFiveContainer {
@@ -28,7 +28,7 @@
     flex-direction: column;
     align-items: center; 
     overflow: hidden; 
-    background-color: var(--color-4);
+    background-color: var(--color-home);
     padding-top: 50px;  
 }
 
@@ -38,12 +38,12 @@
     font-size: clamp(1.6rem, 3.5vw, 2.5rem);
 
     text-align: center;
-    color: var(--color-1);
+    color: var(--color-4);
 }
 
 .qFiveImgContainer {
     width: 100%;
-    background-color: var(--color-4);
+    background-color: var(--color-home);
     display: flex;
     justify-content: center; 
     margin: 0;

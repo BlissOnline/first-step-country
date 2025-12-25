@@ -11,7 +11,7 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: "Safest Countries to Live In – Top Destinations for Security & Stability",
       description: "Explore the safest countries for security and low crime rates.",
-      images: [{ url: "https://firststepcountry.com/questionImages/unsafe-graphic.png", width: 1200, height: 630 }], // ✅ Corrected image path
+      images: [{ url: "https://firststepcountry.com/questionImages/safe-family.png", width: 1200, height: 630 }], // ✅ Corrected image path
       url: "https://firststepcountry.com/questions/question5",
       type: "article",
     },
@@ -19,7 +19,7 @@ export function generateMetadata(): Metadata {
       card: "summary_large_image",
       title: "Safest Countries to Live In – Top Destinations for Security & Stability",
       description: "Find safe destinations with low crime and stable environments.",
-      images: ["https://firststepcountry.com/questionImages/unsafe-graphic.png"], // ✅ Corrected image path
+      images: ["https://firststepcountry.com/questionImages/safe-family.png"], // ✅ Corrected image path
     },
   };
 }
@@ -41,8 +41,8 @@ export default function Q5Page() {
         
         <div className={styles.qFiveImgContainer}>
           <Image
-            src="/questionImages/safe-country-graphic.png"
-            alt='Riot police in protective gear facing a large protest'
+            src="/questionImages/safe-family.png"
+            alt='happy family with parents hold kids dearly in arms'
             width={500}
             height={300}
             className={styles.qFiveImg}
