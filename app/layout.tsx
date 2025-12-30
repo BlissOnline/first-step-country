@@ -116,6 +116,24 @@ export default function RootLayout({
             ],
           })}
         </script>
+
+        {/* Travelpayouts verification script */}
+        <script
+          data-noptimize="1"
+          data-cfasync="false"
+          data-wpfc-render="false"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function () {
+                var script = document.createElement("script");
+                script.async = 1;
+                script.src = 'https://emrld.ltd/NDg0ODcx.js?t=484871';
+                document.head.appendChild(script);
+              })();
+            `,
+          }}
+        />
+
       </head>
 
       <body className="global-body">
